@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "time_up",
+    "atlas": "",
+    "rect": {
+      "x": 2,
+      "y": 1,
+      "width": 195,
+      "height": 235
+    },
+    "offset": {
+      "x": 0,
+      "y": 0.5
+    },
+    "originalSize": {
+      "width": 199,
+      "height": 238
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "fcc3202b-57cc-4ac5-b6da-7df4ebcec688@6c48a",
+    "packable": true
+  }
+}

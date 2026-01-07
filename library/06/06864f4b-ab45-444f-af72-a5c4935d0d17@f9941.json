@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "crown_pink",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 95,
+      "height": 86
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 95,
+      "height": 86
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "06864f4b-ab45-444f-af72-a5c4935d0d17@6c48a",
+    "packable": true
+  }
+}

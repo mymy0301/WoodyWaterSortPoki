@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "button on off",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 120,
+      "height": 121
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 120,
+      "height": 121
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "f2b2e629-cd30-4160-abb2-f02a9f46bcb1@6c48a",
+    "packable": true
+  }
+}

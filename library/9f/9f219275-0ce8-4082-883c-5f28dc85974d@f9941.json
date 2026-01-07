@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "raceProgress",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 152,
+      "height": 38
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 152,
+      "height": 38
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "9f219275-0ce8-4082-883c-5f28dc85974d@6c48a",
+    "packable": true
+  }
+}

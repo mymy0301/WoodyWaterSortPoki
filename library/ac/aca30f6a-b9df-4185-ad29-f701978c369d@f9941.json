@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "box_smaller4",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 200,
+      "height": 114
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 200,
+      "height": 114
+    },
+    "rotated": false,
+    "capInsets": [
+      26,
+      39,
+      137,
+      27
+    ],
+    "texture": "aca30f6a-b9df-4185-ad29-f701978c369d@6c48a",
+    "packable": true
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "icon vibrate",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 134,
+      "height": 114
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 134,
+      "height": 114
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "b4b67e80-624f-47d7-a1de-0a8abbf6f1cf@6c48a",
+    "packable": true
+  }
+}

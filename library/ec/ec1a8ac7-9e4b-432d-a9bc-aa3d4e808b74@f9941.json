@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "CUP",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 87,
+      "height": 71
+    },
+    "offset": {
+      "x": -0.5,
+      "y": 0.5
+    },
+    "originalSize": {
+      "width": 88,
+      "height": 72
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "ec1a8ac7-9e4b-432d-a9bc-aa3d4e808b74@6c48a",
+    "packable": true
+  }
+}

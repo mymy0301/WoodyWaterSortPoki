@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ADS",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 125,
+      "height": 126
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 125,
+      "height": 126
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "18d64317-d906-44f7-b423-b90c538a57a6@6c48a",
+    "packable": true
+  }
+}

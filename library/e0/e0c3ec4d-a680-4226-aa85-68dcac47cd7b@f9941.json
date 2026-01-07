@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "DEMO",
+    "atlas": "",
+    "rect": {
+      "x": 10,
+      "y": 2,
+      "width": 311,
+      "height": 120
+    },
+    "offset": {
+      "x": 3.5,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 324,
+      "height": 124
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "e0c3ec4d-a680-4226-aa85-68dcac47cd7b@6c48a",
+    "packable": true
+  }
+}

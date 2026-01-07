@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Event",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 157,
+      "height": 157
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 157,
+      "height": 157
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "e081fecf-462b-4e5d-bf16-a61b0eef9275@6c48a",
+    "packable": true
+  }
+}

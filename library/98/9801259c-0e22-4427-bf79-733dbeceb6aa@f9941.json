@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "level",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 165,
+      "height": 189
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 165,
+      "height": 189
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "9801259c-0e22-4427-bf79-733dbeceb6aa@6c48a",
+    "packable": true
+  }
+}

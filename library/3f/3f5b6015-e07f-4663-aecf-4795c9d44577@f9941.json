@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "setting_popup",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 944,
+      "height": 1315
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 944,
+      "height": 1315
+    },
+    "rotated": false,
+    "capInsets": [
+      134,
+      276,
+      157,
+      173
+    ],
+    "texture": "3f5b6015-e07f-4663-aecf-4795c9d44577@6c48a",
+    "packable": true
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Coin2",
+    "atlas": "",
+    "rect": {
+      "x": 3,
+      "y": 1,
+      "width": 124,
+      "height": 128
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 130,
+      "height": 130
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "437ecdb4-23fb-4805-8d21-cf5926cee650@6c48a",
+    "packable": true
+  }
+}

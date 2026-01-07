@@ -1,0 +1,46 @@
+[
+  {
+    "items": [
+      {
+        "itemShopType": 2,
+        "value": 500
+      }
+    ]
+  },
+  {
+    "items": [
+      {
+        "itemShopType": 4,
+        "value": 1
+      },
+      {
+        "itemShopType": 8,
+        "value": 1800
+      }
+    ]
+  },
+  {
+    "items": [
+      {
+        "itemShopType": 5,
+        "value": 1
+      },
+      {
+        "itemShopType": 2,
+        "value": 1000
+      }
+    ]
+  },
+  {
+    "items": [
+      {
+        "itemShopType": 6,
+        "value": 1
+      },
+      {
+        "itemShopType": 2,
+        "value": 5000
+      }
+    ]
+  }
+]

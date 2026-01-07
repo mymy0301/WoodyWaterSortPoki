@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "summerpack",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 1,
+      "width": 967,
+      "height": 1467
+    },
+    "offset": {
+      "x": 0,
+      "y": -0.5
+    },
+    "originalSize": {
+      "width": 967,
+      "height": 1468
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "02f68960-8983-475d-b3e6-3a9477fa815c@6c48a",
+    "packable": true
+  }
+}

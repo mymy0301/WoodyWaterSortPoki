@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Coin_613",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 297,
+      "height": 243
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 297,
+      "height": 243
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "b53bb053-1da3-42d5-9750-48da97b1ac48@6c48a",
+    "packable": true
+  }
+}

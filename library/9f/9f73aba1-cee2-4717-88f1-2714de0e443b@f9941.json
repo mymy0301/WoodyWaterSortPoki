@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Broken_Heart_SmallRotated-Info_419",
+    "atlas": "",
+    "rect": {
+      "x": 14,
+      "y": 8,
+      "width": 134,
+      "height": 113
+    },
+    "offset": {
+      "x": 1,
+      "y": 2
+    },
+    "originalSize": {
+      "width": 160,
+      "height": 133
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "9f73aba1-cee2-4717-88f1-2714de0e443b@6c48a",
+    "packable": true
+  }
+}

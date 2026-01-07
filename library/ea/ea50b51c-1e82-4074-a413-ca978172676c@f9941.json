@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "replay",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 60,
+      "height": 67
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 60,
+      "height": 67
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "ea50b51c-1e82-4074-a413-ca978172676c@6c48a",
+    "packable": true
+  }
+}

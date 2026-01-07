@@ -1,0 +1,128 @@
+{
+  "__type__": "cc.JsonAsset",
+  "_name": "unlockprogress",
+  "_objFlags": 0,
+  "_native": "",
+  "json": [
+    {
+      "level": 0,
+      "type": 0,
+      "itemID": 1
+    },
+    {
+      "level": 0,
+      "type": 1,
+      "itemID": 1
+    },
+    {
+      "level": 8,
+      "type": 0,
+      "itemID": 2
+    },
+    {
+      "level": 15,
+      "type": 1,
+      "itemID": 2
+    },
+    {
+      "level": 20,
+      "type": 0,
+      "itemID": 3
+    },
+    {
+      "level": 27,
+      "type": 1,
+      "itemID": 3
+    },
+    {
+      "level": 35,
+      "type": 0,
+      "itemID": 4
+    },
+    {
+      "level": 43,
+      "type": 1,
+      "itemID": 4
+    },
+    {
+      "level": 51,
+      "type": 0,
+      "itemID": 5
+    },
+    {
+      "level": 59,
+      "type": 1,
+      "itemID": 5
+    },
+    {
+      "level": 67,
+      "type": 0,
+      "itemID": 6
+    },
+    {
+      "level": 75,
+      "type": 1,
+      "itemID": 6
+    },
+    {
+      "level": 83,
+      "type": 0,
+      "itemID": 7
+    },
+    {
+      "level": 91,
+      "type": 1,
+      "itemID": 7
+    },
+    {
+      "level": 99,
+      "type": 0,
+      "itemID": 8
+    },
+    {
+      "level": 107,
+      "type": 1,
+      "itemID": 8
+    },
+    {
+      "level": 115,
+      "type": 0,
+      "itemID": 9
+    },
+    {
+      "level": 125,
+      "type": 1,
+      "itemID": 9
+    },
+    {
+      "level": 137,
+      "type": 0,
+      "itemID": 10
+    },
+    {
+      "level": 149,
+      "type": 1,
+      "itemID": 10
+    },
+    {
+      "level": 161,
+      "type": 0,
+      "itemID": 11
+    },
+    {
+      "level": 173,
+      "type": 1,
+      "itemID": 11
+    },
+    {
+      "level": 185,
+      "type": 0,
+      "itemID": 12
+    },
+    {
+      "level": 197,
+      "type": 1,
+      "itemID": 12
+    }
+  ]
+}

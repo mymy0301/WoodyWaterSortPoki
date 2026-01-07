@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "NatoSans",
+    "atlas": "",
+    "rect": {
+      "x": 1,
+      "y": 1,
+      "width": 476,
+      "height": 476
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 478,
+      "height": 478
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "1bf27ed4-509a-4513-b0d9-e6b635954d6e@6c48a",
+    "packable": true
+  }
+}

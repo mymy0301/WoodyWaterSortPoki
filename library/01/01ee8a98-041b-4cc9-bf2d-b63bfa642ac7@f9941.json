@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "leaderboard",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 185,
+      "height": 142
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 185,
+      "height": 142
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "01ee8a98-041b-4cc9-bf2d-b63bfa642ac7@6c48a",
+    "packable": true
+  }
+}

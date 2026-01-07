@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "icon play",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 63,
+      "height": 89
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 63,
+      "height": 89
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "d69f6ed1-986b-486f-be66-4403f5994b2b@6c48a",
+    "packable": true
+  }
+}

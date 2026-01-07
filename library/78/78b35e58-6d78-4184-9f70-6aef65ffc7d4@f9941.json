@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bar 2",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 400,
+      "height": 27
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 400,
+      "height": 27
+    },
+    "rotated": false,
+    "capInsets": [
+      12,
+      12,
+      12,
+      12
+    ],
+    "texture": "78b35e58-6d78-4184-9f70-6aef65ffc7d4@6c48a",
+    "packable": true
+  }
+}

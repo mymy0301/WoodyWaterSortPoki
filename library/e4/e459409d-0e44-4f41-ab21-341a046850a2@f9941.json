@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "icon tutorial",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 129,
+      "height": 97
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 129,
+      "height": 97
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "e459409d-0e44-4f41-ab21-341a046850a2@6c48a",
+    "packable": true
+  }
+}

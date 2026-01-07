@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "well_done",
+    "atlas": "",
+    "rect": {
+      "x": 2,
+      "y": 2,
+      "width": 141,
+      "height": 172
+    },
+    "offset": {
+      "x": -1.5,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 148,
+      "height": 176
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "7b130dae-4918-4146-bc1f-54136ab68220@6c48a",
+    "packable": true
+  }
+}

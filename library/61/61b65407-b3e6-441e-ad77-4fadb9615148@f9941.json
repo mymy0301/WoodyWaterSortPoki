@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "3 day vip",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 878,
+      "height": 532
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 878,
+      "height": 532
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "61b65407-b3e6-441e-ad77-4fadb9615148@6c48a",
+    "packable": true
+  }
+}

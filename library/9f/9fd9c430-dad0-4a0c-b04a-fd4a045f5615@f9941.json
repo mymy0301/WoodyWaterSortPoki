@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "question",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 1,
+      "width": 42,
+      "height": 63
+    },
+    "offset": {
+      "x": -1,
+      "y": -0.5
+    },
+    "originalSize": {
+      "width": 44,
+      "height": 64
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "9fd9c430-dad0-4a0c-b04a-fd4a045f5615@6c48a",
+    "packable": true
+  }
+}

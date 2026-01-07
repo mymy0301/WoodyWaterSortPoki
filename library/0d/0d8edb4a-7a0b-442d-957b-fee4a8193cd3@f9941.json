@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "light_daily",
+    "atlas": "",
+    "rect": {
+      "x": 3,
+      "y": 2,
+      "width": 114,
+      "height": 113
+    },
+    "offset": {
+      "x": -1.5,
+      "y": 0.5
+    },
+    "originalSize": {
+      "width": 123,
+      "height": 118
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "0d8edb4a-7a0b-442d-957b-fee4a8193cd3@6c48a",
+    "packable": true
+  }
+}

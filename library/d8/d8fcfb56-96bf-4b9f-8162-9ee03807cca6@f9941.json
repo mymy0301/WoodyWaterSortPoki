@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "master pass",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 151,
+      "height": 137
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 151,
+      "height": 137
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "d8fcfb56-96bf-4b9f-8162-9ee03807cca6@6c48a",
+    "packable": true
+  }
+}

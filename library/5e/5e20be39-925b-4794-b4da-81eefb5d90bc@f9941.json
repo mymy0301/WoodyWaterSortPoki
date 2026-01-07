@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "exchange board",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 860,
+      "height": 547
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 860,
+      "height": 547
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "5e20be39-925b-4794-b4da-81eefb5d90bc@6c48a",
+    "packable": true
+  }
+}

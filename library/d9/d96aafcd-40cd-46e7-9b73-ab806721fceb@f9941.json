@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "NotoSansSC_0",
+    "atlas": "",
+    "rect": {
+      "x": 2,
+      "y": 2,
+      "width": 507,
+      "height": 172
+    },
+    "offset": {
+      "x": -0.5,
+      "y": 168
+    },
+    "originalSize": {
+      "width": 512,
+      "height": 512
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "d96aafcd-40cd-46e7-9b73-ab806721fceb@6c48a",
+    "packable": true
+  }
+}

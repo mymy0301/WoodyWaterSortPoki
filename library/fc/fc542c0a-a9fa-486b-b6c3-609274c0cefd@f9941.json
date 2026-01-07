@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "broken_heart_417",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 1,
+      "width": 334,
+      "height": 260
+    },
+    "offset": {
+      "x": 0,
+      "y": 0.5
+    },
+    "originalSize": {
+      "width": 334,
+      "height": 263
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "fc542c0a-a9fa-486b-b6c3-609274c0cefd@6c48a",
+    "packable": true
+  }
+}

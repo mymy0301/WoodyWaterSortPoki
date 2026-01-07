@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "racing",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 252,
+      "height": 227
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 252,
+      "height": 227
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "15683f38-a81e-417f-b966-a36136cc618c@6c48a",
+    "packable": true
+  }
+}

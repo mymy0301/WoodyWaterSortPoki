@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Leaves 2",
+    "atlas": "",
+    "rect": {
+      "x": 3,
+      "y": 0,
+      "width": 346,
+      "height": 312
+    },
+    "offset": {
+      "x": 0,
+      "y": 1.5
+    },
+    "originalSize": {
+      "width": 352,
+      "height": 315
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "9163a96f-1092-43b3-b1e4-42237170ee46@6c48a",
+    "packable": true
+  }
+}

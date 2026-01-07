@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "medal",
+    "atlas": "",
+    "rect": {
+      "x": 1,
+      "y": 0,
+      "width": 72,
+      "height": 97
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 74,
+      "height": 97
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "071d7f3c-4407-46b8-9e7b-d5bfcab5df27@6c48a",
+    "packable": true
+  }
+}

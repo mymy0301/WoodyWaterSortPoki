@@ -1,0 +1,80 @@
+{
+  "__type__": "cc.JsonAsset",
+  "_name": "spin",
+  "_objFlags": 0,
+  "_native": "",
+  "json": [
+    {
+      "items": [
+        {
+          "itemShopType": 2,
+          "value": 50
+        }
+      ],
+      "ratio": 20
+    },
+    {
+      "items": [
+        {
+          "itemShopType": 4,
+          "value": 1
+        }
+      ],
+      "ratio": 1
+    },
+    {
+      "items": [
+        {
+          "itemShopType": 2,
+          "value": 75
+        }
+      ],
+      "ratio": 20
+    },
+    {
+      "items": [
+        {
+          "itemShopType": 5,
+          "value": 1
+        }
+      ],
+      "ratio": 1
+    },
+    {
+      "items": [
+        {
+          "itemShopType": 2,
+          "value": 100
+        }
+      ],
+      "ratio": 2
+    },
+    {
+      "items": [
+        {
+          "itemShopType": 6,
+          "value": 1
+        }
+      ],
+      "ratio": 1
+    },
+    {
+      "items": [
+        {
+          "itemShopType": 2,
+          "value": 125
+        }
+      ],
+      "ratio": 30
+    },
+    {
+      "items": [
+        {
+          "itemShopType": 8,
+          "value": 900
+        }
+      ],
+      "ratio": 10
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "ver": "1.0.22",
+  "importer": "image",
+  "imported": true,
+  "uuid": "cabb7339-79e9-4539-957e-e39841f9c0ab",
+  "files": [
+    ".png",
+    ".json"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "cabb7339-79e9-4539-957e-e39841f9c0ab@6c48a",
+      "displayName": "btn2",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "clamp-to-edge",
+        "wrapModeT": "clamp-to-edge",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "cabb7339-79e9-4539-957e-e39841f9c0ab"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9941": {
+      "importer": "sprite-frame",
+      "uuid": "cabb7339-79e9-4539-957e-e39841f9c0ab@f9941",
+      "displayName": "btn2",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 0,
+        "trimY": 0,
+        "width": 563,
+        "height": 209,
+        "rawWidth": 563,
+        "rawHeight": 209,
+        "borderTop": 83,
+        "borderBottom": 94,
+        "borderLeft": 104,
+        "borderRight": 140,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "cabb7339-79e9-4539-957e-e39841f9c0ab@6c48a",
+        "atlasUuid": ""
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "hasAlpha": true,
+    "type": "sprite-frame",
+    "redirect": "cabb7339-79e9-4539-957e-e39841f9c0ab@f9941"
+  }
+}

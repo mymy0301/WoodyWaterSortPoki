@@ -1,0 +1,42 @@
+[
+  {
+    "items": [
+      {
+        "itemShopType": 4,
+        "value": 1
+      },
+      {
+        "itemShopType": 5,
+        "value": 1
+      },
+      {
+        "itemShopType": 2,
+        "value": 500
+      }
+    ]
+  },
+  {
+    "items": [
+      {
+        "itemShopType": 5,
+        "value": 1
+      },
+      {
+        "itemShopType": 2,
+        "value": 300
+      }
+    ]
+  },
+  {
+    "items": [
+      {
+        "itemShopType": 8,
+        "value": 900
+      },
+      {
+        "itemShopType": 2,
+        "value": 100
+      }
+    ]
+  }
+]

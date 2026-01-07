@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "6a",
+    "atlas": "",
+    "rect": {
+      "x": 180,
+      "y": 224,
+      "width": 137,
+      "height": 455
+    },
+    "offset": {
+      "x": -1.5,
+      "y": -51.5
+    },
+    "originalSize": {
+      "width": 500,
+      "height": 800
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "377aacfe-5e7a-4fa7-99e8-74fe59b152d4@6c48a",
+    "packable": true
+  }
+}

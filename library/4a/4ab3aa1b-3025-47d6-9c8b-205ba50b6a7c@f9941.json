@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "NatoSans_outline3_40",
+    "atlas": "",
+    "rect": {
+      "x": 1,
+      "y": 1,
+      "width": 311,
+      "height": 311
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 313,
+      "height": 313
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "4ab3aa1b-3025-47d6-9c8b-205ba50b6a7c@6c48a",
+    "packable": true
+  }
+}
