@@ -110,6 +110,8 @@ export class LevelChestsPopup extends BasePopup {
         this.rewardCoin = localConfig.instance.getRewardCoinby_LevelConfigInfo(localConfig.instance.currLevelConfigInfo);
         this.txtValue.string = `x${Utils.formatNumber(this.rewardCoin)}`;
 
+        localConfig.instance.setCoin(localConfig.instance.currCoin + this.rewardCoin);
+
         this.groupRewards_Opacity.opacity = 0;
         this.groupRewards.setScale(new Vec3(1.5,1.5,1.5));
         this.nodeEfx.active = false;
@@ -192,7 +194,11 @@ export class LevelChestsPopup extends BasePopup {
         LogEventManager.instance.logButtonClick("continue","levelchestpopup");
         this.hidePopup();
 
-        clientEvent.dispatchEvent(Constants.LEVEL_CHEST_TOUCH_CONTINUE,this.rewardCoin);
+        
+
+        clientEvent.dispatchEvent(Constants.TOUCH_NEXT_LEVEL);
+        // clientEvent.dispatchEvent(Constants.LEVEL_CHEST_TOUCH_CONTINUE,this.rewardCoin);
+
     }
     
 }

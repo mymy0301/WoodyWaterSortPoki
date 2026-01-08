@@ -59,30 +59,32 @@ export class PokiSDKManager extends Component {
 
     fb_InterstitialAd_CallBack: FBIntanstAd_Callback = null;
     public Show_InterstitialAdAsync(location: string, button_name: string, cb?: FBIntanstAd_Callback) {
-        if(typeof PokiSDK === 'undefined') {
-            cb(null, Constants.FB_INTERSTITIAL_CALLBACK_SUCCESS);
+        cb(null, Constants.FB_INTERSTITIAL_CALLBACK_SUCCESS);
             return;
-        };
-        let self = this;
-        self.fb_InterstitialAd_CallBack = cb;
-        clientEvent.dispatchEvent(Constants.SHOW_LOADING_AD_POPUP);
-        if (this.isShowInterstitialAd) {
-            // pause your game here if it isn't already
-            PokiSDK.commercialBreak(() => {
-                // you can pause any background music or other audio here
-                MusicManager.instance.pauseMusic();
-            }).then(() => {
-                console.log("Commercial break finished, proceeding to game");
-                // if the audio was paused you can resume it here (keep in mind that the function above to pause it might not always get called)
-                // continue your game here
-                MusicManager.instance.resumeMusic();
-                self.SetNextTime_ShowInterstitialAd();
-                cb(null, Constants.FB_INTERSTITIAL_CALLBACK_SUCCESS);
-            });
-        }else{
-            clientEvent.dispatchEvent(Constants.HIDE_LOADING_AD_POPUP);
-            self.fb_InterstitialAd_CallBack(new Error("next TIME!"), Constants.FB_INTERSTITIAL_CALLBACK_FAIL);
-        }
+        // if(typeof PokiSDK === 'undefined') {
+        //     cb(null, Constants.FB_INTERSTITIAL_CALLBACK_SUCCESS);
+        //     return;
+        // };
+        // let self = this;
+        // self.fb_InterstitialAd_CallBack = cb;
+        // clientEvent.dispatchEvent(Constants.SHOW_LOADING_AD_POPUP);
+        // if (this.isShowInterstitialAd) {
+        //     // pause your game here if it isn't already
+        //     PokiSDK.commercialBreak(() => {
+        //         // you can pause any background music or other audio here
+        //         MusicManager.instance.pauseMusic();
+        //     }).then(() => {
+        //         console.log("Commercial break finished, proceeding to game");
+        //         // if the audio was paused you can resume it here (keep in mind that the function above to pause it might not always get called)
+        //         // continue your game here
+        //         MusicManager.instance.resumeMusic();
+        //         self.SetNextTime_ShowInterstitialAd();
+        //         cb(null, Constants.FB_INTERSTITIAL_CALLBACK_SUCCESS);
+        //     });
+        // }else{
+        //     clientEvent.dispatchEvent(Constants.HIDE_LOADING_AD_POPUP);
+        //     self.fb_InterstitialAd_CallBack(new Error("next TIME!"), Constants.FB_INTERSTITIAL_CALLBACK_FAIL);
+        // }
     }
 
     TIME_NEXT_INTERSTITIAL = 60;

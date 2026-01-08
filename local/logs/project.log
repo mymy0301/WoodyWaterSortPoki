@@ -1,186 +1,395 @@
-2026-01-08 11:50:45-log: [Package] menu@1.0.0 enable
-2026-01-08 11:50:45-log: [Package] profile@1.0.0 enable
-2026-01-08 11:50:45-log: [Package] project@1.0.1 enable
-2026-01-08 11:50:45-log: [Package] messages@1.0.0 enable
-2026-01-08 11:50:45-log: [Package] program@1.0.0 enable
-2026-01-08 11:50:45-log: [Package] device@1.0.1 enable
-2026-01-08 11:50:45-log: [Package] ui-kit@1.0.1 enable
-2026-01-08 11:50:45-log: [Package] tester@1.0.0 enable
-2026-01-08 11:50:45-log: [Package] preferences@1.0.0 enable
-2026-01-08 11:50:45-error: [Window] Message does not exist: asset-db - query-assets
-2026-01-08 11:50:46-log: Setup mods mgr.: 577.342ms
-2026-01-08 11:50:46-log: [Package] engine@1.0.5 enable
-2026-01-08 11:50:48-log: [Package] programming@1.0.0 enable
-2026-01-08 11:50:48-log: [Package] engine-extends@1.0.0 enable
-2026-01-08 11:50:48-log: [Package] asset-db@1.0.0 enable
-2026-01-08 11:50:48-log: [Package] console@1.0.0 enable
-2026-01-08 11:50:48-log: [Package] scene@1.0.0 enable
-2026-01-08 11:50:48-log: [Package] utils@1.0.0 enable
-2026-01-08 11:50:48-log: [Package] assets@1.0.0 enable
-2026-01-08 11:50:48-log: [Package] inspector@1.0.0 enable
-2026-01-08 11:50:49-log: [Package] hierarchy@1.0.0 enable
-2026-01-08 11:50:49-log: [Package] preview@1.0.1 enable
-2026-01-08 11:50:49-log: [Package] animator@1.0.0 enable
-2026-01-08 11:50:49-log: The set IP address does not exist. The default IP will be used.
-2026-01-08 11:50:50-log: [Package] builder@1.3.0 enable
-2026-01-08 11:50:50-log: [Package] node-library@1.0.0 enable
-2026-01-08 11:50:50-log: [Package] shortcuts@1.0.1 enable
-2026-01-08 11:50:50-log: [Package] package-asset@1.0.0 enable
-2026-01-08 11:50:50-log: [Package] reference-image@1.0.0 enable
-2026-01-08 11:50:50-log: [Package] animation-graph@1.0.0 enable
-2026-01-08 11:50:50-log: [Package] channel-upload-tools@1.0.0 enable
-2026-01-08 11:50:50-log: [Package] runtime-dev-tools@1.0.0 enable
-2026-01-08 11:50:51-log: [Package] lightmap@1.0.4 enable
-2026-01-08 11:50:51-log: [Package] alipay-mini-game@1.0.0 enable
-2026-01-08 11:50:51-log: [Package] android@1.0.0 enable
-2026-01-08 11:50:51-log: [Package] baidu-mini-game@1.0.0 enable
-2026-01-08 11:50:51-log: [Package] bytedance-mini-game@1.0.1 enable
-2026-01-08 11:50:51-log: [Package] huawei-agc@1.0.0 enable
-2026-01-08 11:50:51-log: [Package] ios@1.0.0 enable
-2026-01-08 11:50:51-log: [Package] ios-app-clip@1.0.0 enable
-2026-01-08 11:50:51-log: [Package] mac@1.0.0 enable
-2026-01-08 11:50:51-log: [Package] native@1.0.0 enable
-2026-01-08 11:50:51-log: [Package] ohos@1.0.0 enable
-2026-01-08 11:50:51-log: [Package] web-desktop@1.0.0 enable
-2026-01-08 11:50:51-log: [Package] web-mobile@1.0.0 enable
-2026-01-08 11:50:51-log: [Package] wechatgame@1.0.1 enable
-2026-01-08 11:50:51-log: [Package] windows@1.0.0 enable
-2026-01-08 11:50:51-log: [Package] xiaomi-quick-game@1.0.0 enable
-2026-01-08 11:50:51-log: [Package] cocos-play@1.0.0 enable
-2026-01-08 11:50:51-log: [Package] huawei-quick-game@1.0.0 enable
-2026-01-08 11:50:51-log: [Package] link-sure@1.0.0 enable
-2026-01-08 11:50:51-log: [Package] oppo-mini-game@1.0.0 enable
-2026-01-08 11:50:51-log: [Package] qtt@1.0.0 enable
-2026-01-08 11:50:51-log: [Package] vivo-mini-game@1.0.0 enable
-2026-01-08 11:50:51-log: [Package] cocos-service@3.0.2 enable
-2026-01-08 11:50:52-log: [Package] importer@1.0.0 enable
-2026-01-08 11:50:52-log: [Package] extension@3.0.13 enable
-2026-01-08 11:50:52-log: [Im-plugin] Check im-plugin version.
-2026-01-08 11:50:52-log: [Package] im-plugin@3.0.8 enable
-2026-01-08 11:50:52-log: The set IP address does not exist. The default IP will be used.
-2026-01-08 11:50:52-log: The set IP address does not exist. The default IP will be used.
-2026-01-08 11:50:52-log: [Im-plugin] No online info of im-plugin.
-2026-01-08 11:51:30-warn: [Asset DB] Importer exec warning: {asset[D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\assets\effects\textures\glow1.png@6c48a](a870a3f7-9610-4279-b452-b2bf6e1c876d@6c48a)}: The importer version is lower than asset
-2026-01-08 11:51:30-warn: [Asset DB] Importer exec warning: {asset[D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\assets\effects\textures\glow4.png@6c48a](d41b6950-8931-42b1-b1d1-93252faab807@6c48a)}: The importer version is lower than asset
-2026-01-08 11:51:31-warn: Browserslist: caniuse-lite is outdated. Please run:
+2026-01-08 16:49:41-warn: [Window] timeout
+2026-01-08 16:50:50-log: [Package] menu@1.0.0 enable
+2026-01-08 16:50:50-log: [Package] profile@1.0.0 enable
+2026-01-08 16:50:50-log: [Package] Profile Migrate: project@Cocos Creator...
+2026-01-08 16:50:50-log: [Package] project@1.0.1 enable
+2026-01-08 16:50:50-log: [Package] messages@1.0.0 enable
+2026-01-08 16:50:50-log: [Package] Profile Migrate: program@Cocos Creator...
+2026-01-08 16:50:50-log: [Package] program@1.0.0 enable
+2026-01-08 16:50:50-log: [Package] device@1.0.1 enable
+2026-01-08 16:50:50-log: [Package] ui-kit@1.0.1 enable
+2026-01-08 16:50:50-log: [Package] tester@1.0.0 enable
+2026-01-08 16:50:50-log: [Package] preferences@1.0.0 enable
+2026-01-08 16:50:50-log: [Package] Profile Migrate: engine@Cocos Creator...
+2026-01-08 16:50:50-log: Setup mods mgr.: 244.374ms
+2026-01-08 16:50:50-log: [Package] engine@1.0.5 enable
+2026-01-08 16:50:52-error: [Window] Message does not exist: asset-db - query-assets
+2026-01-08 16:50:52-log: [Package] programming@1.0.0 enable
+2026-01-08 16:50:52-log: [Package] Profile Migrate: builder@Cocos Creator...
+2026-01-08 16:50:52-log: [Package] engine-extends@1.0.0 enable
+2026-01-08 16:50:52-log: [Package] asset-db@1.0.0 enable
+2026-01-08 16:50:52-log: [Package] console@1.0.0 enable
+2026-01-08 16:50:52-log: [Package] scene@1.0.0 enable
+2026-01-08 16:50:53-log: [Package] about@1.0.0 enable
+2026-01-08 16:50:53-log: [Package] server@1.0.0 enable
+2026-01-08 16:50:53-log: [Package] utils@1.0.0 enable
+2026-01-08 16:50:53-log: [Package] assets@1.0.0 enable
+2026-01-08 16:50:53-log: [Package] inspector@1.0.0 enable
+2026-01-08 16:50:53-log: [Package] hierarchy@1.0.0 enable
+2026-01-08 16:50:54-log: [Package] preview@1.0.1 enable
+2026-01-08 16:50:54-log: [Package] animator@1.0.0 enable
+2026-01-08 16:50:54-log: The set IP address does not exist. The default IP will be used.
+2026-01-08 16:50:55-log: [Package] builder@1.3.0 enable
+2026-01-08 16:50:55-log: [Package] node-library@1.0.0 enable
+2026-01-08 16:50:55-log: [Package] shortcuts@1.0.1 enable
+2026-01-08 16:50:55-log: [Package] package-asset@1.0.0 enable
+2026-01-08 16:50:55-log: [Package] reference-image@1.0.0 enable
+2026-01-08 16:50:55-log: [Package] animation-graph@1.0.0 enable
+2026-01-08 16:50:55-log: [Package] channel-upload-tools@1.0.0 enable
+2026-01-08 16:50:55-log: [Package] runtime-dev-tools@1.0.0 enable
+2026-01-08 16:50:55-log: [Package] lightmap@1.0.4 enable
+2026-01-08 16:50:55-log: [Package] alipay-mini-game@1.0.0 enable
+2026-01-08 16:50:55-log: [Package] android@1.0.0 enable
+2026-01-08 16:50:55-log: [Package] baidu-mini-game@1.0.0 enable
+2026-01-08 16:50:55-log: [Package] bytedance-mini-game@1.0.1 enable
+2026-01-08 16:50:55-log: [Package] huawei-agc@1.0.0 enable
+2026-01-08 16:50:55-log: [Package] ios@1.0.0 enable
+2026-01-08 16:50:55-log: [Package] ios-app-clip@1.0.0 enable
+2026-01-08 16:50:55-log: [Package] mac@1.0.0 enable
+2026-01-08 16:50:55-log: [Package] native@1.0.0 enable
+2026-01-08 16:50:55-log: [Package] ohos@1.0.0 enable
+2026-01-08 16:50:55-log: [Package] web-desktop@1.0.0 enable
+2026-01-08 16:50:55-log: [Package] web-mobile@1.0.0 enable
+2026-01-08 16:50:55-log: [Package] wechatgame@1.0.1 enable
+2026-01-08 16:50:55-log: [Package] windows@1.0.0 enable
+2026-01-08 16:50:55-log: [Package] xiaomi-quick-game@1.0.0 enable
+2026-01-08 16:50:55-log: [Package] cocos-play@1.0.0 enable
+2026-01-08 16:50:55-log: [Package] huawei-quick-game@1.0.0 enable
+2026-01-08 16:50:55-log: [Package] link-sure@1.0.0 enable
+2026-01-08 16:50:55-log: [Package] oppo-mini-game@1.0.0 enable
+2026-01-08 16:50:56-log: [Package] qtt@1.0.0 enable
+2026-01-08 16:50:56-log: [Package] vivo-mini-game@1.0.0 enable
+2026-01-08 16:50:56-log: [Package] cocos-service@3.0.2 enable
+2026-01-08 16:50:56-log: [Package] importer@1.0.0 enable
+2026-01-08 16:50:56-log: [Package] extension@3.0.13 enable
+2026-01-08 16:50:56-log: [Im-plugin] Check im-plugin version.
+2026-01-08 16:50:56-log: [Package] im-plugin@3.0.8 enable
+2026-01-08 16:50:56-log: The set IP address does not exist. The default IP will be used.
+2026-01-08 16:50:56-log: The set IP address does not exist. The default IP will be used.
+2026-01-08 16:50:57-log: [Im-plugin] No online info of im-plugin.
+2026-01-08 16:50:57-warn: [Asset DB] Importer exec warning: {asset[D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\assets\effects\textures\glow1.png@6c48a](a870a3f7-9610-4279-b452-b2bf6e1c876d@6c48a)}: The importer version is lower than asset
+2026-01-08 16:50:57-warn: [Asset DB] Importer exec warning: {asset[D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\assets\effects\textures\glow4.png@6c48a](d41b6950-8931-42b1-b1d1-93252faab807@6c48a)}: The importer version is lower than asset
+2026-01-08 16:50:57-error: [Window] { status: 701, msg: 'Data Write Failure', path: 'log/add' }
+2026-01-08 16:50:58-warn: Browserslist: caniuse-lite is outdated. Please run:
 npx browserslist@latest --update-db
 
 Why you should do it regularly:
 https://github.com/browserslist/browserslist#browsers-data-updating
-2026-01-08 11:51:42-log: [Scene] begin init
-2026-01-08 11:51:42-log: [Scene] require engine end
-2026-01-08 11:51:42-log: [Scene] Serialize end
-2026-01-08 11:51:42-log: [Scene] configureStartup end
-2026-01-08 11:51:42-log: [Scene] Cocos Creator v3.4.0
-2026-01-08 11:51:53-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
-2026-01-08 11:51:53-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
-2026-01-08 11:51:53-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
-2026-01-08 11:51:53-info: [Scene] Forward render pipeline initialized.
-2026-01-08 11:51:53-log: [Scene] openEngine end
-2026-01-08 11:51:53-log: [Scene] configureEngine end
-2026-01-08 11:51:54-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
-2026-01-08 11:51:54-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
-2026-01-08 11:51:54-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
-2026-01-08 11:51:55-log: [Scene] Spine: Animation not found: <None>
-2026-01-08 11:51:56-error: [Scene] 2 already defined in Enum.
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
-2026-01-08 11:55:08-log: [Scene] Spine: Animation not found: <None>
-2026-01-08 11:55:11-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
-2026-01-08 11:55:12-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
-2026-01-08 11:55:12-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
-2026-01-08 11:55:12-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
-2026-01-08 11:58:06-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
-2026-01-08 11:58:06-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
-2026-01-08 11:58:06-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
-2026-01-08 11:58:06-log: [Scene] Spine: Animation not found: <None>
-2026-01-08 11:58:06-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
-2026-01-08 11:58:07-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
-2026-01-08 11:58:07-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
-2026-01-08 11:58:07-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
-2026-01-08 11:58:08-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
-2026-01-08 11:58:08-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
-2026-01-08 11:58:08-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
-2026-01-08 11:58:08-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
-2026-01-08 12:27:28-log: The set IP address does not exist. The default IP will be used.
-2026-01-08 12:27:29-log: The set IP address does not exist. The default IP will be used.
-2026-01-08 14:13:31-log: The set IP address does not exist. The default IP will be used.
+2026-01-08 16:51:20-log: [Scene] begin init
+2026-01-08 16:51:20-log: [Scene] require engine end
+2026-01-08 16:51:20-log: [Scene] Serialize end
+2026-01-08 16:51:20-log: [Scene] configureStartup end
+2026-01-08 16:51:20-log: [Scene] Cocos Creator v3.4.0
+2026-01-08 16:51:20-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 16:51:20-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 16:51:20-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 16:51:20-info: [Scene] Forward render pipeline initialized.
+2026-01-08 16:51:21-log: [Scene] openEngine end
+2026-01-08 16:51:21-log: [Scene] configureEngine end
+2026-01-08 16:51:21-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 16:51:21-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 16:51:21-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 16:51:24-log: [Scene] Spine: Animation not found: <None>
+2026-01-08 16:51:24-error: [Scene] 2 already defined in Enum.
+2026-01-08 17:09:03-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:09:03-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:09:03-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 17:09:03-log: [Scene] Spine: Animation not found: <None>
+2026-01-08 17:12:10-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:12:10-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:12:10-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 17:12:11-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:12:13-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:12:13-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:12:13-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:12:13-log: [Scene] Spine: Animation not found: <None>
+2026-01-08 17:12:13-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:12:13-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:12:13-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 17:12:14-log: [Scene] Spine: Animation not found: <None>
+2026-01-08 17:13:00-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:13:00-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:13:00-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:13:00-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:13:19-warn: [Scene] Reference "btnShare" of "WinPopup<WinPopup>" to external scene object "btnShare" can not be saved in prefab asset.
+2026-01-08 17:13:19-warn: [Scene] Reference "nodeShare_Opacity" of "WinPopup<WinPopup>" to external scene object "btnShare" can not be saved in prefab asset.
+2026-01-08 17:13:19-warn: [Scene] Reference "btnShare" of "WinPopup<WinPopup>" to external scene object "btnShare" can not be saved in prefab asset.
+2026-01-08 17:13:19-warn: [Scene] Reference "nodeShare_Opacity" of "WinPopup<WinPopup>" to external scene object "btnShare" can not be saved in prefab asset.
+2026-01-08 17:16:51-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:16:51-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:16:51-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 17:16:51-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:16:52-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:16:52-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:16:52-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:16:53-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:16:54-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:16:54-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:16:54-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:17:21-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:17:21-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:17:21-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 17:17:22-warn: [Scene] can't find node in current scene: 55qFwDxfpINox01G3UeON1
+2026-01-08 17:17:22-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:17:22-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:17:23-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:17:23-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:17:23-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:17:23-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:17:23-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:17:23-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:18:49-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:18:49-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:18:49-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 17:18:50-warn: [Scene] can't find node in current scene: 55qFwDxfpINox01G3UeON1
+2026-01-08 17:18:50-warn: [Scene] can't find node in current scene: 55qFwDxfpINox01G3UeON1
+2026-01-08 17:18:50-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:18:50-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:18:50-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:18:50-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:18:57-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:18:57-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:18:57-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:18:57-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:21:02-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:21:02-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:21:02-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 17:21:03-warn: [Scene] can't find node in current scene: 55qFwDxfpINox01G3UeON1
+2026-01-08 17:21:03-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:21:03-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:21:04-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:21:04-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:21:04-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:21:04-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:21:04-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:21:04-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:22:53-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:22:53-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:22:53-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 17:22:54-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:22:55-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:22:55-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:22:55-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:24:23-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:24:24-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:24:24-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:24:24-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:33:28-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:33:28-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 17:33:28-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:33:28-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:33:29-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:33:30-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:33:30-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:33:30-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:33:30-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:33:30-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:33:30-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:41:07-log: [Scene] Can't find letter definition in texture atlas NatoSans_outline3.png for letter:Ô
+2026-01-08 17:41:07-log: [Scene] Can't find letter definition in texture atlas NatoSans_outline3.png for letter:Ô
+2026-01-08 17:41:07-log: [Scene] Can't find letter definition in texture atlas NatoSans_outline3.png for letter:Ố
+2026-01-08 17:41:08-log: [Scene] Can't find letter definition in texture atlas NatoSans_outline3.png for letter:Ố
+2026-01-08 17:42:19-error: [Asset DB] ENOENT: no such file or directory, stat 'D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\assets\items\prefabsUI\TournamentPopup.prefab'
+2026-01-08 17:44:16-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:44:16-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 17:44:17-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:44:17-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:44:17-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:44:18-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:44:18-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:44:18-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:44:18-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:44:18-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:44:18-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:44:50-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:44:50-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:44:50-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:44:50-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:45:41-log: [Scene] Spine: Animation not found: <None>
+2026-01-08 17:45:51-log: [Scene] Spine: Animation not found: 1
+2026-01-08 17:45:51-error: [Scene] 2 already defined in Enum.
+2026-01-08 17:47:09-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:47:09-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 17:47:09-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:47:10-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:47:11-log: [Scene] Spine: Animation not found: 1
+2026-01-08 17:47:11-error: [Scene] 2 already defined in Enum.
+2026-01-08 17:47:11-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:47:11-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:47:11-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:47:11-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:47:11-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 17:47:12-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:47:12-log: [Scene] Spine: Animation not found: 1
+2026-01-08 17:47:12-error: [Scene] 2 already defined in Enum.
+2026-01-08 17:52:19-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:52:19-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 17:52:19-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:52:19-warn: [Scene] can't find node in current scene: 1ebdGGDspEh7Tve6QtCaLr
+2026-01-08 17:52:20-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:52:20-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:52:21-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:52:21-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:52:21-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:52:21-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:52:21-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 17:52:21-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:57:58-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:57:58-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 17:57:58-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:57:59-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:58:00-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:58:00-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:58:00-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:58:32-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:58:32-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 17:58:32-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 17:58:32-warn: [Scene] can't find node in current scene: 8bj/hscfxI56sJlKL9+6qx
+2026-01-08 17:58:33-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:58:33-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:58:33-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:58:33-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:58:34-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 17:58:34-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:58:34-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 17:58:34-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:04:40-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 18:04:40-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 18:04:41-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 18:04:41-warn: [Scene] can't find node in current scene: 89fkMoi7NBCK+gQ4OsqPXZ
+2026-01-08 18:04:41-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:04:41-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:04:42-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:04:42-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:04:42-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:10:15-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 18:10:15-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 18:10:15-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 18:10:18-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:10:20-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 18:10:20-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 18:10:20-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 18:10:21-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:10:21-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:10:21-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:12:02-log: [Scene] Spine: Animation not found: 1
+2026-01-08 18:12:02-error: [Scene] 2 already defined in Enum.
+2026-01-08 18:12:09-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:12:10-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:12:10-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:12:10-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:12:11-log: [Scene] Spine: Animation not found: <None>
+2026-01-08 18:12:27-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:12:28-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:12:28-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:12:28-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:12:31-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:12:31-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:12:31-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:12:31-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:12:32-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:12:32-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:12:33-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:12:33-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:12:33-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:12:33-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:12:33-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:12:33-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:14:15-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:14:16-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:14:16-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:14:16-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:14:16-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:14:16-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:14:16-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:14:16-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:38:04-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:38:05-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:38:05-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:38:05-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:38:05-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:38:06-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:38:06-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:38:06-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:40:12-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 18:40:12-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 18:40:12-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 18:40:12-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:40:13-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:40:13-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:40:13-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:40:13-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:40:13-log: [Scene] Spine: Animation not found: <None>
+2026-01-08 18:40:14-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:40:14-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:40:14-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:43:50-log: [Scene] Spine: Animation not found: <None>
+2026-01-08 18:44:00-log: [Scene] Spine: Animation not found: 1
+2026-01-08 18:44:00-error: [Scene] 2 already defined in Enum.
+2026-01-08 18:44:27-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:44:27-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:44:27-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:44:27-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:44:31-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:44:31-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:44:31-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:44:31-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:44:31-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:44:32-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:44:32-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:44:32-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:44:55-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:44:55-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:44:55-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:44:55-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:45:24-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:45:25-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:45:25-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:45:25-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:45:48-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:45:49-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:45:49-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:45:49-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:45:55-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:45:55-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:45:55-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:45:55-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:46:39-log: The set IP address does not exist. The default IP will be used.
+2026-01-08 18:46:46-log: [Scene] Spine: Animation not found: <None>
+2026-01-08 18:46:46-log: [Scene] Spine: Animation not found: 1
+2026-01-08 18:46:46-error: [Scene] 2 already defined in Enum.
+2026-01-08 18:46:55-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:46:55-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:46:55-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:46:55-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:46:59-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:46:59-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:46:59-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:46:59-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:47:00-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:47:00-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:47:00-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:47:00-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:50:01-error: [Preview]Uncaught TypeError: The thing you want to instantiate must be an object in http://localhost:7456/scripting/engine/bin/.cache/dev/preview/bundled/index.js
+2026-01-08 18:54:43-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 18:54:43-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 18:54:43-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 18:54:46-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:54:47-log: [Scene] Spine: Animation not found: <None>
+2026-01-08 18:54:47-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:54:47-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:54:47-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:54:47-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 18:54:47-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 18:54:47-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 18:54:48-log: [Scene] Spine: Animation not found: <None>
+2026-01-08 18:54:51-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:54:51-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:54:51-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:54:51-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:54:52-log: The set IP address does not exist. The default IP will be used.
+2026-01-08 18:54:52-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 18:54:53-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:54:53-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:54:53-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 18:56:31-log: The set IP address does not exist. The default IP will be used.

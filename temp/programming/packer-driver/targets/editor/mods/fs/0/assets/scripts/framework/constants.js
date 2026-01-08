@@ -43,7 +43,7 @@ System.register(["cc"], function (_export, _context) {
 
       _export("Constants", Constants = class Constants {});
 
-      _defineProperty(Constants, "GAME_NAME", 'WaterSortWoodyPuzzle');
+      _defineProperty(Constants, "GAME_NAME", 'WaterSortWoodyPuzzlePoki');
 
       _defineProperty(Constants, "GAME_NAME_TITLE", 'Water Sort Woody Puzzle');
 

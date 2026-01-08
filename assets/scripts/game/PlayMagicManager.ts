@@ -1217,23 +1217,25 @@ export class PlayMagicManager extends Component {
             child.setParent(this.groupAllTubes);
         }
         this.lockScene.active = false;
-        if(localConfig.instance.currHeartUnlimited_CountTime <= 0){
-            clientEvent.dispatchEvent(Constants.HEART_COUNT_UPDATE,-1);
-        }
+        // if(localConfig.instance.currHeartUnlimited_CountTime <= 0){
+        //     clientEvent.dispatchEvent(Constants.HEART_COUNT_UPDATE,-1);
+        // }
         let rewardCoin: number = localConfig.instance.getRewardCoinby_LevelConfigInfo(localConfig.instance.currLevelConfigInfo);
         localConfig.instance.setAddLoseStreak();
-        if (localConfig.instance.currHeart <= 0) {
-            clientEvent.dispatchEvent(Constants.SHOW_MORELIVES_POPUP, () => {
-                if (localConfig.instance.currHeart > 0) {
-                    let rewardCoin: number = localConfig.instance.getRewardCoinby_LevelConfigInfo(localConfig.instance.currLevelConfigInfo);
-                    clientEvent.dispatchEvent(Constants.SHOW_LEVELFAILED_POPUP, rewardCoin);
-                } else {
-                    clientEvent.dispatchEvent(Constants.BACK_TO_HOME);
-                }
-            });
-        } else {
-            clientEvent.dispatchEvent(Constants.SHOW_LEVELFAILED_POPUP, rewardCoin);
-        }
+        // if (localConfig.instance.currHeart <= 0) {
+        //     clientEvent.dispatchEvent(Constants.SHOW_MORELIVES_POPUP, () => {
+        //         if (localConfig.instance.currHeart > 0) {
+        //             let rewardCoin: number = localConfig.instance.getRewardCoinby_LevelConfigInfo(localConfig.instance.currLevelConfigInfo);
+        //             clientEvent.dispatchEvent(Constants.SHOW_LEVELFAILED_POPUP, rewardCoin);
+        //         } else {
+        //             clientEvent.dispatchEvent(Constants.BACK_TO_HOME);
+        //         }
+        //     });
+        // } else {
+        //     clientEvent.dispatchEvent(Constants.SHOW_LEVELFAILED_POPUP, rewardCoin);
+        // }
+
+        clientEvent.dispatchEvent(Constants.SHOW_LEVELFAILED_POPUP, rewardCoin);
     }
 
     setNoMoves_Touch_Replay(){

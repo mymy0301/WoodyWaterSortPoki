@@ -119,51 +119,33 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         Show_InterstitialAdAsync(location, button_name, cb) {
-          if (typeof PokiSDK === 'undefined') {
-            cb(null, (_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-              error: Error()
-            }), Constants) : Constants).FB_INTERSTITIAL_CALLBACK_SUCCESS);
-            return;
-          }
-
-          ;
-          var self = this;
-          self.fb_InterstitialAd_CallBack = cb;
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
+          cb(null, (_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
             error: Error()
-          }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_LOADING_AD_POPUP);
-
-          if (this.isShowInterstitialAd) {
-            // pause your game here if it isn't already
-            PokiSDK.commercialBreak(() => {
-              // you can pause any background music or other audio here
-              (_crd && MusicManager === void 0 ? (_reportPossibleCrUseOfMusicManager({
-                error: Error()
-              }), MusicManager) : MusicManager).instance.pauseMusic();
-            }).then(() => {
-              console.log("Commercial break finished, proceeding to game"); // if the audio was paused you can resume it here (keep in mind that the function above to pause it might not always get called)
-              // continue your game here
-
-              (_crd && MusicManager === void 0 ? (_reportPossibleCrUseOfMusicManager({
-                error: Error()
-              }), MusicManager) : MusicManager).instance.resumeMusic();
-              self.SetNextTime_ShowInterstitialAd();
-              cb(null, (_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-                error: Error()
-              }), Constants) : Constants).FB_INTERSTITIAL_CALLBACK_SUCCESS);
-            });
-          } else {
-            (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-              error: Error()
-            }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-              error: Error()
-            }), Constants) : Constants).HIDE_LOADING_AD_POPUP);
-            self.fb_InterstitialAd_CallBack(new Error("next TIME!"), (_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-              error: Error()
-            }), Constants) : Constants).FB_INTERSTITIAL_CALLBACK_FAIL);
-          }
+          }), Constants) : Constants).FB_INTERSTITIAL_CALLBACK_SUCCESS);
+          return; // if(typeof PokiSDK === 'undefined') {
+          //     cb(null, Constants.FB_INTERSTITIAL_CALLBACK_SUCCESS);
+          //     return;
+          // };
+          // let self = this;
+          // self.fb_InterstitialAd_CallBack = cb;
+          // clientEvent.dispatchEvent(Constants.SHOW_LOADING_AD_POPUP);
+          // if (this.isShowInterstitialAd) {
+          //     // pause your game here if it isn't already
+          //     PokiSDK.commercialBreak(() => {
+          //         // you can pause any background music or other audio here
+          //         MusicManager.instance.pauseMusic();
+          //     }).then(() => {
+          //         console.log("Commercial break finished, proceeding to game");
+          //         // if the audio was paused you can resume it here (keep in mind that the function above to pause it might not always get called)
+          //         // continue your game here
+          //         MusicManager.instance.resumeMusic();
+          //         self.SetNextTime_ShowInterstitialAd();
+          //         cb(null, Constants.FB_INTERSTITIAL_CALLBACK_SUCCESS);
+          //     });
+          // }else{
+          //     clientEvent.dispatchEvent(Constants.HIDE_LOADING_AD_POPUP);
+          //     self.fb_InterstitialAd_CallBack(new Error("next TIME!"), Constants.FB_INTERSTITIAL_CALLBACK_FAIL);
+          // }
         }
 
         SetNextTime_ShowInterstitialAd() {

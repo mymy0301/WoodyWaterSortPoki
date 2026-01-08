@@ -323,7 +323,7 @@ export class configuration {
         if(this.jsonData.hasOwnProperty(Constants.COIN)){
             return  this.jsonData[Constants.COIN];
         }
-        return 0;
+        return 10000;
     }
     //#endregion
 
@@ -409,7 +409,7 @@ export class configuration {
         if(this.jsonData.hasOwnProperty(Constants.BOOSTER_COUNT)){
             return  this.jsonData[Constants.BOOSTER_COUNT];
         }
-        return [3,3,3];
+        return [5,5,5];
     }
     //#endregion
 

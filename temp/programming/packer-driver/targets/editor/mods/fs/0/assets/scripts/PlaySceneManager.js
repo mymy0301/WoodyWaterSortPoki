@@ -782,77 +782,25 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
             error: Error()
-          }), Constants) : Constants).SHOP_POPUP_CLOSE, this.setShopPopupClose, this);
+          }), Constants) : Constants).SHOP_POPUP_CLOSE, this.setShopPopupClose, this); // clientEvent.on(Constants.SHOW_TUBERACE_JOIN_POPUP,this.showTubeRaceJoinPopup,this);
+          // clientEvent.on(Constants.SHOW_TUBERACE_POPUP,this.showTubeRacePopup,this);
+          // clientEvent.on(Constants.SHOW_TUBERACE_WIN_POPUP,this.showTubeRaceWinPopup,this);
+          // clientEvent.on(Constants.SHOW_TUBERACE_LOSE_POPUP,this.showTubeRaceLosePopup,this);
+          // clientEvent.on(Constants.SHOW_MASSTERPASS_POPUP,this.showMassterPassPopup,this);
+          // clientEvent.on(Constants.SHOW_MASSTERPASS_ACTIVATE_POPUP,this.showMassterPassActivatePopup,this);
+          // clientEvent.on(Constants.SHOW_MASSTERPASS_INFO_POPUP,this.showMassterPassInfoPopup,this);
+
           (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
             error: Error()
           }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
             error: Error()
-          }), Constants) : Constants).SHOW_TUBERACE_JOIN_POPUP, this.showTubeRaceJoinPopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_TUBERACE_POPUP, this.showTubeRacePopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_TUBERACE_WIN_POPUP, this.showTubeRaceWinPopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_TUBERACE_LOSE_POPUP, this.showTubeRaceLosePopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_MASSTERPASS_POPUP, this.showMassterPassPopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_MASSTERPASS_ACTIVATE_POPUP, this.showMassterPassActivatePopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_MASSTERPASS_INFO_POPUP, this.showMassterPassInfoPopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_SPIN_POPUP, this.showSpinPopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_SHARECONTEXT_POPUP, this.showShareContextPopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_SHARE_INFOLEVEL_POPUP, this.showShareInfoLevelPopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_SHARE_INFOSCORE_POPUP, this.showShareInfoScorePopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_SHARE_TOURNAMENT_POPUP, this.showShareTournamentScorePopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_INVITE_POPUP, this.showInvitePopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_VIP_POPUP, this.showVIPPopup, this);
+          }), Constants) : Constants).SHOW_SPIN_POPUP, this.showSpinPopup, this); // clientEvent.on(Constants.SHOW_SHARECONTEXT_POPUP,this.showShareContextPopup,this);
+          // clientEvent.on(Constants.SHOW_SHARE_INFOLEVEL_POPUP,this.showShareInfoLevelPopup,this);
+          // clientEvent.on(Constants.SHOW_SHARE_INFOSCORE_POPUP,this.showShareInfoScorePopup,this);
+          // clientEvent.on(Constants.SHOW_SHARE_TOURNAMENT_POPUP,this.showShareTournamentScorePopup,this);
+          // clientEvent.on(Constants.SHOW_INVITE_POPUP,this.showInvitePopup,this);
+          // clientEvent.on(Constants.SHOW_VIP_POPUP,this.showVIPPopup,this);
+
           (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
             error: Error()
           }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
@@ -902,12 +850,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
             error: Error()
-          }), Constants) : Constants).BACK_TO_HOME, this.setBackToHome, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_MORELIVES_POPUP, this.showMoreLivesPopup, this);
+          }), Constants) : Constants).BACK_TO_HOME, this.setBackToHome, this); // clientEvent.on(Constants.SHOW_MORELIVES_POPUP,this.showMoreLivesPopup,this);
+
           (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
             error: Error()
           }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
@@ -1145,77 +1089,25 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
             error: Error()
-          }), Constants) : Constants).SHOP_POPUP_CLOSE, this.setShopPopupClose, this);
+          }), Constants) : Constants).SHOP_POPUP_CLOSE, this.setShopPopupClose, this); // clientEvent.off(Constants.SHOW_TUBERACE_JOIN_POPUP,this.showTubeRaceJoinPopup,this);
+          // clientEvent.off(Constants.SHOW_TUBERACE_POPUP,this.showTubeRacePopup,this);
+          // clientEvent.off(Constants.SHOW_TUBERACE_WIN_POPUP,this.showTubeRaceWinPopup,this);
+          // clientEvent.off(Constants.SHOW_TUBERACE_LOSE_POPUP,this.showTubeRaceLosePopup,this);
+          // clientEvent.off(Constants.SHOW_MASSTERPASS_POPUP,this.showMassterPassPopup,this);
+          // clientEvent.off(Constants.SHOW_MASSTERPASS_ACTIVATE_POPUP,this.showMassterPassActivatePopup,this);
+          // clientEvent.off(Constants.SHOW_MASSTERPASS_INFO_POPUP,this.showMassterPassInfoPopup,this);
+
           (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
             error: Error()
           }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
             error: Error()
-          }), Constants) : Constants).SHOW_TUBERACE_JOIN_POPUP, this.showTubeRaceJoinPopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_TUBERACE_POPUP, this.showTubeRacePopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_TUBERACE_WIN_POPUP, this.showTubeRaceWinPopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_TUBERACE_LOSE_POPUP, this.showTubeRaceLosePopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_MASSTERPASS_POPUP, this.showMassterPassPopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_MASSTERPASS_ACTIVATE_POPUP, this.showMassterPassActivatePopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_MASSTERPASS_INFO_POPUP, this.showMassterPassInfoPopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_SPIN_POPUP, this.showSpinPopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_SHARECONTEXT_POPUP, this.showShareContextPopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_SHARE_INFOLEVEL_POPUP, this.showShareInfoLevelPopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_SHARE_INFOSCORE_POPUP, this.showShareInfoScorePopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_SHARE_TOURNAMENT_POPUP, this.showShareTournamentScorePopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_INVITE_POPUP, this.showInvitePopup, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_VIP_POPUP, this.showVIPPopup, this);
+          }), Constants) : Constants).SHOW_SPIN_POPUP, this.showSpinPopup, this); // clientEvent.off(Constants.SHOW_SHARECONTEXT_POPUP,this.showShareContextPopup,this);
+          // clientEvent.off(Constants.SHOW_SHARE_INFOLEVEL_POPUP,this.showShareInfoLevelPopup,this);
+          // clientEvent.off(Constants.SHOW_SHARE_INFOSCORE_POPUP,this.showShareInfoScorePopup,this);
+          // clientEvent.off(Constants.SHOW_SHARE_TOURNAMENT_POPUP,this.showShareTournamentScorePopup,this);
+          // clientEvent.off(Constants.SHOW_INVITE_POPUP,this.showInvitePopup,this);
+          // clientEvent.off(Constants.SHOW_VIP_POPUP,this.showVIPPopup,this);
+
           (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
             error: Error()
           }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
@@ -1265,12 +1157,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
             error: Error()
-          }), Constants) : Constants).BACK_TO_HOME, this.setBackToHome, this);
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_MORELIVES_POPUP, this.showMoreLivesPopup, this);
+          }), Constants) : Constants).BACK_TO_HOME, this.setBackToHome, this); // clientEvent.off(Constants.SHOW_MORELIVES_POPUP,this.showMoreLivesPopup,this);
+
           (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
             error: Error()
           }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
@@ -1356,170 +1244,103 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), localConfig) : localConfig).instance.getBoosterCount((_crd && BOOSTER_TYPE === void 0 ? (_reportPossibleCrUseOfBOOSTER_TYPE({
             error: Error()
           }), BOOSTER_TYPE) : BOOSTER_TYPE).ADDCOL)); // [3]
+          // if(localConfig.instance.isStartTournament){
+          //     this.menuManager.node.active = false;
+          //     this.playManager.node.active = false;
+          //     if(localConfig.instance.currTournamentPageHostDataInfo != null){
+          //         this.setPlayTournamentPageHost();
+          //     }else{
+          //         let leaderboardDataInfo:LeaderboardDataInfo = null;
+          //         for(let i=0; i< localConfig.instance.arrTournament_LeaderBoardDataInfos.length;i++){
+          //             if(localConfig.instance.arrTournament_LeaderBoardDataInfos[i].tournamentId == FBInstantManager.instance.tournamentID 
+          //                 && localConfig.instance.arrTournament_LeaderBoardDataInfos[i].contextId == FBInstantManager.instance.contextID){
+          //                 leaderboardDataInfo = localConfig.instance.arrTournament_LeaderBoardDataInfos[i];
+          //             }
+          //         }
+          //         // console.log("START",leaderboardDataInfo);
+          //         if(leaderboardDataInfo == null){
+          //             // console.log(localConfig.instance.currSessionLeaderboardDataInfo);
+          //             if(localConfig.instance.currSessionLeaderboardDataInfo != null){
+          //                 this.setPlayTournament(localConfig.instance.currSessionLeaderboardDataInfo);
+          //             }else{
+          //                 this.menuManager.node.active = true;
+          //                 this.menuManager.showTabTournament();
+          //             }
+          //         }else{
+          //             this.setPlayTournament(leaderboardDataInfo);
+          //         }
+          //     }
+          // }else{
+          //     if(localConfig.instance.currWithFriendDataInfo != null){
+          //         this.menuManager.node.active = false;
+          //         this.playManager.node.active = true;
+          //         this.updateContextWithFriend();
+          //         this.playManager.preloadLevelwithFriend();
+          //         localConfig.instance.playType = PLAY_TYPE.HOME;
+          //         LogEventManager.instance.logLevelStart(localConfig.instance.currWithFriendDataInfo.levelIndex,localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder),PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),1,0,"withfriend");
+          //     }else{
+          //         if(localConfig.instance.currLevelUnlock == 1){
+          //             clientEvent.dispatchEvent(Constants.SHOW_LOADING_START_NOW_POPUP);
+          //             this.menuManager.node.active = false;
+          //             this.playManager.node.active = true;
+          //             localConfig.instance.currLevel = 1;
+          //             this.playManager.preloadLevel(localConfig.instance.currLevel);
+          //             localConfig.instance.playType = PLAY_TYPE.HOME;
+          //             LogEventManager.instance.logLevelStart(localConfig.instance.currLevel,localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder),PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),localConfig.instance.loseStreak + 1,localConfig.instance.loseStreak,"normal");
+          //         }else if(localConfig.instance.currLevelUnlock <= localConfig.instance.LEVEL_SHOW_HOME){
+          //             clientEvent.dispatchEvent(Constants.SHOW_LOADING_START_NOW_POPUP);
+          //             this.menuManager.node.active = false;
+          //             this.playManager.node.active = true;
+          //             localConfig.instance.currLevel = localConfig.instance.currLevelUnlock;
+          //             this.playManager.preloadLevel(localConfig.instance.currLevel);
+          //             localConfig.instance.playType = PLAY_TYPE.HOME;
+          //             LogEventManager.instance.logLevelStart(localConfig.instance.currLevel,localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder),PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),localConfig.instance.loseStreak + 1,localConfig.instance.loseStreak,"normal");
+          //         }else{
+          //             this.menuManager.node.active = true;
+          //             this.playManager.node.active = false;
+          //             this.menuManager.showTabHome();
+          //             this.menuManager.homeGroup.showGroupFirstTime();
+          //         }
+          //     }
+          // }
 
-          if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
             error: Error()
-          }), localConfig) : localConfig).instance.isStartTournament) {
-            this.menuManager.node.active = false;
-            this.playManager.node.active = false;
-
-            if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currTournamentPageHostDataInfo != null) {
-              this.setPlayTournamentPageHost();
-            } else {
-              let leaderboardDataInfo = null;
-
-              for (let i = 0; i < (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                error: Error()
-              }), localConfig) : localConfig).instance.arrTournament_LeaderBoardDataInfos.length; i++) {
-                if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.arrTournament_LeaderBoardDataInfos[i].tournamentId == (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
-                  error: Error()
-                }), FBInstantManager) : FBInstantManager).instance.tournamentID && (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.arrTournament_LeaderBoardDataInfos[i].contextId == (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
-                  error: Error()
-                }), FBInstantManager) : FBInstantManager).instance.contextID) {
-                  leaderboardDataInfo = (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                    error: Error()
-                  }), localConfig) : localConfig).instance.arrTournament_LeaderBoardDataInfos[i];
-                }
-              } // console.log("START",leaderboardDataInfo);
-
-
-              if (leaderboardDataInfo == null) {
-                // console.log(localConfig.instance.currSessionLeaderboardDataInfo);
-                if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.currSessionLeaderboardDataInfo != null) {
-                  this.setPlayTournament((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                    error: Error()
-                  }), localConfig) : localConfig).instance.currSessionLeaderboardDataInfo);
-                } else {
-                  this.menuManager.node.active = true;
-                  this.menuManager.showTabTournament();
-                }
-              } else {
-                this.setPlayTournament(leaderboardDataInfo);
-              }
-            }
-          } else {
-            if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currWithFriendDataInfo != null) {
-              this.menuManager.node.active = false;
-              this.playManager.node.active = true;
-              this.updateContextWithFriend();
-              this.playManager.preloadLevelwithFriend();
-              (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                error: Error()
-              }), localConfig) : localConfig).instance.playType = (_crd && PLAY_TYPE === void 0 ? (_reportPossibleCrUseOfPLAY_TYPE({
-                error: Error()
-              }), PLAY_TYPE) : PLAY_TYPE).HOME;
-              (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
-                error: Error()
-              }), LogEventManager) : LogEventManager).instance.logLevelStart((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                error: Error()
-              }), localConfig) : localConfig).instance.currWithFriendDataInfo.levelIndex, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                error: Error()
-              }), localConfig) : localConfig).instance.getLevelLoopByFromStr((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                error: Error()
-              }), localConfig) : localConfig).instance.currLevelConfigInfo.levelOrder), (_crd && PLAY_TYPE === void 0 ? (_reportPossibleCrUseOfPLAY_TYPE({
-                error: Error()
-              }), PLAY_TYPE) : PLAY_TYPE)[(_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                error: Error()
-              }), localConfig) : localConfig).instance.playType].toLowerCase().toString(), 1, 0, "withfriend");
-            } else {
-              if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                error: Error()
-              }), localConfig) : localConfig).instance.currLevelUnlock == 1) {
-                (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-                  error: Error()
-                }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-                  error: Error()
-                }), Constants) : Constants).SHOW_LOADING_START_NOW_POPUP);
-                this.menuManager.node.active = false;
-                this.playManager.node.active = true;
-                (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.currLevel = 1;
-                this.playManager.preloadLevel((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.currLevel);
-                (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.playType = (_crd && PLAY_TYPE === void 0 ? (_reportPossibleCrUseOfPLAY_TYPE({
-                  error: Error()
-                }), PLAY_TYPE) : PLAY_TYPE).HOME;
-                (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
-                  error: Error()
-                }), LogEventManager) : LogEventManager).instance.logLevelStart((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.currLevel, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.getLevelLoopByFromStr((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.currLevelConfigInfo.levelOrder), (_crd && PLAY_TYPE === void 0 ? (_reportPossibleCrUseOfPLAY_TYPE({
-                  error: Error()
-                }), PLAY_TYPE) : PLAY_TYPE)[(_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.playType].toLowerCase().toString(), (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.loseStreak + 1, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.loseStreak, "normal");
-              } else if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                error: Error()
-              }), localConfig) : localConfig).instance.currLevelUnlock <= (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                error: Error()
-              }), localConfig) : localConfig).instance.LEVEL_SHOW_HOME) {
-                (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-                  error: Error()
-                }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-                  error: Error()
-                }), Constants) : Constants).SHOW_LOADING_START_NOW_POPUP);
-                this.menuManager.node.active = false;
-                this.playManager.node.active = true;
-                (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.currLevel = (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.currLevelUnlock;
-                this.playManager.preloadLevel((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.currLevel);
-                (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.playType = (_crd && PLAY_TYPE === void 0 ? (_reportPossibleCrUseOfPLAY_TYPE({
-                  error: Error()
-                }), PLAY_TYPE) : PLAY_TYPE).HOME;
-                (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
-                  error: Error()
-                }), LogEventManager) : LogEventManager).instance.logLevelStart((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.currLevel, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.getLevelLoopByFromStr((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.currLevelConfigInfo.levelOrder), (_crd && PLAY_TYPE === void 0 ? (_reportPossibleCrUseOfPLAY_TYPE({
-                  error: Error()
-                }), PLAY_TYPE) : PLAY_TYPE)[(_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.playType].toLowerCase().toString(), (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.loseStreak + 1, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.loseStreak, "normal");
-              } else {
-                this.menuManager.node.active = true;
-                this.playManager.node.active = false;
-                this.menuManager.showTabHome();
-                this.menuManager.homeGroup.showGroupFirstTime();
-              }
-            }
-          }
+          }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
+            error: Error()
+          }), Constants) : Constants).SHOW_LOADING_START_NOW_POPUP);
+          this.menuManager.node.active = false;
+          this.playManager.node.active = true;
+          (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.currLevel = (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.currLevelUnlock;
+          this.playManager.preloadLevel((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.currLevel);
+          (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.playType = (_crd && PLAY_TYPE === void 0 ? (_reportPossibleCrUseOfPLAY_TYPE({
+            error: Error()
+          }), PLAY_TYPE) : PLAY_TYPE).HOME;
+          (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
+            error: Error()
+          }), LogEventManager) : LogEventManager).instance.logLevelStart((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.currLevel, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.getLevelLoopByFromStr((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.currLevelConfigInfo.levelOrder), (_crd && PLAY_TYPE === void 0 ? (_reportPossibleCrUseOfPLAY_TYPE({
+            error: Error()
+          }), PLAY_TYPE) : PLAY_TYPE)[(_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.playType].toLowerCase().toString(), (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.loseStreak + 1, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.loseStreak, "normal");
         } // update (deltaTime: number) {
         //     // [4]
         // }

@@ -48,7 +48,11 @@ export class QuitConfirmPopup extends BasePopup {
     touchQuit(): void {
         LogEventManager.instance.logButtonClick("quit","quitconfirm");
         super.hidePopup();
-        clientEvent.dispatchEvent(Constants.QUITCONFIRM_TOUCH_YES);
+        // clientEvent.dispatchEvent(Constants.QUITCONFIRM_TOUCH_YES);
+
+        // let rewardCoin: number = localConfig.instance.getRewardCoinby_LevelConfigInfo(localConfig.instance.currLevelConfigInfo);
+        // clientEvent.dispatchEvent(Constants.SHOW_LEVELFAILED_POPUP, rewardCoin);
+        clientEvent.dispatchEvent(Constants.BACK_TO_HOME);
     }
 
     touchContinue(): void {

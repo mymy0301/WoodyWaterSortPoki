@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Button, Color, Component, Label, LabelOutline, Node, sp, Sprite, SpriteFrame, tween, UIOpacity, Vec3, Widget, clientEvent, Constants, DAILYTASK_TYPE, LEVEL_STATE, SHOP_PACK_TYPE, THEME_TYPE, localConfig, ItemLevel, ButtonMassterPassManager, AudioManager2, FBInstantManager, ButtonRemoveAdManager, LogEventManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _dec23, _dec24, _dec25, _dec26, _dec27, _dec28, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22, _descriptor23, _descriptor24, _descriptor25, _descriptor26, _descriptor27, _temp, _crd, ccclass, property, HomeGroup;
+  var _reporterNs, _cclegacy, _decorator, Button, Color, Component, Label, LabelOutline, Node, sp, Sprite, SpriteFrame, tween, UIOpacity, Vec3, Widget, clientEvent, Constants, DAILYTASK_TYPE, LEVEL_STATE, THEME_TYPE, localConfig, ItemLevel, ButtonMassterPassManager, AudioManager2, ButtonRemoveAdManager, LogEventManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _dec23, _dec24, _dec25, _dec26, _dec27, _dec28, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22, _descriptor23, _descriptor24, _descriptor25, _descriptor26, _descriptor27, _temp, _crd, ccclass, property, HomeGroup;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -27,10 +27,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("LEVEL_STATE", "../framework/constants", _context.meta, extras);
   }
 
-  function _reportPossibleCrUseOfSHOP_PACK_TYPE(extras) {
-    _reporterNs.report("SHOP_PACK_TYPE", "../framework/constants", _context.meta, extras);
-  }
-
   function _reportPossibleCrUseOfTHEME_TYPE(extras) {
     _reporterNs.report("THEME_TYPE", "../framework/constants", _context.meta, extras);
   }
@@ -49,10 +45,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
   function _reportPossibleCrUseOfAudioManager(extras) {
     _reporterNs.report("AudioManager2", "../framework/audioManager2", _context.meta, extras);
-  }
-
-  function _reportPossibleCrUseOfFBInstantManager(extras) {
-    _reporterNs.report("FBInstantManager", "../common/FBInstantManager", _context.meta, extras);
   }
 
   function _reportPossibleCrUseOfButtonRemoveAdManager(extras) {
@@ -92,7 +84,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       Constants = _unresolved_3.Constants;
       DAILYTASK_TYPE = _unresolved_3.DAILYTASK_TYPE;
       LEVEL_STATE = _unresolved_3.LEVEL_STATE;
-      SHOP_PACK_TYPE = _unresolved_3.SHOP_PACK_TYPE;
       THEME_TYPE = _unresolved_3.THEME_TYPE;
     }, function (_unresolved_4) {
       localConfig = _unresolved_4.localConfig;
@@ -103,11 +94,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     }, function (_unresolved_7) {
       AudioManager2 = _unresolved_7.AudioManager2;
     }, function (_unresolved_8) {
-      FBInstantManager = _unresolved_8.FBInstantManager;
+      ButtonRemoveAdManager = _unresolved_8.ButtonRemoveAdManager;
     }, function (_unresolved_9) {
-      ButtonRemoveAdManager = _unresolved_9.ButtonRemoveAdManager;
-    }, function (_unresolved_10) {
-      LogEventManager = _unresolved_10.LogEventManager;
+      LogEventManager = _unresolved_9.LogEventManager;
     }],
     execute: function () {
       _crd = true;
@@ -346,25 +335,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
         showGroupFirstTime() {
           this.isShowGroupFirstTime = true;
-          this.lockGroup.active = false;
-
-          if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.currLevelUnlock > 3 && (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.currLevelUnlock % 3 == 1) {
-            (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
-              error: Error()
-            }), FBInstantManager) : FBInstantManager).instance.SubscribeBot();
-          }
-
-          if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.currLevelUnlock % 3 == 2) {
-            (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
-              error: Error()
-            }), FBInstantManager) : FBInstantManager).instance.Create_Shortcut((err, succuss) => {});
-          }
+          this.lockGroup.active = false; // if(localConfig.instance.currLevelUnlock > 3 && localConfig.instance.currLevelUnlock % 3 == 1){
+          //     FBInstantManager.instance.SubscribeBot();
+          // }
+          // if(localConfig.instance.currLevelUnlock % 3 == 2){
+          //     FBInstantManager.instance.Create_Shortcut((err,succuss)=>{});
+          // }
 
           this.initLevels();
           let isShowPopup = false;
@@ -710,33 +686,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
         setNextLevel_Finished() {
           this.lockGroup.active = false;
-          this.showGroup();
-
-          if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.currLevelUnlock > 5 && (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.currLevelUnlock % 5 == 1) {
-            (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
-              error: Error()
-            }), FBInstantManager) : FBInstantManager).instance.SubscribeBot();
-          }
-
-          if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.raceActive == 1 && (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.checkRaceFinished()) {
-            (_crd && AudioManager2 === void 0 ? (_reportPossibleCrUseOfAudioManager({
-              error: Error()
-            }), AudioManager2) : AudioManager2).instance.playPopupOpen2();
-            (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-              error: Error()
-            }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-              error: Error()
-            }), Constants) : Constants).SHOW_TUBERACE_POPUP, false);
-            return;
-          }
+          this.showGroup(); // if(localConfig.instance.currLevelUnlock > 5 && localConfig.instance.currLevelUnlock % 5 == 1){
+          //     FBInstantManager.instance.SubscribeBot();
+          // }
+          // if(localConfig.instance.raceActive == 1 && localConfig.instance.checkRaceFinished()){
+          //     AudioManager2.instance.playPopupOpen2();
+          //     clientEvent.dispatchEvent(Constants.SHOW_TUBERACE_POPUP,false);
+          //     return;
+          // }
 
           if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
             error: Error()
@@ -745,9 +702,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), localConfig) : localConfig).instance.getCurrDay() > (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
             error: Error()
           }), localConfig) : localConfig).instance.currDailyLoginLastDay) {
-            (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
-              error: Error()
-            }), FBInstantManager) : FBInstantManager).instance.Create_Shortcut((err, succuss) => {});
+            // FBInstantManager.instance.Create_Shortcut((err,succuss)=>{});
             (_crd && AudioManager2 === void 0 ? (_reportPossibleCrUseOfAudioManager({
               error: Error()
             }), AudioManager2) : AudioManager2).instance.playPopupOpen2();
@@ -759,36 +714,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               error: Error()
             }), DAILYTASK_TYPE) : DAILYTASK_TYPE).LOGIN);
             return;
-          }
+          } // if(localConfig.instance.currLevelUnlock >= 5 && !this.isShowRemoveAdPopup && !localConfig.instance.isRemoveAd && 
+          //     (FBInstantManager.instance.checkHaveIAPPack_byProductID(localConfig.instance.getIAP_PackID_bShopPackType(SHOP_PACK_TYPE.REMOVE_AD)) || FBInstantManager.instance.checkHaveIAPPack_byProductID(localConfig.instance.getIAP_PackID_bShopPackType(SHOP_PACK_TYPE.REMOVE_AD_PACK)))){
+          //     this.isShowRemoveAdPopup = true;
+          //     AudioManager2.instance.playPopupOpen2();
+          //     clientEvent.dispatchEvent(Constants.SHOW_REMOVEAD_POPUP);
+          //     return;
+          // }
 
-          if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.currLevelUnlock >= 5 && !this.isShowRemoveAdPopup && !(_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.isRemoveAd && ((_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
-            error: Error()
-          }), FBInstantManager) : FBInstantManager).instance.checkHaveIAPPack_byProductID((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.getIAP_PackID_bShopPackType((_crd && SHOP_PACK_TYPE === void 0 ? (_reportPossibleCrUseOfSHOP_PACK_TYPE({
-            error: Error()
-          }), SHOP_PACK_TYPE) : SHOP_PACK_TYPE).REMOVE_AD)) || (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
-            error: Error()
-          }), FBInstantManager) : FBInstantManager).instance.checkHaveIAPPack_byProductID((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.getIAP_PackID_bShopPackType((_crd && SHOP_PACK_TYPE === void 0 ? (_reportPossibleCrUseOfSHOP_PACK_TYPE({
-            error: Error()
-          }), SHOP_PACK_TYPE) : SHOP_PACK_TYPE).REMOVE_AD_PACK)))) {
-            this.isShowRemoveAdPopup = true;
-            (_crd && AudioManager2 === void 0 ? (_reportPossibleCrUseOfAudioManager({
-              error: Error()
-            }), AudioManager2) : AudioManager2).instance.playPopupOpen2();
-            (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-              error: Error()
-            }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-              error: Error()
-            }), Constants) : Constants).SHOW_REMOVEAD_POPUP);
-            return;
-          }
 
           if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
             error: Error()
@@ -804,54 +737,21 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               error: Error()
             }), Constants) : Constants).SHOW_SPIN_POPUP);
             return;
-          }
+          } // if(localConfig.instance.currLevelUnlock == localConfig.instance.RACE_LEVEL_UNLOCK){
+          //     AudioManager2.instance.playPopupOpen2();
+          //     clientEvent.dispatchEvent(Constants.SHOW_TUBERACE_JOIN_POPUP);
+          //     return;
+          // }
+          // if(localConfig.instance.currLevelUnlock == localConfig.instance.PASS_LEVEL_UNLOCK){
+          //     localConfig.instance.activeNewPassDataInfos();
+          //     AudioManager2.instance.playPopupOpen2();
+          //     clientEvent.dispatchEvent(Constants.SHOW_MASSTERPASS_POPUP);
+          //     return;
+          // }
+          // if(localConfig.instance.currLevelUnlock > localConfig.instance.PASS_LEVEL_UNLOCK && localConfig.instance.currLevelUnlock % 10 == 1){
+          //     FBInstantManager.instance.Create_Shortcut((err,succuss)=>{});
+          // }
 
-          if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.currLevelUnlock == (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.RACE_LEVEL_UNLOCK) {
-            (_crd && AudioManager2 === void 0 ? (_reportPossibleCrUseOfAudioManager({
-              error: Error()
-            }), AudioManager2) : AudioManager2).instance.playPopupOpen2();
-            (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-              error: Error()
-            }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-              error: Error()
-            }), Constants) : Constants).SHOW_TUBERACE_JOIN_POPUP);
-            return;
-          }
-
-          if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.currLevelUnlock == (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.PASS_LEVEL_UNLOCK) {
-            (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.activeNewPassDataInfos();
-            (_crd && AudioManager2 === void 0 ? (_reportPossibleCrUseOfAudioManager({
-              error: Error()
-            }), AudioManager2) : AudioManager2).instance.playPopupOpen2();
-            (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-              error: Error()
-            }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-              error: Error()
-            }), Constants) : Constants).SHOW_MASSTERPASS_POPUP);
-            return;
-          }
-
-          if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.currLevelUnlock > (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.PASS_LEVEL_UNLOCK && (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.currLevelUnlock % 10 == 1) {
-            (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
-              error: Error()
-            }), FBInstantManager) : FBInstantManager).instance.Create_Shortcut((err, succuss) => {});
-          }
         }
 
         touchAvatar() {// console.log("touchAvatar");
@@ -885,25 +785,17 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
             error: Error()
           }), LogEventManager) : LogEventManager).instance.logButtonClick("play", "home"); // console.log("touchLevel");
+          // if(localConfig.instance.currHeartUnlimited_CountTime > 0 || localConfig.instance.currHeart > 0){
+          //     clientEvent.dispatchEvent(Constants.TOUCH_LEVEL);
+          // }else{
+          //     clientEvent.dispatchEvent(Constants.SHOW_MORELIVES_POPUP,()=>{});
+          // }
 
-          if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
             error: Error()
-          }), localConfig) : localConfig).instance.currHeartUnlimited_CountTime > 0 || (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+          }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
             error: Error()
-          }), localConfig) : localConfig).instance.currHeart > 0) {
-            (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-              error: Error()
-            }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-              error: Error()
-            }), Constants) : Constants).TOUCH_LEVEL);
-          } else {
-            (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-              error: Error()
-            }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-              error: Error()
-            }), Constants) : Constants).SHOW_MORELIVES_POPUP, () => {});
-          } // clientEvent.dispatchEvent(Constants.SHOW_TUBERACE_WIN_POPUP,1);
-
+          }), Constants) : Constants).TOUCH_LEVEL);
         }
 
         setShow() {

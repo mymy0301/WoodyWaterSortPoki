@@ -190,6 +190,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           this.txtValue.string = `x${(_crd && Utils === void 0 ? (_reportPossibleCrUseOfUtils({
             error: Error()
           }), Utils) : Utils).formatNumber(this.rewardCoin)}`;
+          (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.setCoin((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.currCoin + this.rewardCoin);
           this.groupRewards_Opacity.opacity = 0;
           this.groupRewards.setScale(new Vec3(1.5, 1.5, 1.5));
           this.nodeEfx.active = false;
@@ -302,7 +307,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
             error: Error()
-          }), Constants) : Constants).LEVEL_CHEST_TOUCH_CONTINUE, this.rewardCoin);
+          }), Constants) : Constants).TOUCH_NEXT_LEVEL); // clientEvent.dispatchEvent(Constants.LEVEL_CHEST_TOUCH_CONTINUE,this.rewardCoin);
         }
 
       }, _temp), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "groupAllTopWidget", [_dec2], {

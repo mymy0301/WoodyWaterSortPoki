@@ -1536,7 +1536,7 @@ export class localConfig {
     isWaterLock:boolean = false;
 
     //#region BOOSTER
-    arrBoosterCount:number[] = [3,3,3];
+    arrBoosterCount:number[] = [5,5,5];
 
     setBoosterCount(boosterType:BOOSTER_TYPE,count:number){
         this.arrBoosterCount[boosterType] = count;

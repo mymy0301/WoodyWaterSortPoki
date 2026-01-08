@@ -133,22 +133,22 @@ export class PlaySceneManager extends Component {
 
         clientEvent.on(Constants.SHOW_SHOP_ITEM_POPUP,this.showShopItemPopup,this);
         clientEvent.on(Constants.SHOP_POPUP_CLOSE,this.setShopPopupClose,this);
-        clientEvent.on(Constants.SHOW_TUBERACE_JOIN_POPUP,this.showTubeRaceJoinPopup,this);
-        clientEvent.on(Constants.SHOW_TUBERACE_POPUP,this.showTubeRacePopup,this);
-        clientEvent.on(Constants.SHOW_TUBERACE_WIN_POPUP,this.showTubeRaceWinPopup,this);
-        clientEvent.on(Constants.SHOW_TUBERACE_LOSE_POPUP,this.showTubeRaceLosePopup,this);
-        clientEvent.on(Constants.SHOW_MASSTERPASS_POPUP,this.showMassterPassPopup,this);
-        clientEvent.on(Constants.SHOW_MASSTERPASS_ACTIVATE_POPUP,this.showMassterPassActivatePopup,this);
-        clientEvent.on(Constants.SHOW_MASSTERPASS_INFO_POPUP,this.showMassterPassInfoPopup,this);
+        // clientEvent.on(Constants.SHOW_TUBERACE_JOIN_POPUP,this.showTubeRaceJoinPopup,this);
+        // clientEvent.on(Constants.SHOW_TUBERACE_POPUP,this.showTubeRacePopup,this);
+        // clientEvent.on(Constants.SHOW_TUBERACE_WIN_POPUP,this.showTubeRaceWinPopup,this);
+        // clientEvent.on(Constants.SHOW_TUBERACE_LOSE_POPUP,this.showTubeRaceLosePopup,this);
+        // clientEvent.on(Constants.SHOW_MASSTERPASS_POPUP,this.showMassterPassPopup,this);
+        // clientEvent.on(Constants.SHOW_MASSTERPASS_ACTIVATE_POPUP,this.showMassterPassActivatePopup,this);
+        // clientEvent.on(Constants.SHOW_MASSTERPASS_INFO_POPUP,this.showMassterPassInfoPopup,this);
 
         clientEvent.on(Constants.SHOW_SPIN_POPUP,this.showSpinPopup,this);
-        clientEvent.on(Constants.SHOW_SHARECONTEXT_POPUP,this.showShareContextPopup,this);
-        clientEvent.on(Constants.SHOW_SHARE_INFOLEVEL_POPUP,this.showShareInfoLevelPopup,this);
-        clientEvent.on(Constants.SHOW_SHARE_INFOSCORE_POPUP,this.showShareInfoScorePopup,this);
-        clientEvent.on(Constants.SHOW_SHARE_TOURNAMENT_POPUP,this.showShareTournamentScorePopup,this);
-        clientEvent.on(Constants.SHOW_INVITE_POPUP,this.showInvitePopup,this);
+        // clientEvent.on(Constants.SHOW_SHARECONTEXT_POPUP,this.showShareContextPopup,this);
+        // clientEvent.on(Constants.SHOW_SHARE_INFOLEVEL_POPUP,this.showShareInfoLevelPopup,this);
+        // clientEvent.on(Constants.SHOW_SHARE_INFOSCORE_POPUP,this.showShareInfoScorePopup,this);
+        // clientEvent.on(Constants.SHOW_SHARE_TOURNAMENT_POPUP,this.showShareTournamentScorePopup,this);
+        // clientEvent.on(Constants.SHOW_INVITE_POPUP,this.showInvitePopup,this);
 
-        clientEvent.on(Constants.SHOW_VIP_POPUP,this.showVIPPopup,this);
+        // clientEvent.on(Constants.SHOW_VIP_POPUP,this.showVIPPopup,this);
 
         clientEvent.on(Constants.SHOW_WIN_WITHFRIEND_POPUP,this.showWinWithFriendPopup,this);
         clientEvent.on(Constants.SHOW_SHARE_WITHFRIEND_POPUP,this.showShareWithFriendPopup,this);
@@ -164,7 +164,7 @@ export class PlaySceneManager extends Component {
         clientEvent.on(Constants.SHOW_LEVELFAILED_POPUP,this.showLevelFailedPopup,this);
 
         clientEvent.on(Constants.BACK_TO_HOME,this.setBackToHome,this);
-        clientEvent.on(Constants.SHOW_MORELIVES_POPUP,this.showMoreLivesPopup,this);
+        // clientEvent.on(Constants.SHOW_MORELIVES_POPUP,this.showMoreLivesPopup,this);
 
         clientEvent.on(Constants.SHOW_TUT_CURTAIN_POPUP,this.showTutCurtainPopup,this);
         clientEvent.on(Constants.SHOW_TUT_CLAY_POPUP,this.showTutClayPopup,this);
@@ -230,23 +230,23 @@ export class PlaySceneManager extends Component {
 
         clientEvent.off(Constants.SHOW_SHOP_ITEM_POPUP,this.showShopItemPopup,this);
         clientEvent.off(Constants.SHOP_POPUP_CLOSE,this.setShopPopupClose,this);
-        clientEvent.off(Constants.SHOW_TUBERACE_JOIN_POPUP,this.showTubeRaceJoinPopup,this);
-        clientEvent.off(Constants.SHOW_TUBERACE_POPUP,this.showTubeRacePopup,this);
-        clientEvent.off(Constants.SHOW_TUBERACE_WIN_POPUP,this.showTubeRaceWinPopup,this);
-        clientEvent.off(Constants.SHOW_TUBERACE_LOSE_POPUP,this.showTubeRaceLosePopup,this);
-        clientEvent.off(Constants.SHOW_MASSTERPASS_POPUP,this.showMassterPassPopup,this);
-        clientEvent.off(Constants.SHOW_MASSTERPASS_ACTIVATE_POPUP,this.showMassterPassActivatePopup,this);
-        clientEvent.off(Constants.SHOW_MASSTERPASS_INFO_POPUP,this.showMassterPassInfoPopup,this);
+        // clientEvent.off(Constants.SHOW_TUBERACE_JOIN_POPUP,this.showTubeRaceJoinPopup,this);
+        // clientEvent.off(Constants.SHOW_TUBERACE_POPUP,this.showTubeRacePopup,this);
+        // clientEvent.off(Constants.SHOW_TUBERACE_WIN_POPUP,this.showTubeRaceWinPopup,this);
+        // clientEvent.off(Constants.SHOW_TUBERACE_LOSE_POPUP,this.showTubeRaceLosePopup,this);
+        // clientEvent.off(Constants.SHOW_MASSTERPASS_POPUP,this.showMassterPassPopup,this);
+        // clientEvent.off(Constants.SHOW_MASSTERPASS_ACTIVATE_POPUP,this.showMassterPassActivatePopup,this);
+        // clientEvent.off(Constants.SHOW_MASSTERPASS_INFO_POPUP,this.showMassterPassInfoPopup,this);
 
         clientEvent.off(Constants.SHOW_SPIN_POPUP,this.showSpinPopup,this);
 
-        clientEvent.off(Constants.SHOW_SHARECONTEXT_POPUP,this.showShareContextPopup,this);
-        clientEvent.off(Constants.SHOW_SHARE_INFOLEVEL_POPUP,this.showShareInfoLevelPopup,this);
-        clientEvent.off(Constants.SHOW_SHARE_INFOSCORE_POPUP,this.showShareInfoScorePopup,this);
-        clientEvent.off(Constants.SHOW_SHARE_TOURNAMENT_POPUP,this.showShareTournamentScorePopup,this);
-        clientEvent.off(Constants.SHOW_INVITE_POPUP,this.showInvitePopup,this);
+        // clientEvent.off(Constants.SHOW_SHARECONTEXT_POPUP,this.showShareContextPopup,this);
+        // clientEvent.off(Constants.SHOW_SHARE_INFOLEVEL_POPUP,this.showShareInfoLevelPopup,this);
+        // clientEvent.off(Constants.SHOW_SHARE_INFOSCORE_POPUP,this.showShareInfoScorePopup,this);
+        // clientEvent.off(Constants.SHOW_SHARE_TOURNAMENT_POPUP,this.showShareTournamentScorePopup,this);
+        // clientEvent.off(Constants.SHOW_INVITE_POPUP,this.showInvitePopup,this);
 
-        clientEvent.off(Constants.SHOW_VIP_POPUP,this.showVIPPopup,this);
+        // clientEvent.off(Constants.SHOW_VIP_POPUP,this.showVIPPopup,this);
 
         clientEvent.off(Constants.SHOW_WIN_WITHFRIEND_POPUP,this.showWinWithFriendPopup,this);
         clientEvent.off(Constants.SHOW_SHARE_WITHFRIEND_POPUP,this.showShareWithFriendPopup,this);
@@ -263,7 +263,7 @@ export class PlaySceneManager extends Component {
 
         clientEvent.off(Constants.BACK_TO_HOME,this.setBackToHome,this);
 
-        clientEvent.off(Constants.SHOW_MORELIVES_POPUP,this.showMoreLivesPopup,this);
+        // clientEvent.off(Constants.SHOW_MORELIVES_POPUP,this.showMoreLivesPopup,this);
 
         clientEvent.off(Constants.SHOW_TUT_CURTAIN_POPUP,this.showTutCurtainPopup,this);
         clientEvent.off(Constants.SHOW_TUT_CLAY_POPUP,this.showTutClayPopup,this);
@@ -292,68 +292,74 @@ export class PlaySceneManager extends Component {
                                                         localConfig.instance.getBoosterCount(BOOSTER_TYPE.SUGGEST),
                                                         localConfig.instance.getBoosterCount(BOOSTER_TYPE.ADDCOL));
         // [3]
-        if(localConfig.instance.isStartTournament){
-            this.menuManager.node.active = false;
-            this.playManager.node.active = false;
-            if(localConfig.instance.currTournamentPageHostDataInfo != null){
-                this.setPlayTournamentPageHost();
-            }else{
-                let leaderboardDataInfo:LeaderboardDataInfo = null;
-                for(let i=0; i< localConfig.instance.arrTournament_LeaderBoardDataInfos.length;i++){
-                    if(localConfig.instance.arrTournament_LeaderBoardDataInfos[i].tournamentId == FBInstantManager.instance.tournamentID 
-                        && localConfig.instance.arrTournament_LeaderBoardDataInfos[i].contextId == FBInstantManager.instance.contextID){
-                        leaderboardDataInfo = localConfig.instance.arrTournament_LeaderBoardDataInfos[i];
-                    }
-                }
-                // console.log("START",leaderboardDataInfo);
-                if(leaderboardDataInfo == null){
-                    // console.log(localConfig.instance.currSessionLeaderboardDataInfo);
-                    if(localConfig.instance.currSessionLeaderboardDataInfo != null){
-                        this.setPlayTournament(localConfig.instance.currSessionLeaderboardDataInfo);
-                    }else{
-                        this.menuManager.node.active = true;
-                        this.menuManager.showTabTournament();
-                    }
-                }else{
-                    this.setPlayTournament(leaderboardDataInfo);
-                }
-            }
+        // if(localConfig.instance.isStartTournament){
+        //     this.menuManager.node.active = false;
+        //     this.playManager.node.active = false;
+        //     if(localConfig.instance.currTournamentPageHostDataInfo != null){
+        //         this.setPlayTournamentPageHost();
+        //     }else{
+        //         let leaderboardDataInfo:LeaderboardDataInfo = null;
+        //         for(let i=0; i< localConfig.instance.arrTournament_LeaderBoardDataInfos.length;i++){
+        //             if(localConfig.instance.arrTournament_LeaderBoardDataInfos[i].tournamentId == FBInstantManager.instance.tournamentID 
+        //                 && localConfig.instance.arrTournament_LeaderBoardDataInfos[i].contextId == FBInstantManager.instance.contextID){
+        //                 leaderboardDataInfo = localConfig.instance.arrTournament_LeaderBoardDataInfos[i];
+        //             }
+        //         }
+        //         // console.log("START",leaderboardDataInfo);
+        //         if(leaderboardDataInfo == null){
+        //             // console.log(localConfig.instance.currSessionLeaderboardDataInfo);
+        //             if(localConfig.instance.currSessionLeaderboardDataInfo != null){
+        //                 this.setPlayTournament(localConfig.instance.currSessionLeaderboardDataInfo);
+        //             }else{
+        //                 this.menuManager.node.active = true;
+        //                 this.menuManager.showTabTournament();
+        //             }
+        //         }else{
+        //             this.setPlayTournament(leaderboardDataInfo);
+        //         }
+        //     }
             
-        }else{
-            if(localConfig.instance.currWithFriendDataInfo != null){
-                this.menuManager.node.active = false;
-                this.playManager.node.active = true;
-                this.updateContextWithFriend();
-                this.playManager.preloadLevelwithFriend();
-                localConfig.instance.playType = PLAY_TYPE.HOME;
-                LogEventManager.instance.logLevelStart(localConfig.instance.currWithFriendDataInfo.levelIndex,localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder),PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),1,0,"withfriend");
-            }else{
-                if(localConfig.instance.currLevelUnlock == 1){
-                    clientEvent.dispatchEvent(Constants.SHOW_LOADING_START_NOW_POPUP);
-                    this.menuManager.node.active = false;
-                    this.playManager.node.active = true;
-                    localConfig.instance.currLevel = 1;
-                    this.playManager.preloadLevel(localConfig.instance.currLevel);
-                    localConfig.instance.playType = PLAY_TYPE.HOME;
-                    LogEventManager.instance.logLevelStart(localConfig.instance.currLevel,localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder),PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),localConfig.instance.loseStreak + 1,localConfig.instance.loseStreak,"normal");
-                }else if(localConfig.instance.currLevelUnlock <= localConfig.instance.LEVEL_SHOW_HOME){
-                    clientEvent.dispatchEvent(Constants.SHOW_LOADING_START_NOW_POPUP);
-                    this.menuManager.node.active = false;
-                    this.playManager.node.active = true;
-                    localConfig.instance.currLevel = localConfig.instance.currLevelUnlock;
-                    this.playManager.preloadLevel(localConfig.instance.currLevel);
-                    localConfig.instance.playType = PLAY_TYPE.HOME;
-                    LogEventManager.instance.logLevelStart(localConfig.instance.currLevel,localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder),PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),localConfig.instance.loseStreak + 1,localConfig.instance.loseStreak,"normal");
-                }else{
-                    this.menuManager.node.active = true;
-                    this.playManager.node.active = false;
-                    this.menuManager.showTabHome();
-                    this.menuManager.homeGroup.showGroupFirstTime();
-                }
-            }
-        }
+        // }else{
+        //     if(localConfig.instance.currWithFriendDataInfo != null){
+        //         this.menuManager.node.active = false;
+        //         this.playManager.node.active = true;
+        //         this.updateContextWithFriend();
+        //         this.playManager.preloadLevelwithFriend();
+        //         localConfig.instance.playType = PLAY_TYPE.HOME;
+        //         LogEventManager.instance.logLevelStart(localConfig.instance.currWithFriendDataInfo.levelIndex,localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder),PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),1,0,"withfriend");
+        //     }else{
+        //         if(localConfig.instance.currLevelUnlock == 1){
+        //             clientEvent.dispatchEvent(Constants.SHOW_LOADING_START_NOW_POPUP);
+        //             this.menuManager.node.active = false;
+        //             this.playManager.node.active = true;
+        //             localConfig.instance.currLevel = 1;
+        //             this.playManager.preloadLevel(localConfig.instance.currLevel);
+        //             localConfig.instance.playType = PLAY_TYPE.HOME;
+        //             LogEventManager.instance.logLevelStart(localConfig.instance.currLevel,localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder),PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),localConfig.instance.loseStreak + 1,localConfig.instance.loseStreak,"normal");
+        //         }else if(localConfig.instance.currLevelUnlock <= localConfig.instance.LEVEL_SHOW_HOME){
+        //             clientEvent.dispatchEvent(Constants.SHOW_LOADING_START_NOW_POPUP);
+        //             this.menuManager.node.active = false;
+        //             this.playManager.node.active = true;
+        //             localConfig.instance.currLevel = localConfig.instance.currLevelUnlock;
+        //             this.playManager.preloadLevel(localConfig.instance.currLevel);
+        //             localConfig.instance.playType = PLAY_TYPE.HOME;
+        //             LogEventManager.instance.logLevelStart(localConfig.instance.currLevel,localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder),PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),localConfig.instance.loseStreak + 1,localConfig.instance.loseStreak,"normal");
+        //         }else{
+        //             this.menuManager.node.active = true;
+        //             this.playManager.node.active = false;
+        //             this.menuManager.showTabHome();
+        //             this.menuManager.homeGroup.showGroupFirstTime();
+        //         }
+        //     }
+        // }
        
-        
+        clientEvent.dispatchEvent(Constants.SHOW_LOADING_START_NOW_POPUP);
+        this.menuManager.node.active = false;
+        this.playManager.node.active = true;
+        localConfig.instance.currLevel = localConfig.instance.currLevelUnlock;
+        this.playManager.preloadLevel(localConfig.instance.currLevel);
+        localConfig.instance.playType = PLAY_TYPE.HOME;
+        LogEventManager.instance.logLevelStart(localConfig.instance.currLevel, localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder), PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(), localConfig.instance.loseStreak + 1, localConfig.instance.loseStreak, "normal");
     }
 
     // update (deltaTime: number) {

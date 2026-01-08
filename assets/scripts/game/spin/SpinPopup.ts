@@ -108,6 +108,7 @@ export class SpinPopup extends BasePopup {
         this.btnSpinAd.node.active = false;
         this.spinAd_disable.active = false;
         this.btnClose.node.active = false;
+        this.btnClose2.node.active = false;
         this.lightAnimation.play("light_wait");
         super.showPopup();
     }
@@ -139,6 +140,7 @@ export class SpinPopup extends BasePopup {
         this.scheduleOnce(()=>{
             this.lockGroup.active = false;
             this.btnClose.node.active = true;
+            this.btnClose2.node.active = true;
             this.showInfo();
             this.lightAnimation.pause();
             this.lightAnimation.play("light_idle");
@@ -155,8 +157,10 @@ export class SpinPopup extends BasePopup {
         this.btnSpinAd.node.active = false;
         this.objFree.active = false;
         this.objNextTime.active = false;
+        this.btnClose2.node.active = false;
     }
     showInfo(){
+        this.btnClose2.node.active = true;
         this.btnFreeSpin.node.active = false;
         this.btnSpinCoin.node.active = false;
         this.btnSpinAd.node.active = false;

@@ -1,7 +1,7 @@
 import { Enum } from "cc";
 
 export class Constants {
-    public static GAME_NAME:string = 'WaterSortWoodyPuzzle';
+    public static GAME_NAME:string = 'WaterSortWoodyPuzzlePoki';
 
     public static GAME_NAME_TITLE:string = 'Water Sort Woody Puzzle';
 

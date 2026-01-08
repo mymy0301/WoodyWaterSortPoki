@@ -36,11 +36,11 @@ export class WinPopup extends BasePopup {
     @property(Label)
     txtLevel:Label;
 
-    @property(Button)
-    btnShare:Button;
+    // @property(Button)
+    // btnShare:Button;
 
-    @property(UIOpacity)
-    nodeShare_Opacity:UIOpacity;
+    // @property(UIOpacity)
+    // nodeShare_Opacity:UIOpacity;
 
     @property(Button)
     btnContinue:Button;
@@ -57,8 +57,8 @@ export class WinPopup extends BasePopup {
     @property(UIOpacity)
     titleGroup_Opacity:UIOpacity;
 
-    @property(RaceGroupManager)
-    raceGroupManager:RaceGroupManager = null;
+    // @property(RaceGroupManager)
+    // raceGroupManager:RaceGroupManager = null;
 
     tweenTitleGroup:Tween<{}> = null;
     tweenTitleGroup_Opacity:Tween<{}> = null;
@@ -67,13 +67,13 @@ export class WinPopup extends BasePopup {
 
     onEnable(): void {
         super.onEnable();
-        this.btnShare.node.on(Constants.CLICK,this.touchShare,this);
+        // this.btnShare.node.on(Constants.CLICK,this.touchShare,this);
         this.btnContinue.node.on(Constants.CLICK,this.touchContinue,this);
     }
 
     onDisable(): void {
         super.onDisable();
-        this.btnShare.node.off(Constants.CLICK,this.touchShare,this);
+        // this.btnShare.node.off(Constants.CLICK,this.touchShare,this);
         this.btnContinue.node.off(Constants.CLICK,this.touchContinue,this);
     }
 
@@ -97,34 +97,36 @@ export class WinPopup extends BasePopup {
     showWinPopup(level:number){
         AudioManager2.instance.playSound_WIN2();
         this.txtLevel.string = `Level ${level}`;
-        this.btnShare.node.active = false;
+        // this.btnShare.node.active = false;
         this.btnContinue.node.active = false;
         this.btnClose.node.active = false;
         this.character.node.active = false;
-        this.raceGroupManager.resetGroup();
-        this.raceGroupManager.node.active = false;
+        // this.raceGroupManager.resetGroup();
+        // this.raceGroupManager.node.active = false;
         this.titleGroup_Opacity.opacity = 0;
 
 
-        if(localConfig.instance.currGameMode == GAME_MODE.NORMAL){
-            if(localConfig.instance.currLevelUnlock <= localConfig.instance.LEVEL_SHOW_HOME){
-                // this.btnClose.node.active = false;
-                this.btnContinue.node.setPosition(new Vec3(0,-350,0));
-            }else{
-                // this.btnClose.node.active = true;
-                if(localConfig.instance.currLevelUnlock > localConfig.instance.RACE_LEVEL_UNLOCK){
-                    this.btnContinue.node.setPosition(new Vec3(225,-250,0));
-                    this.btnShare.node.setPosition(new Vec3(-225,-250,0));
-                }else{
-                    this.btnContinue.node.setPosition(new Vec3(225,-350,0));
-                    this.btnShare.node.setPosition(new Vec3(-225,-350,0));
-                }
-            }
-        }else{
-            // this.btnClose.node.active = true;
-            this.btnContinue.node.setPosition(new Vec3(225,-350,0));
-            this.btnShare.node.setPosition(new Vec3(-225,-350,0));
-        }
+        // if(localConfig.instance.currGameMode == GAME_MODE.NORMAL){
+        //     if(localConfig.instance.currLevelUnlock <= localConfig.instance.LEVEL_SHOW_HOME){
+        //         // this.btnClose.node.active = false;
+        //         this.btnContinue.node.setPosition(new Vec3(0,-350,0));
+        //     }else{
+        //         // this.btnClose.node.active = true;
+        //         if(localConfig.instance.currLevelUnlock > localConfig.instance.RACE_LEVEL_UNLOCK){
+        //             this.btnContinue.node.setPosition(new Vec3(225,-250,0));
+        //             // this.btnShare.node.setPosition(new Vec3(-225,-250,0));
+        //         }else{
+        //             this.btnContinue.node.setPosition(new Vec3(225,-350,0));
+        //             // this.btnShare.node.setPosition(new Vec3(-225,-350,0));
+        //         }
+        //     }
+        // }else{
+        //     // this.btnClose.node.active = true;
+        //     this.btnContinue.node.setPosition(new Vec3(225,-350,0));
+        //     // this.btnShare.node.setPosition(new Vec3(-225,-350,0));
+        // }
+
+        this.btnContinue.node.setPosition(new Vec3(0,-450,0));
 
         
         
@@ -182,29 +184,31 @@ export class WinPopup extends BasePopup {
         this.tweenTitleGroup_Opacity = tween(this.titleGroup_Opacity).to(0.3, { opacity: 255 }, { easing: 'quadOut' }).start();
 
         this.scheduleOnce(()=>{
-            if(localConfig.instance.currGameMode == GAME_MODE.NORMAL){
-                if(localConfig.instance.currLevelUnlock <= 4){
-                    this.showButton_Step2();
-                }else{
-                    this.showButton_Step1();
-                }
-            }else{
-                this.showButton_Step1();
-            }
+            // if(localConfig.instance.currGameMode == GAME_MODE.NORMAL){
+            //     if(localConfig.instance.currLevelUnlock <= 4){
+                    
+            //     }else{
+            //         this.showButton_Step1();
+            //     }
+            // }else{
+            //     this.showButton_Step1();
+            // }
+
+            this.showButton_Step2();
         },0.2);
     }
 
     showButton_Step1(): void {
-        this.btnShare.node.active = true;
-        this.nodeShare_Opacity.opacity = 150;
-        this.btnShare.node.setScale(new Vec3(0.5, 0.5, 0.5));
-        tween(this.btnShare.node).to(0.3, { scale: new Vec3(1, 1, 1) }, { easing: 'backOut' }).start();
-        tween(this.nodeShare_Opacity).to(0.3, { opacity: 255 }, { easing: 'quadOut' }).start();
+        // this.btnShare.node.active = true;
+        // this.nodeShare_Opacity.opacity = 150;
+        // this.btnShare.node.setScale(new Vec3(0.5, 0.5, 0.5));
+        // tween(this.btnShare.node).to(0.3, { scale: new Vec3(1, 1, 1) }, { easing: 'backOut' }).start();
+        // tween(this.nodeShare_Opacity).to(0.3, { opacity: 255 }, { easing: 'quadOut' }).start();
 
 
-        this.scheduleOnce(()=>{
-            this.showButton_Step2();
-        },0.2);
+        // this.scheduleOnce(()=>{
+        //     this.showButton_Step2();
+        // },0.2);
     }
 
     showButton_Step2(): void {
@@ -223,24 +227,24 @@ export class WinPopup extends BasePopup {
         this.nodeContinue_Opacity.opacity = 150;
         tween(this.btnContinue.node).to(0.3, { scale: new Vec3(1, 1, 1) }, { easing: 'backOut' }).start();
         tween(this.nodeContinue_Opacity).to(0.3, { opacity: 255 }, { easing: 'quadOut' ,onComplete:()=>{
-            if(localConfig.instance.currGameMode == GAME_MODE.NORMAL){
-                if(localConfig.instance.currLevelUnlock > localConfig.instance.RACE_LEVEL_UNLOCK){
-                    this.raceGroupManager.node.active = true;
-                }
-            }
+            // if(localConfig.instance.currGameMode == GAME_MODE.NORMAL){
+            //     if(localConfig.instance.currLevelUnlock > localConfig.instance.RACE_LEVEL_UNLOCK){
+            //         this.raceGroupManager.node.active = true;
+            //     }
+            // }
         }}).start();
     }
 
     showWinPopup_DailyChallenge(){
         AudioManager2.instance.playSound_WIN2();
         this.txtLevel.string = `${localConfig.instance.getInfoDayStr_2(localConfig.instance.currInfoDaySelect)}`;
-        this.btnShare.node.active = false;
+        // this.btnShare.node.active = false;
         this.btnContinue.node.active = false;
         this.character.node.active = false;
-        this.raceGroupManager.resetGroup();
-        this.raceGroupManager.node.active = false;
-        this.btnContinue.node.setPosition(new Vec3(225,-350,0));
-        this.btnShare.node.setPosition(new Vec3(-225,-350,0));
+        // this.raceGroupManager.resetGroup();
+        // this.raceGroupManager.node.active = false;
+        this.btnContinue.node.setPosition(new Vec3(0,-450,0));
+        // this.btnShare.node.setPosition(new Vec3(-225,-350,0));
         this.titleGroup_Opacity.opacity = 0;
         this.showPopup();
     }
@@ -280,7 +284,7 @@ export class WinPopup extends BasePopup {
 
     hidePopup_Finished(): void {
         super.hidePopup_Finished();
-        this.raceGroupManager.node.active = false;
+        // this.raceGroupManager.node.active = false;
     }
 
 }

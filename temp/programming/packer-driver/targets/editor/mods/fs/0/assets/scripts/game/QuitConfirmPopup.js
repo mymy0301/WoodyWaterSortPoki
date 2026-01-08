@@ -119,12 +119,15 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
             error: Error()
           }), LogEventManager) : LogEventManager).instance.logButtonClick("quit", "quitconfirm");
-          super.hidePopup();
+          super.hidePopup(); // clientEvent.dispatchEvent(Constants.QUITCONFIRM_TOUCH_YES);
+          // let rewardCoin: number = localConfig.instance.getRewardCoinby_LevelConfigInfo(localConfig.instance.currLevelConfigInfo);
+          // clientEvent.dispatchEvent(Constants.SHOW_LEVELFAILED_POPUP, rewardCoin);
+
           (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
             error: Error()
           }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
             error: Error()
-          }), Constants) : Constants).QUITCONFIRM_TOUCH_YES);
+          }), Constants) : Constants).BACK_TO_HOME);
         }
 
         touchContinue() {

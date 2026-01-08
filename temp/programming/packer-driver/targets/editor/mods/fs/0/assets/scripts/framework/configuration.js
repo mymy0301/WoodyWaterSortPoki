@@ -423,7 +423,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             }), Constants) : Constants).COIN];
           }
 
-          return 0;
+          return 10000;
         } //#endregion
         //#region LOG CAMPID
 
@@ -551,7 +551,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             }), Constants) : Constants).BOOSTER_COUNT];
           }
 
-          return [3, 3, 3];
+          return [5, 5, 5];
         } //#endregion
         //#region TICKET
 

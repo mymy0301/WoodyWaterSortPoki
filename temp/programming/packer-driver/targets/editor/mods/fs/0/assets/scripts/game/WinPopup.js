@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Button, Label, Node, sp, tween, UIOpacity, Vec3, Widget, BasePopup, Constants, GAME_MODE, THEME_TYPE, AudioManager2, clientEvent, localConfig, RaceGroupManager, LogEventManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _temp, _crd, ccclass, property, WinPopup;
+  var _reporterNs, _cclegacy, _decorator, Button, Label, Node, sp, tween, UIOpacity, Vec3, Widget, BasePopup, Constants, GAME_MODE, THEME_TYPE, AudioManager2, clientEvent, localConfig, LogEventManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _temp, _crd, ccclass, property, WinPopup;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -39,10 +39,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("localConfig", "../localConfig", _context.meta, extras);
   }
 
-  function _reportPossibleCrUseOfRaceGroupManager(extras) {
-    _reporterNs.report("RaceGroupManager", "./race/RaceGroupManager", _context.meta, extras);
-  }
-
   function _reportPossibleCrUseOfLogEventManager(extras) {
     _reporterNs.report("LogEventManager", "../common/LogEventManager", _context.meta, extras);
   }
@@ -74,9 +70,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     }, function (_unresolved_6) {
       localConfig = _unresolved_6.localConfig;
     }, function (_unresolved_7) {
-      RaceGroupManager = _unresolved_7.RaceGroupManager;
-    }, function (_unresolved_8) {
-      LogEventManager = _unresolved_8.LogEventManager;
+      LogEventManager = _unresolved_7.LogEventManager;
     }],
     execute: function () {
       _crd = true;
@@ -99,9 +93,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
        *
        */
 
-      _export("WinPopup", WinPopup = (_dec = ccclass('WinPopup'), _dec2 = property(Widget), _dec3 = property(Label), _dec4 = property(Button), _dec5 = property(UIOpacity), _dec6 = property(Button), _dec7 = property(UIOpacity), _dec8 = property(sp.Skeleton), _dec9 = property(Node), _dec10 = property(UIOpacity), _dec11 = property(_crd && RaceGroupManager === void 0 ? (_reportPossibleCrUseOfRaceGroupManager({
-        error: Error()
-      }), RaceGroupManager) : RaceGroupManager), _dec(_class = (_class2 = (_temp = class WinPopup extends (_crd && BasePopup === void 0 ? (_reportPossibleCrUseOfBasePopup({
+      _export("WinPopup", WinPopup = (_dec = ccclass('WinPopup'), _dec2 = property(Widget), _dec3 = property(Label), _dec4 = property(Button), _dec5 = property(UIOpacity), _dec6 = property(sp.Skeleton), _dec7 = property(Node), _dec8 = property(UIOpacity), _dec(_class = (_class2 = (_temp = class WinPopup extends (_crd && BasePopup === void 0 ? (_reportPossibleCrUseOfBasePopup({
         error: Error()
       }), BasePopup) : BasePopup) {
         constructor(...args) {
@@ -111,21 +103,15 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           _initializerDefineProperty(this, "txtLevel", _descriptor2, this);
 
-          _initializerDefineProperty(this, "btnShare", _descriptor3, this);
+          _initializerDefineProperty(this, "btnContinue", _descriptor3, this);
 
-          _initializerDefineProperty(this, "nodeShare_Opacity", _descriptor4, this);
+          _initializerDefineProperty(this, "nodeContinue_Opacity", _descriptor4, this);
 
-          _initializerDefineProperty(this, "btnContinue", _descriptor5, this);
+          _initializerDefineProperty(this, "character", _descriptor5, this);
 
-          _initializerDefineProperty(this, "nodeContinue_Opacity", _descriptor6, this);
+          _initializerDefineProperty(this, "titleGroup", _descriptor6, this);
 
-          _initializerDefineProperty(this, "character", _descriptor7, this);
-
-          _initializerDefineProperty(this, "titleGroup", _descriptor8, this);
-
-          _initializerDefineProperty(this, "titleGroup_Opacity", _descriptor9, this);
-
-          _initializerDefineProperty(this, "raceGroupManager", _descriptor10, this);
+          _initializerDefineProperty(this, "titleGroup_Opacity", _descriptor7, this);
 
           _defineProperty(this, "tweenTitleGroup", null);
 
@@ -133,20 +119,16 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         onEnable() {
-          super.onEnable();
-          this.btnShare.node.on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).CLICK, this.touchShare, this);
+          super.onEnable(); // this.btnShare.node.on(Constants.CLICK,this.touchShare,this);
+
           this.btnContinue.node.on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
             error: Error()
           }), Constants) : Constants).CLICK, this.touchContinue, this);
         }
 
         onDisable() {
-          super.onDisable();
-          this.btnShare.node.off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).CLICK, this.touchShare, this);
+          super.onDisable(); // this.btnShare.node.off(Constants.CLICK,this.touchShare,this);
+
           this.btnContinue.node.off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
             error: Error()
           }), Constants) : Constants).CLICK, this.touchContinue, this);
@@ -180,47 +162,34 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           (_crd && AudioManager2 === void 0 ? (_reportPossibleCrUseOfAudioManager({
             error: Error()
           }), AudioManager2) : AudioManager2).instance.playSound_WIN2();
-          this.txtLevel.string = `Level ${level}`;
-          this.btnShare.node.active = false;
+          this.txtLevel.string = `Level ${level}`; // this.btnShare.node.active = false;
+
           this.btnContinue.node.active = false;
           this.btnClose.node.active = false;
-          this.character.node.active = false;
-          this.raceGroupManager.resetGroup();
-          this.raceGroupManager.node.active = false;
-          this.titleGroup_Opacity.opacity = 0;
+          this.character.node.active = false; // this.raceGroupManager.resetGroup();
+          // this.raceGroupManager.node.active = false;
 
-          if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.currGameMode == (_crd && GAME_MODE === void 0 ? (_reportPossibleCrUseOfGAME_MODE({
-            error: Error()
-          }), GAME_MODE) : GAME_MODE).NORMAL) {
-            if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currLevelUnlock <= (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.LEVEL_SHOW_HOME) {
-              // this.btnClose.node.active = false;
-              this.btnContinue.node.setPosition(new Vec3(0, -350, 0));
-            } else {
-              // this.btnClose.node.active = true;
-              if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                error: Error()
-              }), localConfig) : localConfig).instance.currLevelUnlock > (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                error: Error()
-              }), localConfig) : localConfig).instance.RACE_LEVEL_UNLOCK) {
-                this.btnContinue.node.setPosition(new Vec3(225, -250, 0));
-                this.btnShare.node.setPosition(new Vec3(-225, -250, 0));
-              } else {
-                this.btnContinue.node.setPosition(new Vec3(225, -350, 0));
-                this.btnShare.node.setPosition(new Vec3(-225, -350, 0));
-              }
-            }
-          } else {
-            // this.btnClose.node.active = true;
-            this.btnContinue.node.setPosition(new Vec3(225, -350, 0));
-            this.btnShare.node.setPosition(new Vec3(-225, -350, 0));
-          }
+          this.titleGroup_Opacity.opacity = 0; // if(localConfig.instance.currGameMode == GAME_MODE.NORMAL){
+          //     if(localConfig.instance.currLevelUnlock <= localConfig.instance.LEVEL_SHOW_HOME){
+          //         // this.btnClose.node.active = false;
+          //         this.btnContinue.node.setPosition(new Vec3(0,-350,0));
+          //     }else{
+          //         // this.btnClose.node.active = true;
+          //         if(localConfig.instance.currLevelUnlock > localConfig.instance.RACE_LEVEL_UNLOCK){
+          //             this.btnContinue.node.setPosition(new Vec3(225,-250,0));
+          //             // this.btnShare.node.setPosition(new Vec3(-225,-250,0));
+          //         }else{
+          //             this.btnContinue.node.setPosition(new Vec3(225,-350,0));
+          //             // this.btnShare.node.setPosition(new Vec3(-225,-350,0));
+          //         }
+          //     }
+          // }else{
+          //     // this.btnClose.node.active = true;
+          //     this.btnContinue.node.setPosition(new Vec3(225,-350,0));
+          //     // this.btnShare.node.setPosition(new Vec3(-225,-350,0));
+          // }
 
+          this.btnContinue.node.setPosition(new Vec3(0, -450, 0));
           this.showPopup();
         }
 
@@ -297,41 +266,26 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             easing: 'quadOut'
           }).start();
           this.scheduleOnce(() => {
-            if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currGameMode == (_crd && GAME_MODE === void 0 ? (_reportPossibleCrUseOfGAME_MODE({
-              error: Error()
-            }), GAME_MODE) : GAME_MODE).NORMAL) {
-              if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                error: Error()
-              }), localConfig) : localConfig).instance.currLevelUnlock <= 4) {
-                this.showButton_Step2();
-              } else {
-                this.showButton_Step1();
-              }
-            } else {
-              this.showButton_Step1();
-            }
+            // if(localConfig.instance.currGameMode == GAME_MODE.NORMAL){
+            //     if(localConfig.instance.currLevelUnlock <= 4){
+            //     }else{
+            //         this.showButton_Step1();
+            //     }
+            // }else{
+            //     this.showButton_Step1();
+            // }
+            this.showButton_Step2();
           }, 0.2);
         }
 
-        showButton_Step1() {
-          this.btnShare.node.active = true;
-          this.nodeShare_Opacity.opacity = 150;
-          this.btnShare.node.setScale(new Vec3(0.5, 0.5, 0.5));
-          tween(this.btnShare.node).to(0.3, {
-            scale: new Vec3(1, 1, 1)
-          }, {
-            easing: 'backOut'
-          }).start();
-          tween(this.nodeShare_Opacity).to(0.3, {
-            opacity: 255
-          }, {
-            easing: 'quadOut'
-          }).start();
-          this.scheduleOnce(() => {
-            this.showButton_Step2();
-          }, 0.2);
+        showButton_Step1() {// this.btnShare.node.active = true;
+          // this.nodeShare_Opacity.opacity = 150;
+          // this.btnShare.node.setScale(new Vec3(0.5, 0.5, 0.5));
+          // tween(this.btnShare.node).to(0.3, { scale: new Vec3(1, 1, 1) }, { easing: 'backOut' }).start();
+          // tween(this.nodeShare_Opacity).to(0.3, { opacity: 255 }, { easing: 'quadOut' }).start();
+          // this.scheduleOnce(()=>{
+          //     this.showButton_Step2();
+          // },0.2);
         }
 
         showButton_Step2() {
@@ -365,20 +319,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             opacity: 255
           }, {
             easing: 'quadOut',
-            onComplete: () => {
-              if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                error: Error()
-              }), localConfig) : localConfig).instance.currGameMode == (_crd && GAME_MODE === void 0 ? (_reportPossibleCrUseOfGAME_MODE({
-                error: Error()
-              }), GAME_MODE) : GAME_MODE).NORMAL) {
-                if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.currLevelUnlock > (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.RACE_LEVEL_UNLOCK) {
-                  this.raceGroupManager.node.active = true;
-                }
-              }
+            onComplete: () => {// if(localConfig.instance.currGameMode == GAME_MODE.NORMAL){
+              //     if(localConfig.instance.currLevelUnlock > localConfig.instance.RACE_LEVEL_UNLOCK){
+              //         this.raceGroupManager.node.active = true;
+              //     }
+              // }
             }
           }).start();
         }
@@ -391,14 +336,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), localConfig) : localConfig).instance.getInfoDayStr_2((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
             error: Error()
-          }), localConfig) : localConfig).instance.currInfoDaySelect)}`;
-          this.btnShare.node.active = false;
+          }), localConfig) : localConfig).instance.currInfoDaySelect)}`; // this.btnShare.node.active = false;
+
           this.btnContinue.node.active = false;
-          this.character.node.active = false;
-          this.raceGroupManager.resetGroup();
-          this.raceGroupManager.node.active = false;
-          this.btnContinue.node.setPosition(new Vec3(225, -350, 0));
-          this.btnShare.node.setPosition(new Vec3(-225, -350, 0));
+          this.character.node.active = false; // this.raceGroupManager.resetGroup();
+          // this.raceGroupManager.node.active = false;
+
+          this.btnContinue.node.setPosition(new Vec3(0, -450, 0)); // this.btnShare.node.setPosition(new Vec3(-225,-350,0));
+
           this.titleGroup_Opacity.opacity = 0;
           this.showPopup();
         }
@@ -492,8 +437,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         hidePopup_Finished() {
-          super.hidePopup_Finished();
-          this.raceGroupManager.node.active = false;
+          super.hidePopup_Finished(); // this.raceGroupManager.node.active = false;
         }
 
       }, _temp), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "groupAllTopWidget", [_dec2], {
@@ -506,48 +450,31 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "btnShare", [_dec4], {
+      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "btnContinue", [_dec4], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "nodeShare_Opacity", [_dec5], {
+      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "nodeContinue_Opacity", [_dec5], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, "btnContinue", [_dec6], {
+      }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, "character", [_dec6], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "nodeContinue_Opacity", [_dec7], {
+      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "titleGroup", [_dec7], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "character", [_dec8], {
+      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "titleGroup_Opacity", [_dec8], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor8 = _applyDecoratedDescriptor(_class2.prototype, "titleGroup", [_dec9], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: null
-      }), _descriptor9 = _applyDecoratedDescriptor(_class2.prototype, "titleGroup_Opacity", [_dec10], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: null
-      }), _descriptor10 = _applyDecoratedDescriptor(_class2.prototype, "raceGroupManager", [_dec11], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: function () {
-          return null;
-        }
       })), _class2)) || _class));
       /**
        * [1] Class member could be defined like this.

@@ -461,7 +461,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           _defineProperty(this, "isWaterLock", false);
 
-          _defineProperty(this, "arrBoosterCount", [3, 3, 3]);
+          _defineProperty(this, "arrBoosterCount", [5, 5, 5]);
 
           _defineProperty(this, "arrTickets", []);
 

@@ -2166,17 +2166,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             child.setParent(this.groupAllTubes);
           }
 
-          this.lockScene.active = false;
-
-          if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.currHeartUnlimited_CountTime <= 0) {
-            (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-              error: Error()
-            }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-              error: Error()
-            }), Constants) : Constants).HEART_COUNT_UPDATE, -1);
-          }
+          this.lockScene.active = false; // if(localConfig.instance.currHeartUnlimited_CountTime <= 0){
+          //     clientEvent.dispatchEvent(Constants.HEART_COUNT_UPDATE,-1);
+          // }
 
           let rewardCoin = (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
             error: Error()
@@ -2185,44 +2177,24 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), localConfig) : localConfig).instance.currLevelConfigInfo);
           (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
             error: Error()
-          }), localConfig) : localConfig).instance.setAddLoseStreak();
+          }), localConfig) : localConfig).instance.setAddLoseStreak(); // if (localConfig.instance.currHeart <= 0) {
+          //     clientEvent.dispatchEvent(Constants.SHOW_MORELIVES_POPUP, () => {
+          //         if (localConfig.instance.currHeart > 0) {
+          //             let rewardCoin: number = localConfig.instance.getRewardCoinby_LevelConfigInfo(localConfig.instance.currLevelConfigInfo);
+          //             clientEvent.dispatchEvent(Constants.SHOW_LEVELFAILED_POPUP, rewardCoin);
+          //         } else {
+          //             clientEvent.dispatchEvent(Constants.BACK_TO_HOME);
+          //         }
+          //     });
+          // } else {
+          //     clientEvent.dispatchEvent(Constants.SHOW_LEVELFAILED_POPUP, rewardCoin);
+          // }
 
-          if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
             error: Error()
-          }), localConfig) : localConfig).instance.currHeart <= 0) {
-            (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-              error: Error()
-            }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-              error: Error()
-            }), Constants) : Constants).SHOW_MORELIVES_POPUP, () => {
-              if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                error: Error()
-              }), localConfig) : localConfig).instance.currHeart > 0) {
-                let rewardCoin = (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.getRewardCoinby_LevelConfigInfo((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                  error: Error()
-                }), localConfig) : localConfig).instance.currLevelConfigInfo);
-                (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-                  error: Error()
-                }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-                  error: Error()
-                }), Constants) : Constants).SHOW_LEVELFAILED_POPUP, rewardCoin);
-              } else {
-                (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-                  error: Error()
-                }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-                  error: Error()
-                }), Constants) : Constants).BACK_TO_HOME);
-              }
-            });
-          } else {
-            (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-              error: Error()
-            }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-              error: Error()
-            }), Constants) : Constants).SHOW_LEVELFAILED_POPUP, rewardCoin);
-          }
+          }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
+            error: Error()
+          }), Constants) : Constants).SHOW_LEVELFAILED_POPUP, rewardCoin);
         }
 
         setNoMoves_Touch_Replay() {

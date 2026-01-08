@@ -212,12 +212,12 @@ export class HomeGroup extends Component {
     showGroupFirstTime(){
         this.isShowGroupFirstTime = true;
         this.lockGroup.active = false;
-        if(localConfig.instance.currLevelUnlock > 3 && localConfig.instance.currLevelUnlock % 3 == 1){
-            FBInstantManager.instance.SubscribeBot();
-        }
-        if(localConfig.instance.currLevelUnlock % 3 == 2){
-            FBInstantManager.instance.Create_Shortcut((err,succuss)=>{});
-        }
+        // if(localConfig.instance.currLevelUnlock > 3 && localConfig.instance.currLevelUnlock % 3 == 1){
+        //     FBInstantManager.instance.SubscribeBot();
+        // }
+        // if(localConfig.instance.currLevelUnlock % 3 == 2){
+        //     FBInstantManager.instance.Create_Shortcut((err,succuss)=>{});
+        // }
         
 
         this.initLevels();
@@ -417,30 +417,30 @@ export class HomeGroup extends Component {
         this.lockGroup.active = false;
 
         this.showGroup();
-        if(localConfig.instance.currLevelUnlock > 5 && localConfig.instance.currLevelUnlock % 5 == 1){
-            FBInstantManager.instance.SubscribeBot();
-        }
+        // if(localConfig.instance.currLevelUnlock > 5 && localConfig.instance.currLevelUnlock % 5 == 1){
+        //     FBInstantManager.instance.SubscribeBot();
+        // }
 
-        if(localConfig.instance.raceActive == 1 && localConfig.instance.checkRaceFinished()){
-            AudioManager2.instance.playPopupOpen2();
-            clientEvent.dispatchEvent(Constants.SHOW_TUBERACE_POPUP,false);
-            return;
-        }
+        // if(localConfig.instance.raceActive == 1 && localConfig.instance.checkRaceFinished()){
+        //     AudioManager2.instance.playPopupOpen2();
+        //     clientEvent.dispatchEvent(Constants.SHOW_TUBERACE_POPUP,false);
+        //     return;
+        // }
 
         if(localConfig.instance.currLevelUnlock == 4 && localConfig.instance.getCurrDay() > localConfig.instance.currDailyLoginLastDay){
-            FBInstantManager.instance.Create_Shortcut((err,succuss)=>{});
+            // FBInstantManager.instance.Create_Shortcut((err,succuss)=>{});
             AudioManager2.instance.playPopupOpen2();
             clientEvent.dispatchEvent(Constants.SHOW_DAILYTASK_POPUP,DAILYTASK_TYPE.LOGIN);
             return;
         }
 
-        if(localConfig.instance.currLevelUnlock >= 5 && !this.isShowRemoveAdPopup && !localConfig.instance.isRemoveAd && 
-            (FBInstantManager.instance.checkHaveIAPPack_byProductID(localConfig.instance.getIAP_PackID_bShopPackType(SHOP_PACK_TYPE.REMOVE_AD)) || FBInstantManager.instance.checkHaveIAPPack_byProductID(localConfig.instance.getIAP_PackID_bShopPackType(SHOP_PACK_TYPE.REMOVE_AD_PACK)))){
-            this.isShowRemoveAdPopup = true;
-            AudioManager2.instance.playPopupOpen2();
-            clientEvent.dispatchEvent(Constants.SHOW_REMOVEAD_POPUP);
-            return;
-        }
+        // if(localConfig.instance.currLevelUnlock >= 5 && !this.isShowRemoveAdPopup && !localConfig.instance.isRemoveAd && 
+        //     (FBInstantManager.instance.checkHaveIAPPack_byProductID(localConfig.instance.getIAP_PackID_bShopPackType(SHOP_PACK_TYPE.REMOVE_AD)) || FBInstantManager.instance.checkHaveIAPPack_byProductID(localConfig.instance.getIAP_PackID_bShopPackType(SHOP_PACK_TYPE.REMOVE_AD_PACK)))){
+        //     this.isShowRemoveAdPopup = true;
+        //     AudioManager2.instance.playPopupOpen2();
+        //     clientEvent.dispatchEvent(Constants.SHOW_REMOVEAD_POPUP);
+        //     return;
+        // }
 
         if(localConfig.instance.currLevelUnlock == localConfig.instance.SPIN_LEVEL_UNLOCK){
             AudioManager2.instance.playPopupOpen2();
@@ -448,22 +448,22 @@ export class HomeGroup extends Component {
             return;
         }
 
-        if(localConfig.instance.currLevelUnlock == localConfig.instance.RACE_LEVEL_UNLOCK){
-            AudioManager2.instance.playPopupOpen2();
-            clientEvent.dispatchEvent(Constants.SHOW_TUBERACE_JOIN_POPUP);
-            return;
-        }
+        // if(localConfig.instance.currLevelUnlock == localConfig.instance.RACE_LEVEL_UNLOCK){
+        //     AudioManager2.instance.playPopupOpen2();
+        //     clientEvent.dispatchEvent(Constants.SHOW_TUBERACE_JOIN_POPUP);
+        //     return;
+        // }
 
-        if(localConfig.instance.currLevelUnlock == localConfig.instance.PASS_LEVEL_UNLOCK){
-            localConfig.instance.activeNewPassDataInfos();
-            AudioManager2.instance.playPopupOpen2();
-            clientEvent.dispatchEvent(Constants.SHOW_MASSTERPASS_POPUP);
-            return;
-        }
+        // if(localConfig.instance.currLevelUnlock == localConfig.instance.PASS_LEVEL_UNLOCK){
+        //     localConfig.instance.activeNewPassDataInfos();
+        //     AudioManager2.instance.playPopupOpen2();
+        //     clientEvent.dispatchEvent(Constants.SHOW_MASSTERPASS_POPUP);
+        //     return;
+        // }
 
-        if(localConfig.instance.currLevelUnlock > localConfig.instance.PASS_LEVEL_UNLOCK && localConfig.instance.currLevelUnlock % 10 == 1){
-            FBInstantManager.instance.Create_Shortcut((err,succuss)=>{});
-        }
+        // if(localConfig.instance.currLevelUnlock > localConfig.instance.PASS_LEVEL_UNLOCK && localConfig.instance.currLevelUnlock % 10 == 1){
+        //     FBInstantManager.instance.Create_Shortcut((err,succuss)=>{});
+        // }
     }
 
 
@@ -487,13 +487,14 @@ export class HomeGroup extends Component {
     touchLevel(){
         LogEventManager.instance.logButtonClick("play","home");
         // console.log("touchLevel");
-        if(localConfig.instance.currHeartUnlimited_CountTime > 0 || localConfig.instance.currHeart > 0){
-            clientEvent.dispatchEvent(Constants.TOUCH_LEVEL);
-        }else{
-            clientEvent.dispatchEvent(Constants.SHOW_MORELIVES_POPUP,()=>{});
-        }
+        // if(localConfig.instance.currHeartUnlimited_CountTime > 0 || localConfig.instance.currHeart > 0){
+        //     clientEvent.dispatchEvent(Constants.TOUCH_LEVEL);
+        // }else{
+        //     clientEvent.dispatchEvent(Constants.SHOW_MORELIVES_POPUP,()=>{});
+        // }
        
-        // clientEvent.dispatchEvent(Constants.SHOW_TUBERACE_WIN_POPUP,1);
+
+        clientEvent.dispatchEvent(Constants.TOUCH_LEVEL);
     }
 
 
