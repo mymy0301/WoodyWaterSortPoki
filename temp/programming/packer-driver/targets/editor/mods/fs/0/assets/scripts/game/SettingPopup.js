@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Button, Node, Vec3, BasePopup, UIOnOffItem, localConfig, MusicManager, clientEvent, Constants, GAME_MODE, GAME_STATE, PLAY_TYPE, FBInstantManager, LogEventManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _temp, _crd, ccclass, property, SettingPopup;
+  var _reporterNs, _cclegacy, _decorator, Button, Vec3, BasePopup, UIOnOffItem, localConfig, MusicManager, clientEvent, Constants, GAME_MODE, GAME_STATE, PLAY_TYPE, FBInstantManager, LogEventManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _temp, _crd, ccclass, property, SettingPopup;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -62,7 +62,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       _cclegacy = _cc.cclegacy;
       _decorator = _cc._decorator;
       Button = _cc.Button;
-      Node = _cc.Node;
       Vec3 = _cc.Vec3;
     }, function (_unresolved_2) {
       BasePopup = _unresolved_2.BasePopup;
@@ -109,11 +108,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         error: Error()
       }), UIOnOffItem) : UIOnOffItem), _dec4 = property(Button), _dec5 = property(_crd && UIOnOffItem === void 0 ? (_reportPossibleCrUseOfUIOnOffItem({
         error: Error()
-      }), UIOnOffItem) : UIOnOffItem), _dec6 = property(Node), _dec7 = property(Button), _dec8 = property(_crd && UIOnOffItem === void 0 ? (_reportPossibleCrUseOfUIOnOffItem({
+      }), UIOnOffItem) : UIOnOffItem), _dec6 = property(Button), _dec7 = property(_crd && UIOnOffItem === void 0 ? (_reportPossibleCrUseOfUIOnOffItem({
         error: Error()
-      }), UIOnOffItem) : UIOnOffItem), _dec9 = property(Button), _dec10 = property(_crd && UIOnOffItem === void 0 ? (_reportPossibleCrUseOfUIOnOffItem({
-        error: Error()
-      }), UIOnOffItem) : UIOnOffItem), _dec11 = property(Button), _dec12 = property(Button), _dec13 = property(Button), _dec14 = property(Button), _dec15 = property(Button), _dec16 = property(Button), _dec17 = property(Button), _dec18 = property(Button), _dec(_class = (_class2 = (_temp = class SettingPopup extends (_crd && BasePopup === void 0 ? (_reportPossibleCrUseOfBasePopup({
+      }), UIOnOffItem) : UIOnOffItem), _dec8 = property(Button), _dec9 = property(Button), _dec10 = property(Button), _dec(_class = (_class2 = (_temp = class SettingPopup extends (_crd && BasePopup === void 0 ? (_reportPossibleCrUseOfBasePopup({
         error: Error()
       }), BasePopup) : BasePopup) {
         constructor(...args) {
@@ -127,60 +124,48 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           _initializerDefineProperty(this, "itemSound", _descriptor4, this);
 
-          _initializerDefineProperty(this, "objVibration", _descriptor5, this);
+          _initializerDefineProperty(this, "btnTops", _descriptor5, this);
 
-          _initializerDefineProperty(this, "btnVibrate", _descriptor6, this);
+          _initializerDefineProperty(this, "itemTops", _descriptor6, this);
 
-          _initializerDefineProperty(this, "itemVibrate", _descriptor7, this);
+          _initializerDefineProperty(this, "btnLanguage", _descriptor7, this);
 
-          _initializerDefineProperty(this, "btnTops", _descriptor8, this);
+          _initializerDefineProperty(this, "btnHome", _descriptor8, this);
 
-          _initializerDefineProperty(this, "itemTops", _descriptor9, this);
-
-          _initializerDefineProperty(this, "btnLanguage", _descriptor10, this);
-
-          _initializerDefineProperty(this, "btnHome", _descriptor11, this);
-
-          _initializerDefineProperty(this, "btnContinue", _descriptor12, this);
-
-          _initializerDefineProperty(this, "btnShare", _descriptor13, this);
-
-          _initializerDefineProperty(this, "btnLike", _descriptor14, this);
-
-          _initializerDefineProperty(this, "btnJoinGroup", _descriptor15, this);
-
-          _initializerDefineProperty(this, "btnCreatShortcut", _descriptor16, this);
-
-          _initializerDefineProperty(this, "btnInviteFriend", _descriptor17, this);
+          _initializerDefineProperty(this, "btnContinue", _descriptor9, this);
         }
 
+        // @property(Button)
+        // btnShare: Button;
+        // @property(Button)
+        // btnLike: Button;
+        // @property(Button)
+        // btnJoinGroup: Button;
+        // @property(Button)
+        // btnCreatShortcut: Button;
+        // @property(Button)
+        // btnInviteFriend: Button;
         onEnable() {
           super.onEnable();
           this.btnMusic.node.on(Button.EventType.CLICK, this.touchMusic, this);
-          this.btnSound.node.on(Button.EventType.CLICK, this.touchSound, this);
-          this.btnVibrate.node.on(Button.EventType.CLICK, this.touchVibrate, this);
+          this.btnSound.node.on(Button.EventType.CLICK, this.touchSound, this); // this.btnVibrate.node.on(Button.EventType.CLICK, this.touchVibrate, this);
+
           this.btnTops.node.on(Button.EventType.CLICK, this.touchTops, this);
-          this.btnLanguage.node.on(Button.EventType.CLICK, this.touchLanguage, this);
-
-          if (this.btnJoinGroup) {
-            this.btnJoinGroup.node.on(Button.EventType.CLICK, this.touchJoinGroup, this);
-          }
-
-          if (this.btnShare) {
-            this.btnShare.node.on(Button.EventType.CLICK, this.touchShare, this);
-          }
-
-          if (this.btnLike) {
-            this.btnLike.node.on(Button.EventType.CLICK, this.touchLike, this);
-          }
-
-          if (this.btnInviteFriend) {
-            this.btnInviteFriend.node.on(Button.EventType.CLICK, this.touchInvite, this);
-          }
-
-          if (this.btnCreatShortcut) {
-            this.btnCreatShortcut.node.on(Button.EventType.CLICK, this.touchCreateShortcut, this);
-          }
+          this.btnLanguage.node.on(Button.EventType.CLICK, this.touchLanguage, this); // if(this.btnJoinGroup){
+          //     this.btnJoinGroup.node.on(Button.EventType.CLICK, this.touchJoinGroup, this);
+          // }
+          // if(this.btnShare){
+          //     this.btnShare.node.on(Button.EventType.CLICK, this.touchShare, this);
+          // }
+          // if(this.btnLike){
+          //     this.btnLike.node.on(Button.EventType.CLICK, this.touchLike, this);
+          // }
+          // if(this.btnInviteFriend){
+          //     this.btnInviteFriend.node.on(Button.EventType.CLICK, this.touchInvite, this);
+          // }
+          // if(this.btnCreatShortcut){
+          //     this.btnCreatShortcut.node.on(Button.EventType.CLICK, this.touchCreateShortcut, this);
+          // }
 
           if (this.btnHome) {
             this.btnHome.node.on(Button.EventType.CLICK, this.touchHome, this);
@@ -188,39 +173,37 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           if (this.btnContinue) {
             this.btnContinue.node.on(Button.EventType.CLICK, this.touchContinue, this);
-          }
+          } // this.objVibration.active = false;
+          // this.showCreateShortcut();
 
-          this.objVibration.active = false;
-          this.showCreateShortcut();
         }
 
         onDisable() {
           super.onDisable();
           this.btnMusic.node.off(Button.EventType.CLICK, this.touchMusic, this);
-          this.btnSound.node.off(Button.EventType.CLICK, this.touchSound, this);
-          this.btnVibrate.node.off(Button.EventType.CLICK, this.touchVibrate, this);
+          this.btnSound.node.off(Button.EventType.CLICK, this.touchSound, this); // this.btnVibrate.node.off(Button.EventType.CLICK, this.touchVibrate, this);
+
           this.btnTops.node.off(Button.EventType.CLICK, this.touchTops, this);
           this.btnLanguage.node.off(Button.EventType.CLICK, this.touchLanguage, this);
 
-          if (this.btnJoinGroup) {
-            this.btnJoinGroup.node.off(Button.EventType.CLICK, this.touchJoinGroup, this);
-          }
+          if (this.btnClose2) {
+            this.btnClose2.node.off(Button.EventType.CLICK, this.touchClose, this);
+          } // if(this.btnJoinGroup){
+          //     this.btnJoinGroup.node.off(Button.EventType.CLICK, this.touchJoinGroup, this);
+          // }
+          // if(this.btnShare){
+          //     this.btnShare.node.off(Button.EventType.CLICK, this.touchShare, this);
+          // }
+          // if(this.btnLike){
+          //     this.btnLike.node.off(Button.EventType.CLICK, this.touchLike, this);
+          // }
+          // if(this.btnInviteFriend){
+          //     this.btnInviteFriend.node.off(Button.EventType.CLICK, this.touchInvite, this);
+          // }
+          // if(this.btnCreatShortcut){
+          //     this.btnCreatShortcut.node.off(Button.EventType.CLICK, this.touchCreateShortcut, this);
+          // }
 
-          if (this.btnShare) {
-            this.btnShare.node.off(Button.EventType.CLICK, this.touchShare, this);
-          }
-
-          if (this.btnLike) {
-            this.btnLike.node.off(Button.EventType.CLICK, this.touchLike, this);
-          }
-
-          if (this.btnInviteFriend) {
-            this.btnInviteFriend.node.off(Button.EventType.CLICK, this.touchInvite, this);
-          }
-
-          if (this.btnCreatShortcut) {
-            this.btnCreatShortcut.node.off(Button.EventType.CLICK, this.touchCreateShortcut, this);
-          }
 
           if (this.btnHome) {
             this.btnHome.node.off(Button.EventType.CLICK, this.touchHome, this);
@@ -296,15 +279,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             this.itemSound.setItemON();
           } else {
             this.itemSound.setItemOFF();
-          }
+          } // if(localConfig.instance.isVibration){
+          //     this.itemVibrate.setItemON();
+          // }else{
+          //     this.itemVibrate.setItemOFF();
+          // }
 
-          if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.isVibration) {
-            this.itemVibrate.setItemON();
-          } else {
-            this.itemVibrate.setItemOFF();
-          }
 
           if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
             error: Error()
@@ -359,27 +339,17 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             }), localConfig) : localConfig).instance.setSound(true);
             this.itemSound.switchItemON();
           }
-        }
+        } // touchVibrate() {
+        //     LogEventManager.instance.logButtonClick("vibration","settingpopup");
+        //     if(localConfig.instance.isVibration){
+        //         localConfig.instance.setVibration(false);
+        //         this.itemVibrate.switchItemOFF();
+        //     }else{
+        //         localConfig.instance.setVibration(true);
+        //         this.itemVibrate.switchItemON();
+        //     }
+        // }
 
-        touchVibrate() {
-          (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
-            error: Error()
-          }), LogEventManager) : LogEventManager).instance.logButtonClick("vibration", "settingpopup");
-
-          if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.isVibration) {
-            (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.setVibration(false);
-            this.itemVibrate.switchItemOFF();
-          } else {
-            (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.setVibration(true);
-            this.itemVibrate.switchItemON();
-          }
-        }
 
         touchTops() {
           (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
@@ -537,75 +507,43 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
             error: Error()
           }), Constants) : Constants).SETTING_TOUCH_CONTINUE);
-        }
+        } // touchShare(): void {
+        //     LogEventManager.instance.logButtonClick("share","settingpopup");
+        //     clientEvent.dispatchEvent(Constants.SHOW_SHARE_INFOLEVEL_POPUP,localConfig.instance.currLevelUnlock,(err,success)=>{});
+        // }
+        // touchLike(): void {
+        //     LogEventManager.instance.logButtonClick("like","settingpopup");
+        //     FBInstantManager.instance.followOfficialPage();
+        // }
+        // touchInvite(): void {
+        //     LogEventManager.instance.logButtonClick("invite","settingpopup");
+        //     clientEvent.dispatchEvent(Constants.SHOW_INVITE_POPUP,localConfig.instance.currLevelUnlock,(err,content)=>{
+        //     });
+        // }
+        // touchCreateShortcut(): void {
+        //     LogEventManager.instance.logButtonClick("createshortcut","settingpopup");
+        //     FBInstantManager.instance.Create_Shortcut((err,success)=>{
+        //         if(err){
+        //         }else{
+        //             FBInstantManager.instance.isCreateShortcutAvailable = false;
+        //             // if(this.btnCreatShortcut){
+        //             //     this.btnCreatShortcut.node.active = false;
+        //             // }
+        //         }
+        //     });
+        // }
+        // showCreateShortcut(){
+        //     // if (FBInstantManager.instance.isCreateShortcutAvailable) {
+        //     //     if(this.btnCreatShortcut){
+        //     //         this.btnCreatShortcut.node.active = true;
+        //     //     }
+        //     // } else {
+        //     //     if(this.btnCreatShortcut){
+        //     //         this.btnCreatShortcut.node.active = false;
+        //     //     }
+        //     // }
+        // }
 
-        touchShare() {
-          (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
-            error: Error()
-          }), LogEventManager) : LogEventManager).instance.logButtonClick("share", "settingpopup");
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_SHARE_INFOLEVEL_POPUP, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.currLevelUnlock, (err, success) => {});
-        }
-
-        touchLike() {
-          (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
-            error: Error()
-          }), LogEventManager) : LogEventManager).instance.logButtonClick("like", "settingpopup");
-          (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
-            error: Error()
-          }), FBInstantManager) : FBInstantManager).instance.followOfficialPage();
-        }
-
-        touchInvite() {
-          (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
-            error: Error()
-          }), LogEventManager) : LogEventManager).instance.logButtonClick("invite", "settingpopup");
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).SHOW_INVITE_POPUP, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.currLevelUnlock, (err, content) => {});
-        }
-
-        touchCreateShortcut() {
-          (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
-            error: Error()
-          }), LogEventManager) : LogEventManager).instance.logButtonClick("createshortcut", "settingpopup");
-          (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
-            error: Error()
-          }), FBInstantManager) : FBInstantManager).instance.Create_Shortcut((err, success) => {
-            if (err) {} else {
-              (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
-                error: Error()
-              }), FBInstantManager) : FBInstantManager).instance.isCreateShortcutAvailable = false;
-
-              if (this.btnCreatShortcut) {
-                this.btnCreatShortcut.node.active = false;
-              }
-            }
-          });
-        }
-
-        showCreateShortcut() {
-          if ((_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
-            error: Error()
-          }), FBInstantManager) : FBInstantManager).instance.isCreateShortcutAvailable) {
-            if (this.btnCreatShortcut) {
-              this.btnCreatShortcut.node.active = true;
-            }
-          } else {
-            if (this.btnCreatShortcut) {
-              this.btnCreatShortcut.node.active = false;
-            }
-          }
-        }
 
       }, _temp), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "btnMusic", [_dec2], {
         configurable: true,
@@ -627,67 +565,27 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, "objVibration", [_dec6], {
+      }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, "btnTops", [_dec6], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "btnVibrate", [_dec7], {
+      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "itemTops", [_dec7], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "itemVibrate", [_dec8], {
+      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "btnLanguage", [_dec8], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor8 = _applyDecoratedDescriptor(_class2.prototype, "btnTops", [_dec9], {
+      }), _descriptor8 = _applyDecoratedDescriptor(_class2.prototype, "btnHome", [_dec9], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor9 = _applyDecoratedDescriptor(_class2.prototype, "itemTops", [_dec10], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: null
-      }), _descriptor10 = _applyDecoratedDescriptor(_class2.prototype, "btnLanguage", [_dec11], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: null
-      }), _descriptor11 = _applyDecoratedDescriptor(_class2.prototype, "btnHome", [_dec12], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: null
-      }), _descriptor12 = _applyDecoratedDescriptor(_class2.prototype, "btnContinue", [_dec13], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: null
-      }), _descriptor13 = _applyDecoratedDescriptor(_class2.prototype, "btnShare", [_dec14], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: null
-      }), _descriptor14 = _applyDecoratedDescriptor(_class2.prototype, "btnLike", [_dec15], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: null
-      }), _descriptor15 = _applyDecoratedDescriptor(_class2.prototype, "btnJoinGroup", [_dec16], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: null
-      }), _descriptor16 = _applyDecoratedDescriptor(_class2.prototype, "btnCreatShortcut", [_dec17], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: null
-      }), _descriptor17 = _applyDecoratedDescriptor(_class2.prototype, "btnInviteFriend", [_dec18], {
+      }), _descriptor9 = _applyDecoratedDescriptor(_class2.prototype, "btnContinue", [_dec10], {
         configurable: true,
         enumerable: true,
         writable: true,

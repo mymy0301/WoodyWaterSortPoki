@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Button, Label, Node, BasePopup, CountDownTimeHeart, localConfig, Constants, SCENE_TYPE, configuration, clientEvent, FBInstantManager, LogEventManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _temp, _crd, ccclass, property, MoreLivesPopup;
+  var _reporterNs, _cclegacy, _decorator, Button, Label, Node, BasePopup, CountDownTimeHeart, localConfig, Constants, SCENE_TYPE, configuration, clientEvent, LogEventManager, PokiSDKManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _temp, _crd, ccclass, property, MoreLivesPopup;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -39,12 +39,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("clientEvent", "../framework/clientEvent", _context.meta, extras);
   }
 
-  function _reportPossibleCrUseOfFBInstantManager(extras) {
-    _reporterNs.report("FBInstantManager", "../common/FBInstantManager", _context.meta, extras);
-  }
-
   function _reportPossibleCrUseOfLogEventManager(extras) {
     _reporterNs.report("LogEventManager", "../common/LogEventManager", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfPokiSDKManager(extras) {
+    _reporterNs.report("PokiSDKManager", "../common/PokiSDKManager", _context.meta, extras);
   }
 
   return {
@@ -70,9 +70,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     }, function (_unresolved_7) {
       clientEvent = _unresolved_7.clientEvent;
     }, function (_unresolved_8) {
-      FBInstantManager = _unresolved_8.FBInstantManager;
+      LogEventManager = _unresolved_8.LogEventManager;
     }, function (_unresolved_9) {
-      LogEventManager = _unresolved_9.LogEventManager;
+      PokiSDKManager = _unresolved_9.PokiSDKManager;
     }],
     execute: function () {
       _crd = true;
@@ -242,10 +242,22 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         touchWatchAd() {
           (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
             error: Error()
-          }), LogEventManager) : LogEventManager).instance.logButtonClick("watchad", "masterpasspopup");
-          (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
+          }), LogEventManager) : LogEventManager).instance.logButtonClick("watchad", "masterpasspopup"); // FBInstantManager.instance.Show_RewardedVideoAsync("morelivespopup","watchad",(err, success) => {
+          //     if(err){
+          //     }else{
+          //         localConfig.instance.currHeart ++;
+          //         configuration.instance.setData_HeartCount(localConfig.instance.currHeart);
+          //         LogEventManager.instance.logResourceEarned("booster","heart",1,"morelivespopup","watchad");
+          //         clientEvent.dispatchEvent(Constants.HEART_UPDATE);
+          //         this.showInfo();
+          //         this.hidePopup();
+          //         this.cbMoreLives();
+          //     }
+          // });
+
+          (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
             error: Error()
-          }), FBInstantManager) : FBInstantManager).instance.Show_RewardedVideoAsync("morelivespopup", "watchad", (err, success) => {
+          }), PokiSDKManager) : PokiSDKManager).instance.Show_RewardedVideoAsync("morelivespopup", "watchad", (err, success) => {
             if (err) {} else {
               (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
                 error: Error()

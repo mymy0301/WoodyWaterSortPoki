@@ -9,6 +9,7 @@ import { clientEvent } from '../framework/clientEvent';
 import { LogEventManager } from '../common/LogEventManager';
 import { FBInstantManager } from '../common/FBInstantManager';
 import { ItemRankInfo } from '../common/ItemRankInfo';
+import { PokiSDKManager } from '../common/PokiSDKManager';
 const { ccclass, property } = _decorator;
 
 /**
@@ -150,12 +151,17 @@ export class WinTournamentPageHostPopup extends BasePopup {
     }
 
     touchReplay(){
-        FBInstantManager.instance.Show_InterstitialAdAsync("tournament_pagehost_popup", "replay", (err, success) => {
+        // FBInstantManager.instance.Show_InterstitialAdAsync("tournament_pagehost_popup", "replay", (err, success) => {
+        //     LogEventManager.instance.logButtonClick("replay", "wintournamentpagehostpopup");
+        //     this.hidePopup();
+        //     clientEvent.dispatchEvent(Constants.TOURNAMENT_PAGEHOST_TOUCH_REPLAY);
+        // });
+
+        PokiSDKManager.instance.Show_InterstitialAdAsync("tournament_pagehost_popup", "replay", (err, success) => {
             LogEventManager.instance.logButtonClick("replay", "wintournamentpagehostpopup");
             this.hidePopup();
             clientEvent.dispatchEvent(Constants.TOURNAMENT_PAGEHOST_TOUCH_REPLAY);
         });
-       
     }
 
     // touchClose(): void {

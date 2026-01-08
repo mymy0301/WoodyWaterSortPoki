@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Button, CountDownTimeNextDay, BasePopup, Constants, SHOP_ITEM_TYPE, localConfig, FBInstantManager, clientEvent, GroupRewardDataInfo, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _temp, _crd, ccclass, property, BlackFridayPopup;
+  var _reporterNs, _cclegacy, _decorator, Button, CountDownTimeNextDay, BasePopup, Constants, SHOP_ITEM_TYPE, localConfig, clientEvent, GroupRewardDataInfo, PokiSDKManager, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _temp, _crd, ccclass, property, BlackFridayPopup;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -31,16 +31,16 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("localConfig", "../../localConfig", _context.meta, extras);
   }
 
-  function _reportPossibleCrUseOfFBInstantManager(extras) {
-    _reporterNs.report("FBInstantManager", "../../common/FBInstantManager", _context.meta, extras);
-  }
-
   function _reportPossibleCrUseOfclientEvent(extras) {
     _reporterNs.report("clientEvent", "../../framework/clientEvent", _context.meta, extras);
   }
 
   function _reportPossibleCrUseOfGroupRewardDataInfo(extras) {
     _reporterNs.report("GroupRewardDataInfo", "../info/ShopDataInfo", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfPokiSDKManager(extras) {
+    _reporterNs.report("PokiSDKManager", "../../common/PokiSDKManager", _context.meta, extras);
   }
 
   return {
@@ -60,11 +60,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     }, function (_unresolved_5) {
       localConfig = _unresolved_5.localConfig;
     }, function (_unresolved_6) {
-      FBInstantManager = _unresolved_6.FBInstantManager;
+      clientEvent = _unresolved_6.clientEvent;
     }, function (_unresolved_7) {
-      clientEvent = _unresolved_7.clientEvent;
+      GroupRewardDataInfo = _unresolved_7.GroupRewardDataInfo;
     }, function (_unresolved_8) {
-      GroupRewardDataInfo = _unresolved_8.GroupRewardDataInfo;
+      PokiSDKManager = _unresolved_8.PokiSDKManager;
     }],
     execute: function () {
       _crd = true;
@@ -129,10 +129,17 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         touchClaim() {
-          var self = this;
-          (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
+          var self = this; // FBInstantManager.instance.Show_RewardedVideoAsync("blackfridaypopup","claimads",((err,isSuccess)=>{
+          //     if (err) {
+          //         localConfig.instance.isShowBlackFriday = false;
+          //     } else {
+          //         self.rewardFinished();
+          //     }
+          // }));
+
+          (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
             error: Error()
-          }), FBInstantManager) : FBInstantManager).instance.Show_RewardedVideoAsync("blackfridaypopup", "claimads", (err, isSuccess) => {
+          }), PokiSDKManager) : PokiSDKManager).instance.Show_RewardedVideoAsync("blackfridaypopup", "claimads", (err, isSuccess) => {
             if (err) {
               (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
                 error: Error()

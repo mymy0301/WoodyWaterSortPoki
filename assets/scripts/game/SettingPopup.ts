@@ -42,14 +42,14 @@ export class SettingPopup extends BasePopup {
     @property(UIOnOffItem)
     itemSound: UIOnOffItem;
 
-    @property(Node)
-    objVibration:Node;
+    // @property(Node)
+    // objVibration:Node;
 
-    @property(Button)
-    btnVibrate:Button;  
+    // @property(Button)
+    // btnVibrate:Button;  
 
-    @property(UIOnOffItem)
-    itemVibrate: UIOnOffItem;
+    // @property(UIOnOffItem)
+    // itemVibrate: UIOnOffItem;
 
     @property(Button)
     btnTops:Button;
@@ -69,49 +69,49 @@ export class SettingPopup extends BasePopup {
     @property(Button)
     btnContinue:Button;
 
-    @property(Button)
-    btnShare: Button;
+    // @property(Button)
+    // btnShare: Button;
 
-    @property(Button)
-    btnLike: Button;
+    // @property(Button)
+    // btnLike: Button;
 
-    @property(Button)
-    btnJoinGroup: Button;
+    // @property(Button)
+    // btnJoinGroup: Button;
 
-    @property(Button)
-    btnCreatShortcut: Button;
+    // @property(Button)
+    // btnCreatShortcut: Button;
 
-    @property(Button)
-    btnInviteFriend: Button;
+    // @property(Button)
+    // btnInviteFriend: Button;
 
     onEnable(): void {
         super.onEnable();
 
         this.btnMusic.node.on(Button.EventType.CLICK, this.touchMusic, this);
         this.btnSound.node.on(Button.EventType.CLICK, this.touchSound, this);
-        this.btnVibrate.node.on(Button.EventType.CLICK, this.touchVibrate, this);
+        // this.btnVibrate.node.on(Button.EventType.CLICK, this.touchVibrate, this);
         this.btnTops.node.on(Button.EventType.CLICK, this.touchTops, this);
         this.btnLanguage.node.on(Button.EventType.CLICK, this.touchLanguage, this);
 
-        if(this.btnJoinGroup){
-            this.btnJoinGroup.node.on(Button.EventType.CLICK, this.touchJoinGroup, this);
-        }
+        // if(this.btnJoinGroup){
+        //     this.btnJoinGroup.node.on(Button.EventType.CLICK, this.touchJoinGroup, this);
+        // }
 
-        if(this.btnShare){
-            this.btnShare.node.on(Button.EventType.CLICK, this.touchShare, this);
-        }
+        // if(this.btnShare){
+        //     this.btnShare.node.on(Button.EventType.CLICK, this.touchShare, this);
+        // }
 
-        if(this.btnLike){
-            this.btnLike.node.on(Button.EventType.CLICK, this.touchLike, this);
-        }
+        // if(this.btnLike){
+        //     this.btnLike.node.on(Button.EventType.CLICK, this.touchLike, this);
+        // }
 
-        if(this.btnInviteFriend){
-            this.btnInviteFriend.node.on(Button.EventType.CLICK, this.touchInvite, this);
-        }
+        // if(this.btnInviteFriend){
+        //     this.btnInviteFriend.node.on(Button.EventType.CLICK, this.touchInvite, this);
+        // }
 
-        if(this.btnCreatShortcut){
-            this.btnCreatShortcut.node.on(Button.EventType.CLICK, this.touchCreateShortcut, this);
-        }
+        // if(this.btnCreatShortcut){
+        //     this.btnCreatShortcut.node.on(Button.EventType.CLICK, this.touchCreateShortcut, this);
+        // }
 
         if(this.btnHome){
             this.btnHome.node.on(Button.EventType.CLICK, this.touchHome, this);
@@ -121,9 +121,9 @@ export class SettingPopup extends BasePopup {
             this.btnContinue.node.on(Button.EventType.CLICK, this.touchContinue, this);
         }
 
-        this.objVibration.active = false;
+        // this.objVibration.active = false;
 
-        this.showCreateShortcut();
+        // this.showCreateShortcut();
     }
 
     onDisable(): void {
@@ -131,29 +131,32 @@ export class SettingPopup extends BasePopup {
 
         this.btnMusic.node.off(Button.EventType.CLICK, this.touchMusic, this);
         this.btnSound.node.off(Button.EventType.CLICK, this.touchSound, this);
-        this.btnVibrate.node.off(Button.EventType.CLICK, this.touchVibrate, this);
+        // this.btnVibrate.node.off(Button.EventType.CLICK, this.touchVibrate, this);
         this.btnTops.node.off(Button.EventType.CLICK, this.touchTops, this);
         this.btnLanguage.node.off(Button.EventType.CLICK, this.touchLanguage, this);
-
-        if(this.btnJoinGroup){
-            this.btnJoinGroup.node.off(Button.EventType.CLICK, this.touchJoinGroup, this);
+        if(this.btnClose2){
+            this.btnClose2.node.off(Button.EventType.CLICK, this.touchClose, this);
         }
 
-        if(this.btnShare){
-            this.btnShare.node.off(Button.EventType.CLICK, this.touchShare, this);
-        }
+        // if(this.btnJoinGroup){
+        //     this.btnJoinGroup.node.off(Button.EventType.CLICK, this.touchJoinGroup, this);
+        // }
 
-        if(this.btnLike){
-            this.btnLike.node.off(Button.EventType.CLICK, this.touchLike, this);
-        }
+        // if(this.btnShare){
+        //     this.btnShare.node.off(Button.EventType.CLICK, this.touchShare, this);
+        // }
 
-        if(this.btnInviteFriend){
-            this.btnInviteFriend.node.off(Button.EventType.CLICK, this.touchInvite, this);
-        }
+        // if(this.btnLike){
+        //     this.btnLike.node.off(Button.EventType.CLICK, this.touchLike, this);
+        // }
 
-        if(this.btnCreatShortcut){
-            this.btnCreatShortcut.node.off(Button.EventType.CLICK, this.touchCreateShortcut, this);
-        }
+        // if(this.btnInviteFriend){
+        //     this.btnInviteFriend.node.off(Button.EventType.CLICK, this.touchInvite, this);
+        // }
+
+        // if(this.btnCreatShortcut){
+        //     this.btnCreatShortcut.node.off(Button.EventType.CLICK, this.touchCreateShortcut, this);
+        // }
 
         if(this.btnHome){
             this.btnHome.node.off(Button.EventType.CLICK, this.touchHome, this);
@@ -212,11 +215,11 @@ export class SettingPopup extends BasePopup {
             this.itemSound.setItemOFF();
         }
 
-        if(localConfig.instance.isVibration){
-            this.itemVibrate.setItemON();
-        }else{
-            this.itemVibrate.setItemOFF();
-        }
+        // if(localConfig.instance.isVibration){
+        //     this.itemVibrate.setItemON();
+        // }else{
+        //     this.itemVibrate.setItemOFF();
+        // }
 
         if(localConfig.instance.isTops){
             this.itemTops.setItemON();
@@ -251,16 +254,16 @@ export class SettingPopup extends BasePopup {
         }
     }
 
-    touchVibrate() {
-        LogEventManager.instance.logButtonClick("vibration","settingpopup");
-        if(localConfig.instance.isVibration){
-            localConfig.instance.setVibration(false);
-            this.itemVibrate.switchItemOFF();
-        }else{
-            localConfig.instance.setVibration(true);
-            this.itemVibrate.switchItemON();
-        }
-    }
+    // touchVibrate() {
+    //     LogEventManager.instance.logButtonClick("vibration","settingpopup");
+    //     if(localConfig.instance.isVibration){
+    //         localConfig.instance.setVibration(false);
+    //         this.itemVibrate.switchItemOFF();
+    //     }else{
+    //         localConfig.instance.setVibration(true);
+    //         this.itemVibrate.switchItemON();
+    //     }
+    // }
 
     touchTops() {
         LogEventManager.instance.logButtonClick("tops","settingpopup");
@@ -322,49 +325,49 @@ export class SettingPopup extends BasePopup {
         clientEvent.dispatchEvent(Constants.SETTING_TOUCH_CONTINUE);
     }
 
-    touchShare(): void {
-        LogEventManager.instance.logButtonClick("share","settingpopup");
-        clientEvent.dispatchEvent(Constants.SHOW_SHARE_INFOLEVEL_POPUP,localConfig.instance.currLevelUnlock,(err,success)=>{});
-    }
+    // touchShare(): void {
+    //     LogEventManager.instance.logButtonClick("share","settingpopup");
+    //     clientEvent.dispatchEvent(Constants.SHOW_SHARE_INFOLEVEL_POPUP,localConfig.instance.currLevelUnlock,(err,success)=>{});
+    // }
 
-    touchLike(): void {
-        LogEventManager.instance.logButtonClick("like","settingpopup");
-        FBInstantManager.instance.followOfficialPage();
-    }
+    // touchLike(): void {
+    //     LogEventManager.instance.logButtonClick("like","settingpopup");
+    //     FBInstantManager.instance.followOfficialPage();
+    // }
 
-    touchInvite(): void {
-        LogEventManager.instance.logButtonClick("invite","settingpopup");
-        clientEvent.dispatchEvent(Constants.SHOW_INVITE_POPUP,localConfig.instance.currLevelUnlock,(err,content)=>{
+    // touchInvite(): void {
+    //     LogEventManager.instance.logButtonClick("invite","settingpopup");
+    //     clientEvent.dispatchEvent(Constants.SHOW_INVITE_POPUP,localConfig.instance.currLevelUnlock,(err,content)=>{
             
-        });
-    }
+    //     });
+    // }
 
-    touchCreateShortcut(): void {
-        LogEventManager.instance.logButtonClick("createshortcut","settingpopup");
-        FBInstantManager.instance.Create_Shortcut((err,success)=>{
-            if(err){
+    // touchCreateShortcut(): void {
+    //     LogEventManager.instance.logButtonClick("createshortcut","settingpopup");
+    //     FBInstantManager.instance.Create_Shortcut((err,success)=>{
+    //         if(err){
                 
-            }else{
-                FBInstantManager.instance.isCreateShortcutAvailable = false;
-                if(this.btnCreatShortcut){
-                    this.btnCreatShortcut.node.active = false;
-                }
-            }
-        });
-    }
+    //         }else{
+    //             FBInstantManager.instance.isCreateShortcutAvailable = false;
+    //             // if(this.btnCreatShortcut){
+    //             //     this.btnCreatShortcut.node.active = false;
+    //             // }
+    //         }
+    //     });
+    // }
 
-    showCreateShortcut(){
+    // showCreateShortcut(){
 
-        if (FBInstantManager.instance.isCreateShortcutAvailable) {
-            if(this.btnCreatShortcut){
-                this.btnCreatShortcut.node.active = true;
-            }
-        } else {
-            if(this.btnCreatShortcut){
-                this.btnCreatShortcut.node.active = false;
-            }
-        }
-    }
+    //     // if (FBInstantManager.instance.isCreateShortcutAvailable) {
+    //     //     if(this.btnCreatShortcut){
+    //     //         this.btnCreatShortcut.node.active = true;
+    //     //     }
+    //     // } else {
+    //     //     if(this.btnCreatShortcut){
+    //     //         this.btnCreatShortcut.node.active = false;
+    //     //     }
+    //     // }
+    // }
 
 }
 

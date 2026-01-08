@@ -23,6 +23,9 @@ export class BasePopup extends Component {
     @property(Button)
     btnClose : Button | null = null;
 
+    @property(Button)
+    btnClose2 : Button | null = null;
+
     @property(UIOpacity)
     popup_UIOpacity:UIOpacity;
 
@@ -47,11 +50,19 @@ export class BasePopup extends Component {
             this.btnClose!.node.on(Constants.CLICK,this.touchClose,this);
         }
 
+        if(this.btnClose2!= null){
+            this.btnClose2!.node.on(Constants.CLICK,this.touchClose,this);
+        }
+
     }
 
     onDisable(){
         if(this.btnClose!= null){
             this.btnClose!.node.off(Constants.CLICK,this.touchClose,this);
+        }
+
+        if(this.btnClose2!= null){
+            this.btnClose2!.node.off(Constants.CLICK,this.touchClose,this);
         }
     }
     // update (deltaTime: number) {

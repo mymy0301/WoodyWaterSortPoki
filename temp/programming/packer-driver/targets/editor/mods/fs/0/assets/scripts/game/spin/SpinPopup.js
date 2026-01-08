@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9", "__unresolved_10", "__unresolved_11"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, AnimationComponent, Button, instantiate, Label, Node, Prefab, tween, Vec3, BasePopup, ItemSpin, Constants, SHOP_ITEM_TYPE, localConfig, lodash, clientEvent, AudioManager2, FBInstantManager, Utils, GroupRewardDataInfo, LogEventManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _temp, _crd, ccclass, property, SpinPopup;
+  var _reporterNs, _cclegacy, _decorator, AnimationComponent, Button, instantiate, Label, Node, Prefab, tween, Vec3, BasePopup, ItemSpin, Constants, SHOP_ITEM_TYPE, localConfig, lodash, clientEvent, AudioManager2, Utils, GroupRewardDataInfo, LogEventManager, PokiSDKManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _temp, _crd, ccclass, property, SpinPopup;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -43,10 +43,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("AudioManager2", "../../framework/audioManager2", _context.meta, extras);
   }
 
-  function _reportPossibleCrUseOfFBInstantManager(extras) {
-    _reporterNs.report("FBInstantManager", "../../common/FBInstantManager", _context.meta, extras);
-  }
-
   function _reportPossibleCrUseOfUtils(extras) {
     _reporterNs.report("Utils", "../../core/utils/Utils", _context.meta, extras);
   }
@@ -57,6 +53,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
   function _reportPossibleCrUseOfLogEventManager(extras) {
     _reporterNs.report("LogEventManager", "../../common/LogEventManager", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfPokiSDKManager(extras) {
+    _reporterNs.report("PokiSDKManager", "../../common/PokiSDKManager", _context.meta, extras);
   }
 
   return {
@@ -89,13 +89,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     }, function (_unresolved_8) {
       AudioManager2 = _unresolved_8.AudioManager2;
     }, function (_unresolved_9) {
-      FBInstantManager = _unresolved_9.FBInstantManager;
+      Utils = _unresolved_9.default;
     }, function (_unresolved_10) {
-      Utils = _unresolved_10.default;
+      GroupRewardDataInfo = _unresolved_10.GroupRewardDataInfo;
     }, function (_unresolved_11) {
-      GroupRewardDataInfo = _unresolved_11.GroupRewardDataInfo;
+      LogEventManager = _unresolved_11.LogEventManager;
     }, function (_unresolved_12) {
-      LogEventManager = _unresolved_12.LogEventManager;
+      PokiSDKManager = _unresolved_12.PokiSDKManager;
     }],
     execute: function () {
       _crd = true;
@@ -489,9 +489,21 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
             error: Error()
           }), localConfig) : localConfig).instance.spinFreeCount > 0) {
-            (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
+            // FBInstantManager.instance.Show_RewardedVideoAsync("spinpopup","spin",(err, success) => {
+            //     if (err) {
+            //         console.log(err);
+            //     }else{
+            //         if(localConfig.instance.spinFreeCount == 0){
+            //             this.spinAd_disable.active = true;
+            //         }
+            //         this.txtSpinAdCount.string = `(${localConfig.instance.spinFreeCount - 1}/3)`;
+            //         localConfig.instance.setSpinFreeCount(localConfig.instance.spinFreeCount - 1);
+            //         this.setSpinStart();
+            //     }
+            // })
+            (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
               error: Error()
-            }), FBInstantManager) : FBInstantManager).instance.Show_RewardedVideoAsync("spinpopup", "spin", (err, success) => {
+            }), PokiSDKManager) : PokiSDKManager).instance.Show_RewardedVideoAsync("spinpopup", "spin", (err, success) => {
               if (err) {
                 console.log(err);
               } else {

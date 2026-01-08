@@ -23,6 +23,7 @@ import { NoMovesGroup } from './NoMovesGroup';
 import { LogEventManager } from '../common/LogEventManager';
 import { InfoGroupTournamentPageHost } from './tournaments/InfoGroupTournamentPageHost';
 import { BackGroundGameManager } from './BackGroundGameManager';
+import { PokiSDKManager } from '../common/PokiSDKManager';
 const { ccclass, property } = _decorator;
 
 /**
@@ -219,7 +220,10 @@ export class PlayMagicManager extends Component {
     }
 
     touchReplay(){
-        FBInstantManager.instance.Show_InterstitialAdAsync("play","replay",(err,success)=>{
+        // FBInstantManager.instance.Show_InterstitialAdAsync("play","replay",(err,success)=>{
+        //     this.setReplay();
+        // });
+        PokiSDKManager.instance.Show_InterstitialAdAsync("play","replay",(err,success)=>{
             this.setReplay();
         });
     }
@@ -1395,53 +1399,58 @@ export class PlayMagicManager extends Component {
                                                  PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),1,0,"dailychallenge",
                                                  localConfig.instance.playDurationEndTime - localConfig.instance.playDurationStartTime,
                                                 "win","");
-            FBInstantManager.instance.Show_InterstitialAdAsync("dailychallenge","win",(err,success)=>{
+            // FBInstantManager.instance.Show_InterstitialAdAsync("dailychallenge","win",(err,success)=>{
+            //     clientEvent.dispatchEvent(Constants.SHOW_WIN_DAILYCHALLENGE_POPUP);
+            // });
+
+            PokiSDKManager.instance.Show_InterstitialAdAsync("dailychallenge","win",(err,success)=>{
                 clientEvent.dispatchEvent(Constants.SHOW_WIN_DAILYCHALLENGE_POPUP);
             });
             
-        }else if(localConfig.instance.currGameMode == GAME_MODE.TOURNAMENT){
-            LogEventManager.instance.logLevelEnd(localConfig.instance.currIndexLevelTournament,localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder),
-                                                 PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),1,0,"tournament",
-                                                 localConfig.instance.playDurationEndTime - localConfig.instance.playDurationStartTime,
-                                                "win","");
-
-            if(localConfig.instance.currIndexLevelTournament + localConfig.instance.currLevelStartTournament == 2){
-                localConfig.instance.setLevelUnlock(3);
-                this.hideTutLevel2();
-            }
-            localConfig.instance.setLevelUnlock(2);
-            if(localConfig.instance.currIndexLevelTournament + localConfig.instance.currLevelStartTournament > 2){
-                FBInstantManager.instance.Show_InterstitialAdAsync("tournament","win",(err,success)=>{
-                    this.setWinTournament();
-                });
-            }else{
-                this.setWinTournament();
-            }
-        }else if(localConfig.instance.currGameMode == GAME_MODE.TOURNAMENT_PAGEHOST){
-            LogEventManager.instance.logLevelEnd(localConfig.instance.currTournamentPageHostDataInfo.levelIndex,localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder),
-                                                 PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),1,0,"tournament_pagehost",
-                                                 localConfig.instance.playDurationEndTime - localConfig.instance.playDurationStartTime,
-                                                "win","");
-            
-            this.setWinTournamentPageHost();
-        }else if(localConfig.instance.currGameMode == GAME_MODE.WITH_FRIEND){
-            LogEventManager.instance.logLevelEnd(localConfig.instance.currWithFriendDataInfo.levelIndex,localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder),
-                                                 PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),1,0,"withfriend",
-                                                 localConfig.instance.playDurationEndTime - localConfig.instance.playDurationStartTime,
-                                                "win","");
-
-            if(localConfig.instance.currWithFriendDataInfo.senderID == FBInstantManager.instance.getID()){
-                localConfig.instance.currWithFriendDataInfo.senderScore = this.infoGroupWithFriend.scoreValue;
-                this.updateContextWithFriend();
-            }else{
-                localConfig.instance.currWithFriendDataInfo.receiverScore = this.infoGroupWithFriend.scoreValue;
-                this.updateContextWithFriend();
-            }
-            FBInstantManager.instance.Show_InterstitialAdAsync("withfriend","win",()=>{
-                // this.showWinWithFriendPopup(this.scoreGroupWithFriend.currScore);
-                clientEvent.dispatchEvent(Constants.SHOW_WIN_WITHFRIEND_POPUP, localConfig.instance.currWithFriendDataInfo, this.infoGroupWithFriend.scoreValue);
-            });
         }
+        // else if(localConfig.instance.currGameMode == GAME_MODE.TOURNAMENT){
+        //     LogEventManager.instance.logLevelEnd(localConfig.instance.currIndexLevelTournament,localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder),
+        //                                          PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),1,0,"tournament",
+        //                                          localConfig.instance.playDurationEndTime - localConfig.instance.playDurationStartTime,
+        //                                         "win","");
+
+        //     if(localConfig.instance.currIndexLevelTournament + localConfig.instance.currLevelStartTournament == 2){
+        //         localConfig.instance.setLevelUnlock(3);
+        //         this.hideTutLevel2();
+        //     }
+        //     localConfig.instance.setLevelUnlock(2);
+        //     if(localConfig.instance.currIndexLevelTournament + localConfig.instance.currLevelStartTournament > 2){
+        //         FBInstantManager.instance.Show_InterstitialAdAsync("tournament","win",(err,success)=>{
+        //             this.setWinTournament();
+        //         });
+        //     }else{
+        //         this.setWinTournament();
+        //     }
+        // }else if(localConfig.instance.currGameMode == GAME_MODE.TOURNAMENT_PAGEHOST){
+        //     LogEventManager.instance.logLevelEnd(localConfig.instance.currTournamentPageHostDataInfo.levelIndex,localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder),
+        //                                          PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),1,0,"tournament_pagehost",
+        //                                          localConfig.instance.playDurationEndTime - localConfig.instance.playDurationStartTime,
+        //                                         "win","");
+            
+        //     this.setWinTournamentPageHost();
+        // }else if(localConfig.instance.currGameMode == GAME_MODE.WITH_FRIEND){
+        //     LogEventManager.instance.logLevelEnd(localConfig.instance.currWithFriendDataInfo.levelIndex,localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder),
+        //                                          PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),1,0,"withfriend",
+        //                                          localConfig.instance.playDurationEndTime - localConfig.instance.playDurationStartTime,
+        //                                         "win","");
+
+        //     if(localConfig.instance.currWithFriendDataInfo.senderID == FBInstantManager.instance.getID()){
+        //         localConfig.instance.currWithFriendDataInfo.senderScore = this.infoGroupWithFriend.scoreValue;
+        //         this.updateContextWithFriend();
+        //     }else{
+        //         localConfig.instance.currWithFriendDataInfo.receiverScore = this.infoGroupWithFriend.scoreValue;
+        //         this.updateContextWithFriend();
+        //     }
+        //     FBInstantManager.instance.Show_InterstitialAdAsync("withfriend","win",()=>{
+        //         // this.showWinWithFriendPopup(this.scoreGroupWithFriend.currScore);
+        //         clientEvent.dispatchEvent(Constants.SHOW_WIN_WITHFRIEND_POPUP, localConfig.instance.currWithFriendDataInfo, this.infoGroupWithFriend.scoreValue);
+        //     });
+        // }
         else{
             LogEventManager.instance.logLevelEnd(localConfig.instance.currLevel,localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder),
                                                  PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),localConfig.instance.loseStreak+1,localConfig.instance.loseStreak,"normal",
@@ -1465,8 +1474,11 @@ export class PlayMagicManager extends Component {
             }
 
             if(localConfig.instance.currLevelUnlock >= 4){
-                FBInstantManager.instance.Show_InterstitialAdAsync("normal","win",(err,success)=>{
-                    clientEvent.dispatchEvent(Constants.SHOW_WIN_POPUP,localConfig.instance.currLevel);
+                // FBInstantManager.instance.Show_InterstitialAdAsync("normal","win",(err,success)=>{
+                //     clientEvent.dispatchEvent(Constants.SHOW_WIN_POPUP,localConfig.instance.currLevel);
+                // });
+                PokiSDKManager.instance.Show_InterstitialAdAsync("normal","win",(err,success)=>{
+                    clientEvent.dispatchEvent(Constants.SHOW_WIN_POPUP,localConfig.instance.currLevel); 
                 });
             }else{
                 clientEvent.dispatchEvent(Constants.SHOW_WIN_POPUP,localConfig.instance.currLevel);

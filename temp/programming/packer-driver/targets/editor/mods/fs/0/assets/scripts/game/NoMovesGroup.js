@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Component, Node, tween, UIOpacity, Vec3, BOOSTER_TYPE, Constants, GAME_MODE, PLAY_TYPE, localConfig, clientEvent, FBInstantManager, AudioManager2, LogEventManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _temp, _crd, ccclass, property, NoMovesGroup;
+  var _reporterNs, _cclegacy, _decorator, Component, Node, tween, UIOpacity, Vec3, BOOSTER_TYPE, Constants, GAME_MODE, PLAY_TYPE, localConfig, clientEvent, FBInstantManager, AudioManager2, LogEventManager, PokiSDKManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _temp, _crd, ccclass, property, NoMovesGroup;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -47,6 +47,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("LogEventManager", "../common/LogEventManager", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfPokiSDKManager(extras) {
+    _reporterNs.report("PokiSDKManager", "../common/PokiSDKManager", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -73,6 +77,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       AudioManager2 = _unresolved_6.AudioManager2;
     }, function (_unresolved_7) {
       LogEventManager = _unresolved_7.LogEventManager;
+    }, function (_unresolved_8) {
+      PokiSDKManager = _unresolved_8.PokiSDKManager;
     }],
     execute: function () {
       _crd = true;
@@ -324,26 +330,28 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         touchGiveUp() {
           (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
             error: Error()
-          }), LogEventManager) : LogEventManager).instance.logButtonClick("giveup", "nomoves");
-          (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
+          }), LogEventManager) : LogEventManager).instance.logButtonClick("giveup", "nomoves"); // FBInstantManager.instance.Show_InterstitialAdAsync("nomoves","giveup",(err,success)=>{
+          // });
+
+          this.node.active = false;
+          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
             error: Error()
-          }), FBInstantManager) : FBInstantManager).instance.Show_InterstitialAdAsync("nomoves", "giveup", (err, success) => {
-            this.node.active = false;
-            (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-              error: Error()
-            }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-              error: Error()
-            }), Constants) : Constants).NOMOVES_TOUCH_GIVEUP);
-          });
+          }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
+            error: Error()
+          }), Constants) : Constants).NOMOVES_TOUCH_GIVEUP);
         }
 
         touchReplay() {
           (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
             error: Error()
-          }), LogEventManager) : LogEventManager).instance.logButtonClick("replay", "nomoves");
-          (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
+          }), LogEventManager) : LogEventManager).instance.logButtonClick("replay", "nomoves"); // FBInstantManager.instance.Show_InterstitialAdAsync("nomoves","replay",(err, success) => {
+          //     this.node.active = false;
+          //     clientEvent.dispatchEvent(Constants.NOMOVES_TOUCH_REPLAY);
+          // });
+
+          (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
             error: Error()
-          }), FBInstantManager) : FBInstantManager).instance.Show_InterstitialAdAsync("nomoves", "replay", (err, success) => {
+          }), PokiSDKManager) : PokiSDKManager).instance.Show_InterstitialAdAsync("nomoves", "replay", (err, success) => {
             this.node.active = false;
             (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
               error: Error()
@@ -356,10 +364,15 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         touchQuitTournament() {
           (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
             error: Error()
-          }), LogEventManager) : LogEventManager).instance.logButtonClick("quittournament", "nomoves");
-          (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
+          }), LogEventManager) : LogEventManager).instance.logButtonClick("quittournament", "nomoves"); // FBInstantManager.instance.Show_InterstitialAdAsync("nomoves","quittournament",(err, success) => {
+          //     this.node.active = false;
+          //     LogEventManager.instance.logLevelEnd(localConfig.instance.currIndexLevelTournament,localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder),PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),1,0,"tournament",localConfig.instance.playDurationEndTime - localConfig.instance.playDurationStartTime,"lose","out_of_move");
+          //     clientEvent.dispatchEvent(Constants.TOURNAMENT_QUIT_YES);
+          // });
+
+          (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
             error: Error()
-          }), FBInstantManager) : FBInstantManager).instance.Show_InterstitialAdAsync("nomoves", "quittournament", (err, success) => {
+          }), PokiSDKManager) : PokiSDKManager).instance.Show_InterstitialAdAsync("nomoves", "quittournament", (err, success) => {
             this.node.active = false;
             (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
               error: Error()
@@ -389,10 +402,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         touchAddColAd() {
           (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
             error: Error()
-          }), LogEventManager) : LogEventManager).instance.logButtonClick("addcolad", "nomoves");
-          (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
+          }), LogEventManager) : LogEventManager).instance.logButtonClick("addcolad", "nomoves"); // FBInstantManager.instance.Show_RewardedVideoAsync("nomoves","addcolad",(err, success) => {
+          //     if (err) {
+          //     } else {
+          //         localConfig.instance.isNoMoves_AddCol_byAD = true;
+          //         this.node.active = false;
+          //         clientEvent.dispatchEvent(Constants.NOMOVES_TOUCH_PLAYON);
+          //     }
+          // });
+
+          (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
             error: Error()
-          }), FBInstantManager) : FBInstantManager).instance.Show_RewardedVideoAsync("nomoves", "addcolad", (err, success) => {
+          }), PokiSDKManager) : PokiSDKManager).instance.Show_RewardedVideoAsync("nomoves", "addcolad", (err, success) => {
             if (err) {} else {
               (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
                 error: Error()

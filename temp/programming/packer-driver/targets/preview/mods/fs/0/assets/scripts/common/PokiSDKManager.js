@@ -66,8 +66,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         onLoad() {
-          if (PokiSDKManager.Instance == null) {
-            PokiSDKManager.Instance = this;
+          if (PokiSDKManager.instance == null) {
+            PokiSDKManager.instance = this;
           }
 
           game.addPersistRootNode(this.node);
@@ -91,7 +91,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }
         }
 
-        start() {// clientEvent.dispatchEvent(MConst.POKI_INIT_SUCCESS);
+        start() {
+          this.isInitializeAsync = true;
+          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
+            error: Error()
+          }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
+            error: Error()
+          }), Constants) : Constants).POKI_INIT_SUCCESS);
         }
 
         setGameLoadingFinished() {
@@ -112,7 +118,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           PokiSDK.gameplayStop();
         }
 
-        Show_InterstitialAdAsync(location, cb) {
+        Show_InterstitialAdAsync(location, button_name, cb) {
           if (typeof PokiSDK === 'undefined') {
             cb(null, (_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
               error: Error()
@@ -229,7 +235,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }, this.TIME_NEXT_INTERSTITIAL_AFTERREWARD);
         }
 
-      }, _defineProperty(_class2, "Instance", void 0), _temp)) || _class));
+      }, _defineProperty(_class2, "instance", void 0), _temp)) || _class));
 
       _cclegacy._RF.pop();
 

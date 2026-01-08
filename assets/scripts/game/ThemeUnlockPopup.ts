@@ -7,6 +7,7 @@ import { resourceUtil } from '../framework/resourceUtil';
 import { FBInstantManager } from '../common/FBInstantManager';
 import { AudioManager2 } from '../framework/audioManager2';
 import { LogEventManager } from '../common/LogEventManager';
+import { PokiSDKManager } from '../common/PokiSDKManager';
 const { ccclass, property } = _decorator;
 
 /**
@@ -185,13 +186,21 @@ export class ThemeUnlockPopup extends BasePopup {
 
     touchClaim(){
         LogEventManager.instance.logButtonClick("claim","themeunlockpopup");
-        FBInstantManager.instance.Show_RewardedVideoAsync("themeunlockpopup","claim",(err, success) => {
-           if(err){
+        // FBInstantManager.instance.Show_RewardedVideoAsync("themeunlockpopup","claim",(err, success) => {
+        //    if(err){
 
-           }else{
-                this.setClaimRewards();
-           } 
+        //    }else{
+        //         this.setClaimRewards();
+        //    } 
+        // });
+        PokiSDKManager.instance.Show_RewardedVideoAsync("themeunlockpopup","claim",(err, success) => {
+            if(err){
+    
+            }else{
+                 this.setClaimRewards();
+            }
         });
+
     }
 
     setClaimRewards(){

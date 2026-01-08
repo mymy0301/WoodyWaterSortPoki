@@ -7,6 +7,7 @@ import { localConfig } from '../../localConfig';
 import { FBInstantManager } from '../../common/FBInstantManager';
 import { clientEvent } from '../../framework/clientEvent';
 import { GroupRewardDataInfo } from '../info/ShopDataInfo';
+import { PokiSDKManager } from '../../common/PokiSDKManager';
 const { ccclass, property } = _decorator;
 
 /**
@@ -59,7 +60,15 @@ export class BlackFridayPopup extends BasePopup {
 
     touchClaim(){
         let self = this;
-        FBInstantManager.instance.Show_RewardedVideoAsync("blackfridaypopup","claimads",((err,isSuccess)=>{
+        // FBInstantManager.instance.Show_RewardedVideoAsync("blackfridaypopup","claimads",((err,isSuccess)=>{
+        //     if (err) {
+        //         localConfig.instance.isShowBlackFriday = false;
+        //     } else {
+        //         self.rewardFinished();
+        //     }
+        // }));
+
+        PokiSDKManager.instance.Show_RewardedVideoAsync("blackfridaypopup","claimads",((err,isSuccess)=>{
             if (err) {
                 localConfig.instance.isShowBlackFriday = false;
             } else {

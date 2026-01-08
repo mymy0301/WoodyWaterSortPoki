@@ -6,6 +6,7 @@ import { clientEvent } from '../framework/clientEvent';
 import { FBInstantManager } from '../common/FBInstantManager';
 import { AudioManager2 } from '../framework/audioManager2';
 import { LogEventManager } from '../common/LogEventManager';
+import { PokiSDKManager } from '../common/PokiSDKManager';
 const { ccclass, property } = _decorator;
 
 /**
@@ -188,24 +189,36 @@ export class NoMovesGroup extends Component {
     }
     touchGiveUp() {
         LogEventManager.instance.logButtonClick("giveup","nomoves");
-        FBInstantManager.instance.Show_InterstitialAdAsync("nomoves","giveup",(err,success)=>{
-            this.node.active = false;
-            clientEvent.dispatchEvent(Constants.NOMOVES_TOUCH_GIVEUP);
-        });
+        // FBInstantManager.instance.Show_InterstitialAdAsync("nomoves","giveup",(err,success)=>{
+            
+        // });
+        this.node.active = false;
+        clientEvent.dispatchEvent(Constants.NOMOVES_TOUCH_GIVEUP);
         
     }
 
     touchReplay() {
         LogEventManager.instance.logButtonClick("replay","nomoves");
-        FBInstantManager.instance.Show_InterstitialAdAsync("nomoves","replay",(err, success) => {
+        // FBInstantManager.instance.Show_InterstitialAdAsync("nomoves","replay",(err, success) => {
+        //     this.node.active = false;
+        //     clientEvent.dispatchEvent(Constants.NOMOVES_TOUCH_REPLAY);
+        // });
+        PokiSDKManager.instance.Show_InterstitialAdAsync("nomoves","replay",(err, success) => {
             this.node.active = false;
             clientEvent.dispatchEvent(Constants.NOMOVES_TOUCH_REPLAY);
         });
+         
     }
 
     touchQuitTournament() {
         LogEventManager.instance.logButtonClick("quittournament","nomoves");
-        FBInstantManager.instance.Show_InterstitialAdAsync("nomoves","quittournament",(err, success) => {
+        // FBInstantManager.instance.Show_InterstitialAdAsync("nomoves","quittournament",(err, success) => {
+        //     this.node.active = false;
+        //     LogEventManager.instance.logLevelEnd(localConfig.instance.currIndexLevelTournament,localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder),PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),1,0,"tournament",localConfig.instance.playDurationEndTime - localConfig.instance.playDurationStartTime,"lose","out_of_move");
+        //     clientEvent.dispatchEvent(Constants.TOURNAMENT_QUIT_YES);
+        // });
+
+        PokiSDKManager.instance.Show_InterstitialAdAsync("nomoves","quittournament",(err, success) => {
             this.node.active = false;
             LogEventManager.instance.logLevelEnd(localConfig.instance.currIndexLevelTournament,localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder),PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),1,0,"tournament",localConfig.instance.playDurationEndTime - localConfig.instance.playDurationStartTime,"lose","out_of_move");
             clientEvent.dispatchEvent(Constants.TOURNAMENT_QUIT_YES);
@@ -215,7 +228,17 @@ export class NoMovesGroup extends Component {
 
     touchAddColAd() {
         LogEventManager.instance.logButtonClick("addcolad","nomoves");
-        FBInstantManager.instance.Show_RewardedVideoAsync("nomoves","addcolad",(err, success) => {
+        // FBInstantManager.instance.Show_RewardedVideoAsync("nomoves","addcolad",(err, success) => {
+        //     if (err) {
+
+        //     } else {
+        //         localConfig.instance.isNoMoves_AddCol_byAD = true;
+        //         this.node.active = false;
+        //         clientEvent.dispatchEvent(Constants.NOMOVES_TOUCH_PLAYON);
+        //     }
+        // });
+
+        PokiSDKManager.instance.Show_RewardedVideoAsync("nomoves","addcolad",(err, success) => {
             if (err) {
 
             } else {

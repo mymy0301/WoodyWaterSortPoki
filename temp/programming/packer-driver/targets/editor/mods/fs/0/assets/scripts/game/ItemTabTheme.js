@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Button, Component, Enum, Sprite, SpriteFrame, tween, Vec3, Constants, THEME_TYPE, clientEvent, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _temp, _crd, ccclass, property, ItemTabTheme;
+  var _reporterNs, _cclegacy, _decorator, Button, Component, Enum, Node, Sprite, SpriteFrame, Constants, THEME_TYPE, clientEvent, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _temp, _crd, ccclass, property, ItemTabTheme;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -32,10 +32,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       Button = _cc.Button;
       Component = _cc.Component;
       Enum = _cc.Enum;
+      Node = _cc.Node;
       Sprite = _cc.Sprite;
       SpriteFrame = _cc.SpriteFrame;
-      tween = _cc.tween;
-      Vec3 = _cc.Vec3;
     }, function (_unresolved_2) {
       Constants = _unresolved_2.Constants;
       THEME_TYPE = _unresolved_2.THEME_TYPE;
@@ -67,7 +66,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         type: Enum(_crd && THEME_TYPE === void 0 ? (_reportPossibleCrUseOfTHEME_TYPE({
           error: Error()
         }), THEME_TYPE) : THEME_TYPE)
-      }), _dec3 = property(Button), _dec4 = property(Sprite), _dec5 = property(SpriteFrame), _dec6 = property(SpriteFrame), _dec(_class = (_class2 = (_temp = class ItemTabTheme extends Component {
+      }), _dec3 = property(Button), _dec4 = property(Sprite), _dec5 = property(SpriteFrame), _dec6 = property(SpriteFrame), _dec7 = property(Node), _dec8 = property(Node), _dec(_class = (_class2 = (_temp = class ItemTabTheme extends Component {
         constructor(...args) {
           super(...args);
 
@@ -80,6 +79,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           _initializerDefineProperty(this, "sfON", _descriptor4, this);
 
           _initializerDefineProperty(this, "sfOFF", _descriptor5, this);
+
+          _initializerDefineProperty(this, "nodeActive", _descriptor6, this);
+
+          _initializerDefineProperty(this, "nodeDeactive", _descriptor7, this);
 
           _defineProperty(this, "tweenMove", null);
         }
@@ -107,23 +110,17 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         }
 
         setItemON() {
-          this.bg.spriteFrame = this.sfON;
-          tween(this.node).to(0.15, {
-            position: new Vec3(this.node.position.x, 0, 0)
-          }, {
-            easing: 'quadOut',
-            onComplete: () => {}
-          }).start();
+          this.bg.spriteFrame = this.sfON; // tween(this.node).to(0.15, { position: new Vec3(this.node.position.x, 0, 0) }, { easing: 'quadOut', onComplete: () => { } }).start();
+
+          this.nodeActive.active = true;
+          this.nodeDeactive.active = false;
         }
 
         setItemOff() {
-          this.bg.spriteFrame = this.sfOFF;
-          tween(this.node).to(0.15, {
-            position: new Vec3(this.node.position.x, -5, 0)
-          }, {
-            easing: 'quadOut',
-            onComplete: () => {}
-          }).start();
+          this.bg.spriteFrame = this.sfOFF; // tween(this.node).to(0.15, { position: new Vec3(this.node.position.x, -5, 0) }, { easing: 'quadOut', onComplete: () => { } }).start();
+
+          this.nodeActive.active = false;
+          this.nodeDeactive.active = true;
         }
 
         touchTab() {
@@ -171,6 +168,20 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         enumerable: true,
         writable: true,
         initializer: null
+      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "nodeActive", [_dec7], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function () {
+          return null;
+        }
+      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "nodeDeactive", [_dec8], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function () {
+          return null;
+        }
       })), _class2)) || _class));
       /**
        * [1] Class member could be defined like this.

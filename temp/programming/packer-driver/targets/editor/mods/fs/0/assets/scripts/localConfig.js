@@ -1578,6 +1578,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           // console.log("updateFixRatioScreen",view.getViewportRect().width,view.getViewportRect().height);
           // this.fixRatioScreen =  (view.getViewportRect().width/view.getViewportRect().height) / (720/1280) ;
           this.fixRatioScreen = view.getFrameSize().width / view.getFrameSize().height / (1080 / 1920); // console.log("fixRatioScreen",this.fixRatioScreen);
+
+          this.fixRatioScreen = 1;
         }
 
         getPos_PosWord_WorldSpace(posWorld, scale) {

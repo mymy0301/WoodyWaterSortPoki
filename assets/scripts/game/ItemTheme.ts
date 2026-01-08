@@ -6,6 +6,7 @@ import { resourceUtil } from '../framework/resourceUtil';
 import { clientEvent } from '../framework/clientEvent';
 import { FBInstantManager } from '../common/FBInstantManager';
 import { LogEventManager } from '../common/LogEventManager';
+import { PokiSDKManager } from '../common/PokiSDKManager';
 const { ccclass, property } = _decorator;
 
 /**
@@ -258,7 +259,19 @@ export class ItemTheme extends Component {
             clientEvent.dispatchEvent(Constants.THEME_SELECT_UPDATE, this.themeType, this.itemID);
         } else {
             if (this.themeType == THEME_TYPE.TUBE || this.themeType == THEME_TYPE.BG) {
-                FBInstantManager.instance.Show_RewardedVideoAsync("themepopup","unlock",(err, success) => {
+                // FBInstantManager.instance.Show_RewardedVideoAsync("themepopup","unlock",(err, success) => {
+                //     if (err) {
+
+                //     } else {
+                //         localConfig.instance.setThemeUnlocked(this.themeType, this.itemID);
+                //         LogEventManager.instance.logResourceEarned("theme","bg",this.itemID,"themepopup","watchad");
+                //         clientEvent.dispatchEvent(Constants.THEME_UNSELECT_UPDATE, this.themeType, localConfig.instance.getThemeSelected_byThemeType(this.themeType));
+                //         localConfig.instance.setThemeSelected(this.themeType, this.itemID);
+                //         clientEvent.dispatchEvent(Constants.THEME_SELECT_UPDATE, this.themeType, this.itemID);
+                //     }
+                // });
+
+                PokiSDKManager.instance.Show_RewardedVideoAsync("themepopup","unlock",(err, success) => {
                     if (err) {
 
                     } else {
@@ -273,7 +286,19 @@ export class ItemTheme extends Component {
                 let skinInfo = localConfig.instance.getSkinInfo(this.itemID);
                 if (skinInfo) {
                     if (skinInfo.unlockType == UNLOCK_TYPE.WATCH_AD) {
-                        FBInstantManager.instance.Show_RewardedVideoAsync("themepopup","unlock",(err, success) => {
+                        // FBInstantManager.instance.Show_RewardedVideoAsync("themepopup","unlock",(err, success) => {
+                        //     if (err) {
+
+                        //     } else {
+                        //         localConfig.instance.setThemeUnlocked(this.themeType, this.itemID);
+                        //         LogEventManager.instance.logResourceEarned("theme","skin",this.itemID,"themepopup","watchad");
+                        //         clientEvent.dispatchEvent(Constants.THEME_UNSELECT_UPDATE, this.themeType, localConfig.instance.getThemeSelected_byThemeType(this.themeType));
+                        //         localConfig.instance.setThemeSelected(this.themeType, this.itemID);
+                        //         clientEvent.dispatchEvent(Constants.THEME_SELECT_UPDATE, this.themeType, this.itemID);
+                        //     }
+                        // });
+
+                        PokiSDKManager.instance.Show_RewardedVideoAsync("themepopup","unlock",(err, success) => {
                             if (err) {
 
                             } else {
@@ -283,7 +308,7 @@ export class ItemTheme extends Component {
                                 localConfig.instance.setThemeSelected(this.themeType, this.itemID);
                                 clientEvent.dispatchEvent(Constants.THEME_SELECT_UPDATE, this.themeType, this.itemID);
                             }
-                        });
+                        })
                     } else if (skinInfo.unlockType == UNLOCK_TYPE.TICKET_GOLD) {
                         if (localConfig.instance.getTicketCount(TICKET_TYPE.GOLD) >= skinInfo.price) {
                             localConfig.instance.setTicketCount(TICKET_TYPE.GOLD, localConfig.instance.getTicketCount(TICKET_TYPE.GOLD) - skinInfo.price);
@@ -330,7 +355,23 @@ export class ItemTheme extends Component {
 
     touchUnlock_Ad() {
         LogEventManager.instance.logButtonClick("unlockad", "themepopup");
-        FBInstantManager.instance.Show_RewardedVideoAsync("themepopup","unlock",(err, success) => {
+        // FBInstantManager.instance.Show_RewardedVideoAsync("themepopup","unlock",(err, success) => {
+        //     if (err) {
+
+        //     } else {
+        //         localConfig.instance.setThemeUnlocked(this.themeType, this.itemID);
+        //         if (this.themeType == THEME_TYPE.BG) {
+        //             LogEventManager.instance.logResourceEarned("theme", "bg", this.itemID, "themepopup", "watchad");
+        //         } else if (this.themeType == THEME_TYPE.SKIN) {
+        //             LogEventManager.instance.logResourceEarned("theme", "skin", this.itemID, "themepopup", "watchad");
+        //         }
+        //         clientEvent.dispatchEvent(Constants.THEME_UNSELECT_UPDATE, this.themeType, localConfig.instance.getThemeSelected_byThemeType(this.themeType));
+        //         localConfig.instance.setThemeSelected(this.themeType, this.itemID);
+        //         clientEvent.dispatchEvent(Constants.THEME_SELECT_UPDATE, this.themeType, this.itemID);
+        //     }
+        // });
+
+        PokiSDKManager.instance.Show_RewardedVideoAsync("themepopup","unlock",(err, success) => {
             if (err) {
 
             } else {
@@ -344,7 +385,7 @@ export class ItemTheme extends Component {
                 localConfig.instance.setThemeSelected(this.themeType, this.itemID);
                 clientEvent.dispatchEvent(Constants.THEME_SELECT_UPDATE, this.themeType, this.itemID);
             }
-        });
+        })
     }
 
     touchUnlock_TicketGold() {

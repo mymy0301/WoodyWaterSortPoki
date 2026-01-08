@@ -8,6 +8,7 @@ import { localConfig } from '../localConfig';
 import { FBInstantManager } from '../common/FBInstantManager';
 import { clientEvent } from '../framework/clientEvent';
 import { LogEventManager } from '../common/LogEventManager';
+import { PokiSDKManager } from '../common/PokiSDKManager';
 const { ccclass, property } = _decorator;
 
 /**
@@ -95,14 +96,23 @@ export class ShopItemPopup extends BasePopup {
     }
     touchWatchAd(): void {
         LogEventManager.instance.logButtonClick("watchad","shopitempopup");
-        FBInstantManager.instance.Show_RewardedVideoAsync("shopitempopup","watchad",(err, success) => {
+        // FBInstantManager.instance.Show_RewardedVideoAsync("shopitempopup","watchad",(err, success) => {
+        //     if (err) {
+        //     } else {
+        //         localConfig.instance.setShopItem_Free_byBoosterType(this.boosterType);
+        //         this.receiveBooster("watchad");
+        //         this.hidePopup();
+        //     }
+        // })
+
+        PokiSDKManager.instance.Show_RewardedVideoAsync("shopitempopup","watchad",(err, success) => {
             if (err) {
             } else {
                 localConfig.instance.setShopItem_Free_byBoosterType(this.boosterType);
                 this.receiveBooster("watchad");
                 this.hidePopup();
             }
-        })
+        });
     }
 
     touchCoin(): void {

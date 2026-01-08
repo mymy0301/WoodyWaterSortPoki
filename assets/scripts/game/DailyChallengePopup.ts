@@ -15,6 +15,7 @@ import { GroupRewardDataInfo } from './info/ShopDataInfo';
 import { InfoMonth } from '../common/InfoMonth';
 import { InfoMonthReward } from '../common/InfoMonthReward';
 import { LogEventManager } from '../common/LogEventManager';
+import { PokiSDKManager } from '../common/PokiSDKManager';
 const { ccclass, property } = _decorator;
 
 /**
@@ -288,7 +289,16 @@ export class DailyChallengePopup extends BasePopup {
             this.hidePopup();
             clientEvent.dispatchEvent(Constants.DAILYCHALLENGE_PLAY_LEVEL,this.currInfoDaySelect);
         }else{
-            FBInstantManager.instance.Show_RewardedVideoAsync("dailychallengepopup","play",(err,success)=>{
+            // FBInstantManager.instance.Show_RewardedVideoAsync("dailychallengepopup","play",(err,success)=>{
+            //     if(err){
+
+            //     }else{
+            //         this.hidePopup();
+            //         clientEvent.dispatchEvent(Constants.DAILYCHALLENGE_PLAY_LEVEL,this.currInfoDaySelect);
+            //     }
+            // });
+
+            PokiSDKManager.instance.Show_RewardedVideoAsync("dailychallengepopup","play",(err,success)=>{
                 if(err){
 
                 }else{

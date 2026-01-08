@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Button, Component, Node, Vec3, ItemDailyLogin, localConfig, clientEvent, Constants, SHOP_ITEM_TYPE, GroupRewardDataInfo, FBInstantManager, LogEventManager, _dec, _dec2, _dec3, _dec4, _dec5, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _temp, _crd, ccclass, property, DailyTaskLoginGroup;
+  var _reporterNs, _cclegacy, _decorator, Button, Component, Node, Vec3, ItemDailyLogin, localConfig, clientEvent, Constants, SHOP_ITEM_TYPE, GroupRewardDataInfo, LogEventManager, PokiSDKManager, _dec, _dec2, _dec3, _dec4, _dec5, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _temp, _crd, ccclass, property, DailyTaskLoginGroup;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -35,12 +35,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("GroupRewardDataInfo", "./info/ShopDataInfo", _context.meta, extras);
   }
 
-  function _reportPossibleCrUseOfFBInstantManager(extras) {
-    _reporterNs.report("FBInstantManager", "../common/FBInstantManager", _context.meta, extras);
-  }
-
   function _reportPossibleCrUseOfLogEventManager(extras) {
     _reporterNs.report("LogEventManager", "../common/LogEventManager", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfPokiSDKManager(extras) {
+    _reporterNs.report("PokiSDKManager", "../common/PokiSDKManager", _context.meta, extras);
   }
 
   return {
@@ -65,9 +65,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     }, function (_unresolved_6) {
       GroupRewardDataInfo = _unresolved_6.GroupRewardDataInfo;
     }, function (_unresolved_7) {
-      FBInstantManager = _unresolved_7.FBInstantManager;
+      LogEventManager = _unresolved_7.LogEventManager;
     }, function (_unresolved_8) {
-      LogEventManager = _unresolved_8.LogEventManager;
+      PokiSDKManager = _unresolved_8.PokiSDKManager;
     }],
     execute: function () {
       _crd = true;
@@ -190,10 +190,23 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         touchBonus() {
           (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
             error: Error()
-          }), LogEventManager) : LogEventManager).instance.logButtonClick("loginbonus", "dailytaskpopup");
-          (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
+          }), LogEventManager) : LogEventManager).instance.logButtonClick("loginbonus", "dailytaskpopup"); // FBInstantManager.instance.Show_RewardedVideoAsync("dailytaskpopup","loginbonus",(err, success) => {
+          //     if (err) {
+          //         console.log(err);
+          //     }else{
+          //         let groupRewardDataInfo:GroupRewardDataInfo = new GroupRewardDataInfo([]);
+          //         groupRewardDataInfo.items = [];
+          //         groupRewardDataInfo.items.push({itemShopType:SHOP_ITEM_TYPE.COIN,value:200});
+          //         localConfig.instance.setDailyLogin_AdReceiveReward();
+          //         clientEvent.dispatchEvent(Constants.SHOW_REWARDRECEIVE_POPUP,"DAILY LOGIN",groupRewardDataInfo);
+          //         this.btnBonus.node.active = false;
+          //         this.showGroup();
+          //     }
+          // });
+
+          (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
             error: Error()
-          }), FBInstantManager) : FBInstantManager).instance.Show_RewardedVideoAsync("dailytaskpopup", "loginbonus", (err, success) => {
+          }), PokiSDKManager) : PokiSDKManager).instance.Show_RewardedVideoAsync("dailytaskpopup", "loginbonus", (err, success) => {
             if (err) {
               console.log(err);
             } else {

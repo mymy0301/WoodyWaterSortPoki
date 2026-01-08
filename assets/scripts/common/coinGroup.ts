@@ -20,9 +20,6 @@ export class CoinGroup extends Component {
     @property(Node)
     iconCoin: Node;
 
-    @property(Button)
-    btnAddCoin:Button;
-
 
     tweenCoinUpdate:Tween<{}> = null;
     onLoad(){
@@ -31,14 +28,14 @@ export class CoinGroup extends Component {
 
     onEnable(){
         clientEvent.on(Constants.COIN_UPDATE,this.coinUpdate,this);
-        this.btnAddCoin.node.on(Constants.CLICK,this.touchAddCoin,this);
+        // this.btnAddCoin.node.on(Constants.CLICK,this.touchAddCoin,this);
 
         this.txtCoin.string = `${Utils.formatNumber(Math.floor(localConfig.instance.currCoin))}`;
     }   
 
     onDisable(){
         clientEvent.off(Constants.COIN_UPDATE,this.coinUpdate,this);
-        this.btnAddCoin.node.off(Constants.CLICK,this.touchAddCoin,this);
+        // this.btnAddCoin.node.off(Constants.CLICK,this.touchAddCoin,this);
     }
 
     start () {

@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Button, instantiate, Label, Node, Prefab, tween, UIOpacity, Vec3, BasePopup, clientEvent, BOOSTER_TYPE, Constants, SHOP_ITEM_TYPE, ItemRewardReceive, AudioManager2, FBInstantManager, localConfig, LogEventManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _temp, _crd, ccclass, property, RewardChestsPopup;
+  var _reporterNs, _cclegacy, _decorator, Button, instantiate, Label, Node, Prefab, tween, UIOpacity, Vec3, BasePopup, clientEvent, BOOSTER_TYPE, Constants, SHOP_ITEM_TYPE, ItemRewardReceive, AudioManager2, localConfig, LogEventManager, PokiSDKManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _temp, _crd, ccclass, property, RewardChestsPopup;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -43,16 +43,16 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("AudioManager2", "../framework/audioManager2", _context.meta, extras);
   }
 
-  function _reportPossibleCrUseOfFBInstantManager(extras) {
-    _reporterNs.report("FBInstantManager", "../common/FBInstantManager", _context.meta, extras);
-  }
-
   function _reportPossibleCrUseOflocalConfig(extras) {
     _reporterNs.report("localConfig", "../localConfig", _context.meta, extras);
   }
 
   function _reportPossibleCrUseOfLogEventManager(extras) {
     _reporterNs.report("LogEventManager", "../common/LogEventManager", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfPokiSDKManager(extras) {
+    _reporterNs.report("PokiSDKManager", "../common/PokiSDKManager", _context.meta, extras);
   }
 
   return {
@@ -82,11 +82,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     }, function (_unresolved_6) {
       AudioManager2 = _unresolved_6.AudioManager2;
     }, function (_unresolved_7) {
-      FBInstantManager = _unresolved_7.FBInstantManager;
+      localConfig = _unresolved_7.localConfig;
     }, function (_unresolved_8) {
-      localConfig = _unresolved_8.localConfig;
+      LogEventManager = _unresolved_8.LogEventManager;
     }, function (_unresolved_9) {
-      LogEventManager = _unresolved_9.LogEventManager;
+      PokiSDKManager = _unresolved_9.PokiSDKManager;
     }],
     execute: function () {
       _crd = true;
@@ -314,10 +314,16 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           } else {
             (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
               error: Error()
-            }), LogEventManager) : LogEventManager).instance.logButtonClick("claimx2", "rewardchestpopup");
-            (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
+            }), LogEventManager) : LogEventManager).instance.logButtonClick("claimx2", "rewardchestpopup"); // FBInstantManager.instance.Show_RewardedVideoAsync("rewardchestpopup","claimx2",(err, success) => {
+            //     if (err) {
+            //     } else {
+            //         this.setClaimRewards(true);
+            //     }
+            // });
+
+            (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
               error: Error()
-            }), FBInstantManager) : FBInstantManager).instance.Show_RewardedVideoAsync("rewardchestpopup", "claimx2", (err, success) => {
+            }), PokiSDKManager) : PokiSDKManager).instance.Show_RewardedVideoAsync("rewardchestpopup", "claimx2", (err, success) => {
               if (err) {} else {
                 this.setClaimRewards(true);
               }

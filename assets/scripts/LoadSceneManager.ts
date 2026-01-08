@@ -11,6 +11,7 @@ import { PGSPlayInstantManager } from './common/PGSPlayInstantManager';
 import { LevelConfigInfo } from './newlevel/LevelConfigInfo';
 import { MagicLevelDataInfo } from './newlevel/MagicLevelDataInfo';
 import { FBInstantManager } from './common/FBInstantManager';
+import { PokiSDKManager } from './common/PokiSDKManager';
 const { ccclass, property } = _decorator;
 
 /**
@@ -36,6 +37,8 @@ export class LoadSceneManager extends Component {
 
     @property(Node)
     bg:Node;
+    @property(Node)
+    bg2:Node;
 
     @property(Node)
     nodeTitle:Node = null;
@@ -58,11 +61,13 @@ export class LoadSceneManager extends Component {
     protected onEnable(): void {
         clientEvent.on(Constants.GET_DATA_PLAYER_SUCCESS,this.getDataPlayerSuccess,this);
         clientEvent.on(Constants.GET_DATA_PAYLOAD_SUCCESS,this.getDataPayloadSuccess,this);
+        clientEvent.on(Constants.POKI_INIT_SUCCESS,this.pokiInitSuccess,this);
     }
 
     protected onDisable(): void {
         clientEvent.off(Constants.GET_DATA_PLAYER_SUCCESS,this.getDataPlayerSuccess,this);
         clientEvent.off(Constants.GET_DATA_PAYLOAD_SUCCESS,this.getDataPayloadSuccess,this);
+        clientEvent.off(Constants.POKI_INIT_SUCCESS,this.pokiInitSuccess,this);
     }
     start () {
         console.log(PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString());
@@ -91,7 +96,7 @@ export class LoadSceneManager extends Component {
                 localConfig.instance.scaleBG = (localConfig.instance.DEFAULT_W / localConfig.instance.DEFAULT_H) / (w / h);
 
                 this.bg.setScale(new Vec3(localConfig.instance.scaleBG,localConfig.instance.scaleBG,localConfig.instance.scaleBG));
-
+                this.bg2.setScale(new Vec3(localConfig.instance.scaleBG,localConfig.instance.scaleBG,localConfig.instance.scaleBG));
                 // console.log(localConfig.instance.scaleBG);
             }
         }
@@ -500,12 +505,19 @@ export class LoadSceneManager extends Component {
         }
     }
 
+    pokiInitSuccess(){
+        if(PokiSDKManager.instance.isInitializeAsync){
+            this.setNextScene();
+        }
+    }
+
     isNextScene:boolean = false;
     setNextScene(){
         // console.log("LoadSceneManager2222:"+localConfig.instance.isGetPlayerDataSuccess);
         if(this.isNextScene) return;
         if(!localConfig.instance.isGetPlayerDataSuccess) return;
         if(!localConfig.instance.isGetPayloadDataSuccess) return;
+        if(!PokiSDKManager.instance.isInitializeAsync) return;
         if(!this.isDataFinished) return;
         this.isNextScene = true;
 

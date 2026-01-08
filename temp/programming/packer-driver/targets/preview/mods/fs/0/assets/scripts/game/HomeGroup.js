@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Button, Color, Component, Label, LabelOutline, Node, sp, Sprite, SpriteFrame, tween, UIOpacity, Vec3, Widget, clientEvent, Constants, DAILYTASK_TYPE, LEVEL_STATE, SHOP_PACK_TYPE, THEME_TYPE, localConfig, ItemLevel, ButtonMassterPassManager, AudioManager2, FBInstantManager, ButtonRemoveAdManager, LogEventManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _dec23, _dec24, _dec25, _dec26, _dec27, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22, _descriptor23, _descriptor24, _descriptor25, _descriptor26, _temp, _crd, ccclass, property, HomeGroup;
+  var _reporterNs, _cclegacy, _decorator, Button, Color, Component, Label, LabelOutline, Node, sp, Sprite, SpriteFrame, tween, UIOpacity, Vec3, Widget, clientEvent, Constants, DAILYTASK_TYPE, LEVEL_STATE, SHOP_PACK_TYPE, THEME_TYPE, localConfig, ItemLevel, ButtonMassterPassManager, AudioManager2, FBInstantManager, ButtonRemoveAdManager, LogEventManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _dec23, _dec24, _dec25, _dec26, _dec27, _dec28, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22, _descriptor23, _descriptor24, _descriptor25, _descriptor26, _descriptor27, _temp, _crd, ccclass, property, HomeGroup;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -130,15 +130,15 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
        *
        */
 
-      _export("HomeGroup", HomeGroup = (_dec = ccclass('HomeGroup'), _dec2 = property(Widget), _dec3 = property(Widget), _dec4 = property(Widget), _dec5 = property(Widget), _dec6 = property(Node), _dec7 = property(UIOpacity), _dec8 = property(Button), _dec9 = property(Button), _dec10 = property(Button), _dec11 = property(SpriteFrame), _dec12 = property(Sprite), _dec13 = property(SpriteFrame), _dec14 = property(Sprite), _dec15 = property(Color), _dec16 = property(LabelOutline), _dec17 = property(Node), _dec18 = property(Node), _dec19 = property(_crd && ItemLevel === void 0 ? (_reportPossibleCrUseOfItemLevel({
+      _export("HomeGroup", HomeGroup = (_dec = ccclass('HomeGroup'), _dec2 = property(Widget), _dec3 = property(Widget), _dec4 = property(Widget), _dec5 = property(Widget), _dec6 = property(Node), _dec7 = property(UIOpacity), _dec8 = property(Button), _dec9 = property(Button), _dec10 = property(Button), _dec11 = property(Button), _dec12 = property(SpriteFrame), _dec13 = property(Sprite), _dec14 = property(SpriteFrame), _dec15 = property(Sprite), _dec16 = property(Color), _dec17 = property(LabelOutline), _dec18 = property(Node), _dec19 = property(Node), _dec20 = property(_crd && ItemLevel === void 0 ? (_reportPossibleCrUseOfItemLevel({
         error: Error()
-      }), ItemLevel) : ItemLevel), _dec20 = property(sp.Skeleton), _dec21 = property(_crd && ButtonMassterPassManager === void 0 ? (_reportPossibleCrUseOfButtonMassterPassManager({
+      }), ItemLevel) : ItemLevel), _dec21 = property(sp.Skeleton), _dec22 = property(_crd && ButtonMassterPassManager === void 0 ? (_reportPossibleCrUseOfButtonMassterPassManager({
         error: Error()
-      }), ButtonMassterPassManager) : ButtonMassterPassManager), _dec22 = property(Node), _dec23 = property(Node), _dec24 = property(Label), _dec25 = property(_crd && ButtonRemoveAdManager === void 0 ? (_reportPossibleCrUseOfButtonRemoveAdManager({
+      }), ButtonMassterPassManager) : ButtonMassterPassManager), _dec23 = property(Node), _dec24 = property(Node), _dec25 = property(Label), _dec26 = property(_crd && ButtonRemoveAdManager === void 0 ? (_reportPossibleCrUseOfButtonRemoveAdManager({
         error: Error()
-      }), ButtonRemoveAdManager) : ButtonRemoveAdManager), _dec26 = property(_crd && ButtonMassterPassManager === void 0 ? (_reportPossibleCrUseOfButtonMassterPassManager({
+      }), ButtonRemoveAdManager) : ButtonRemoveAdManager), _dec27 = property(_crd && ButtonMassterPassManager === void 0 ? (_reportPossibleCrUseOfButtonMassterPassManager({
         error: Error()
-      }), ButtonMassterPassManager) : ButtonMassterPassManager), _dec27 = property(sp.Skeleton), _dec(_class = (_class2 = (_temp = class HomeGroup extends Component {
+      }), ButtonMassterPassManager) : ButtonMassterPassManager), _dec28 = property(sp.Skeleton), _dec(_class = (_class2 = (_temp = class HomeGroup extends Component {
         constructor() {
           super(...arguments);
 
@@ -160,43 +160,45 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           _initializerDefineProperty(this, "btnSetting", _descriptor8, this);
 
-          _initializerDefineProperty(this, "btnLevel", _descriptor9, this);
+          _initializerDefineProperty(this, "btnTheme", _descriptor9, this);
 
-          _initializerDefineProperty(this, "arrSfIconPlays", _descriptor10, this);
+          _initializerDefineProperty(this, "btnLevel", _descriptor10, this);
 
-          _initializerDefineProperty(this, "iconBtnPlay", _descriptor11, this);
+          _initializerDefineProperty(this, "arrSfIconPlays", _descriptor11, this);
 
-          _initializerDefineProperty(this, "arrSfBGPlays", _descriptor12, this);
+          _initializerDefineProperty(this, "iconBtnPlay", _descriptor12, this);
 
-          _initializerDefineProperty(this, "bgBtnPlay", _descriptor13, this);
+          _initializerDefineProperty(this, "arrSfBGPlays", _descriptor13, this);
 
-          _initializerDefineProperty(this, "arrColorOutlinePlays", _descriptor14, this);
+          _initializerDefineProperty(this, "bgBtnPlay", _descriptor14, this);
 
-          _initializerDefineProperty(this, "txtPlayOutline", _descriptor15, this);
+          _initializerDefineProperty(this, "arrColorOutlinePlays", _descriptor15, this);
 
-          _initializerDefineProperty(this, "targetCoin", _descriptor16, this);
+          _initializerDefineProperty(this, "txtPlayOutline", _descriptor16, this);
 
-          _initializerDefineProperty(this, "targetHeart", _descriptor17, this);
+          _initializerDefineProperty(this, "targetCoin", _descriptor17, this);
 
-          _initializerDefineProperty(this, "arrItemLevels", _descriptor18, this);
+          _initializerDefineProperty(this, "targetHeart", _descriptor18, this);
 
-          _initializerDefineProperty(this, "character", _descriptor19, this);
+          _initializerDefineProperty(this, "arrItemLevels", _descriptor19, this);
 
-          _initializerDefineProperty(this, "buttonMassterPassManager", _descriptor20, this);
+          _initializerDefineProperty(this, "character", _descriptor20, this);
 
-          _initializerDefineProperty(this, "contentGroup", _descriptor21, this);
+          _initializerDefineProperty(this, "buttonMassterPassManager", _descriptor21, this);
 
-          _initializerDefineProperty(this, "lockGroup", _descriptor22, this);
+          _initializerDefineProperty(this, "contentGroup", _descriptor22, this);
 
-          _initializerDefineProperty(this, "txtInfo", _descriptor23, this);
+          _initializerDefineProperty(this, "lockGroup", _descriptor23, this);
 
-          _initializerDefineProperty(this, "btnRemoveAdManager", _descriptor24, this);
+          _initializerDefineProperty(this, "txtInfo", _descriptor24, this);
 
-          _initializerDefineProperty(this, "btnMasterPassManager", _descriptor25, this);
+          _initializerDefineProperty(this, "btnRemoveAdManager", _descriptor25, this);
+
+          _initializerDefineProperty(this, "btnMasterPassManager", _descriptor26, this);
 
           _defineProperty(this, "tweenButtonPlay", null);
 
-          _initializerDefineProperty(this, "fx_Button", _descriptor26, this);
+          _initializerDefineProperty(this, "fx_Button", _descriptor27, this);
 
           _defineProperty(this, "isShowGroupFirstTime", false);
 
@@ -224,6 +226,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
             error: Error()
           }), Constants) : Constants).THEME_SELECTED_UPDATE, this.setThemeSelected, this);
+          this.btnTheme.node.on(Button.EventType.CLICK, this.touchTheme, this);
           this.initAllTop();
           this.showInfo();
           this.showInfoCharacter(); // this.showButtonPlay();
@@ -235,6 +238,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           this.btnAvatar.node.off(Button.EventType.CLICK, this.touchAvatar, this);
           this.btnSetting.node.off(Button.EventType.CLICK, this.touchSetting, this);
           this.btnLevel.node.off(Button.EventType.CLICK, this.touchLevel, this);
+          this.btnTheme.node.off(Button.EventType.CLICK, this.touchTheme, this);
           (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
             error: Error()
           }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
@@ -281,7 +285,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               this.groupHoverWidget.top = 0;
               this.groupBGTopWidget.top = 0;
               this.groupAllTopWidget.top = 0;
-              this.groupScrollWidget.bottom = 560;
+              this.groupScrollWidget.bottom = 360;
               this.groupScrollWidget.top = 160;
               return;
             } // this.groupAllTop.setPosition(new Vec3(0,posY + 180,0));
@@ -290,13 +294,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             this.groupHoverWidget.top = -posY;
             this.groupBGTopWidget.top = -posY;
             this.groupAllTopWidget.top = -posY;
-            this.groupScrollWidget.bottom = 560;
+            this.groupScrollWidget.bottom = 360;
             this.groupScrollWidget.top = 160 - posY;
           } else {
             this.groupHoverWidget.top = 0;
             this.groupBGTopWidget.top = 0;
             this.groupAllTopWidget.top = 0;
-            this.groupScrollWidget.bottom = 560;
+            this.groupScrollWidget.bottom = 360;
             this.groupScrollWidget.top = 160;
           }
         }
@@ -865,6 +869,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), Constants) : Constants).SHOW_SETTING_POPUP);
         }
 
+        touchTheme() {
+          (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
+            error: Error()
+          }), LogEventManager) : LogEventManager).instance.logButtonClick("theme", "home"); // console.log("touchSetting");
+
+          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
+            error: Error()
+          }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
+            error: Error()
+          }), Constants) : Constants).SHOW_THEME_POPUP);
+        }
+
         touchLevel() {
           (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
             error: Error()
@@ -1023,110 +1039,115 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor9 = _applyDecoratedDescriptor(_class2.prototype, "btnLevel", [_dec10], {
+      }), _descriptor9 = _applyDecoratedDescriptor(_class2.prototype, "btnTheme", [_dec10], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor10 = _applyDecoratedDescriptor(_class2.prototype, "arrSfIconPlays", [_dec11], {
+      }), _descriptor10 = _applyDecoratedDescriptor(_class2.prototype, "btnLevel", [_dec11], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: null
+      }), _descriptor11 = _applyDecoratedDescriptor(_class2.prototype, "arrSfIconPlays", [_dec12], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return [];
         }
-      }), _descriptor11 = _applyDecoratedDescriptor(_class2.prototype, "iconBtnPlay", [_dec12], {
+      }), _descriptor12 = _applyDecoratedDescriptor(_class2.prototype, "iconBtnPlay", [_dec13], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor12 = _applyDecoratedDescriptor(_class2.prototype, "arrSfBGPlays", [_dec13], {
+      }), _descriptor13 = _applyDecoratedDescriptor(_class2.prototype, "arrSfBGPlays", [_dec14], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return [];
         }
-      }), _descriptor13 = _applyDecoratedDescriptor(_class2.prototype, "bgBtnPlay", [_dec14], {
+      }), _descriptor14 = _applyDecoratedDescriptor(_class2.prototype, "bgBtnPlay", [_dec15], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor14 = _applyDecoratedDescriptor(_class2.prototype, "arrColorOutlinePlays", [_dec15], {
+      }), _descriptor15 = _applyDecoratedDescriptor(_class2.prototype, "arrColorOutlinePlays", [_dec16], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return [];
         }
-      }), _descriptor15 = _applyDecoratedDescriptor(_class2.prototype, "txtPlayOutline", [_dec16], {
+      }), _descriptor16 = _applyDecoratedDescriptor(_class2.prototype, "txtPlayOutline", [_dec17], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor16 = _applyDecoratedDescriptor(_class2.prototype, "targetCoin", [_dec17], {
+      }), _descriptor17 = _applyDecoratedDescriptor(_class2.prototype, "targetCoin", [_dec18], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor17 = _applyDecoratedDescriptor(_class2.prototype, "targetHeart", [_dec18], {
+      }), _descriptor18 = _applyDecoratedDescriptor(_class2.prototype, "targetHeart", [_dec19], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor18 = _applyDecoratedDescriptor(_class2.prototype, "arrItemLevels", [_dec19], {
+      }), _descriptor19 = _applyDecoratedDescriptor(_class2.prototype, "arrItemLevels", [_dec20], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return [];
         }
-      }), _descriptor19 = _applyDecoratedDescriptor(_class2.prototype, "character", [_dec20], {
+      }), _descriptor20 = _applyDecoratedDescriptor(_class2.prototype, "character", [_dec21], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor20 = _applyDecoratedDescriptor(_class2.prototype, "buttonMassterPassManager", [_dec21], {
+      }), _descriptor21 = _applyDecoratedDescriptor(_class2.prototype, "buttonMassterPassManager", [_dec22], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor21 = _applyDecoratedDescriptor(_class2.prototype, "contentGroup", [_dec22], {
+      }), _descriptor22 = _applyDecoratedDescriptor(_class2.prototype, "contentGroup", [_dec23], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor22 = _applyDecoratedDescriptor(_class2.prototype, "lockGroup", [_dec23], {
+      }), _descriptor23 = _applyDecoratedDescriptor(_class2.prototype, "lockGroup", [_dec24], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor23 = _applyDecoratedDescriptor(_class2.prototype, "txtInfo", [_dec24], {
+      }), _descriptor24 = _applyDecoratedDescriptor(_class2.prototype, "txtInfo", [_dec25], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor24 = _applyDecoratedDescriptor(_class2.prototype, "btnRemoveAdManager", [_dec25], {
+      }), _descriptor25 = _applyDecoratedDescriptor(_class2.prototype, "btnRemoveAdManager", [_dec26], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor25 = _applyDecoratedDescriptor(_class2.prototype, "btnMasterPassManager", [_dec26], {
+      }), _descriptor26 = _applyDecoratedDescriptor(_class2.prototype, "btnMasterPassManager", [_dec27], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor26 = _applyDecoratedDescriptor(_class2.prototype, "fx_Button", [_dec27], {
+      }), _descriptor27 = _applyDecoratedDescriptor(_class2.prototype, "fx_Button", [_dec28], {
         configurable: true,
         enumerable: true,
         writable: true,

@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9", "__unresolved_10"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Button, Label, Node, Widget, BasePopup, AVATAR_TYPE, Constants, localConfig, AudioManager2, LeaderBoardGroupManager, clientEvent, LogEventManager, FBInstantManager, ItemRankInfo, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _temp, _crd, ccclass, property, WinTournamentPageHostPopup;
+  var _reporterNs, _cclegacy, _decorator, Button, Label, Node, Widget, BasePopup, AVATAR_TYPE, Constants, localConfig, AudioManager2, LeaderBoardGroupManager, clientEvent, LogEventManager, FBInstantManager, ItemRankInfo, PokiSDKManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _temp, _crd, ccclass, property, WinTournamentPageHostPopup;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -51,6 +51,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("ItemRankInfo", "../common/ItemRankInfo", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfPokiSDKManager(extras) {
+    _reporterNs.report("PokiSDKManager", "../common/PokiSDKManager", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -80,6 +84,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       FBInstantManager = _unresolved_9.FBInstantManager;
     }, function (_unresolved_10) {
       ItemRankInfo = _unresolved_10.ItemRankInfo;
+    }, function (_unresolved_11) {
+      PokiSDKManager = _unresolved_11.PokiSDKManager;
     }],
     execute: function () {
       _crd = true;
@@ -279,9 +285,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         touchReplay() {
-          (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
+          // FBInstantManager.instance.Show_InterstitialAdAsync("tournament_pagehost_popup", "replay", (err, success) => {
+          //     LogEventManager.instance.logButtonClick("replay", "wintournamentpagehostpopup");
+          //     this.hidePopup();
+          //     clientEvent.dispatchEvent(Constants.TOURNAMENT_PAGEHOST_TOUCH_REPLAY);
+          // });
+          (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
             error: Error()
-          }), FBInstantManager) : FBInstantManager).instance.Show_InterstitialAdAsync("tournament_pagehost_popup", "replay", (err, success) => {
+          }), PokiSDKManager) : PokiSDKManager).instance.Show_InterstitialAdAsync("tournament_pagehost_popup", "replay", (err, success) => {
             (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
               error: Error()
             }), LogEventManager) : LogEventManager).instance.logButtonClick("replay", "wintournamentpagehostpopup");

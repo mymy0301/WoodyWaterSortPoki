@@ -9,10 +9,10 @@ const { ccclass, property } = _decorator;
 
 @ccclass('PokiSDKManager')
 export class PokiSDKManager extends Component {
-    public static Instance: PokiSDKManager;
+    public static instance: PokiSDKManager;
     protected onLoad(): void {
-        if (PokiSDKManager.Instance == null) {
-            PokiSDKManager.Instance = this;
+        if (PokiSDKManager.instance == null) {
+            PokiSDKManager.instance = this;
         }
         game.addPersistRootNode(this.node);
     }
@@ -33,7 +33,8 @@ export class PokiSDKManager extends Component {
     }
 
     protected start(): void {
-        // clientEvent.dispatchEvent(MConst.POKI_INIT_SUCCESS);
+        this.isInitializeAsync = true;
+        clientEvent.dispatchEvent(Constants.POKI_INIT_SUCCESS);
     }
 
 
@@ -57,7 +58,7 @@ export class PokiSDKManager extends Component {
     }
 
     fb_InterstitialAd_CallBack: FBIntanstAd_Callback = null;
-    public Show_InterstitialAdAsync(location: string, cb?: FBIntanstAd_Callback) {
+    public Show_InterstitialAdAsync(location: string, button_name: string, cb?: FBIntanstAd_Callback) {
         if(typeof PokiSDK === 'undefined') {
             cb(null, Constants.FB_INTERSTITIAL_CALLBACK_SUCCESS);
             return;

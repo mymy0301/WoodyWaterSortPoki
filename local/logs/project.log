@@ -1,144 +1,186 @@
-2026-01-07 17:57:37-log: [Package] menu@1.0.0 enable
-2026-01-07 17:57:37-log: [Package] profile@1.0.0 enable
-2026-01-07 17:57:37-log: [Package] Profile Migrate: project@Cocos Creator...
-2026-01-07 17:57:37-log: [Package] project@1.0.1 enable
-2026-01-07 17:57:37-log: [Package] messages@1.0.0 enable
-2026-01-07 17:57:37-log: [Package] Profile Migrate: program@Cocos Creator...
-2026-01-07 17:57:37-log: [Package] program@1.0.0 enable
-2026-01-07 17:57:37-log: [Package] device@1.0.1 enable
-2026-01-07 17:57:37-log: [Package] ui-kit@1.0.1 enable
-2026-01-07 17:57:37-log: [Package] tester@1.0.0 enable
-2026-01-07 17:57:37-log: [Package] preferences@1.0.0 enable
-2026-01-07 17:57:37-log: [Package] Profile Migrate: engine@Cocos Creator...
-2026-01-07 17:57:38-log: Setup mods mgr.: 583.944ms
-2026-01-07 17:57:38-log: [Package] engine@1.0.5 enable
-2026-01-07 17:57:40-log: [Package] programming@1.0.0 enable
-2026-01-07 17:57:40-log: [Package] Profile Migrate: builder@Cocos Creator...
-2026-01-07 17:57:40-error: [Window] Message does not exist: asset-db - query-assets
-2026-01-07 17:57:41-log: [Package] engine-extends@1.0.0 enable
-2026-01-07 17:57:41-log: [Package] asset-db@1.0.0 enable
-2026-01-07 17:57:41-log: [Package] console@1.0.0 enable
-2026-01-07 17:57:41-log: [Package] scene@1.0.0 enable
-2026-01-07 17:57:41-log: [Package] about@1.0.0 enable
-2026-01-07 17:57:41-log: [Package] server@1.0.0 enable
-2026-01-07 17:57:41-log: [Package] utils@1.0.0 enable
-2026-01-07 17:57:41-log: [Package] assets@1.0.0 enable
-2026-01-07 17:57:41-log: [Package] inspector@1.0.0 enable
-2026-01-07 17:57:41-log: [Package] hierarchy@1.0.0 enable
-2026-01-07 17:57:42-log: [Package] preview@1.0.1 enable
-2026-01-07 17:57:42-log: [Package] animator@1.0.0 enable
-2026-01-07 17:57:42-log: The set IP address does not exist. The default IP will be used.
-2026-01-07 17:57:43-log: [Package] builder@1.3.0 enable
-2026-01-07 17:57:43-log: [Package] node-library@1.0.0 enable
-2026-01-07 17:57:43-log: [Package] shortcuts@1.0.1 enable
-2026-01-07 17:57:43-log: [Package] package-asset@1.0.0 enable
-2026-01-07 17:57:43-log: [Package] reference-image@1.0.0 enable
-2026-01-07 17:57:43-log: [Package] animation-graph@1.0.0 enable
-2026-01-07 17:57:43-log: [Package] channel-upload-tools@1.0.0 enable
-2026-01-07 17:57:43-log: [Package] runtime-dev-tools@1.0.0 enable
-2026-01-07 17:57:43-log: [Package] lightmap@1.0.4 enable
-2026-01-07 17:57:43-log: [Package] alipay-mini-game@1.0.0 enable
-2026-01-07 17:57:43-log: [Package] android@1.0.0 enable
-2026-01-07 17:57:43-log: [Package] baidu-mini-game@1.0.0 enable
-2026-01-07 17:57:43-log: [Package] bytedance-mini-game@1.0.1 enable
-2026-01-07 17:57:43-log: [Package] huawei-agc@1.0.0 enable
-2026-01-07 17:57:44-log: [Package] ios@1.0.0 enable
-2026-01-07 17:57:44-log: [Package] ios-app-clip@1.0.0 enable
-2026-01-07 17:57:44-log: [Package] mac@1.0.0 enable
-2026-01-07 17:57:44-log: [Package] native@1.0.0 enable
-2026-01-07 17:57:44-log: [Package] ohos@1.0.0 enable
-2026-01-07 17:57:44-log: [Package] web-desktop@1.0.0 enable
-2026-01-07 17:57:44-log: [Package] web-mobile@1.0.0 enable
-2026-01-07 17:57:44-log: [Package] wechatgame@1.0.1 enable
-2026-01-07 17:57:44-log: [Package] windows@1.0.0 enable
-2026-01-07 17:57:44-log: [Package] xiaomi-quick-game@1.0.0 enable
-2026-01-07 17:57:44-log: [Package] cocos-play@1.0.0 enable
-2026-01-07 17:57:44-log: [Package] huawei-quick-game@1.0.0 enable
-2026-01-07 17:57:44-log: [Package] link-sure@1.0.0 enable
-2026-01-07 17:57:44-log: [Package] oppo-mini-game@1.0.0 enable
-2026-01-07 17:57:44-log: [Package] qtt@1.0.0 enable
-2026-01-07 17:57:44-log: [Package] vivo-mini-game@1.0.0 enable
-2026-01-07 17:57:44-log: [Package] cocos-service@3.0.2 enable
-2026-01-07 17:57:44-log: [Package] importer@1.0.0 enable
-2026-01-07 17:57:45-log: [Package] extension@3.0.13 enable
-2026-01-07 17:57:45-log: [Im-plugin] Check im-plugin version.
-2026-01-07 17:57:45-log: [Package] im-plugin@3.0.8 enable
-2026-01-07 17:57:45-log: The set IP address does not exist. The default IP will be used.
-2026-01-07 17:57:45-log: The set IP address does not exist. The default IP will be used.
-2026-01-07 17:57:46-log: [Im-plugin] No online info of im-plugin.
-2026-01-07 17:58:28-warn: [Asset DB] Importer exec warning: {asset[D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\assets\effects\textures\glow4.png@6c48a](d41b6950-8931-42b1-b1d1-93252faab807@6c48a)}: The importer version is lower than asset
-2026-01-07 17:58:28-warn: [Asset DB] Importer exec warning: {asset[D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\assets\effects\textures\glow1.png@6c48a](a870a3f7-9610-4279-b452-b2bf6e1c876d@6c48a)}: The importer version is lower than asset
-2026-01-07 17:58:48-warn: Browserslist: caniuse-lite is outdated. Please run:
+2026-01-08 11:50:45-log: [Package] menu@1.0.0 enable
+2026-01-08 11:50:45-log: [Package] profile@1.0.0 enable
+2026-01-08 11:50:45-log: [Package] project@1.0.1 enable
+2026-01-08 11:50:45-log: [Package] messages@1.0.0 enable
+2026-01-08 11:50:45-log: [Package] program@1.0.0 enable
+2026-01-08 11:50:45-log: [Package] device@1.0.1 enable
+2026-01-08 11:50:45-log: [Package] ui-kit@1.0.1 enable
+2026-01-08 11:50:45-log: [Package] tester@1.0.0 enable
+2026-01-08 11:50:45-log: [Package] preferences@1.0.0 enable
+2026-01-08 11:50:45-error: [Window] Message does not exist: asset-db - query-assets
+2026-01-08 11:50:46-log: Setup mods mgr.: 577.342ms
+2026-01-08 11:50:46-log: [Package] engine@1.0.5 enable
+2026-01-08 11:50:48-log: [Package] programming@1.0.0 enable
+2026-01-08 11:50:48-log: [Package] engine-extends@1.0.0 enable
+2026-01-08 11:50:48-log: [Package] asset-db@1.0.0 enable
+2026-01-08 11:50:48-log: [Package] console@1.0.0 enable
+2026-01-08 11:50:48-log: [Package] scene@1.0.0 enable
+2026-01-08 11:50:48-log: [Package] utils@1.0.0 enable
+2026-01-08 11:50:48-log: [Package] assets@1.0.0 enable
+2026-01-08 11:50:48-log: [Package] inspector@1.0.0 enable
+2026-01-08 11:50:49-log: [Package] hierarchy@1.0.0 enable
+2026-01-08 11:50:49-log: [Package] preview@1.0.1 enable
+2026-01-08 11:50:49-log: [Package] animator@1.0.0 enable
+2026-01-08 11:50:49-log: The set IP address does not exist. The default IP will be used.
+2026-01-08 11:50:50-log: [Package] builder@1.3.0 enable
+2026-01-08 11:50:50-log: [Package] node-library@1.0.0 enable
+2026-01-08 11:50:50-log: [Package] shortcuts@1.0.1 enable
+2026-01-08 11:50:50-log: [Package] package-asset@1.0.0 enable
+2026-01-08 11:50:50-log: [Package] reference-image@1.0.0 enable
+2026-01-08 11:50:50-log: [Package] animation-graph@1.0.0 enable
+2026-01-08 11:50:50-log: [Package] channel-upload-tools@1.0.0 enable
+2026-01-08 11:50:50-log: [Package] runtime-dev-tools@1.0.0 enable
+2026-01-08 11:50:51-log: [Package] lightmap@1.0.4 enable
+2026-01-08 11:50:51-log: [Package] alipay-mini-game@1.0.0 enable
+2026-01-08 11:50:51-log: [Package] android@1.0.0 enable
+2026-01-08 11:50:51-log: [Package] baidu-mini-game@1.0.0 enable
+2026-01-08 11:50:51-log: [Package] bytedance-mini-game@1.0.1 enable
+2026-01-08 11:50:51-log: [Package] huawei-agc@1.0.0 enable
+2026-01-08 11:50:51-log: [Package] ios@1.0.0 enable
+2026-01-08 11:50:51-log: [Package] ios-app-clip@1.0.0 enable
+2026-01-08 11:50:51-log: [Package] mac@1.0.0 enable
+2026-01-08 11:50:51-log: [Package] native@1.0.0 enable
+2026-01-08 11:50:51-log: [Package] ohos@1.0.0 enable
+2026-01-08 11:50:51-log: [Package] web-desktop@1.0.0 enable
+2026-01-08 11:50:51-log: [Package] web-mobile@1.0.0 enable
+2026-01-08 11:50:51-log: [Package] wechatgame@1.0.1 enable
+2026-01-08 11:50:51-log: [Package] windows@1.0.0 enable
+2026-01-08 11:50:51-log: [Package] xiaomi-quick-game@1.0.0 enable
+2026-01-08 11:50:51-log: [Package] cocos-play@1.0.0 enable
+2026-01-08 11:50:51-log: [Package] huawei-quick-game@1.0.0 enable
+2026-01-08 11:50:51-log: [Package] link-sure@1.0.0 enable
+2026-01-08 11:50:51-log: [Package] oppo-mini-game@1.0.0 enable
+2026-01-08 11:50:51-log: [Package] qtt@1.0.0 enable
+2026-01-08 11:50:51-log: [Package] vivo-mini-game@1.0.0 enable
+2026-01-08 11:50:51-log: [Package] cocos-service@3.0.2 enable
+2026-01-08 11:50:52-log: [Package] importer@1.0.0 enable
+2026-01-08 11:50:52-log: [Package] extension@3.0.13 enable
+2026-01-08 11:50:52-log: [Im-plugin] Check im-plugin version.
+2026-01-08 11:50:52-log: [Package] im-plugin@3.0.8 enable
+2026-01-08 11:50:52-log: The set IP address does not exist. The default IP will be used.
+2026-01-08 11:50:52-log: The set IP address does not exist. The default IP will be used.
+2026-01-08 11:50:52-log: [Im-plugin] No online info of im-plugin.
+2026-01-08 11:51:30-warn: [Asset DB] Importer exec warning: {asset[D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\assets\effects\textures\glow1.png@6c48a](a870a3f7-9610-4279-b452-b2bf6e1c876d@6c48a)}: The importer version is lower than asset
+2026-01-08 11:51:30-warn: [Asset DB] Importer exec warning: {asset[D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\assets\effects\textures\glow4.png@6c48a](d41b6950-8931-42b1-b1d1-93252faab807@6c48a)}: The importer version is lower than asset
+2026-01-08 11:51:31-warn: Browserslist: caniuse-lite is outdated. Please run:
 npx browserslist@latest --update-db
 
 Why you should do it regularly:
 https://github.com/browserslist/browserslist#browsers-data-updating
-2026-01-07 17:58:59-log: [Scene] begin init
-2026-01-07 17:58:59-log: [Scene] require engine end
-2026-01-07 17:58:59-log: [Scene] Serialize end
-2026-01-07 17:58:59-log: [Scene] configureStartup end
-2026-01-07 17:58:59-log: [Scene] Cocos Creator v3.4.0
-2026-01-07 17:59:10-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
-2026-01-07 17:59:10-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
-2026-01-07 17:59:10-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
-2026-01-07 17:59:10-info: [Scene] Forward render pipeline initialized.
-2026-01-07 17:59:11-log: [Scene] openEngine end
-2026-01-07 17:59:11-log: [Scene] configureEngine end
-2026-01-07 17:59:11-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
-2026-01-07 17:59:11-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
-2026-01-07 17:59:11-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
-2026-01-07 18:00:37-error: Failed to resolve ../../Configs/MConfigFacebook from file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts, treat it as external dependency.
-Which is caused by: Error: Module "../../Configs/MConfigFacebook" not found for file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts
-2026-01-07 18:00:37-warn: Did you forget the extension? Please note that you can not omit extension in module specifier.
-2026-01-07 18:00:37-error: Failed to resolve ../../Common/SoundSys from file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts, treat it as external dependency.
-Which is caused by: Error: Module "../../Common/SoundSys" not found for file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts
-2026-01-07 18:00:37-warn: Did you forget the extension? Please note that you can not omit extension in module specifier.
-2026-01-07 18:00:37-error: Failed to resolve ../../framework/clientEvent from file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts, treat it as external dependency.
-Which is caused by: Error: Module "../../framework/clientEvent" not found for file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts
-2026-01-07 18:00:37-warn: Did you forget the extension? Please note that you can not omit extension in module specifier.
-2026-01-07 18:00:37-error: Failed to resolve ../../Const/MConst from file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts, treat it as external dependency.
-Which is caused by: Error: Module "../../Const/MConst" not found for file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts
-2026-01-07 18:00:37-warn: Did you forget the extension? Please note that you can not omit extension in module specifier.
-2026-01-07 18:00:37-error: Failed to resolve ../../Configs/MConfigs from file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts, treat it as external dependency.
-Which is caused by: Error: Module "../../Configs/MConfigs" not found for file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts
-2026-01-07 18:00:37-warn: Did you forget the extension? Please note that you can not omit extension in module specifier.
-2026-01-07 18:00:37-error: Failed to resolve ../Utils from file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts, treat it as external dependency.
-Which is caused by: Error: Module "../Utils" not found for file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts
-2026-01-07 18:00:37-warn: Did you forget the extension? Please note that you can not omit extension in module specifier.
-2026-01-07 18:00:37-error: Failed to resolve ../../Configs/MConfigFacebook from file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts, treat it as external dependency.
-Which is caused by: Error: Module "../../Configs/MConfigFacebook" not found for file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts
-2026-01-07 18:00:37-warn: Did you forget the extension? Please note that you can not omit extension in module specifier.
-2026-01-07 18:00:37-error: Failed to resolve ../../Common/SoundSys from file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts, treat it as external dependency.
-Which is caused by: Error: Module "../../Common/SoundSys" not found for file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts
-2026-01-07 18:00:37-warn: Did you forget the extension? Please note that you can not omit extension in module specifier.
-2026-01-07 18:00:37-error: Failed to resolve ../../framework/clientEvent from file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts, treat it as external dependency.
-Which is caused by: Error: Module "../../framework/clientEvent" not found for file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts
-2026-01-07 18:00:37-warn: Did you forget the extension? Please note that you can not omit extension in module specifier.
-2026-01-07 18:00:37-error: Failed to resolve ../../Const/MConst from file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts, treat it as external dependency.
-Which is caused by: Error: Module "../../Const/MConst" not found for file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts
-2026-01-07 18:00:37-warn: Did you forget the extension? Please note that you can not omit extension in module specifier.
-2026-01-07 18:00:37-error: Failed to resolve ../../Configs/MConfigs from file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts, treat it as external dependency.
-Which is caused by: Error: Module "../../Configs/MConfigs" not found for file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts
-2026-01-07 18:00:37-warn: Did you forget the extension? Please note that you can not omit extension in module specifier.
-2026-01-07 18:00:37-error: Failed to resolve ../Utils from file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts, treat it as external dependency.
-Which is caused by: Error: Module "../Utils" not found for file:///D:/COCOS/Project/WoodWaterSort/WoodyWaterSortPoki/CodeWoodyWaterSortPoki/WoodyWaterSortPoki/assets/scripts/common/PokiSDKManager.ts
-2026-01-07 18:00:37-warn: Did you forget the extension? Please note that you can not omit extension in module specifier.
-2026-01-07 18:00:37-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
-2026-01-07 18:00:37-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
-2026-01-07 18:00:37-error: [Scene] Failed to resolve __unresolved_1 from pack:///mods/fs/0/assets/scripts/common/PokiSDKManager.js.
-2026-01-07 18:00:37-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
-2026-01-07 18:12:11-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
-2026-01-07 18:12:11-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
-2026-01-07 18:12:11-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
-2026-01-07 18:12:17-log: [Scene] Spine: Animation not found: 1
-2026-01-07 18:12:17-error: [Scene] 2 already defined in Enum.
-2026-01-07 18:12:17-error: [Scene] 2 already defined in Enum.
-2026-01-07 18:12:24-log: [Scene] Spine: Animation not found: <None>
-2026-01-07 18:13:18-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
-2026-01-07 18:13:18-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
-2026-01-07 18:13:18-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
-2026-01-07 18:13:18-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
-2026-01-07 18:13:19-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
-2026-01-07 18:13:19-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
-2026-01-07 18:13:19-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
-2026-01-07 18:13:19-log: [Scene] Spine: Animation not found: <None>
+2026-01-08 11:51:42-log: [Scene] begin init
+2026-01-08 11:51:42-log: [Scene] require engine end
+2026-01-08 11:51:42-log: [Scene] Serialize end
+2026-01-08 11:51:42-log: [Scene] configureStartup end
+2026-01-08 11:51:42-log: [Scene] Cocos Creator v3.4.0
+2026-01-08 11:51:53-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 11:51:53-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 11:51:53-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 11:51:53-info: [Scene] Forward render pipeline initialized.
+2026-01-08 11:51:53-log: [Scene] openEngine end
+2026-01-08 11:51:53-log: [Scene] configureEngine end
+2026-01-08 11:51:54-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 11:51:54-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 11:51:54-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 11:51:55-log: [Scene] Spine: Animation not found: <None>
+2026-01-08 11:51:56-error: [Scene] 2 already defined in Enum.
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:43-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:55-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:53:56-error: [Scene] Cannot read property '_prefab' of null
+2026-01-08 11:55:08-log: [Scene] Spine: Animation not found: <None>
+2026-01-08 11:55:11-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 11:55:12-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 11:55:12-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 11:55:12-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 11:58:06-warn: [Scene] The type of "ItemPlayerRaceProgress.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 11:58:06-warn: [Scene] The type of "ItemPlayerRace.isMyPlayer" must be CCBoolean, not Boolean.
+2026-01-08 11:58:06-warn: [Scene] The type of "TextLoading.isRandomTime" must be CCBoolean, not Boolean.
+2026-01-08 11:58:06-log: [Scene] Spine: Animation not found: <None>
+2026-01-08 11:58:06-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 11:58:07-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 11:58:07-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 11:58:07-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 11:58:08-log: Use preview template {link(D:\COCOS\Project\WoodWaterSort\WoodyWaterSortPoki\CodeWoodyWaterSortPoki\WoodyWaterSortPoki\preview-template\index.ejs)}
+2026-01-08 11:58:08-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg)}) and asset({asset(db://assets/resources/banner/banner2.png)}) are the same banner/banner2, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 11:58:08-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/texture)}) and asset({asset(db://assets/resources/banner/banner2.png/texture)}) are the same banner/banner2/texture, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 11:58:08-warn: [Build] The loading url of asset({asset(db://assets/resources/banner/banner2.jpg/spriteFrame)}) and asset({asset(db://assets/resources/banner/banner2.png/spriteFrame)}) are the same banner/banner2/spriteFrame, that will affect the correctness of loading resource in script.Please adjust the resource directory structure in time.If the resource is not loaded in the script, it can be ignored.
+2026-01-08 12:27:28-log: The set IP address does not exist. The default IP will be used.
+2026-01-08 12:27:29-log: The set IP address does not exist. The default IP will be used.
+2026-01-08 14:13:31-log: The set IP address does not exist. The default IP will be used.

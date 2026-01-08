@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Button, Label, Sprite, SpriteFrame, Vec3, BasePopup, BOOSTER_TYPE, Constants, localConfig, FBInstantManager, clientEvent, LogEventManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _temp, _crd, ccclass, property, ShopItemPopup;
+  var _reporterNs, _cclegacy, _decorator, Button, Label, Sprite, SpriteFrame, Vec3, BasePopup, BOOSTER_TYPE, Constants, localConfig, clientEvent, LogEventManager, PokiSDKManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _temp, _crd, ccclass, property, ShopItemPopup;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -27,16 +27,16 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("localConfig", "../localConfig", _context.meta, extras);
   }
 
-  function _reportPossibleCrUseOfFBInstantManager(extras) {
-    _reporterNs.report("FBInstantManager", "../common/FBInstantManager", _context.meta, extras);
-  }
-
   function _reportPossibleCrUseOfclientEvent(extras) {
     _reporterNs.report("clientEvent", "../framework/clientEvent", _context.meta, extras);
   }
 
   function _reportPossibleCrUseOfLogEventManager(extras) {
     _reporterNs.report("LogEventManager", "../common/LogEventManager", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfPokiSDKManager(extras) {
+    _reporterNs.report("PokiSDKManager", "../common/PokiSDKManager", _context.meta, extras);
   }
 
   return {
@@ -58,11 +58,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     }, function (_unresolved_4) {
       localConfig = _unresolved_4.localConfig;
     }, function (_unresolved_5) {
-      FBInstantManager = _unresolved_5.FBInstantManager;
+      clientEvent = _unresolved_5.clientEvent;
     }, function (_unresolved_6) {
-      clientEvent = _unresolved_6.clientEvent;
+      LogEventManager = _unresolved_6.LogEventManager;
     }, function (_unresolved_7) {
-      LogEventManager = _unresolved_7.LogEventManager;
+      PokiSDKManager = _unresolved_7.PokiSDKManager;
     }],
     execute: function () {
       _crd = true;
@@ -170,10 +170,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         touchWatchAd() {
           (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
             error: Error()
-          }), LogEventManager) : LogEventManager).instance.logButtonClick("watchad", "shopitempopup");
-          (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
+          }), LogEventManager) : LogEventManager).instance.logButtonClick("watchad", "shopitempopup"); // FBInstantManager.instance.Show_RewardedVideoAsync("shopitempopup","watchad",(err, success) => {
+          //     if (err) {
+          //     } else {
+          //         localConfig.instance.setShopItem_Free_byBoosterType(this.boosterType);
+          //         this.receiveBooster("watchad");
+          //         this.hidePopup();
+          //     }
+          // })
+
+          (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
             error: Error()
-          }), FBInstantManager) : FBInstantManager).instance.Show_RewardedVideoAsync("shopitempopup", "watchad", (err, success) => {
+          }), PokiSDKManager) : PokiSDKManager).instance.Show_RewardedVideoAsync("shopitempopup", "watchad", (err, success) => {
             if (err) {} else {
               (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
                 error: Error()

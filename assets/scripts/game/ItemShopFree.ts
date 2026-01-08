@@ -7,6 +7,7 @@ import { localConfig } from '../localConfig';
 import { CountDownToNextTime } from '../common/CountDownToNextTime';
 import { AudioManager2 } from '../framework/audioManager2';
 import { LogEventManager } from '../common/LogEventManager';
+import { PokiSDKManager } from '../common/PokiSDKManager';
 const { ccclass, property } = _decorator;
 
 /**
@@ -64,7 +65,23 @@ export class ItemShopFree extends Component {
 
     touchClaim(){
         LogEventManager.instance.logButtonClick("shopitemfree","shoppopup");
-        FBInstantManager.instance.Show_RewardedVideoAsync("shoppopup","shopitemfree",(err,success)=>{
+        // FBInstantManager.instance.Show_RewardedVideoAsync("shoppopup","shopitemfree",(err,success)=>{
+        //     if(err){
+
+        //     }else{
+        //         AudioManager2.instance.playSound_Coin_Appear();
+        //         this.btnClaim.node.active = false;
+        //         this.objNextTime.active = true;
+        //         clientEvent.dispatchEvent(Constants.UPDATE_COIN_STARTPOS, this.startPos.worldPosition);
+        
+        //         clientEvent.dispatchEvent(Constants.SHOW_ADDCOIN, 100);
+        //         LogEventManager.instance.logResourceEarned("currency","coin",100,"shop","watchad");
+        //         localConfig.instance.setShopFreeLastTime();
+        //         this.countDownToNextTime.initCountDownTime(localConfig.instance.SHOP_FREE_NEXT_TIME,()=>{this.setCountDownToNextTimeFinished()});
+        //     }
+        // });
+
+        PokiSDKManager.instance.Show_RewardedVideoAsync("shoppopup","shopitemfree",(err,success)=>{
             if(err){
 
             }else{

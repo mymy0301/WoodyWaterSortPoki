@@ -9,6 +9,7 @@ import { AudioManager2 } from '../framework/audioManager2';
 import { FBInstantManager } from '../common/FBInstantManager';
 import { localConfig } from '../localConfig';
 import { LogEventManager } from '../common/LogEventManager';
+import { PokiSDKManager } from '../common/PokiSDKManager';
 const { ccclass, property } = _decorator;
 
 /**
@@ -192,11 +193,19 @@ export class RewardChestsPopup extends BasePopup {
             this.setClaimRewards(false);
         }else{
             LogEventManager.instance.logButtonClick("claimx2","rewardchestpopup");
-            FBInstantManager.instance.Show_RewardedVideoAsync("rewardchestpopup","claimx2",(err, success) => {
+            // FBInstantManager.instance.Show_RewardedVideoAsync("rewardchestpopup","claimx2",(err, success) => {
+            //     if (err) {
+    
+            //     } else {
+            //         this.setClaimRewards(true);
+            //     }
+            // });
+
+            PokiSDKManager.instance.Show_RewardedVideoAsync("rewardchestpopup","claimx2",(err, success) => {
                 if (err) {
     
                 } else {
-                    this.setClaimRewards(true);
+                    this.setClaimRewards(true);   
                 }
             });
         }

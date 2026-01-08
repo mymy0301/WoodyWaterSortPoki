@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9", "__unresolved_10", "__unresolved_11", "__unresolved_12", "__unresolved_13", "__unresolved_14", "__unresolved_15", "__unresolved_16", "__unresolved_17", "__unresolved_18", "__unresolved_19", "__unresolved_20", "__unresolved_21"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9", "__unresolved_10", "__unresolved_11", "__unresolved_12", "__unresolved_13", "__unresolved_14", "__unresolved_15", "__unresolved_16", "__unresolved_17", "__unresolved_18", "__unresolved_19", "__unresolved_20", "__unresolved_21", "__unresolved_22"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Button, Component, instantiate, Label, Node, Prefab, tween, Vec3, Widget, ItemTube, ButtonBoosterTypeGroup, InfoGroupTournament, InfoGroupWithFriend, BOOSTER_TYPE, Constants, GAME_MODE, GAME_STATE, ITEM_TUBE_STATE, PLAY_TYPE, SCENE_TYPE, WATER_STATE, localConfig, clientEvent, FBInstantManager, Utils, lodash, WellDoneGroup, PGSPlayInstantManager, TutLevelPopup, resourceUtil, AudioManager2, ComboGroup, MagicBIMInfo, MagicBInfo, MagicCInfo, MagicLevelDataInfo, NoMovesGroup, LogEventManager, InfoGroupTournamentPageHost, BackGroundGameManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _dec23, _dec24, _dec25, _dec26, _dec27, _dec28, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22, _descriptor23, _descriptor24, _descriptor25, _descriptor26, _descriptor27, _temp, _dec29, _class4, _temp2, _crd, ccclass, property, PlayMagicManager, TubeSuggest;
+  var _reporterNs, _cclegacy, _decorator, Button, Component, instantiate, Label, Node, Prefab, tween, Vec3, Widget, ItemTube, ButtonBoosterTypeGroup, InfoGroupTournament, InfoGroupWithFriend, BOOSTER_TYPE, Constants, GAME_MODE, GAME_STATE, ITEM_TUBE_STATE, PLAY_TYPE, SCENE_TYPE, WATER_STATE, localConfig, clientEvent, FBInstantManager, Utils, lodash, WellDoneGroup, PGSPlayInstantManager, TutLevelPopup, resourceUtil, AudioManager2, ComboGroup, MagicBIMInfo, MagicBInfo, MagicCInfo, MagicLevelDataInfo, NoMovesGroup, LogEventManager, InfoGroupTournamentPageHost, BackGroundGameManager, PokiSDKManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _dec23, _dec24, _dec25, _dec26, _dec27, _dec28, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22, _descriptor23, _descriptor24, _descriptor25, _descriptor26, _descriptor27, _temp, _dec29, _class4, _temp2, _crd, ccclass, property, PlayMagicManager, TubeSuggest;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -139,6 +139,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("BackGroundGameManager", "./BackGroundGameManager", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfPokiSDKManager(extras) {
+    _reporterNs.report("PokiSDKManager", "../common/PokiSDKManager", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -206,6 +210,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       InfoGroupTournamentPageHost = _unresolved_21.InfoGroupTournamentPageHost;
     }, function (_unresolved_22) {
       BackGroundGameManager = _unresolved_22.BackGroundGameManager;
+    }, function (_unresolved_23) {
+      PokiSDKManager = _unresolved_23.PokiSDKManager;
     }],
     execute: function () {
       _crd = true;
@@ -615,9 +621,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         touchReplay() {
-          (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
+          // FBInstantManager.instance.Show_InterstitialAdAsync("play","replay",(err,success)=>{
+          //     this.setReplay();
+          // });
+          (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
             error: Error()
-          }), FBInstantManager) : FBInstantManager).instance.Show_InterstitialAdAsync("play", "replay", (err, success) => {
+          }), PokiSDKManager) : PokiSDKManager).instance.Show_InterstitialAdAsync("play", "replay", (err, success) => {
             this.setReplay();
           });
         }
@@ -2464,214 +2473,144 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               error: Error()
             }), localConfig) : localConfig).instance.playDurationEndTime - (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
               error: Error()
-            }), localConfig) : localConfig).instance.playDurationStartTime, "win", "");
-            (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
+            }), localConfig) : localConfig).instance.playDurationStartTime, "win", ""); // FBInstantManager.instance.Show_InterstitialAdAsync("dailychallenge","win",(err,success)=>{
+            //     clientEvent.dispatchEvent(Constants.SHOW_WIN_DAILYCHALLENGE_POPUP);
+            // });
+
+            (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
               error: Error()
-            }), FBInstantManager) : FBInstantManager).instance.Show_InterstitialAdAsync("dailychallenge", "win", (err, success) => {
+            }), PokiSDKManager) : PokiSDKManager).instance.Show_InterstitialAdAsync("dailychallenge", "win", (err, success) => {
               (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
                 error: Error()
               }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
                 error: Error()
               }), Constants) : Constants).SHOW_WIN_DAILYCHALLENGE_POPUP);
             });
-          } else if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.currGameMode == (_crd && GAME_MODE === void 0 ? (_reportPossibleCrUseOfGAME_MODE({
-            error: Error()
-          }), GAME_MODE) : GAME_MODE).TOURNAMENT) {
-            (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
-              error: Error()
-            }), LogEventManager) : LogEventManager).instance.logLevelEnd((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currIndexLevelTournament, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.getLevelLoopByFromStr((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currLevelConfigInfo.levelOrder), (_crd && PLAY_TYPE === void 0 ? (_reportPossibleCrUseOfPLAY_TYPE({
-              error: Error()
-            }), PLAY_TYPE) : PLAY_TYPE)[(_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.playType].toLowerCase().toString(), 1, 0, "tournament", (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.playDurationEndTime - (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.playDurationStartTime, "win", "");
+          } // else if(localConfig.instance.currGameMode == GAME_MODE.TOURNAMENT){
+          //     LogEventManager.instance.logLevelEnd(localConfig.instance.currIndexLevelTournament,localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder),
+          //                                          PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),1,0,"tournament",
+          //                                          localConfig.instance.playDurationEndTime - localConfig.instance.playDurationStartTime,
+          //                                         "win","");
+          //     if(localConfig.instance.currIndexLevelTournament + localConfig.instance.currLevelStartTournament == 2){
+          //         localConfig.instance.setLevelUnlock(3);
+          //         this.hideTutLevel2();
+          //     }
+          //     localConfig.instance.setLevelUnlock(2);
+          //     if(localConfig.instance.currIndexLevelTournament + localConfig.instance.currLevelStartTournament > 2){
+          //         FBInstantManager.instance.Show_InterstitialAdAsync("tournament","win",(err,success)=>{
+          //             this.setWinTournament();
+          //         });
+          //     }else{
+          //         this.setWinTournament();
+          //     }
+          // }else if(localConfig.instance.currGameMode == GAME_MODE.TOURNAMENT_PAGEHOST){
+          //     LogEventManager.instance.logLevelEnd(localConfig.instance.currTournamentPageHostDataInfo.levelIndex,localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder),
+          //                                          PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),1,0,"tournament_pagehost",
+          //                                          localConfig.instance.playDurationEndTime - localConfig.instance.playDurationStartTime,
+          //                                         "win","");
+          //     this.setWinTournamentPageHost();
+          // }else if(localConfig.instance.currGameMode == GAME_MODE.WITH_FRIEND){
+          //     LogEventManager.instance.logLevelEnd(localConfig.instance.currWithFriendDataInfo.levelIndex,localConfig.instance.getLevelLoopByFromStr(localConfig.instance.currLevelConfigInfo.levelOrder),
+          //                                          PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString(),1,0,"withfriend",
+          //                                          localConfig.instance.playDurationEndTime - localConfig.instance.playDurationStartTime,
+          //                                         "win","");
+          //     if(localConfig.instance.currWithFriendDataInfo.senderID == FBInstantManager.instance.getID()){
+          //         localConfig.instance.currWithFriendDataInfo.senderScore = this.infoGroupWithFriend.scoreValue;
+          //         this.updateContextWithFriend();
+          //     }else{
+          //         localConfig.instance.currWithFriendDataInfo.receiverScore = this.infoGroupWithFriend.scoreValue;
+          //         this.updateContextWithFriend();
+          //     }
+          //     FBInstantManager.instance.Show_InterstitialAdAsync("withfriend","win",()=>{
+          //         // this.showWinWithFriendPopup(this.scoreGroupWithFriend.currScore);
+          //         clientEvent.dispatchEvent(Constants.SHOW_WIN_WITHFRIEND_POPUP, localConfig.instance.currWithFriendDataInfo, this.infoGroupWithFriend.scoreValue);
+          //     });
+          // }
+          else {
+              (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
+                error: Error()
+              }), LogEventManager) : LogEventManager).instance.logLevelEnd((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+                error: Error()
+              }), localConfig) : localConfig).instance.currLevel, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+                error: Error()
+              }), localConfig) : localConfig).instance.getLevelLoopByFromStr((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+                error: Error()
+              }), localConfig) : localConfig).instance.currLevelConfigInfo.levelOrder), (_crd && PLAY_TYPE === void 0 ? (_reportPossibleCrUseOfPLAY_TYPE({
+                error: Error()
+              }), PLAY_TYPE) : PLAY_TYPE)[(_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+                error: Error()
+              }), localConfig) : localConfig).instance.playType].toLowerCase().toString(), (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+                error: Error()
+              }), localConfig) : localConfig).instance.loseStreak + 1, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+                error: Error()
+              }), localConfig) : localConfig).instance.loseStreak, "normal", (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+                error: Error()
+              }), localConfig) : localConfig).instance.playDurationEndTime - (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+                error: Error()
+              }), localConfig) : localConfig).instance.playDurationStartTime, "win", "");
 
-            if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currIndexLevelTournament + (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currLevelStartTournament == 2) {
+              if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+                error: Error()
+              }), localConfig) : localConfig).instance.currLevel == 2) {
+                this.hideTutLevel2();
+              }
+
               (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
                 error: Error()
-              }), localConfig) : localConfig).instance.setLevelUnlock(3);
-              this.hideTutLevel2();
-            }
-
-            (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.setLevelUnlock(2);
-
-            if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currIndexLevelTournament + (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currLevelStartTournament > 2) {
-              (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
+              }), localConfig) : localConfig).instance.setLevelUnlock((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
                 error: Error()
-              }), FBInstantManager) : FBInstantManager).instance.Show_InterstitialAdAsync("tournament", "win", (err, success) => {
-                this.setWinTournament();
-              });
-            } else {
-              this.setWinTournament();
-            }
-          } else if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.currGameMode == (_crd && GAME_MODE === void 0 ? (_reportPossibleCrUseOfGAME_MODE({
-            error: Error()
-          }), GAME_MODE) : GAME_MODE).TOURNAMENT_PAGEHOST) {
-            (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
-              error: Error()
-            }), LogEventManager) : LogEventManager).instance.logLevelEnd((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currTournamentPageHostDataInfo.levelIndex, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.getLevelLoopByFromStr((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currLevelConfigInfo.levelOrder), (_crd && PLAY_TYPE === void 0 ? (_reportPossibleCrUseOfPLAY_TYPE({
-              error: Error()
-            }), PLAY_TYPE) : PLAY_TYPE)[(_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.playType].toLowerCase().toString(), 1, 0, "tournament_pagehost", (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.playDurationEndTime - (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.playDurationStartTime, "win", "");
-            this.setWinTournamentPageHost();
-          } else if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.currGameMode == (_crd && GAME_MODE === void 0 ? (_reportPossibleCrUseOfGAME_MODE({
-            error: Error()
-          }), GAME_MODE) : GAME_MODE).WITH_FRIEND) {
-            (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
-              error: Error()
-            }), LogEventManager) : LogEventManager).instance.logLevelEnd((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currWithFriendDataInfo.levelIndex, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.getLevelLoopByFromStr((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currLevelConfigInfo.levelOrder), (_crd && PLAY_TYPE === void 0 ? (_reportPossibleCrUseOfPLAY_TYPE({
-              error: Error()
-            }), PLAY_TYPE) : PLAY_TYPE)[(_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.playType].toLowerCase().toString(), 1, 0, "withfriend", (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.playDurationEndTime - (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.playDurationStartTime, "win", "");
-
-            if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currWithFriendDataInfo.senderID == (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
-              error: Error()
-            }), FBInstantManager) : FBInstantManager).instance.getID()) {
+              }), localConfig) : localConfig).instance.currLevel + 1);
               (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
                 error: Error()
-              }), localConfig) : localConfig).instance.currWithFriendDataInfo.senderScore = this.infoGroupWithFriend.scoreValue;
-              this.updateContextWithFriend();
-            } else {
-              (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                error: Error()
-              }), localConfig) : localConfig).instance.currWithFriendDataInfo.receiverScore = this.infoGroupWithFriend.scoreValue;
-              this.updateContextWithFriend();
-            }
-
-            (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
-              error: Error()
-            }), FBInstantManager) : FBInstantManager).instance.Show_InterstitialAdAsync("withfriend", "win", () => {
-              // this.showWinWithFriendPopup(this.scoreGroupWithFriend.currScore);
-              (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-                error: Error()
-              }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-                error: Error()
-              }), Constants) : Constants).SHOW_WIN_WITHFRIEND_POPUP, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                error: Error()
-              }), localConfig) : localConfig).instance.currWithFriendDataInfo, this.infoGroupWithFriend.scoreValue);
-            });
-          } else {
-            (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
-              error: Error()
-            }), LogEventManager) : LogEventManager).instance.logLevelEnd((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currLevel, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.getLevelLoopByFromStr((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currLevelConfigInfo.levelOrder), (_crd && PLAY_TYPE === void 0 ? (_reportPossibleCrUseOfPLAY_TYPE({
-              error: Error()
-            }), PLAY_TYPE) : PLAY_TYPE)[(_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.playType].toLowerCase().toString(), (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.loseStreak + 1, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.loseStreak, "normal", (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.playDurationEndTime - (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.playDurationStartTime, "win", "");
-
-            if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currLevel == 2) {
-              this.hideTutLevel2();
-            }
-
-            (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.setLevelUnlock((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currLevel + 1);
-            (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.addPassLevel();
-            (_crd && PGSPlayInstantManager === void 0 ? (_reportPossibleCrUseOfPGSPlayInstantManager({
-              error: Error()
-            }), PGSPlayInstantManager) : PGSPlayInstantManager).instance.UpdatePlayerScore((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currLevelUnlock);
-            let strWorldContextID = (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.getWorldContextID_byWeek((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currWeek);
-            let leaderboardDataInfo = (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.getLeaderBoardDataInfo_byContextID(strWorldContextID);
-
-            if (leaderboardDataInfo != null) {
+              }), localConfig) : localConfig).instance.addPassLevel();
               (_crd && PGSPlayInstantManager === void 0 ? (_reportPossibleCrUseOfPGSPlayInstantManager({
                 error: Error()
-              }), PGSPlayInstantManager) : PGSPlayInstantManager).instance.UpdatePlayerScore_byLeaderboardID(leaderboardDataInfo._id, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+              }), PGSPlayInstantManager) : PGSPlayInstantManager).instance.UpdatePlayerScore((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
                 error: Error()
               }), localConfig) : localConfig).instance.currLevelUnlock);
-            }
-
-            if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.raceActive) {
-              (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+              let strWorldContextID = (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
                 error: Error()
-              }), localConfig) : localConfig).instance.addRaceScore();
-            }
-
-            if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currLevelUnlock >= 4) {
-              (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
+              }), localConfig) : localConfig).instance.getWorldContextID_byWeek((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
                 error: Error()
-              }), FBInstantManager) : FBInstantManager).instance.Show_InterstitialAdAsync("normal", "win", (err, success) => {
+              }), localConfig) : localConfig).instance.currWeek);
+              let leaderboardDataInfo = (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+                error: Error()
+              }), localConfig) : localConfig).instance.getLeaderBoardDataInfo_byContextID(strWorldContextID);
+
+              if (leaderboardDataInfo != null) {
+                (_crd && PGSPlayInstantManager === void 0 ? (_reportPossibleCrUseOfPGSPlayInstantManager({
+                  error: Error()
+                }), PGSPlayInstantManager) : PGSPlayInstantManager).instance.UpdatePlayerScore_byLeaderboardID(leaderboardDataInfo._id, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+                  error: Error()
+                }), localConfig) : localConfig).instance.currLevelUnlock);
+              }
+
+              if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+                error: Error()
+              }), localConfig) : localConfig).instance.raceActive) {
+                (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+                  error: Error()
+                }), localConfig) : localConfig).instance.addRaceScore();
+              }
+
+              if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+                error: Error()
+              }), localConfig) : localConfig).instance.currLevelUnlock >= 4) {
+                // FBInstantManager.instance.Show_InterstitialAdAsync("normal","win",(err,success)=>{
+                //     clientEvent.dispatchEvent(Constants.SHOW_WIN_POPUP,localConfig.instance.currLevel);
+                // });
+                (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
+                  error: Error()
+                }), PokiSDKManager) : PokiSDKManager).instance.Show_InterstitialAdAsync("normal", "win", (err, success) => {
+                  (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
+                    error: Error()
+                  }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
+                    error: Error()
+                  }), Constants) : Constants).SHOW_WIN_POPUP, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+                    error: Error()
+                  }), localConfig) : localConfig).instance.currLevel);
+                });
+              } else {
                 (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
                   error: Error()
                 }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
@@ -2679,17 +2618,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                 }), Constants) : Constants).SHOW_WIN_POPUP, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
                   error: Error()
                 }), localConfig) : localConfig).instance.currLevel);
-              });
-            } else {
-              (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-                error: Error()
-              }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-                error: Error()
-              }), Constants) : Constants).SHOW_WIN_POPUP, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                error: Error()
-              }), localConfig) : localConfig).instance.currLevel);
+              }
             }
-          }
         } //#endregion
 
 

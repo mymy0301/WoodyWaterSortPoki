@@ -28,6 +28,9 @@ export class BackGroundGameManager extends Component {
     // serializableDummy = 0;
 
     @property(Sprite)
+    bg3:Sprite = null;
+
+    @property(Sprite)
     bg:Sprite = null;
 
     @property(Sprite)
@@ -45,6 +48,7 @@ export class BackGroundGameManager extends Component {
     start () {
         // [3]
         this.bg.node.setScale(new Vec3(localConfig.instance.scaleBG,localConfig.instance.scaleBG,localConfig.instance.scaleBG));
+        this.bg3.node.setScale(new Vec3(localConfig.instance.scaleBG,localConfig.instance.scaleBG,localConfig.instance.scaleBG));
     }
 
     // update (deltaTime: number) {
@@ -69,6 +73,7 @@ export class BackGroundGameManager extends Component {
                 return;
             } 
             this.bg.spriteFrame = spriteFrame;
+            this.bg3.spriteFrame = spriteFrame;
         });
     }
 

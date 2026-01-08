@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Component, director, game, macro, Node, ProgressBar, tween, UIOpacity, Vec3, view, clientEvent, Constants, ENV_TYPE, PLAY_TYPE, resourceUtil, localConfig, configuration, LogEventManager, MusicManager, PGSPlayInstantManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _temp, _crd, ccclass, property, LoadSceneManager;
+  var _reporterNs, _cclegacy, _decorator, Component, director, game, macro, Node, ProgressBar, tween, UIOpacity, Vec3, view, clientEvent, Constants, ENV_TYPE, PLAY_TYPE, resourceUtil, localConfig, configuration, LogEventManager, MusicManager, PGSPlayInstantManager, PokiSDKManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _temp, _crd, ccclass, property, LoadSceneManager;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -51,6 +51,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("PGSPlayInstantManager", "./common/PGSPlayInstantManager", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfPokiSDKManager(extras) {
+    _reporterNs.report("PokiSDKManager", "./common/PokiSDKManager", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -85,6 +89,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       MusicManager = _unresolved_8.MusicManager;
     }, function (_unresolved_9) {
       PGSPlayInstantManager = _unresolved_9.PGSPlayInstantManager;
+    }, function (_unresolved_10) {
+      PokiSDKManager = _unresolved_10.PokiSDKManager;
     }],
     execute: function () {
       _crd = true;
@@ -107,7 +113,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
        *
        */
 
-      _export("LoadSceneManager", LoadSceneManager = (_dec = ccclass('LoadSceneManager'), _dec2 = property(ProgressBar), _dec3 = property(Node), _dec4 = property(Node), _dec5 = property(UIOpacity), _dec6 = property(Node), _dec7 = property(UIOpacity), _dec(_class = (_class2 = (_temp = class LoadSceneManager extends Component {
+      _export("LoadSceneManager", LoadSceneManager = (_dec = ccclass('LoadSceneManager'), _dec2 = property(ProgressBar), _dec3 = property(Node), _dec4 = property(Node), _dec5 = property(Node), _dec6 = property(UIOpacity), _dec7 = property(Node), _dec8 = property(UIOpacity), _dec(_class = (_class2 = (_temp = class LoadSceneManager extends Component {
         constructor() {
           super(...arguments);
 
@@ -121,13 +127,15 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           _initializerDefineProperty(this, "bg", _descriptor2, this);
 
-          _initializerDefineProperty(this, "nodeTitle", _descriptor3, this);
+          _initializerDefineProperty(this, "bg2", _descriptor3, this);
 
-          _initializerDefineProperty(this, "nodeTitle_Opacity", _descriptor4, this);
+          _initializerDefineProperty(this, "nodeTitle", _descriptor4, this);
 
-          _initializerDefineProperty(this, "nodeIcon", _descriptor5, this);
+          _initializerDefineProperty(this, "nodeTitle_Opacity", _descriptor5, this);
 
-          _initializerDefineProperty(this, "nodeIcon_Opacity", _descriptor6, this);
+          _initializerDefineProperty(this, "nodeIcon", _descriptor6, this);
+
+          _initializerDefineProperty(this, "nodeIcon_Opacity", _descriptor7, this);
 
           _defineProperty(this, "indexLevel", 1);
 
@@ -151,6 +159,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
             error: Error()
           }), Constants) : Constants).GET_DATA_PAYLOAD_SUCCESS, this.getDataPayloadSuccess, this);
+          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
+            error: Error()
+          }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
+            error: Error()
+          }), Constants) : Constants).POKI_INIT_SUCCESS, this.pokiInitSuccess, this);
         }
 
         onDisable() {
@@ -164,6 +177,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
             error: Error()
           }), Constants) : Constants).GET_DATA_PAYLOAD_SUCCESS, this.getDataPayloadSuccess, this);
+          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
+            error: Error()
+          }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
+            error: Error()
+          }), Constants) : Constants).POKI_INIT_SUCCESS, this.pokiInitSuccess, this);
         }
 
         start() {
@@ -231,6 +249,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                 error: Error()
               }), localConfig) : localConfig).instance.DEFAULT_H / (w / h);
               this.bg.setScale(new Vec3((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+                error: Error()
+              }), localConfig) : localConfig).instance.scaleBG, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+                error: Error()
+              }), localConfig) : localConfig).instance.scaleBG, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+                error: Error()
+              }), localConfig) : localConfig).instance.scaleBG));
+              this.bg2.setScale(new Vec3((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
                 error: Error()
               }), localConfig) : localConfig).instance.scaleBG, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
                 error: Error()
@@ -654,6 +679,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }
         }
 
+        pokiInitSuccess() {
+          if ((_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
+            error: Error()
+          }), PokiSDKManager) : PokiSDKManager).instance.isInitializeAsync) {
+            this.setNextScene();
+          }
+        }
+
         setNextScene() {
           // console.log("LoadSceneManager2222:"+localConfig.instance.isGetPlayerDataSuccess);
           if (this.isNextScene) return;
@@ -663,6 +696,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           if (!(_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
             error: Error()
           }), localConfig) : localConfig).instance.isGetPayloadDataSuccess) return;
+          if (!(_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
+            error: Error()
+          }), PokiSDKManager) : PokiSDKManager).instance.isInitializeAsync) return;
           if (!this.isDataFinished) return;
           this.isNextScene = true;
 
@@ -835,28 +871,33 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "nodeTitle", [_dec4], {
+      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "bg2", [_dec4], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: null
+      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "nodeTitle", [_dec5], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "nodeTitle_Opacity", [_dec5], {
+      }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, "nodeTitle_Opacity", [_dec6], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, "nodeIcon", [_dec6], {
+      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "nodeIcon", [_dec7], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "nodeIcon_Opacity", [_dec7], {
+      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "nodeIcon_Opacity", [_dec8], {
         configurable: true,
         enumerable: true,
         writable: true,

@@ -62,6 +62,7 @@ export class localConfig {
     isGetPlayerDataSuccess:boolean = false;
     isGetPayloadDataSuccess:boolean = false;
     isGetRemoteConfigDataSuccess:boolean = false;
+    
 
     arrConnectedPlayerInfos:FriendAvatarInfo[] = [];
 
@@ -1519,6 +1520,8 @@ export class localConfig {
         // this.fixRatioScreen =  (view.getViewportRect().width/view.getViewportRect().height) / (720/1280) ;
         this.fixRatioScreen =  (view.getFrameSize().width/view.getFrameSize().height) / (1080/1920);
         // console.log("fixRatioScreen",this.fixRatioScreen);
+
+        this.fixRatioScreen = 1;
     }
     getPos_PosWord_WorldSpace(posWorld:Vec3,scale:number){
         // console.log("getPos_PosWord_WorldSpace",posWorld,scale);

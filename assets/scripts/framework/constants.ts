@@ -375,6 +375,7 @@ export class Constants {
 
     public static RECEIVE_LISTRANK_TOURNAMENT_PAGEHOST:string = "receive_listrank_tournament_pagehost";
 
+    public static SHOW_THEME_POPUP:string = "show_theme_popup";
     public static POKI_INIT_SUCCESS:string = "poki_init_success";
 }
 

@@ -11,6 +11,7 @@ import { FBInstantManager } from '../../common/FBInstantManager';
 import Utils from '../../core/utils/Utils';
 import { GroupRewardDataInfo } from '../info/ShopDataInfo';
 import { LogEventManager } from '../../common/LogEventManager';
+import { PokiSDKManager } from '../../common/PokiSDKManager';
 const { ccclass, property } = _decorator;
 
 /**
@@ -296,7 +297,20 @@ export class SpinPopup extends BasePopup {
     touchSpinAd(){
         LogEventManager.instance.logButtonClick("spinad","spinpopup");
         if(localConfig.instance.spinFreeCount > 0){
-            FBInstantManager.instance.Show_RewardedVideoAsync("spinpopup","spin",(err, success) => {
+            // FBInstantManager.instance.Show_RewardedVideoAsync("spinpopup","spin",(err, success) => {
+            //     if (err) {
+            //         console.log(err);
+            //     }else{
+            //         if(localConfig.instance.spinFreeCount == 0){
+            //             this.spinAd_disable.active = true;
+            //         }
+            //         this.txtSpinAdCount.string = `(${localConfig.instance.spinFreeCount - 1}/3)`;
+            //         localConfig.instance.setSpinFreeCount(localConfig.instance.spinFreeCount - 1);
+            //         this.setSpinStart();
+            //     }
+            // })
+
+            PokiSDKManager.instance.Show_RewardedVideoAsync("spinpopup","spin",(err, success) => {
                 if (err) {
                     console.log(err);
                 }else{
@@ -307,7 +321,7 @@ export class SpinPopup extends BasePopup {
                     localConfig.instance.setSpinFreeCount(localConfig.instance.spinFreeCount - 1);
                     this.setSpinStart();
                 }
-            })
+            });
         }
     }
 

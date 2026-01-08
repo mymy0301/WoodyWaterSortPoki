@@ -8,6 +8,7 @@ import { configuration } from '../framework/configuration';
 import { clientEvent } from '../framework/clientEvent';
 import { FBInstantManager } from '../common/FBInstantManager';
 import { LogEventManager } from '../common/LogEventManager';
+import { PokiSDKManager } from '../common/PokiSDKManager';
 const { ccclass, property } = _decorator;
 
 /**
@@ -108,7 +109,23 @@ export class MoreLivesPopup extends BasePopup {
 
     touchWatchAd() {
         LogEventManager.instance.logButtonClick("watchad","masterpasspopup");
-        FBInstantManager.instance.Show_RewardedVideoAsync("morelivespopup","watchad",(err, success) => {
+        // FBInstantManager.instance.Show_RewardedVideoAsync("morelivespopup","watchad",(err, success) => {
+        //     if(err){
+                
+        //     }else{
+        //         localConfig.instance.currHeart ++;
+        //         configuration.instance.setData_HeartCount(localConfig.instance.currHeart);
+        //         LogEventManager.instance.logResourceEarned("booster","heart",1,"morelivespopup","watchad");
+        //         clientEvent.dispatchEvent(Constants.HEART_UPDATE);
+        //         this.showInfo();
+
+        //         this.hidePopup();
+
+        //         this.cbMoreLives();
+        //     }
+        // });
+
+        PokiSDKManager.instance.Show_RewardedVideoAsync("morelivespopup","watchad",(err, success) => {
             if(err){
                 
             }else{

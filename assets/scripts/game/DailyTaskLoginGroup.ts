@@ -7,6 +7,7 @@ import { Constants, SHOP_ITEM_TYPE, TICKET_TYPE } from '../framework/constants';
 import { GroupRewardDataInfo } from './info/ShopDataInfo';
 import { FBInstantManager } from '../common/FBInstantManager';
 import { LogEventManager } from '../common/LogEventManager';
+import { PokiSDKManager } from '../common/PokiSDKManager';
 const { ccclass, property } = _decorator;
 
 /**
@@ -104,7 +105,21 @@ export class DailyTaskLoginGroup extends Component {
 
     touchBonus(){
         LogEventManager.instance.logButtonClick("loginbonus","dailytaskpopup");
-        FBInstantManager.instance.Show_RewardedVideoAsync("dailytaskpopup","loginbonus",(err, success) => {
+        // FBInstantManager.instance.Show_RewardedVideoAsync("dailytaskpopup","loginbonus",(err, success) => {
+        //     if (err) {
+        //         console.log(err);
+        //     }else{
+        //         let groupRewardDataInfo:GroupRewardDataInfo = new GroupRewardDataInfo([]);
+        //         groupRewardDataInfo.items = [];
+        //         groupRewardDataInfo.items.push({itemShopType:SHOP_ITEM_TYPE.COIN,value:200});
+        //         localConfig.instance.setDailyLogin_AdReceiveReward();
+        //         clientEvent.dispatchEvent(Constants.SHOW_REWARDRECEIVE_POPUP,"DAILY LOGIN",groupRewardDataInfo);
+        //         this.btnBonus.node.active = false;
+        //         this.showGroup();
+        //     }
+        // });
+
+        PokiSDKManager.instance.Show_RewardedVideoAsync("dailytaskpopup","loginbonus",(err, success) => {
             if (err) {
                 console.log(err);
             }else{

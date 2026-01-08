@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Component, Sprite, Vec3, localConfig, Constants, THEME_TYPE, resourceUtil, clientEvent, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _temp, _crd, ccclass, property, BackGroundGameManager;
+  var _reporterNs, _cclegacy, _decorator, Component, Sprite, Vec3, localConfig, Constants, THEME_TYPE, resourceUtil, clientEvent, _dec, _dec2, _dec3, _dec4, _class, _class2, _descriptor, _descriptor2, _descriptor3, _temp, _crd, ccclass, property, BackGroundGameManager;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -71,13 +71,15 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
        *
        */
 
-      _export("BackGroundGameManager", BackGroundGameManager = (_dec = ccclass('BackGroundGameManager'), _dec2 = property(Sprite), _dec3 = property(Sprite), _dec(_class = (_class2 = (_temp = class BackGroundGameManager extends Component {
+      _export("BackGroundGameManager", BackGroundGameManager = (_dec = ccclass('BackGroundGameManager'), _dec2 = property(Sprite), _dec3 = property(Sprite), _dec4 = property(Sprite), _dec(_class = (_class2 = (_temp = class BackGroundGameManager extends Component {
         constructor(...args) {
           super(...args);
 
-          _initializerDefineProperty(this, "bg", _descriptor, this);
+          _initializerDefineProperty(this, "bg3", _descriptor, this);
 
-          _initializerDefineProperty(this, "bg2", _descriptor2, this);
+          _initializerDefineProperty(this, "bg", _descriptor2, this);
+
+          _initializerDefineProperty(this, "bg2", _descriptor3, this);
         }
 
         onEnable() {
@@ -100,6 +102,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         start() {
           // [3]
           this.bg.node.setScale(new Vec3((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.scaleBG, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.scaleBG, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.scaleBG));
+          this.bg3.node.setScale(new Vec3((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
             error: Error()
           }), localConfig) : localConfig).instance.scaleBG, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
             error: Error()
@@ -139,6 +148,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             }
 
             this.bg.spriteFrame = spriteFrame;
+            this.bg3.spriteFrame = spriteFrame;
           });
         }
 
@@ -170,14 +180,21 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           this.bg2.node.active = false;
         }
 
-      }, _temp), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "bg", [_dec2], {
+      }, _temp), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "bg3", [_dec2], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
-      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "bg2", [_dec3], {
+      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "bg", [_dec3], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function () {
+          return null;
+        }
+      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "bg2", [_dec4], {
         configurable: true,
         enumerable: true,
         writable: true,

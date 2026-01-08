@@ -55,6 +55,7 @@ import { TutClayPopup } from './game/TutClayPopup';
 import { LogEventManager } from './common/LogEventManager';
 import { WinTournamentPageHostPopup } from './game/WinTournamentPageHostPopup';
 import { BlackFridayPopup } from './game/blackfriday/BlackFridayPopup';
+import { ThemePopup } from './game/ThemePopup';
 const { ccclass, property } = _decorator;
 
 /**
@@ -179,6 +180,8 @@ export class PlaySceneManager extends Component {
 
         clientEvent.on(Constants.SHOW_BLACKRIDAY_COIN_POPUP,this.showBlackFridayPopup,this);
 
+        clientEvent.on(Constants.SHOW_THEME_POPUP,this.showThemePopup,this);
+
         this.nodeEfx.on(Constants.CLICK,this.touchEfx,this);
     }
 
@@ -273,6 +276,9 @@ export class PlaySceneManager extends Component {
         clientEvent.off(Constants.TOURNAMENT_PAGEHOST_TOUCH_HOME,this.setTournamentPageHostTouchHome,this);
 
         clientEvent.off(Constants.SHOW_BLACKRIDAY_COIN_POPUP,this.showBlackFridayPopup,this);
+
+        clientEvent.off(Constants.SHOW_THEME_POPUP,this.showThemePopup,this);
+    
 
         this.nodeEfx.off(Constants.CLICK,this.touchEfx,this);
     }
@@ -1791,6 +1797,30 @@ export class PlaySceneManager extends Component {
     }
     //#endregion
 
+
+    //#region THEME POPUP
+    @property(Node)
+    nodeThemePopup:Node;
+
+    themePopup:ThemePopup;
+
+    showThemePopup(){
+        let self = this;
+        if(this.themePopup){
+            this.themePopup.showThemePopup();
+        }else{
+            this.showLoadingPopup();
+            resourceUtil.loadPrefabUI_Bundle("ThemePopup",(err,uiPrefab)=>{
+                let uiPopup = instantiate(uiPrefab);    
+                uiPopup.setParent(self.nodeThemePopup);
+                uiPopup.setPosition(new Vec3(0,0,0));
+
+                self.themePopup = uiPopup.getComponent(ThemePopup);
+                self.themePopup.showThemePopup();
+                self.hideLoadingPopup();
+            });
+        }
+    }
 
 
     touchEfx() {

@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Component, Node, tween, Vec3, Button, UIOpacity, CCBoolean, AudioManager2, Constants, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _temp, _crd, ccclass, property, BasePopup;
+  var _reporterNs, _cclegacy, _decorator, Component, Node, tween, Vec3, Button, UIOpacity, CCBoolean, AudioManager2, Constants, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _temp, _crd, ccclass, property, BasePopup;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -47,7 +47,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         property
       } = _decorator);
 
-      _export("BasePopup", BasePopup = (_dec = ccclass('BasePopup'), _dec2 = property(CCBoolean), _dec3 = property(UIOpacity), _dec4 = property(Node), _dec5 = property(Node), _dec6 = property(Button), _dec7 = property(UIOpacity), _dec(_class = (_class2 = (_temp = class BasePopup extends Component {
+      _export("BasePopup", BasePopup = (_dec = ccclass('BasePopup'), _dec2 = property(CCBoolean), _dec3 = property(UIOpacity), _dec4 = property(Node), _dec5 = property(Node), _dec6 = property(Button), _dec7 = property(Button), _dec8 = property(UIOpacity), _dec(_class = (_class2 = (_temp = class BasePopup extends Component {
         constructor(...args) {
           super(...args);
 
@@ -61,7 +61,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
           _initializerDefineProperty(this, "btnClose", _descriptor5, this);
 
-          _initializerDefineProperty(this, "popup_UIOpacity", _descriptor6, this);
+          _initializerDefineProperty(this, "btnClose2", _descriptor6, this);
+
+          _initializerDefineProperty(this, "popup_UIOpacity", _descriptor7, this);
 
           _defineProperty(this, "tweenScalePopup", null);
 
@@ -89,11 +91,23 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
               error: Error()
             }), Constants) : Constants).CLICK, this.touchClose, this);
           }
+
+          if (this.btnClose2 != null) {
+            this.btnClose2.node.on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
+              error: Error()
+            }), Constants) : Constants).CLICK, this.touchClose, this);
+          }
         }
 
         onDisable() {
           if (this.btnClose != null) {
             this.btnClose.node.off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
+              error: Error()
+            }), Constants) : Constants).CLICK, this.touchClose, this);
+          }
+
+          if (this.btnClose2 != null) {
+            this.btnClose2.node.off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
               error: Error()
             }), Constants) : Constants).CLICK, this.touchClose, this);
           }
@@ -306,7 +320,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         initializer: function () {
           return null;
         }
-      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "popup_UIOpacity", [_dec7], {
+      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "btnClose2", [_dec7], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function () {
+          return null;
+        }
+      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "popup_UIOpacity", [_dec8], {
         configurable: true,
         enumerable: true,
         writable: true,

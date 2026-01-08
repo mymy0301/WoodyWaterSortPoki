@@ -55,6 +55,8 @@ export class HomeGroup extends Component {
     @property(Button)
     btnSetting:Button;
 
+    @property(Button)
+    btnTheme:Button;
 
 
     @property(Button)
@@ -116,6 +118,8 @@ export class HomeGroup extends Component {
         clientEvent.on(Constants.IAP_INIT_SUCCESS, this.setIAPInitSuccess, this);
         clientEvent.on(Constants.THEME_SELECTED_UPDATE, this.setThemeSelected, this);
         
+        this.btnTheme.node.on(Button.EventType.CLICK, this.touchTheme, this);
+
         this.initAllTop();
         this.showInfo();
         this.showInfoCharacter();
@@ -128,6 +132,8 @@ export class HomeGroup extends Component {
         this.btnAvatar.node.off(Button.EventType.CLICK, this.touchAvatar, this);
         this.btnSetting.node.off(Button.EventType.CLICK, this.touchSetting, this);
         this.btnLevel.node.off(Button.EventType.CLICK, this.touchLevel, this);
+
+        this.btnTheme.node.off(Button.EventType.CLICK, this.touchTheme, this);
         
         clientEvent.off(Constants.HOME_UPDATE_TARGET_POS,this.updateTargetPos,this);
         clientEvent.off(Constants.IAP_INIT_SUCCESS,this.setIAPInitSuccess,this);
@@ -151,7 +157,7 @@ export class HomeGroup extends Component {
                 this.groupHoverWidget.top = 0;
                 this.groupBGTopWidget.top = 0;
                 this.groupAllTopWidget.top = 0;
-                this.groupScrollWidget.bottom = 560;
+                this.groupScrollWidget.bottom = 360;
                 this.groupScrollWidget.top = 160;
                 return;
             }
@@ -159,13 +165,13 @@ export class HomeGroup extends Component {
             this.groupHoverWidget.top = -posY;
             this.groupBGTopWidget.top = -posY;
             this.groupAllTopWidget.top = -posY;
-            this.groupScrollWidget.bottom = 560;
+            this.groupScrollWidget.bottom = 360;
             this.groupScrollWidget.top = 160 - posY;
         }else{
             this.groupHoverWidget.top = 0;
             this.groupBGTopWidget.top = 0;
             this.groupAllTopWidget.top = 0;
-            this.groupScrollWidget.bottom = 560;
+            this.groupScrollWidget.bottom = 360;
             this.groupScrollWidget.top = 160;
         }
     }
@@ -470,6 +476,12 @@ export class HomeGroup extends Component {
         LogEventManager.instance.logButtonClick("setting","home");
         // console.log("touchSetting");
         clientEvent.dispatchEvent(Constants.SHOW_SETTING_POPUP);
+    }
+
+    touchTheme(){
+        LogEventManager.instance.logButtonClick("theme","home");
+        // console.log("touchSetting");
+        clientEvent.dispatchEvent(Constants.SHOW_THEME_POPUP);
     }
 
     touchLevel(){

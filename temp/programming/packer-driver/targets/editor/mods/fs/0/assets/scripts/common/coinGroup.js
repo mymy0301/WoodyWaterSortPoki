@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Component, Node, Label, tween, Vec3, Button, clientEvent, Constants, SCENE_TYPE, localConfig, Utils, _dec, _dec2, _dec3, _dec4, _class, _class2, _descriptor, _descriptor2, _descriptor3, _temp, _crd, ccclass, property, CoinGroup;
+  var _reporterNs, _cclegacy, _decorator, Component, Node, Label, tween, Vec3, clientEvent, Constants, SCENE_TYPE, localConfig, Utils, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _temp, _crd, ccclass, property, CoinGroup;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -42,7 +42,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       Label = _cc.Label;
       tween = _cc.tween;
       Vec3 = _cc.Vec3;
-      Button = _cc.Button;
     }, function (_unresolved_2) {
       clientEvent = _unresolved_2.clientEvent;
     }, function (_unresolved_3) {
@@ -63,15 +62,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         property
       } = _decorator);
 
-      _export("CoinGroup", CoinGroup = (_dec = ccclass('CoinGroup'), _dec2 = property(Label), _dec3 = property(Node), _dec4 = property(Button), _dec(_class = (_class2 = (_temp = class CoinGroup extends Component {
+      _export("CoinGroup", CoinGroup = (_dec = ccclass('CoinGroup'), _dec2 = property(Label), _dec3 = property(Node), _dec(_class = (_class2 = (_temp = class CoinGroup extends Component {
         constructor(...args) {
           super(...args);
 
           _initializerDefineProperty(this, "txtCoin", _descriptor, this);
 
           _initializerDefineProperty(this, "iconCoin", _descriptor2, this);
-
-          _initializerDefineProperty(this, "btnAddCoin", _descriptor3, this);
 
           _defineProperty(this, "tweenCoinUpdate", null);
         }
@@ -93,10 +90,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), clientEvent) : clientEvent).on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
             error: Error()
-          }), Constants) : Constants).COIN_UPDATE, this.coinUpdate, this);
-          this.btnAddCoin.node.on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).CLICK, this.touchAddCoin, this);
+          }), Constants) : Constants).COIN_UPDATE, this.coinUpdate, this); // this.btnAddCoin.node.on(Constants.CLICK,this.touchAddCoin,this);
+
           this.txtCoin.string = `${(_crd && Utils === void 0 ? (_reportPossibleCrUseOfUtils({
             error: Error()
           }), Utils) : Utils).formatNumber(Math.floor((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
@@ -109,10 +104,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), clientEvent) : clientEvent).off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
             error: Error()
-          }), Constants) : Constants).COIN_UPDATE, this.coinUpdate, this);
-          this.btnAddCoin.node.off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).CLICK, this.touchAddCoin, this);
+          }), Constants) : Constants).COIN_UPDATE, this.coinUpdate, this); // this.btnAddCoin.node.off(Constants.CLICK,this.touchAddCoin,this);
         }
 
         start() {
@@ -166,11 +158,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         writable: true,
         initializer: null
       }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "iconCoin", [_dec3], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: null
-      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "btnAddCoin", [_dec4], {
         configurable: true,
         enumerable: true,
         writable: true,

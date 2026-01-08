@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Button, Component, Label, Node, Sprite, SpriteFrame, tween, Vec3, Constants, THEME_TYPE, TICKET_TYPE, UNLOCK_TYPE, localConfig, resourceUtil, clientEvent, FBInstantManager, LogEventManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _temp, _crd, ccclass, property, ItemTheme;
+  var _reporterNs, _cclegacy, _decorator, Button, Component, Label, Node, Sprite, SpriteFrame, tween, Vec3, Constants, THEME_TYPE, TICKET_TYPE, UNLOCK_TYPE, localConfig, resourceUtil, clientEvent, LogEventManager, PokiSDKManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _temp, _crd, ccclass, property, ItemTheme;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -39,12 +39,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("clientEvent", "../framework/clientEvent", _context.meta, extras);
   }
 
-  function _reportPossibleCrUseOfFBInstantManager(extras) {
-    _reporterNs.report("FBInstantManager", "../common/FBInstantManager", _context.meta, extras);
-  }
-
   function _reportPossibleCrUseOfLogEventManager(extras) {
     _reporterNs.report("LogEventManager", "../common/LogEventManager", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfPokiSDKManager(extras) {
+    _reporterNs.report("PokiSDKManager", "../common/PokiSDKManager", _context.meta, extras);
   }
 
   return {
@@ -73,9 +73,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     }, function (_unresolved_5) {
       clientEvent = _unresolved_5.clientEvent;
     }, function (_unresolved_6) {
-      FBInstantManager = _unresolved_6.FBInstantManager;
+      LogEventManager = _unresolved_6.LogEventManager;
     }, function (_unresolved_7) {
-      LogEventManager = _unresolved_7.LogEventManager;
+      PokiSDKManager = _unresolved_7.PokiSDKManager;
     }],
     execute: function () {
       _crd = true;
@@ -400,9 +400,19 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             }), THEME_TYPE) : THEME_TYPE).TUBE || this.themeType == (_crd && THEME_TYPE === void 0 ? (_reportPossibleCrUseOfTHEME_TYPE({
               error: Error()
             }), THEME_TYPE) : THEME_TYPE).BG) {
-              (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
+              // FBInstantManager.instance.Show_RewardedVideoAsync("themepopup","unlock",(err, success) => {
+              //     if (err) {
+              //     } else {
+              //         localConfig.instance.setThemeUnlocked(this.themeType, this.itemID);
+              //         LogEventManager.instance.logResourceEarned("theme","bg",this.itemID,"themepopup","watchad");
+              //         clientEvent.dispatchEvent(Constants.THEME_UNSELECT_UPDATE, this.themeType, localConfig.instance.getThemeSelected_byThemeType(this.themeType));
+              //         localConfig.instance.setThemeSelected(this.themeType, this.itemID);
+              //         clientEvent.dispatchEvent(Constants.THEME_SELECT_UPDATE, this.themeType, this.itemID);
+              //     }
+              // });
+              (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
                 error: Error()
-              }), FBInstantManager) : FBInstantManager).instance.Show_RewardedVideoAsync("themepopup", "unlock", (err, success) => {
+              }), PokiSDKManager) : PokiSDKManager).instance.Show_RewardedVideoAsync("themepopup", "unlock", (err, success) => {
                 if (err) {} else {
                   (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
                     error: Error()
@@ -438,9 +448,19 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                 if (skinInfo.unlockType == (_crd && UNLOCK_TYPE === void 0 ? (_reportPossibleCrUseOfUNLOCK_TYPE({
                   error: Error()
                 }), UNLOCK_TYPE) : UNLOCK_TYPE).WATCH_AD) {
-                  (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
+                  // FBInstantManager.instance.Show_RewardedVideoAsync("themepopup","unlock",(err, success) => {
+                  //     if (err) {
+                  //     } else {
+                  //         localConfig.instance.setThemeUnlocked(this.themeType, this.itemID);
+                  //         LogEventManager.instance.logResourceEarned("theme","skin",this.itemID,"themepopup","watchad");
+                  //         clientEvent.dispatchEvent(Constants.THEME_UNSELECT_UPDATE, this.themeType, localConfig.instance.getThemeSelected_byThemeType(this.themeType));
+                  //         localConfig.instance.setThemeSelected(this.themeType, this.itemID);
+                  //         clientEvent.dispatchEvent(Constants.THEME_SELECT_UPDATE, this.themeType, this.itemID);
+                  //     }
+                  // });
+                  (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
                     error: Error()
-                  }), FBInstantManager) : FBInstantManager).instance.Show_RewardedVideoAsync("themepopup", "unlock", (err, success) => {
+                  }), PokiSDKManager) : PokiSDKManager).instance.Show_RewardedVideoAsync("themepopup", "unlock", (err, success) => {
                     if (err) {} else {
                       (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
                         error: Error()
@@ -601,10 +621,24 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         touchUnlock_Ad() {
           (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
             error: Error()
-          }), LogEventManager) : LogEventManager).instance.logButtonClick("unlockad", "themepopup");
-          (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
+          }), LogEventManager) : LogEventManager).instance.logButtonClick("unlockad", "themepopup"); // FBInstantManager.instance.Show_RewardedVideoAsync("themepopup","unlock",(err, success) => {
+          //     if (err) {
+          //     } else {
+          //         localConfig.instance.setThemeUnlocked(this.themeType, this.itemID);
+          //         if (this.themeType == THEME_TYPE.BG) {
+          //             LogEventManager.instance.logResourceEarned("theme", "bg", this.itemID, "themepopup", "watchad");
+          //         } else if (this.themeType == THEME_TYPE.SKIN) {
+          //             LogEventManager.instance.logResourceEarned("theme", "skin", this.itemID, "themepopup", "watchad");
+          //         }
+          //         clientEvent.dispatchEvent(Constants.THEME_UNSELECT_UPDATE, this.themeType, localConfig.instance.getThemeSelected_byThemeType(this.themeType));
+          //         localConfig.instance.setThemeSelected(this.themeType, this.itemID);
+          //         clientEvent.dispatchEvent(Constants.THEME_SELECT_UPDATE, this.themeType, this.itemID);
+          //     }
+          // });
+
+          (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
             error: Error()
-          }), FBInstantManager) : FBInstantManager).instance.Show_RewardedVideoAsync("themepopup", "unlock", (err, success) => {
+          }), PokiSDKManager) : PokiSDKManager).instance.Show_RewardedVideoAsync("themepopup", "unlock", (err, success) => {
             if (err) {} else {
               (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
                 error: Error()

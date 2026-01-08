@@ -40,6 +40,12 @@ export class ItemTabTheme extends Component {
     @property(SpriteFrame)
     sfOFF:SpriteFrame;
 
+    @property(Node)
+    nodeActive:Node = null;
+
+    @property(Node)
+    nodeDeactive:Node = null;
+
     protected onEnable(): void {
         this.btnTab.node.on(Constants.CLICK,this.touchTab,this);
         clientEvent.on(Constants.TABTHEME_UPDATE,this.showTab,this);
@@ -53,12 +59,16 @@ export class ItemTabTheme extends Component {
     tweenMove:Tween<{}> = null;
     setItemON(){
         this.bg.spriteFrame = this.sfON;
-        tween(this.node).to(0.15, { position: new Vec3(this.node.position.x, 0, 0) }, { easing: 'quadOut', onComplete: () => { } }).start();
+        // tween(this.node).to(0.15, { position: new Vec3(this.node.position.x, 0, 0) }, { easing: 'quadOut', onComplete: () => { } }).start();
+        this.nodeActive.active = true;
+        this.nodeDeactive.active = false;
     }
 
     setItemOff(){
         this.bg.spriteFrame = this.sfOFF;
-        tween(this.node).to(0.15, { position: new Vec3(this.node.position.x, -5, 0) }, { easing: 'quadOut', onComplete: () => { } }).start();
+        // tween(this.node).to(0.15, { position: new Vec3(this.node.position.x, -5, 0) }, { easing: 'quadOut', onComplete: () => { } }).start();
+        this.nodeActive.active = false;
+        this.nodeDeactive.active = true;
     }
 
     touchTab(){

@@ -7,6 +7,7 @@ import { clientEvent } from '../../framework/clientEvent';
 import { FBInstantManager } from '../../common/FBInstantManager';
 import { AudioManager2 } from '../../framework/audioManager2';
 import { LogEventManager } from '../../common/LogEventManager';
+import { PokiSDKManager } from '../../common/PokiSDKManager';
 const { ccclass, property } = _decorator;
 
 /**
@@ -85,7 +86,17 @@ export class TournamentRevivePopup extends BasePopup {
 
     touchReviveAD(){
         LogEventManager.instance.logButtonClick("revivead","tournamentrevivepopup");
-        FBInstantManager.instance.Show_RewardedVideoAsync("tournamentrevivepopup","revivead",(err, success) => {
+        // FBInstantManager.instance.Show_RewardedVideoAsync("tournamentrevivepopup","revivead",(err, success) => {
+        //     if(err){
+
+        //     }else{
+        //         this.hidePopup();
+        //         localConfig.instance.isTournamentRevivebyAd = true;
+        //         clientEvent.dispatchEvent(Constants.TOURNAMENT_REVIVE_YES);
+        //     }
+        // })
+
+        PokiSDKManager.instance.Show_RewardedVideoAsync("tournamentrevivepopup","revivead",(err, success) => {
             if(err){
 
             }else{
@@ -93,7 +104,7 @@ export class TournamentRevivePopup extends BasePopup {
                 localConfig.instance.isTournamentRevivebyAd = true;
                 clientEvent.dispatchEvent(Constants.TOURNAMENT_REVIVE_YES);
             }
-        })
+        });
     }
 
     touchClose(): void {

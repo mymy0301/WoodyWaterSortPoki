@@ -537,6 +537,8 @@ System.register(["cc"], function (_export, _context) {
 
       _defineProperty(Constants, "RECEIVE_LISTRANK_TOURNAMENT_PAGEHOST", "receive_listrank_tournament_pagehost");
 
+      _defineProperty(Constants, "SHOW_THEME_POPUP", "show_theme_popup");
+
       _defineProperty(Constants, "POKI_INIT_SUCCESS", "poki_init_success");
 
       _export("GAME_STATE", GAME_STATE = {

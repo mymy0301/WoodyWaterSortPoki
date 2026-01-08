@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Button, Vec3, BasePopup, Constants, GAME_STATE, localConfig, clientEvent, FBInstantManager, AudioManager2, LogEventManager, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _temp, _crd, ccclass, property, TournamentRevivePopup;
+  var _reporterNs, _cclegacy, _decorator, Button, Vec3, BasePopup, Constants, GAME_STATE, localConfig, clientEvent, AudioManager2, LogEventManager, PokiSDKManager, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _temp, _crd, ccclass, property, TournamentRevivePopup;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -31,16 +31,16 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("clientEvent", "../../framework/clientEvent", _context.meta, extras);
   }
 
-  function _reportPossibleCrUseOfFBInstantManager(extras) {
-    _reporterNs.report("FBInstantManager", "../../common/FBInstantManager", _context.meta, extras);
-  }
-
   function _reportPossibleCrUseOfAudioManager(extras) {
     _reporterNs.report("AudioManager2", "../../framework/audioManager2", _context.meta, extras);
   }
 
   function _reportPossibleCrUseOfLogEventManager(extras) {
     _reporterNs.report("LogEventManager", "../../common/LogEventManager", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfPokiSDKManager(extras) {
+    _reporterNs.report("PokiSDKManager", "../../common/PokiSDKManager", _context.meta, extras);
   }
 
   return {
@@ -61,11 +61,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     }, function (_unresolved_5) {
       clientEvent = _unresolved_5.clientEvent;
     }, function (_unresolved_6) {
-      FBInstantManager = _unresolved_6.FBInstantManager;
+      AudioManager2 = _unresolved_6.AudioManager2;
     }, function (_unresolved_7) {
-      AudioManager2 = _unresolved_7.AudioManager2;
+      LogEventManager = _unresolved_7.LogEventManager;
     }, function (_unresolved_8) {
-      LogEventManager = _unresolved_8.LogEventManager;
+      PokiSDKManager = _unresolved_8.PokiSDKManager;
     }],
     execute: function () {
       _crd = true;
@@ -190,10 +190,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         touchReviveAD() {
           (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
             error: Error()
-          }), LogEventManager) : LogEventManager).instance.logButtonClick("revivead", "tournamentrevivepopup");
-          (_crd && FBInstantManager === void 0 ? (_reportPossibleCrUseOfFBInstantManager({
+          }), LogEventManager) : LogEventManager).instance.logButtonClick("revivead", "tournamentrevivepopup"); // FBInstantManager.instance.Show_RewardedVideoAsync("tournamentrevivepopup","revivead",(err, success) => {
+          //     if(err){
+          //     }else{
+          //         this.hidePopup();
+          //         localConfig.instance.isTournamentRevivebyAd = true;
+          //         clientEvent.dispatchEvent(Constants.TOURNAMENT_REVIVE_YES);
+          //     }
+          // })
+
+          (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
             error: Error()
-          }), FBInstantManager) : FBInstantManager).instance.Show_RewardedVideoAsync("tournamentrevivepopup", "revivead", (err, success) => {
+          }), PokiSDKManager) : PokiSDKManager).instance.Show_RewardedVideoAsync("tournamentrevivepopup", "revivead", (err, success) => {
             if (err) {} else {
               this.hidePopup();
               (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
