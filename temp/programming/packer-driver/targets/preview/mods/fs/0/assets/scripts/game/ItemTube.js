@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9", "__unresolved_10", "__unresolved_11"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Button, Color, Component, Graphics, Mask, Node, ProgressBar, Sprite, SpriteFrame, tween, UIOpacity, Vec2, Vec3, ItemWater, localConfig, Utils, Constants, GAME_MODE, GAME_STATE, ITEM_TUBE_STATE, THEME_TYPE, WATER_STATE, clientEvent, AudioManager2, FBInstantManager, ItemTubeOBIMObj, ItemTubeClayObj, ItemTubePlasterObj, lodash, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _temp, _crd, ccclass, property, ItemTube;
+  var _reporterNs, _cclegacy, _decorator, Button, Color, Component, Graphics, Mask, Node, ProgressBar, Sprite, SpriteFrame, tween, UIOpacity, UITransform, Vec2, Vec3, ItemWater, localConfig, Utils, Constants, GAME_MODE, GAME_STATE, ITEM_TUBE_STATE, THEME_TYPE, WATER_STATE, clientEvent, AudioManager2, FBInstantManager, ItemTubeOBIMObj, ItemTubeClayObj, ItemTubePlasterObj, lodash, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _temp, _crd, ccclass, property, ItemTube;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -108,6 +108,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       SpriteFrame = _cc.SpriteFrame;
       tween = _cc.tween;
       UIOpacity = _cc.UIOpacity;
+      UITransform = _cc.UITransform;
       Vec2 = _cc.Vec2;
       Vec3 = _cc.Vec3;
     }, function (_unresolved_2) {
@@ -269,15 +270,17 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
         onEnable() {
-          this.btnTube.node.on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).CLICK, this.touchItemTube, this);
+          this.btnTube.node.on(Node.EventType.TOUCH_START, this.touchItemTube, this);
+          this.btnTube.node.on(Node.EventType.TOUCH_CANCEL, this.touchEndItemTube, this);
+          this.btnTube.node.on(Node.EventType.TOUCH_END, this.touchEndItemTube, this);
+          this.btnTube.node.on(Node.EventType.TOUCH_MOVE, this.onTouchMoveItemTube, this);
         }
 
         onDisable() {
-          this.btnTube.node.on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).CLICK, this.touchItemTube, this);
+          this.btnTube.node.on(Node.EventType.TOUCH_START, this.touchItemTube, this);
+          this.btnTube.node.off(Node.EventType.TOUCH_CANCEL, this.touchEndItemTube, this);
+          this.btnTube.node.off(Node.EventType.TOUCH_END, this.touchEndItemTube, this);
+          this.btnTube.node.off(Node.EventType.TOUCH_MOVE, this.onTouchMoveItemTube, this);
         }
 
         initItemTube(_tubeX, _tubeY, _arrIndexColors) {
@@ -1263,6 +1266,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               this.setSelectTube_Fail();
             }
           }
+        }
+
+        touchEndItemTube() {
+          console.log("touchEndItemTube");
+        }
+
+        onTouchMoveItemTube(event) {
+          console.log("onTouchMoveItemTube");
+          var touches_Check = event.getTouches();
+          var locationUI_Check = touches_Check[0].getUILocation();
+          var posCheck = this.node.parent.getComponent(UITransform).convertToNodeSpaceAR(new Vec3(locationUI_Check.x, locationUI_Check.y));
+          console.log("posCheck:", posCheck, locationUI_Check);
         }
 
         setSelectTube_Fail() {}

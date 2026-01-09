@@ -1,5 +1,5 @@
 
-import { _decorator, Button, Color, Component, Graphics, log, Mask, Node, ProgressBar, Sprite, SpriteFrame, tween, Tween, UIOpacity, Vec2, Vec3 } from 'cc';
+import { _decorator, Button, Color, Component, EventTouch, Graphics, log, Mask, Node, ProgressBar, Sprite, SpriteFrame, tween, Tween, UIOpacity, UITransform, Vec2, Vec3 } from 'cc';
 import { ItemWater } from './ItemWater';
 import { ItemTubeConfig } from './info/ItemTubeConfig';
 import { localConfig } from '../localConfig';
@@ -106,11 +106,17 @@ export class ItemTube extends Component {
     // }
 
     protected onEnable(): void {
-        this.btnTube.node.on(Constants.CLICK,this.touchItemTube,this);
+        this.btnTube.node.on(Node.EventType.TOUCH_START,this.touchItemTube,this);
+        // this.btnTube.node.on(Node.EventType.TOUCH_CANCEL,this.touchEndItemTube,this);
+        // this.btnTube.node.on(Node.EventType.TOUCH_END, this.touchEndItemTube, this);
+        // this.btnTube.node.on(Node.EventType.TOUCH_MOVE, this.onTouchMoveItemTube, this);
     }
 
     protected onDisable(): void {
-        this.btnTube.node.on(Constants.CLICK,this.touchItemTube,this);
+        this.btnTube.node.on(Node.EventType.TOUCH_START,this.touchItemTube,this);
+        // this.btnTube.node.off(Node.EventType.TOUCH_CANCEL,this.touchEndItemTube,this);
+        // this.btnTube.node.off(Node.EventType.TOUCH_END, this.touchEndItemTube, this);
+        // this.btnTube.node.off(Node.EventType.TOUCH_MOVE, this.onTouchMoveItemTube, this);
     }
 
 
@@ -912,6 +918,19 @@ export class ItemTube extends Component {
                 this.setSelectTube_Fail();
             }
         }
+    }
+
+    touchEndItemTube(){
+        console.log("touchEndItemTube");
+    }
+
+    onTouchMoveItemTube(event:EventTouch){
+        console.log("onTouchMoveItemTube");
+        let touches_Check = event.getTouches();
+        let locationUI_Check = touches_Check[0].getUILocation();
+        let posCheck:Vec3 = this.node.parent.getComponent(UITransform).convertToNodeSpaceAR(new Vec3(locationUI_Check.x, locationUI_Check.y));
+
+        console.log("posCheck:",posCheck,locationUI_Check);
     }
 
     setSelectTube_Fail(){
