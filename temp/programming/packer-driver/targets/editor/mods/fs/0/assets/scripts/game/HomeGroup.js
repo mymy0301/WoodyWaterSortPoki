@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Button, Color, Component, Label, LabelOutline, Node, sp, Sprite, SpriteFrame, tween, UIOpacity, Vec3, Widget, clientEvent, Constants, DAILYTASK_TYPE, LEVEL_STATE, THEME_TYPE, localConfig, ItemLevel, ButtonMassterPassManager, AudioManager2, ButtonRemoveAdManager, LogEventManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _dec23, _dec24, _dec25, _dec26, _dec27, _dec28, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22, _descriptor23, _descriptor24, _descriptor25, _descriptor26, _descriptor27, _temp, _crd, ccclass, property, HomeGroup;
+  var _reporterNs, _cclegacy, _decorator, Button, Color, Component, Label, LabelOutline, Node, sp, Sprite, SpriteFrame, tween, UIOpacity, Vec3, Widget, clientEvent, Constants, DAILYTASK_TYPE, LEVEL_STATE, THEME_TYPE, localConfig, ItemLevel, ButtonMassterPassManager, AudioManager2, ButtonRemoveAdManager, LogEventManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _dec23, _dec24, _dec25, _dec26, _dec27, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22, _descriptor23, _descriptor24, _descriptor25, _descriptor26, _temp, _crd, ccclass, property, HomeGroup;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -121,13 +121,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
       _export("HomeGroup", HomeGroup = (_dec = ccclass('HomeGroup'), _dec2 = property(Widget), _dec3 = property(Widget), _dec4 = property(Widget), _dec5 = property(Widget), _dec6 = property(Node), _dec7 = property(UIOpacity), _dec8 = property(Button), _dec9 = property(Button), _dec10 = property(Button), _dec11 = property(Button), _dec12 = property(SpriteFrame), _dec13 = property(Sprite), _dec14 = property(SpriteFrame), _dec15 = property(Sprite), _dec16 = property(Color), _dec17 = property(LabelOutline), _dec18 = property(Node), _dec19 = property(Node), _dec20 = property(_crd && ItemLevel === void 0 ? (_reportPossibleCrUseOfItemLevel({
         error: Error()
-      }), ItemLevel) : ItemLevel), _dec21 = property(sp.Skeleton), _dec22 = property(_crd && ButtonMassterPassManager === void 0 ? (_reportPossibleCrUseOfButtonMassterPassManager({
+      }), ItemLevel) : ItemLevel), _dec21 = property(sp.Skeleton), _dec22 = property(Node), _dec23 = property(Node), _dec24 = property(Label), _dec25 = property(_crd && ButtonRemoveAdManager === void 0 ? (_reportPossibleCrUseOfButtonRemoveAdManager({
         error: Error()
-      }), ButtonMassterPassManager) : ButtonMassterPassManager), _dec23 = property(Node), _dec24 = property(Node), _dec25 = property(Label), _dec26 = property(_crd && ButtonRemoveAdManager === void 0 ? (_reportPossibleCrUseOfButtonRemoveAdManager({
+      }), ButtonRemoveAdManager) : ButtonRemoveAdManager), _dec26 = property(_crd && ButtonMassterPassManager === void 0 ? (_reportPossibleCrUseOfButtonMassterPassManager({
         error: Error()
-      }), ButtonRemoveAdManager) : ButtonRemoveAdManager), _dec27 = property(_crd && ButtonMassterPassManager === void 0 ? (_reportPossibleCrUseOfButtonMassterPassManager({
-        error: Error()
-      }), ButtonMassterPassManager) : ButtonMassterPassManager), _dec28 = property(sp.Skeleton), _dec(_class = (_class2 = (_temp = class HomeGroup extends Component {
+      }), ButtonMassterPassManager) : ButtonMassterPassManager), _dec27 = property(sp.Skeleton), _dec(_class = (_class2 = (_temp = class HomeGroup extends Component {
         constructor(...args) {
           super(...args);
 
@@ -173,21 +171,19 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           _initializerDefineProperty(this, "character", _descriptor20, this);
 
-          _initializerDefineProperty(this, "buttonMassterPassManager", _descriptor21, this);
+          _initializerDefineProperty(this, "contentGroup", _descriptor21, this);
 
-          _initializerDefineProperty(this, "contentGroup", _descriptor22, this);
+          _initializerDefineProperty(this, "lockGroup", _descriptor22, this);
 
-          _initializerDefineProperty(this, "lockGroup", _descriptor23, this);
+          _initializerDefineProperty(this, "txtInfo", _descriptor23, this);
 
-          _initializerDefineProperty(this, "txtInfo", _descriptor24, this);
+          _initializerDefineProperty(this, "btnRemoveAdManager", _descriptor24, this);
 
-          _initializerDefineProperty(this, "btnRemoveAdManager", _descriptor25, this);
-
-          _initializerDefineProperty(this, "btnMasterPassManager", _descriptor26, this);
+          _initializerDefineProperty(this, "btnMasterPassManager", _descriptor25, this);
 
           _defineProperty(this, "tweenButtonPlay", null);
 
-          _initializerDefineProperty(this, "fx_Button", _descriptor27, this);
+          _initializerDefineProperty(this, "fx_Button", _descriptor26, this);
 
           _defineProperty(this, "isShowGroupFirstTime", false);
 
@@ -357,23 +353,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               error: Error()
             }), Constants) : Constants).SHOW_BLACKRIDAY_COIN_POPUP);
             isShowPopup = true;
-          }
+          } // if(!isShowPopup && localConfig.instance.raceActive == 1 && localConfig.instance.checkRaceFinished()){
+          //     AudioManager2.instance.playPopupOpen2();
+          //     clientEvent.dispatchEvent(Constants.SHOW_TUBERACE_POPUP,false);
+          //     isShowPopup = true;
+          // }
 
-          if (!isShowPopup && (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.raceActive == 1 && (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.checkRaceFinished()) {
-            (_crd && AudioManager2 === void 0 ? (_reportPossibleCrUseOfAudioManager({
-              error: Error()
-            }), AudioManager2) : AudioManager2).instance.playPopupOpen2();
-            (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-              error: Error()
-            }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-              error: Error()
-            }), Constants) : Constants).SHOW_TUBERACE_POPUP, false);
-            isShowPopup = true;
-          }
 
           if (!isShowPopup && (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
             error: Error()
@@ -411,65 +396,30 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               }), Constants) : Constants).SHOW_SPIN_POPUP);
               isShowPopup = true;
             }
-          }
+          } // if(!isShowPopup && localConfig.instance.currLevelUnlock >= localConfig.instance.RACE_LEVEL_UNLOCK){
+          //     if(localConfig.instance.raceActive == 0){
+          //         AudioManager2.instance.playPopupOpen2();
+          //         clientEvent.dispatchEvent(Constants.SHOW_TUBERACE_JOIN_POPUP);
+          //         isShowPopup = true;
+          //     }
+          // }
+          // if(!isShowPopup && localConfig.instance.currLevelUnlock >= localConfig.instance.PASS_LEVEL_UNLOCK){
+          //     let indexPass:number = localConfig.instance.passIndexAvailable;
+          //     // console.log("indexPass:"+indexPass);
+          //     let countFreeClaim:number = indexPass - localConfig.instance.arrPassFreeClaims.length + 1;
+          //     // console.log("countFreeClaim:"+countFreeClaim);
+          //     let countPassClaim:number = 0;
+          //     if(localConfig.instance.passActivated){
+          //         countPassClaim = indexPass - localConfig.instance.arrPassMasterClaims.length + 1;
+          //     }
+          //     let countClaimAvailable:number = countFreeClaim + countPassClaim;
+          //     if(countClaimAvailable > 0){
+          //         AudioManager2.instance.playPopupOpen2();
+          //         clientEvent.dispatchEvent(Constants.SHOW_MASSTERPASS_POPUP);
+          //         isShowPopup = true;
+          //     }
+          // }
 
-          if (!isShowPopup && (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.currLevelUnlock >= (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.RACE_LEVEL_UNLOCK) {
-            if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.raceActive == 0) {
-              (_crd && AudioManager2 === void 0 ? (_reportPossibleCrUseOfAudioManager({
-                error: Error()
-              }), AudioManager2) : AudioManager2).instance.playPopupOpen2();
-              (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-                error: Error()
-              }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-                error: Error()
-              }), Constants) : Constants).SHOW_TUBERACE_JOIN_POPUP);
-              isShowPopup = true;
-            }
-          }
-
-          if (!isShowPopup && (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.currLevelUnlock >= (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-            error: Error()
-          }), localConfig) : localConfig).instance.PASS_LEVEL_UNLOCK) {
-            let indexPass = (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.passIndexAvailable; // console.log("indexPass:"+indexPass);
-
-            let countFreeClaim = indexPass - (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.arrPassFreeClaims.length + 1; // console.log("countFreeClaim:"+countFreeClaim);
-
-            let countPassClaim = 0;
-
-            if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.passActivated) {
-              countPassClaim = indexPass - (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                error: Error()
-              }), localConfig) : localConfig).instance.arrPassMasterClaims.length + 1;
-            }
-
-            let countClaimAvailable = countFreeClaim + countPassClaim;
-
-            if (countClaimAvailable > 0) {
-              (_crd && AudioManager2 === void 0 ? (_reportPossibleCrUseOfAudioManager({
-                error: Error()
-              }), AudioManager2) : AudioManager2).instance.playPopupOpen2();
-              (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-                error: Error()
-              }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-                error: Error()
-              }), Constants) : Constants).SHOW_MASSTERPASS_POPUP);
-              isShowPopup = true;
-            }
-          }
 
           if (!isShowPopup && (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
             error: Error()
@@ -536,8 +486,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
         setNextLevel(rewardCoin) {
           this.lockGroup.active = true;
-          this.contentGroup.setPosition(new Vec3(0, -600, 0));
-          this.buttonMassterPassManager.initReceiveKey(); // console.log("setNextLevel");
+          this.contentGroup.setPosition(new Vec3(0, -600, 0)); // this.buttonMassterPassManager.initReceiveKey();
+          // console.log("setNextLevel");
 
           this.isInitLevel = true;
           let level = (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
@@ -650,26 +600,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
               error: Error()
             }), LogEventManager) : LogEventManager).instance.logResourceEarned("currency", "coin", rewardCoin, "home", "win_level");
-            let timeDelay = 0;
-
-            if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.currLevelUnlock > (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-              error: Error()
-            }), localConfig) : localConfig).instance.PASS_LEVEL_UNLOCK) {
-              let timeLeft = (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                error: Error()
-              }), localConfig) : localConfig).instance.passLastTime + (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                error: Error()
-              }), localConfig) : localConfig).instance.PASS_TIME - (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
-                error: Error()
-              }), localConfig) : localConfig).instance.getCurrTime();
-
-              if (timeLeft > 0) {
-                timeDelay = 1;
-                this.buttonMassterPassManager.showReceiveKey();
-              }
-            }
+            let timeDelay = 0; // if(localConfig.instance.currLevelUnlock > localConfig.instance.PASS_LEVEL_UNLOCK){
+            //     let timeLeft:number = localConfig.instance.passLastTime + localConfig.instance.PASS_TIME - localConfig.instance.getCurrTime();
+            //     if(timeLeft > 0){
+            //         timeDelay = 1;
+            //         this.buttonMassterPassManager.showReceiveKey();
+            //     }
+            // }
 
             this.setNextLevel_Finished_Delay(timeDelay);
           }, 2);
@@ -1009,37 +946,32 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor21 = _applyDecoratedDescriptor(_class2.prototype, "buttonMassterPassManager", [_dec22], {
+      }), _descriptor21 = _applyDecoratedDescriptor(_class2.prototype, "contentGroup", [_dec22], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor22 = _applyDecoratedDescriptor(_class2.prototype, "contentGroup", [_dec23], {
+      }), _descriptor22 = _applyDecoratedDescriptor(_class2.prototype, "lockGroup", [_dec23], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor23 = _applyDecoratedDescriptor(_class2.prototype, "lockGroup", [_dec24], {
+      }), _descriptor23 = _applyDecoratedDescriptor(_class2.prototype, "txtInfo", [_dec24], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor24 = _applyDecoratedDescriptor(_class2.prototype, "txtInfo", [_dec25], {
+      }), _descriptor24 = _applyDecoratedDescriptor(_class2.prototype, "btnRemoveAdManager", [_dec25], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor25 = _applyDecoratedDescriptor(_class2.prototype, "btnRemoveAdManager", [_dec26], {
+      }), _descriptor25 = _applyDecoratedDescriptor(_class2.prototype, "btnMasterPassManager", [_dec26], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor26 = _applyDecoratedDescriptor(_class2.prototype, "btnMasterPassManager", [_dec27], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: null
-      }), _descriptor27 = _applyDecoratedDescriptor(_class2.prototype, "fx_Button", [_dec28], {
+      }), _descriptor26 = _applyDecoratedDescriptor(_class2.prototype, "fx_Button", [_dec27], {
         configurable: true,
         enumerable: true,
         writable: true,

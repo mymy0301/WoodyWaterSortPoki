@@ -48,6 +48,9 @@ export class ShopItemPopup extends BasePopup {
     @property(Button)
     btnCoin: Button = null;
 
+    @property(Sprite)
+    bgBtnCoin: Sprite = null;
+
     @property(Label)
     txtPriceCoin: Label = null;
 
@@ -80,7 +83,19 @@ export class ShopItemPopup extends BasePopup {
             this.btnCoin.node.setPosition(new Vec3(0,-444,0));
         }
 
+        this.showButtonCoin();
+
         super.showPopup();
+    }
+
+    showButtonCoin(){
+        if(localConfig.instance.currCoin >= localConfig.instance.getBoosterPrice(this.boosterType)){
+            this.bgBtnCoin.grayscale = false;
+            this.btnCoin.interactable = true;
+        }else{
+            this.bgBtnCoin.grayscale = true;
+            this.btnCoin.interactable = false;
+        }
     }
 
     onEnable(): void {

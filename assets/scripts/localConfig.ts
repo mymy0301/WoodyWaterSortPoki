@@ -3292,7 +3292,7 @@ export class localConfig {
 
     currTournamentPageHostDataInfo:TournamentPageHostDataInfo = null;
 
-
+    // isFirstUserInteraction: boolean = false;
     
 }
 

@@ -4,7 +4,7 @@
   },
   "common": {
     "outputName": "web-mobile",
-    "mainBundleCompressionType": "merge_dep",
+    "mainBundleCompressionType": "merge_all_json",
     "platform": "web-mobile",
     "scenes": [
       {
@@ -26,7 +26,7 @@
         "id": "1726807400739",
         "progress": 1,
         "state": "success",
-        "message": "11-25-2025 10:46 Build success in 66330 ms!",
+        "message": "1-9-2026 10:50 Build success in 59765 ms!",
         "options": {
           "name": "Water Sort Woody Puzzle",
           "platform": "web-mobile",
@@ -35,7 +35,7 @@
           "md5Cache": false,
           "sourceMaps": false,
           "replaceSplashScreen": true,
-          "mainBundleCompressionType": "merge_dep",
+          "mainBundleCompressionType": "merge_all_json",
           "mainBundleIsRemote": false,
           "mergeStartScene": false,
           "experimentalEraseModules": false,
@@ -69,7 +69,7 @@
             }
           }
         },
-        "time": "11-25-2025 10:45",
+        "time": "1-9-2026 10:49",
         "dirty": false
       }
     }

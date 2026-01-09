@@ -1,5 +1,5 @@
 
-import { _decorator, AnimationComponent, Button, Component, instantiate, Label, Node, Prefab, tween, Tween, Vec3 } from 'cc';
+import { _decorator, AnimationComponent, Button, Component, instantiate, Label, Node, Prefab, Sprite, tween, Tween, Vec3 } from 'cc';
 import { BasePopup } from '../../common/basePopup';
 import { ItemSpin } from './ItemSpin';
 import { Constants, SHOP_ITEM_TYPE, TICKET_TYPE } from '../../framework/constants';
@@ -51,6 +51,9 @@ export class SpinPopup extends BasePopup {
 
     @property(Button)
     btnSpinCoin:Button = null;
+
+    @property(Sprite)
+    bgBtnSpinCoin:Sprite = null;
 
     @property(Button)
     btnSpinAd:Button = null;
@@ -110,7 +113,20 @@ export class SpinPopup extends BasePopup {
         this.btnClose.node.active = false;
         this.btnClose2.node.active = false;
         this.lightAnimation.play("light_wait");
+
+        this.showButtonCoin();
+
         super.showPopup();
+    }
+
+    showButtonCoin(){
+        if(localConfig.instance.currCoin >= this.priceSpinCoin){
+            this.bgBtnSpinCoin.grayscale = false;
+            this.btnSpinCoin.interactable = true;
+        }else{
+            this.bgBtnSpinCoin.grayscale = true;
+            this.btnSpinCoin.interactable = false;
+        }
     }
 
     arrRatios:number[] = [];
@@ -272,7 +288,7 @@ export class SpinPopup extends BasePopup {
         this.lightAnimation.play("light_idle");
 
         this.showInfo();
-        // console.log("this.indexTarget:"+this.indexTarget);
+        console.log("this.indexTarget:"+this.indexTarget);
         
         let groupRewardDataInfo:GroupRewardDataInfo = new GroupRewardDataInfo(localConfig.instance.arrSpinRewardDataInfos[(8 - this.indexTarget)%8].items);
         clientEvent.dispatchEvent(Constants.SHOW_REWARDRECEIVE_POPUP,"SPIN",groupRewardDataInfo);

@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Component, Node, tween, UIOpacity, Vec3, BOOSTER_TYPE, Constants, GAME_MODE, PLAY_TYPE, localConfig, clientEvent, FBInstantManager, AudioManager2, LogEventManager, PokiSDKManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _temp, _crd, ccclass, property, NoMovesGroup;
+  var _reporterNs, _cclegacy, _decorator, Button, Component, Node, Sprite, tween, UIOpacity, Vec3, BOOSTER_TYPE, Constants, GAME_MODE, PLAY_TYPE, localConfig, clientEvent, FBInstantManager, AudioManager2, LogEventManager, PokiSDKManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _temp, _crd, ccclass, property, NoMovesGroup;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -57,8 +57,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     }, function (_cc) {
       _cclegacy = _cc.cclegacy;
       _decorator = _cc._decorator;
+      Button = _cc.Button;
       Component = _cc.Component;
       Node = _cc.Node;
+      Sprite = _cc.Sprite;
       tween = _cc.tween;
       UIOpacity = _cc.UIOpacity;
       Vec3 = _cc.Vec3;
@@ -101,25 +103,27 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
        *
        */
 
-      _export("NoMovesGroup", NoMovesGroup = (_dec = ccclass('NoMovesGroup'), _dec2 = property(Node), _dec3 = property(Node), _dec4 = property(Node), _dec5 = property(Node), _dec6 = property(Node), _dec7 = property(Node), _dec8 = property(Node), _dec9 = property(UIOpacity), _dec10 = property(Node), _dec(_class = (_class2 = (_temp = class NoMovesGroup extends Component {
+      _export("NoMovesGroup", NoMovesGroup = (_dec = ccclass('NoMovesGroup'), _dec2 = property(Button), _dec3 = property(Sprite), _dec4 = property(Node), _dec5 = property(Node), _dec6 = property(Node), _dec7 = property(Node), _dec8 = property(Node), _dec9 = property(Node), _dec10 = property(UIOpacity), _dec11 = property(Node), _dec(_class = (_class2 = (_temp = class NoMovesGroup extends Component {
         constructor(...args) {
           super(...args);
 
           _initializerDefineProperty(this, "btnPlayOn", _descriptor, this);
 
-          _initializerDefineProperty(this, "btnClose", _descriptor2, this);
+          _initializerDefineProperty(this, "bgBtnPlayOn", _descriptor2, this);
 
-          _initializerDefineProperty(this, "btnAddColAd", _descriptor3, this);
+          _initializerDefineProperty(this, "btnClose", _descriptor3, this);
 
-          _initializerDefineProperty(this, "groupRight", _descriptor4, this);
+          _initializerDefineProperty(this, "btnAddColAd", _descriptor4, this);
 
-          _initializerDefineProperty(this, "nodeTitle", _descriptor5, this);
+          _initializerDefineProperty(this, "groupRight", _descriptor5, this);
 
-          _initializerDefineProperty(this, "nodeTitle2", _descriptor6, this);
+          _initializerDefineProperty(this, "nodeTitle", _descriptor6, this);
 
-          _initializerDefineProperty(this, "nodeCoinGroup", _descriptor7, this);
+          _initializerDefineProperty(this, "nodeTitle2", _descriptor7, this);
 
-          _initializerDefineProperty(this, "bgOpacity", _descriptor8, this);
+          _initializerDefineProperty(this, "nodeCoinGroup", _descriptor8, this);
+
+          _initializerDefineProperty(this, "bgOpacity", _descriptor9, this);
 
           _defineProperty(this, "tweenBGOpacity", null);
 
@@ -131,11 +135,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           _defineProperty(this, "tweenTitle2", null);
 
-          _initializerDefineProperty(this, "lockGroup", _descriptor9, this);
+          _initializerDefineProperty(this, "lockGroup", _descriptor10, this);
         }
 
         onEnable() {
-          this.btnPlayOn.on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
+          this.btnPlayOn.node.on((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
             error: Error()
           }), Constants) : Constants).CLICK, this.touchPlayOn, this); // this.btnGiveUp.on(Constants.CLICK, this.touchGiveUp, this);
           // this.btnReplay.on(Constants.CLICK, this.touchReplay, this);
@@ -150,7 +154,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         onDisable() {
-          this.btnPlayOn.off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
+          this.btnPlayOn.node.off((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
             error: Error()
           }), Constants) : Constants).CLICK, this.touchPlayOn, this); // this.btnGiveUp.off(Constants.CLICK, this.touchGiveUp, this);
           // this.btnReplay.off(Constants.CLICK, this.touchReplay, this);
@@ -175,16 +179,19 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           const playOnTarget2 = new Vec3(0, -680, 0);
           const rightGroupTarget = new Vec3(260, -680, 0);
           const titleTarget = this.nodeTitle.position.clone();
-          const title2Target = this.nodeTitle2.position.clone(); // Vị trí bắt đầu
+          const title2Target = this.nodeTitle2.position.clone();
+          (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.isNoMoves_AddCol_byAD = false; // Vị trí bắt đầu
 
           if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
             error: Error()
           }), localConfig) : localConfig).instance.isNoMoves_AddCol_byAD) {
             this.groupRight.active = false;
-            this.btnPlayOn.setPosition(new Vec3(0, -1200, 0));
+            this.btnPlayOn.node.setPosition(new Vec3(0, -1200, 0));
           } else {
             this.groupRight.active = true;
-            this.btnPlayOn.setPosition(new Vec3(-600, -680, 0));
+            this.btnPlayOn.node.setPosition(new Vec3(-600, -680, 0));
           }
 
           this.groupRight.setPosition(new Vec3(600, rightGroupTarget.y));
@@ -262,14 +269,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
             error: Error()
           }), localConfig) : localConfig).instance.isNoMoves_AddCol_byAD) {
-            this.twennPlayOn = tween(this.btnPlayOn).to(0.5, {
+            this.twennPlayOn = tween(this.btnPlayOn.node).to(0.5, {
               position: playOnTarget2
             }, {
               easing: 'backOut',
               onComplete: () => {}
             }).start();
           } else {
-            this.twennPlayOn = tween(this.btnPlayOn).to(0.5, {
+            this.twennPlayOn = tween(this.btnPlayOn.node).to(0.5, {
               position: playOnTarget
             }, {
               easing: 'backOut',
@@ -281,6 +288,24 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               easing: 'backOut',
               onComplete: () => {}
             }).start();
+          }
+
+          this.showButtonPlayOn();
+        }
+
+        showButtonPlayOn() {
+          if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.currCoin >= (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.getBoosterPrice((_crd && BOOSTER_TYPE === void 0 ? (_reportPossibleCrUseOfBOOSTER_TYPE({
+            error: Error()
+          }), BOOSTER_TYPE) : BOOSTER_TYPE).ADDCOL)) {
+            this.bgBtnPlayOn.grayscale = false;
+            this.btnPlayOn.interactable = true;
+          } else {
+            this.bgBtnPlayOn.grayscale = true;
+            this.btnPlayOn.interactable = false;
           }
         }
 
@@ -536,56 +561,63 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         initializer: function () {
           return null;
         }
-      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "btnClose", [_dec3], {
+      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "bgBtnPlayOn", [_dec3], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
-      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "btnAddColAd", [_dec4], {
+      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "btnClose", [_dec4], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
-      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "groupRight", [_dec5], {
+      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "btnAddColAd", [_dec5], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
-      }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, "nodeTitle", [_dec6], {
+      }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, "groupRight", [_dec6], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
-      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "nodeTitle2", [_dec7], {
+      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "nodeTitle", [_dec7], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
-      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "nodeCoinGroup", [_dec8], {
+      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "nodeTitle2", [_dec8], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
-      }), _descriptor8 = _applyDecoratedDescriptor(_class2.prototype, "bgOpacity", [_dec9], {
+      }), _descriptor8 = _applyDecoratedDescriptor(_class2.prototype, "nodeCoinGroup", [_dec9], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
-      }), _descriptor9 = _applyDecoratedDescriptor(_class2.prototype, "lockGroup", [_dec10], {
+      }), _descriptor9 = _applyDecoratedDescriptor(_class2.prototype, "bgOpacity", [_dec10], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function () {
+          return null;
+        }
+      }), _descriptor10 = _applyDecoratedDescriptor(_class2.prototype, "lockGroup", [_dec11], {
         configurable: true,
         enumerable: true,
         writable: true,

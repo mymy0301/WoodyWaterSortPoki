@@ -55,13 +55,13 @@ export class FBInstantManager extends Component {
             }
         }else{
 
-            console.log("myTestPhotomyTestPhotomyTestPhoto");
-            // let myTestPhoto:string = "https://i.imgur.com/HnBxgfS.png";
-            let myTestPhoto:string = "https://i.imgur.com/MhuKnur.png";
-            resourceUtil.setAvatarSpriteFrame(myTestPhoto,(err,spriteFrame)=>{
-                console.log("myTestPhotomyTestPhotomyTestPhoto FINISHED");
-                // FBInstantManager.instance.testShareImage();
-            });
+            // console.log("myTestPhotomyTestPhotomyTestPhoto");
+            // // let myTestPhoto:string = "https://i.imgur.com/HnBxgfS.png";
+            // let myTestPhoto:string = "https://i.imgur.com/MhuKnur.png";
+            // resourceUtil.setAvatarSpriteFrame(myTestPhoto,(err,spriteFrame)=>{
+            //     console.log("myTestPhotomyTestPhotomyTestPhoto FINISHED");
+            //     // FBInstantManager.instance.testShareImage();
+            // });
         }
 
         //performance.now();

@@ -70,6 +70,8 @@ export class LoadSceneManager extends Component {
         clientEvent.off(Constants.POKI_INIT_SUCCESS,this.pokiInitSuccess,this);
     }
     start () {
+        
+
         console.log(PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString());
         localConfig.instance.splashStartTime = localConfig.instance.getCurrTime();
         tween(this.nodeTitle_Opacity).to(3,{opacity:255},{easing:'quadOut'}).start();
@@ -199,25 +201,25 @@ export class LoadSceneManager extends Component {
                 // console.log("TutLevelPopup");
             }),
 
-            resourceUtil.loadPrefabUI_Bundle("TutLevel5Popup",(err,uiPrefab)=>{
-                // console.log("TutLevel5Popup");
-            }),
+            // resourceUtil.loadPrefabUI_Bundle("TutLevel5Popup",(err,uiPrefab)=>{
+            //     // console.log("TutLevel5Popup");
+            // }),
 
-            resourceUtil.loadPrefabUI_Bundle("ShopGroup",(err,uiPrefab)=>{
+            // resourceUtil.loadPrefabUI_Bundle("ShopGroup",(err,uiPrefab)=>{
+                
+            // }),
+
+            resourceUtil.loadPrefabUI_Bundle("ThemePopup",(err,uiPrefab)=>{
                 
             }),
 
-            resourceUtil.loadPrefabUI_Bundle("ThemeGroup",(err,uiPrefab)=>{
+            // resourceUtil.loadPrefabUI_Bundle("LeaderBoardGroup",(err,uiPrefab)=>{
                 
-            }),
-
-            resourceUtil.loadPrefabUI_Bundle("LeaderBoardGroup",(err,uiPrefab)=>{
-                
-            }),
+            // }),
             
-            resourceUtil.loadPrefabUI_Bundle("TournamentsGroup",(err,uiPrefab)=>{
+            // resourceUtil.loadPrefabUI_Bundle("TournamentsGroup",(err,uiPrefab)=>{
                 
-            }),
+            // }),
             
             resourceUtil.loadPrefabUI_Bundle("WinPopup",(err,uiPrefab)=>{
                 // console.log("WinPopup");
@@ -225,18 +227,18 @@ export class LoadSceneManager extends Component {
             resourceUtil.loadPrefabUI_Bundle("PausePopup",(err,uiPrefab)=>{
                 // console.log("PausePopup");
             }),
-            resourceUtil.loadPrefabUI_Bundle("RemoveAdPopup",(err,uiPrefab)=>{
-                // console.log("RemoveAdPopup");
-            }),
+            // resourceUtil.loadPrefabUI_Bundle("RemoveAdPopup",(err,uiPrefab)=>{
+            //     // console.log("RemoveAdPopup");
+            // }),
             resourceUtil.loadPrefabUI_Bundle("SettingPopup",(err,uiPrefab)=>{
                 // console.log("SettingPopup");
             }),
-            resourceUtil.loadPrefabUI_Bundle("ShopPopup",(err,uiPrefab)=>{
-                // console.log("ShopPopup");
-            }),
-            resourceUtil.loadPrefabUI_Bundle("SummerPackPopup",(err,uiPrefab)=>{
-                // console.log("SummerPackPopup");
-            }),
+            // resourceUtil.loadPrefabUI_Bundle("ShopPopup",(err,uiPrefab)=>{
+            //     // console.log("ShopPopup");
+            // }),
+            // resourceUtil.loadPrefabUI_Bundle("SummerPackPopup",(err,uiPrefab)=>{
+            //     // console.log("SummerPackPopup");
+            // }),
 
             resourceUtil.loadPrefabUI_Bundle("DailyChallengePopup",(err,uiPrefab)=>{
                 // console.log("DailyChallengePopup");
@@ -245,11 +247,6 @@ export class LoadSceneManager extends Component {
             resourceUtil.loadPrefabUI_Bundle("BoxRewardReceivePopup",(err,uiPrefab)=>{
                 // console.log("BoxRewardReceivePopup");
             }),
-
-            resourceUtil.loadPrefabUI_Bundle("RewardReceivePopup",(err,uiPrefab)=>{
-                // console.log("RewardReceivePopup");
-            }),
-
             
 
             resourceUtil.loadPrefabUI_Bundle("DailyTaskPopup",(err,uiPrefab)=>{
@@ -264,25 +261,25 @@ export class LoadSceneManager extends Component {
                 // console.log("LevelChestsPopup");
             }),
 
-            resourceUtil.loadPrefabUI_Bundle("TubeRaceJoinPopup",(err,uiPrefab)=>{
-                // console.log("TubeRaceJoinPopup");
-            }),
+            // resourceUtil.loadPrefabUI_Bundle("TubeRaceJoinPopup",(err,uiPrefab)=>{
+            //     // console.log("TubeRaceJoinPopup");
+            // }),
 
-            resourceUtil.loadPrefabUI_Bundle("TubeRacePopup",(err,uiPrefab)=>{
-                // console.log("TubeRacePopup");
-            }),
+            // resourceUtil.loadPrefabUI_Bundle("TubeRacePopup",(err,uiPrefab)=>{
+            //     // console.log("TubeRacePopup");
+            // }),
 
-            resourceUtil.loadPrefabUI_Bundle("MasterPassDetailPopup",(err,uiPrefab)=>{
-                // console.log("MasterPassDetailPopup");
-            }),
+            // resourceUtil.loadPrefabUI_Bundle("MasterPassDetailPopup",(err,uiPrefab)=>{
+            //     // console.log("MasterPassDetailPopup");
+            // }),
 
-            resourceUtil.loadPrefabUI_Bundle("MasterPassInfoPopup",(err,uiPrefab)=>{
-                // console.log("MasterPassInfoPopup");
-            }),
+            // resourceUtil.loadPrefabUI_Bundle("MasterPassInfoPopup",(err,uiPrefab)=>{
+            //     // console.log("MasterPassInfoPopup");
+            // }),
 
-            resourceUtil.loadPrefabUI_Bundle("MasterPassPopup",(err,uiPrefab)=>{
-                // console.log("MasterPassPopup");
-            }),
+            // resourceUtil.loadPrefabUI_Bundle("MasterPassPopup",(err,uiPrefab)=>{
+            //     // console.log("MasterPassPopup");
+            // }),
 
 
 
@@ -290,13 +287,13 @@ export class LoadSceneManager extends Component {
                 // console.log("SpinPopup");
             }),
 
-            resourceUtil.loadPrefabUI_Bundle("ShareInfoPopup",(err,uiPrefab)=>{
-                // console.log("ShareInfoPopup");
-            }),
+            // resourceUtil.loadPrefabUI_Bundle("ShareInfoPopup",(err,uiPrefab)=>{
+            //     // console.log("ShareInfoPopup");
+            // }),
 
-            resourceUtil.loadPrefabUI_Bundle("ShareContextPopup",(err,uiPrefab)=>{
-                // console.log("ShareContextPopup");
-            }),
+            // resourceUtil.loadPrefabUI_Bundle("ShareContextPopup",(err,uiPrefab)=>{
+            //     // console.log("ShareContextPopup");
+            // }),
 
             resourceUtil.loadPrefabUI_Bundle("ShopItemPopup",(err,uiPrefab)=>{
                 // console.log("ShopItemPopup");
@@ -306,45 +303,45 @@ export class LoadSceneManager extends Component {
                 // console.log("ThemeUnlockPopup");
             }),
 
-            resourceUtil.loadPrefabUI_Bundle("TournamentPopup",(err,uiPrefab)=>{
-                // console.log("TournamentPopup");
-            }),
+            // resourceUtil.loadPrefabUI_Bundle("TournamentPopup",(err,uiPrefab)=>{
+            //     // console.log("TournamentPopup");
+            // }),
 
-            resourceUtil.loadPrefabUI_Bundle("TournamentQuitPopup",(err,uiPrefab)=>{
-                // console.log("TournamentQuitPopup");
-            }),
+            // resourceUtil.loadPrefabUI_Bundle("TournamentQuitPopup",(err,uiPrefab)=>{
+            //     // console.log("TournamentQuitPopup");
+            // }),
 
-            resourceUtil.loadPrefabUI_Bundle("TournamentResultPopup",(err,uiPrefab)=>{
-                // console.log("TournamentResultPopup");
-            }),
+            // resourceUtil.loadPrefabUI_Bundle("TournamentResultPopup",(err,uiPrefab)=>{
+            //     // console.log("TournamentResultPopup");
+            // }),
 
-            resourceUtil.loadPrefabUI_Bundle("TournamentRevivePopup",(err,uiPrefab)=>{
-                // console.log("TournamentRevivePopup");
-            }),
+            // resourceUtil.loadPrefabUI_Bundle("TournamentRevivePopup",(err,uiPrefab)=>{
+            //     // console.log("TournamentRevivePopup");
+            // }),
 
-            resourceUtil.loadPrefabUI_Bundle("TubeRaceJoinPopup",(err,uiPrefab)=>{
-                // console.log("TubeRaceJoinPopup");
-            }),
+            // resourceUtil.loadPrefabUI_Bundle("TubeRaceJoinPopup",(err,uiPrefab)=>{
+            //     // console.log("TubeRaceJoinPopup");
+            // }),
 
-            resourceUtil.loadPrefabUI_Bundle("TubeRaceLosePopup",(err,uiPrefab)=>{
-                // console.log("TubeRaceLosePopup");
-            }),
+            // resourceUtil.loadPrefabUI_Bundle("TubeRaceLosePopup",(err,uiPrefab)=>{
+            //     // console.log("TubeRaceLosePopup");
+            // }),
 
-            resourceUtil.loadPrefabUI_Bundle("TubeRacePopup",(err,uiPrefab)=>{
-                // console.log("TubeRacePopup");
-            }),
+            // resourceUtil.loadPrefabUI_Bundle("TubeRacePopup",(err,uiPrefab)=>{
+            //     // console.log("TubeRacePopup");
+            // }),
 
-            resourceUtil.loadPrefabUI_Bundle("TubeRaceWinPopup",(err,uiPrefab)=>{
-                // console.log("TubeRaceWinPopup");
-            }),
+            // resourceUtil.loadPrefabUI_Bundle("TubeRaceWinPopup",(err,uiPrefab)=>{
+            //     // console.log("TubeRaceWinPopup");
+            // }),
 
             resourceUtil.loadPrefabUI_Bundle("LevelFailedPopup",(err,uiPrefab)=>{
                 // console.log("TubeRaceWinPopup");
             }),
 
-            resourceUtil.loadPrefabUI_Bundle("MoreLivesPopup",(err,uiPrefab)=>{
-                // console.log("TubeRaceWinPopup");
-            }),
+            // resourceUtil.loadPrefabUI_Bundle("MoreLivesPopup",(err,uiPrefab)=>{
+            //     // console.log("TubeRaceWinPopup");
+            // }),
 
             resourceUtil.loadPrefabUI_Bundle("QuitConfirmPopup", (err, uiPrefab) => {
                 // console.log("TubeRaceWinPopup");
@@ -362,9 +359,9 @@ export class LoadSceneManager extends Component {
                 // console.log("TubeRaceWinPopup");
             }),
 
-            resourceUtil.loadPrefabUI_Bundle("WinTournamentPageHostPopup", (err, uiPrefab) => {
-                // console.log("WinTournamentPageHostPopup");
-            }),
+            // resourceUtil.loadPrefabUI_Bundle("WinTournamentPageHostPopup", (err, uiPrefab) => {
+            //     // console.log("WinTournamentPageHostPopup");
+            // }),
 
             resourceUtil.loadAudioClip("audio/sound/Button", (err, clip)=> {
             }),
@@ -592,7 +589,7 @@ export class LoadSceneManager extends Component {
     }
 
     setNextScene222(){
-        
+        PokiSDKManager.instance.setGameLoadingFinished();
         director.loadScene("play");
 
         // this.setLoad_Step2_NoWait();

@@ -3343,7 +3343,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         getLevelLoopByFromStr(levelOrder) {
           var strLevel = levelOrder.split("_")[1];
           return parseInt(strLevel);
-        }
+        } // isFirstUserInteraction: boolean = false;
+
 
       }, _defineProperty(_class2, "_instance", void 0), _temp)) || _class));
 

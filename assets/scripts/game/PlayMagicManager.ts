@@ -211,6 +211,7 @@ export class PlayMagicManager extends Component {
     }
 
     touchSetting(){
+        PokiSDKManager.instance.setGameStop();
         LogEventManager.instance.logButtonClick("setting","play");
         localConfig.instance.playDurationEndTime = localConfig.instance.getCurrTime();
         clientEvent.dispatchEvent(Constants.SHOW_PAUSE_POPUP);
@@ -240,6 +241,7 @@ export class PlayMagicManager extends Component {
     }
 
     setReplay(){
+        PokiSDKManager.instance.setGameStart();
         clientEvent.dispatchEvent(Constants.SHOW_LOADING_START_NOW_POPUP);
         if(localConfig.instance.currGameMode == GAME_MODE.NORMAL){
             this.preloadLevel(localConfig.instance.currLevel);
@@ -515,7 +517,6 @@ export class PlayMagicManager extends Component {
 
         this.initAllTubes();
         this.initTutorials();
-
         this.lockScene.active = false;
         clientEvent.dispatchEvent(Constants.HIDE_LOADING_START_POPUP);
 
@@ -559,6 +560,10 @@ export class PlayMagicManager extends Component {
     lastItemTubeSelect:ItemTube = null;
     selectTubeItem(itemTube:ItemTube){
         this.isHaveNewTubeDone = false;
+        if (!PokiSDKManager.instance.isFirstUserInteraction) {
+            PokiSDKManager.instance.isFirstUserInteraction = true;
+            PokiSDKManager.instance.setGameStart();
+        }
         
         if(localConfig.instance.currGameState == GAME_STATE.PRE_START){
             localConfig.instance.currGameState = GAME_STATE.PLAY;
@@ -1195,6 +1200,7 @@ export class PlayMagicManager extends Component {
 
     setNoMoves_Touch_PlayOn(){
         this.isShowNoMovesGroup = false;
+        PokiSDKManager.instance.setGameStart();
         localConfig.instance.currGameState = GAME_STATE.PLAY;
         let children = this.noMovesGroupAllTubes.children.slice(); // clone để tránh thay đổi khi move
         for (const child of children) {
@@ -1386,6 +1392,7 @@ export class PlayMagicManager extends Component {
     setWin(){
         this.unschedule(this.scheduleCheckNoMoves);
         if(localConfig.instance.currGameState != GAME_STATE.WIN){
+            PokiSDKManager.instance.setGameStop();
             localConfig.instance.currGameState = GAME_STATE.WIN;
             this.tweenBoosterGroup = tween(this.boosterGroup).to(0.5,{position:new Vec3(0,-786,0)},{easing:'quadOut'}).start();
             this.wellDoneGroup.showWellDoneGroup();
@@ -1492,6 +1499,7 @@ export class PlayMagicManager extends Component {
     //#endregion
 
     setNextLevel(){
+        PokiSDKManager.instance.setGameStart();
         clientEvent.dispatchEvent(Constants.SHOW_LOADING_START_NOW_POPUP);
         localConfig.instance.currLevel++;   
         this.preloadLevel(localConfig.instance.currLevel);
@@ -1779,6 +1787,7 @@ export class PlayMagicManager extends Component {
 
             });
         }
+        
         clientEvent.dispatchEvent(Constants.SHOW_LOADING_START_NOW_POPUP);
         this.resetLevel();
         localConfig.instance.currIndexLevelTournament ++;
@@ -1879,6 +1888,7 @@ export class PlayMagicManager extends Component {
     }
 
     setSettingTouchContinue(){
+        PokiSDKManager.instance.setGameStart();
         localConfig.instance.currGameState = GAME_STATE.PLAY;
     }
 

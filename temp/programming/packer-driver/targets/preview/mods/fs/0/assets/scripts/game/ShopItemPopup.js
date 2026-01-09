@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Button, Label, Sprite, SpriteFrame, Vec3, BasePopup, BOOSTER_TYPE, Constants, localConfig, clientEvent, LogEventManager, PokiSDKManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _temp, _crd, ccclass, property, ShopItemPopup;
+  var _reporterNs, _cclegacy, _decorator, Button, Label, Sprite, SpriteFrame, Vec3, BasePopup, BOOSTER_TYPE, Constants, localConfig, clientEvent, LogEventManager, PokiSDKManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _temp, _crd, ccclass, property, ShopItemPopup;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -85,7 +85,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
        *
        */
 
-      _export("ShopItemPopup", ShopItemPopup = (_dec = ccclass('ShopItemPopup'), _dec2 = property(Button), _dec3 = property(Sprite), _dec4 = property(SpriteFrame), _dec5 = property(SpriteFrame), _dec6 = property(SpriteFrame), _dec7 = property(Button), _dec8 = property(Label), _dec9 = property(Label), _dec(_class = (_class2 = (_temp = class ShopItemPopup extends (_crd && BasePopup === void 0 ? (_reportPossibleCrUseOfBasePopup({
+      _export("ShopItemPopup", ShopItemPopup = (_dec = ccclass('ShopItemPopup'), _dec2 = property(Button), _dec3 = property(Sprite), _dec4 = property(SpriteFrame), _dec5 = property(SpriteFrame), _dec6 = property(SpriteFrame), _dec7 = property(Button), _dec8 = property(Sprite), _dec9 = property(Label), _dec10 = property(Label), _dec(_class = (_class2 = (_temp = class ShopItemPopup extends (_crd && BasePopup === void 0 ? (_reportPossibleCrUseOfBasePopup({
         error: Error()
       }), BasePopup) : BasePopup) {
         constructor() {
@@ -103,9 +103,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           _initializerDefineProperty(this, "btnCoin", _descriptor6, this);
 
-          _initializerDefineProperty(this, "txtPriceCoin", _descriptor7, this);
+          _initializerDefineProperty(this, "bgBtnCoin", _descriptor7, this);
 
-          _initializerDefineProperty(this, "txtInfo", _descriptor8, this);
+          _initializerDefineProperty(this, "txtPriceCoin", _descriptor8, this);
+
+          _initializerDefineProperty(this, "txtInfo", _descriptor9, this);
 
           _defineProperty(this, "countItem", 1);
 
@@ -144,7 +146,22 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             this.btnCoin.node.setPosition(new Vec3(0, -444, 0));
           }
 
+          this.showButtonCoin();
           super.showPopup();
+        }
+
+        showButtonCoin() {
+          if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.currCoin >= (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.getBoosterPrice(this.boosterType)) {
+            this.bgBtnCoin.grayscale = false;
+            this.btnCoin.interactable = true;
+          } else {
+            this.bgBtnCoin.grayscale = true;
+            this.btnCoin.interactable = false;
+          }
         }
 
         onEnable() {
@@ -330,14 +347,21 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "txtPriceCoin", [_dec8], {
+      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "bgBtnCoin", [_dec8], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor8 = _applyDecoratedDescriptor(_class2.prototype, "txtInfo", [_dec9], {
+      }), _descriptor8 = _applyDecoratedDescriptor(_class2.prototype, "txtPriceCoin", [_dec9], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
+      }), _descriptor9 = _applyDecoratedDescriptor(_class2.prototype, "txtInfo", [_dec10], {
         configurable: true,
         enumerable: true,
         writable: true,

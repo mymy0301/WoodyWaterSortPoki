@@ -217,15 +217,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                 error: Error()
               }), localConfig) : localConfig).instance.isMobile = false;
             }
-          } else {
-            console.log("myTestPhotomyTestPhotomyTestPhoto"); // let myTestPhoto:string = "https://i.imgur.com/HnBxgfS.png";
-
-            let myTestPhoto = "https://i.imgur.com/MhuKnur.png";
-            (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-              error: Error()
-            }), resourceUtil) : resourceUtil).setAvatarSpriteFrame(myTestPhoto, (err, spriteFrame) => {
-              console.log("myTestPhotomyTestPhotomyTestPhoto FINISHED"); // FBInstantManager.instance.testShareImage();
-            });
+          } else {// console.log("myTestPhotomyTestPhotomyTestPhoto");
+            // // let myTestPhoto:string = "https://i.imgur.com/HnBxgfS.png";
+            // let myTestPhoto:string = "https://i.imgur.com/MhuKnur.png";
+            // resourceUtil.setAvatarSpriteFrame(myTestPhoto,(err,spriteFrame)=>{
+            //     console.log("myTestPhotomyTestPhotomyTestPhoto FINISHED");
+            //     // FBInstantManager.instance.testShareImage();
+            // });
           } //performance.now();
           //console.log(renderer.drawCalls);
 

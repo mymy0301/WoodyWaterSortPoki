@@ -9887,6 +9887,9 @@
     "btnSpinCoin": {
       "__id__": 376
     },
+    "bgBtnSpinCoin": {
+      "__id__": 359
+    },
     "btnSpinAd": {
       "__id__": 350
     },

@@ -28491,9 +28491,6 @@
     "character": {
       "__id__": 769
     },
-    "buttonMassterPassManager": {
-      "__id__": 909
-    },
     "contentGroup": {
       "__id__": 516
     },
@@ -52543,7 +52540,10 @@
     "_enabled": true,
     "__prefab": null,
     "btnPlayOn": {
-      "__id__": 1858
+      "__id__": 1872
+    },
+    "bgBtnPlayOn": {
+      "__id__": 1861
     },
     "btnClose": {
       "__id__": 1849

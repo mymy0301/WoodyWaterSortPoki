@@ -33,8 +33,8 @@ export class PokiSDKManager extends Component {
     }
 
     protected start(): void {
-        this.isInitializeAsync = true;
-        clientEvent.dispatchEvent(Constants.POKI_INIT_SUCCESS);
+        // this.isInitializeAsync = true;
+        // clientEvent.dispatchEvent(Constants.POKI_INIT_SUCCESS);
     }
 
 

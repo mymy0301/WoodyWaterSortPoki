@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9", "__unresolved_10", "__unresolved_11"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, AnimationComponent, Button, instantiate, Label, Node, Prefab, tween, Vec3, BasePopup, ItemSpin, Constants, SHOP_ITEM_TYPE, localConfig, lodash, clientEvent, AudioManager2, Utils, GroupRewardDataInfo, LogEventManager, PokiSDKManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _temp, _crd, ccclass, property, SpinPopup;
+  var _reporterNs, _cclegacy, _decorator, AnimationComponent, Button, instantiate, Label, Node, Prefab, Sprite, tween, Vec3, BasePopup, ItemSpin, Constants, SHOP_ITEM_TYPE, localConfig, lodash, clientEvent, AudioManager2, Utils, GroupRewardDataInfo, LogEventManager, PokiSDKManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _temp, _crd, ccclass, property, SpinPopup;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -71,6 +71,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       Label = _cc.Label;
       Node = _cc.Node;
       Prefab = _cc.Prefab;
+      Sprite = _cc.Sprite;
       tween = _cc.tween;
       Vec3 = _cc.Vec3;
     }, function (_unresolved_2) {
@@ -118,7 +119,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
        *
        */
 
-      _export("SpinPopup", SpinPopup = (_dec = ccclass('SpinPopup'), _dec2 = property(Node), _dec3 = property(Node), _dec4 = property(Prefab), _dec5 = property(Button), _dec6 = property(Button), _dec7 = property(Button), _dec8 = property(Node), _dec9 = property(Label), _dec10 = property(Node), _dec11 = property(Node), _dec12 = property(AnimationComponent), _dec13 = property(Node), _dec(_class = (_class2 = (_temp = class SpinPopup extends (_crd && BasePopup === void 0 ? (_reportPossibleCrUseOfBasePopup({
+      _export("SpinPopup", SpinPopup = (_dec = ccclass('SpinPopup'), _dec2 = property(Node), _dec3 = property(Node), _dec4 = property(Prefab), _dec5 = property(Button), _dec6 = property(Button), _dec7 = property(Sprite), _dec8 = property(Button), _dec9 = property(Node), _dec10 = property(Label), _dec11 = property(Node), _dec12 = property(Node), _dec13 = property(AnimationComponent), _dec14 = property(Node), _dec(_class = (_class2 = (_temp = class SpinPopup extends (_crd && BasePopup === void 0 ? (_reportPossibleCrUseOfBasePopup({
         error: Error()
       }), BasePopup) : BasePopup) {
         constructor(...args) {
@@ -136,19 +137,21 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           _initializerDefineProperty(this, "btnSpinCoin", _descriptor5, this);
 
-          _initializerDefineProperty(this, "btnSpinAd", _descriptor6, this);
+          _initializerDefineProperty(this, "bgBtnSpinCoin", _descriptor6, this);
 
-          _initializerDefineProperty(this, "spinAd_disable", _descriptor7, this);
+          _initializerDefineProperty(this, "btnSpinAd", _descriptor7, this);
 
-          _initializerDefineProperty(this, "txtSpinAdCount", _descriptor8, this);
+          _initializerDefineProperty(this, "spinAd_disable", _descriptor8, this);
 
-          _initializerDefineProperty(this, "objFree", _descriptor9, this);
+          _initializerDefineProperty(this, "txtSpinAdCount", _descriptor9, this);
 
-          _initializerDefineProperty(this, "objNextTime", _descriptor10, this);
+          _initializerDefineProperty(this, "objFree", _descriptor10, this);
 
-          _initializerDefineProperty(this, "lightAnimation", _descriptor11, this);
+          _initializerDefineProperty(this, "objNextTime", _descriptor11, this);
 
-          _initializerDefineProperty(this, "targetCoin", _descriptor12, this);
+          _initializerDefineProperty(this, "lightAnimation", _descriptor12, this);
+
+          _initializerDefineProperty(this, "targetCoin", _descriptor13, this);
 
           _defineProperty(this, "arrRatios", []);
 
@@ -221,7 +224,20 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           this.btnClose.node.active = false;
           this.btnClose2.node.active = false;
           this.lightAnimation.play("light_wait");
+          this.showButtonCoin();
           super.showPopup();
+        }
+
+        showButtonCoin() {
+          if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.currCoin >= this.priceSpinCoin) {
+            this.bgBtnSpinCoin.grayscale = false;
+            this.btnSpinCoin.interactable = true;
+          } else {
+            this.bgBtnSpinCoin.grayscale = true;
+            this.btnSpinCoin.interactable = false;
+          }
         }
 
         showPoup_ShowView_Finished() {
@@ -429,8 +445,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         setSpinFinished() {
           this.lightAnimation.pause();
           this.lightAnimation.play("light_idle");
-          this.showInfo(); // console.log("this.indexTarget:"+this.indexTarget);
-
+          this.showInfo();
+          console.log("this.indexTarget:" + this.indexTarget);
           let groupRewardDataInfo = new (_crd && GroupRewardDataInfo === void 0 ? (_reportPossibleCrUseOfGroupRewardDataInfo({
             error: Error()
           }), GroupRewardDataInfo) : GroupRewardDataInfo)((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
@@ -566,49 +582,56 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         initializer: function () {
           return null;
         }
-      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "btnSpinAd", [_dec7], {
+      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "bgBtnSpinCoin", [_dec7], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
-      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "spinAd_disable", [_dec8], {
+      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "btnSpinAd", [_dec8], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
-      }), _descriptor8 = _applyDecoratedDescriptor(_class2.prototype, "txtSpinAdCount", [_dec9], {
+      }), _descriptor8 = _applyDecoratedDescriptor(_class2.prototype, "spinAd_disable", [_dec9], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
-      }), _descriptor9 = _applyDecoratedDescriptor(_class2.prototype, "objFree", [_dec10], {
+      }), _descriptor9 = _applyDecoratedDescriptor(_class2.prototype, "txtSpinAdCount", [_dec10], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
-      }), _descriptor10 = _applyDecoratedDescriptor(_class2.prototype, "objNextTime", [_dec11], {
+      }), _descriptor10 = _applyDecoratedDescriptor(_class2.prototype, "objFree", [_dec11], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
-      }), _descriptor11 = _applyDecoratedDescriptor(_class2.prototype, "lightAnimation", [_dec12], {
+      }), _descriptor11 = _applyDecoratedDescriptor(_class2.prototype, "objNextTime", [_dec12], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
-      }), _descriptor12 = _applyDecoratedDescriptor(_class2.prototype, "targetCoin", [_dec13], {
+      }), _descriptor12 = _applyDecoratedDescriptor(_class2.prototype, "lightAnimation", [_dec13], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function () {
+          return null;
+        }
+      }), _descriptor13 = _applyDecoratedDescriptor(_class2.prototype, "targetCoin", [_dec14], {
         configurable: true,
         enumerable: true,
         writable: true,

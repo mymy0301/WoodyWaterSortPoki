@@ -1,5 +1,5 @@
 
-import { _decorator, Component, Node, tween, Tween, UIOpacity, Vec3 } from 'cc';
+import { _decorator, Button, Component, Node, Sprite, tween, Tween, UIOpacity, Vec3 } from 'cc';
 import { BOOSTER_TYPE, Constants, GAME_MODE, PLAY_TYPE } from '../framework/constants';
 import { localConfig } from '../localConfig';
 import { clientEvent } from '../framework/clientEvent';
@@ -30,8 +30,11 @@ export class NoMovesGroup extends Component {
     // @property
     // serializableDummy = 0;
 
-    @property(Node)
-    btnPlayOn: Node = null;
+    @property(Button)
+    btnPlayOn: Button = null;
+
+    @property(Sprite)
+    bgBtnPlayOn: Sprite = null;
 
     // @property(Node)
     // btnGiveUp: Node = null;
@@ -73,7 +76,7 @@ export class NoMovesGroup extends Component {
     lockGroup: Node = null;
 
     protected onEnable(): void {
-        this.btnPlayOn.on(Constants.CLICK, this.touchPlayOn, this);
+        this.btnPlayOn.node.on(Constants.CLICK, this.touchPlayOn, this);
         // this.btnGiveUp.on(Constants.CLICK, this.touchGiveUp, this);
         // this.btnReplay.on(Constants.CLICK, this.touchReplay, this);
         this.btnAddColAd.on(Constants.CLICK, this.touchAddColAd, this);
@@ -81,7 +84,7 @@ export class NoMovesGroup extends Component {
         this.btnClose.on(Constants.CLICK, this.touchClose, this);
     }
     protected onDisable(): void {
-        this.btnPlayOn.off(Constants.CLICK, this.touchPlayOn, this);
+        this.btnPlayOn.node.off(Constants.CLICK, this.touchPlayOn, this);
         // this.btnGiveUp.off(Constants.CLICK, this.touchGiveUp, this);
         // this.btnReplay.off(Constants.CLICK, this.touchReplay, this);
         this.btnAddColAd.off(Constants.CLICK, this.touchAddColAd, this);
@@ -100,13 +103,14 @@ export class NoMovesGroup extends Component {
         const titleTarget = this.nodeTitle.position.clone();
         const title2Target = this.nodeTitle2.position.clone();
 
+        localConfig.instance.isNoMoves_AddCol_byAD = false;
         // Vị trí bắt đầu
         if(localConfig.instance.isNoMoves_AddCol_byAD){
             this.groupRight.active = false;
-            this.btnPlayOn.setPosition(new Vec3(0,  -1200,0));
+            this.btnPlayOn.node.setPosition(new Vec3(0,  -1200,0));
         }else{
             this.groupRight.active = true;
-            this.btnPlayOn.setPosition(new Vec3(-600,-680,0));
+            this.btnPlayOn.node.setPosition(new Vec3(-600,-680,0));
         }
        
         this.groupRight.setPosition(new Vec3(600, rightGroupTarget.y));
@@ -168,12 +172,23 @@ export class NoMovesGroup extends Component {
 
         this.tweenBGOpacity = tween(this.bgOpacity).to(0.3, { opacity: 255 }, { easing: 'linear', onComplete: () => { } }).start();
         if(localConfig.instance.isNoMoves_AddCol_byAD){
-           this.twennPlayOn = tween(this.btnPlayOn).to(0.5, { position: playOnTarget2 }, { easing: 'backOut', onComplete: () => { } }).start();
+           this.twennPlayOn = tween(this.btnPlayOn.node).to(0.5, { position: playOnTarget2 }, { easing: 'backOut', onComplete: () => { } }).start();
         }else{
-            this.twennPlayOn = tween(this.btnPlayOn).to(0.5, { position: playOnTarget }, { easing: 'backOut', onComplete: () => { } }).start();
+            this.twennPlayOn = tween(this.btnPlayOn.node).to(0.5, { position: playOnTarget }, { easing: 'backOut', onComplete: () => { } }).start();
             this.tweenRightGroup = tween(this.groupRight).to(0.5, { position: rightGroupTarget }, { easing: 'backOut', onComplete: () => { } }).start();
         }
        
+        this.showButtonPlayOn();
+    }
+
+    showButtonPlayOn(){
+        if(localConfig.instance.currCoin >= localConfig.instance.getBoosterPrice(BOOSTER_TYPE.ADDCOL)){
+            this.bgBtnPlayOn.grayscale = false;
+            this.btnPlayOn.interactable = true;
+        }else{
+            this.bgBtnPlayOn.grayscale = true;
+            this.btnPlayOn.interactable = false;
+        }
     }
 
     touchPlayOn() {

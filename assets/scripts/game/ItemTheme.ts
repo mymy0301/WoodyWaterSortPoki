@@ -68,21 +68,11 @@ export class ItemTheme extends Component {
 
     @property(Button)
     btnUnlock_Ad: Button = null;
-
-    @property(Button)
-    btnUnlock_TicketGold: Button = null;
-
-    @property(Label)
-    txtUnlock_TicketGold: Label = null;
-
-    @property(Button)
-    btnUnlock_TicketSilver: Button = null;
-
-    @property(Label)
-    txtUnlock_TicketSilver: Label = null;
-
     @property(Button)
     btnUnlock_Coin: Button = null;
+
+    @property(Sprite)
+    bgBtnUnlock_Coin: Sprite = null;
 
     @property(Label)
     txtUnlock_Coin: Label = null;
@@ -94,8 +84,6 @@ export class ItemTheme extends Component {
         clientEvent.on(Constants.THEME_UNSELECT_UPDATE, this.setThemeUnselect_Update, this);
         this.btnItemTheme.node.on(Button.EventType.CLICK, this.touchItemTheme, this);
         this.btnUnlock_Ad.node.on(Button.EventType.CLICK, this.touchUnlock_Ad, this);
-        this.btnUnlock_TicketGold.node.on(Button.EventType.CLICK, this.touchUnlock_TicketGold, this);
-        this.btnUnlock_TicketSilver.node.on(Button.EventType.CLICK, this.touchUnlock_TicketSilver, this);
         this.btnUnlock_Coin.node.on(Button.EventType.CLICK, this.touchUnlock_Coin, this);
     }
 
@@ -104,8 +92,6 @@ export class ItemTheme extends Component {
         clientEvent.off(Constants.THEME_UNSELECT_UPDATE, this.setThemeUnselect_Update, this);
         this.btnItemTheme.node.off(Button.EventType.CLICK, this.touchItemTheme, this);
         this.btnUnlock_Ad.node.off(Button.EventType.CLICK, this.touchUnlock_Ad, this);
-        this.btnUnlock_TicketGold.node.off(Button.EventType.CLICK, this.touchUnlock_TicketGold, this);
-        this.btnUnlock_TicketSilver.node.off(Button.EventType.CLICK, this.touchUnlock_TicketSilver, this);
         this.btnUnlock_Coin.node.off(Button.EventType.CLICK, this.touchUnlock_Coin, this);
 
     }
@@ -173,6 +159,23 @@ export class ItemTheme extends Component {
             this.objLock.active = false; 
             this.objUnlock.active = false;
         }
+
+        if (this.itemID == localConfig.instance.getThemeSelected_byThemeType(this.themeType)) {
+            
+        }else{
+            if (localConfig.instance.checkThemeUnlocked(this.themeType, this.itemID)) {
+
+            }else{
+                if (this.themeType == THEME_TYPE.SKIN) {
+                    let skinInfo = localConfig.instance.getSkinInfo(this.itemID);
+                    if (localConfig.instance.currCoin >= skinInfo.price) {
+                        this.bgBtnUnlock_Coin.grayscale = false;
+                    } else {
+                        this.bgBtnUnlock_Coin.grayscale = true;
+                    }
+                }
+            }
+        }
     }
 
     setThemeUnselect_Update(themeType: THEME_TYPE, itemID: number) {
@@ -186,8 +189,6 @@ export class ItemTheme extends Component {
         this.objLock.active = false;
         this.objSelected.active = false;
         this.objUnlock.active = false;
-        this.btnUnlock_TicketGold.node.active = false;
-        this.btnUnlock_TicketSilver.node.active = false;
         this.btnUnlock_Coin.node.active = false;
         this.btnUnlock_Ad.node.active = false;
         this.btnItemTheme.node.active = true;
@@ -227,15 +228,14 @@ export class ItemTheme extends Component {
                     let skinInfo = localConfig.instance.getSkinInfo(this.itemID);
                     if (skinInfo) {
                         this.objUnlock.active = true;
-                        if (skinInfo.unlockType == UNLOCK_TYPE.TICKET_GOLD) {
-                            this.btnUnlock_TicketGold.node.active = true;
-                            this.txtUnlock_TicketGold.string = `${skinInfo.price}`;
-                        } else if (skinInfo.unlockType == UNLOCK_TYPE.TICKET_SILVER) {
-                            this.btnUnlock_TicketSilver.node.active = true;
-                            this.txtUnlock_TicketSilver.string = `${skinInfo.price}`;
-                        } else if (skinInfo.unlockType == UNLOCK_TYPE.COIN) {
+                        if (skinInfo.unlockType == UNLOCK_TYPE.COIN) {
                             this.btnUnlock_Coin.node.active = true;
                             this.txtUnlock_Coin.string = `${skinInfo.price}`;
+                            if(localConfig.instance.currCoin >= skinInfo.price){
+                                this.bgBtnUnlock_Coin.grayscale = false;
+                            }else{
+                                this.bgBtnUnlock_Coin.grayscale = true;
+                            }
                         } else if (skinInfo.unlockType == UNLOCK_TYPE.WATCH_AD) {
                             this.btnUnlock_Ad.node.active = true;
                         }

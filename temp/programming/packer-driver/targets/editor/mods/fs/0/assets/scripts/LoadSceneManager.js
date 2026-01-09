@@ -395,44 +395,41 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           Promise.all([(_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
             error: Error()
           }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("TutLevelPopup", (err, uiPrefab) => {// console.log("TutLevelPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
+          }), // resourceUtil.loadPrefabUI_Bundle("TutLevel5Popup",(err,uiPrefab)=>{
+          //     // console.log("TutLevel5Popup");
+          // }),
+          // resourceUtil.loadPrefabUI_Bundle("ShopGroup",(err,uiPrefab)=>{
+          // }),
+          (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
             error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("TutLevel5Popup", (err, uiPrefab) => {// console.log("TutLevel5Popup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("ShopGroup", (err, uiPrefab) => {}), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("ThemeGroup", (err, uiPrefab) => {}), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("LeaderBoardGroup", (err, uiPrefab) => {}), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("TournamentsGroup", (err, uiPrefab) => {}), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
+          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("ThemePopup", (err, uiPrefab) => {}), // resourceUtil.loadPrefabUI_Bundle("LeaderBoardGroup",(err,uiPrefab)=>{
+          // }),
+          // resourceUtil.loadPrefabUI_Bundle("TournamentsGroup",(err,uiPrefab)=>{
+          // }),
+          (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
             error: Error()
           }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("WinPopup", (err, uiPrefab) => {// console.log("WinPopup");
           }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
             error: Error()
           }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("PausePopup", (err, uiPrefab) => {// console.log("PausePopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("RemoveAdPopup", (err, uiPrefab) => {// console.log("RemoveAdPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
+          }), // resourceUtil.loadPrefabUI_Bundle("RemoveAdPopup",(err,uiPrefab)=>{
+          //     // console.log("RemoveAdPopup");
+          // }),
+          (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
             error: Error()
           }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("SettingPopup", (err, uiPrefab) => {// console.log("SettingPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("ShopPopup", (err, uiPrefab) => {// console.log("ShopPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("SummerPackPopup", (err, uiPrefab) => {// console.log("SummerPackPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
+          }), // resourceUtil.loadPrefabUI_Bundle("ShopPopup",(err,uiPrefab)=>{
+          //     // console.log("ShopPopup");
+          // }),
+          // resourceUtil.loadPrefabUI_Bundle("SummerPackPopup",(err,uiPrefab)=>{
+          //     // console.log("SummerPackPopup");
+          // }),
+          (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
             error: Error()
           }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("DailyChallengePopup", (err, uiPrefab) => {// console.log("DailyChallengePopup");
           }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
             error: Error()
           }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("BoxRewardReceivePopup", (err, uiPrefab) => {// console.log("BoxRewardReceivePopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("RewardReceivePopup", (err, uiPrefab) => {// console.log("RewardReceivePopup");
           }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
             error: Error()
           }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("DailyTaskPopup", (err, uiPrefab) => {// console.log("DailyTaskPopup");
@@ -442,67 +439,67 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
             error: Error()
           }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("LevelChestsPopup", (err, uiPrefab) => {// console.log("LevelChestsPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("TubeRaceJoinPopup", (err, uiPrefab) => {// console.log("TubeRaceJoinPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("TubeRacePopup", (err, uiPrefab) => {// console.log("TubeRacePopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("MasterPassDetailPopup", (err, uiPrefab) => {// console.log("MasterPassDetailPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("MasterPassInfoPopup", (err, uiPrefab) => {// console.log("MasterPassInfoPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("MasterPassPopup", (err, uiPrefab) => {// console.log("MasterPassPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
+          }), // resourceUtil.loadPrefabUI_Bundle("TubeRaceJoinPopup",(err,uiPrefab)=>{
+          //     // console.log("TubeRaceJoinPopup");
+          // }),
+          // resourceUtil.loadPrefabUI_Bundle("TubeRacePopup",(err,uiPrefab)=>{
+          //     // console.log("TubeRacePopup");
+          // }),
+          // resourceUtil.loadPrefabUI_Bundle("MasterPassDetailPopup",(err,uiPrefab)=>{
+          //     // console.log("MasterPassDetailPopup");
+          // }),
+          // resourceUtil.loadPrefabUI_Bundle("MasterPassInfoPopup",(err,uiPrefab)=>{
+          //     // console.log("MasterPassInfoPopup");
+          // }),
+          // resourceUtil.loadPrefabUI_Bundle("MasterPassPopup",(err,uiPrefab)=>{
+          //     // console.log("MasterPassPopup");
+          // }),
+          (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
             error: Error()
           }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("SpinPopup", (err, uiPrefab) => {// console.log("SpinPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("ShareInfoPopup", (err, uiPrefab) => {// console.log("ShareInfoPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("ShareContextPopup", (err, uiPrefab) => {// console.log("ShareContextPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
+          }), // resourceUtil.loadPrefabUI_Bundle("ShareInfoPopup",(err,uiPrefab)=>{
+          //     // console.log("ShareInfoPopup");
+          // }),
+          // resourceUtil.loadPrefabUI_Bundle("ShareContextPopup",(err,uiPrefab)=>{
+          //     // console.log("ShareContextPopup");
+          // }),
+          (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
             error: Error()
           }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("ShopItemPopup", (err, uiPrefab) => {// console.log("ShopItemPopup");
           }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
             error: Error()
           }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("ThemeUnlockPopup", (err, uiPrefab) => {// console.log("ThemeUnlockPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("TournamentPopup", (err, uiPrefab) => {// console.log("TournamentPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("TournamentQuitPopup", (err, uiPrefab) => {// console.log("TournamentQuitPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("TournamentResultPopup", (err, uiPrefab) => {// console.log("TournamentResultPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("TournamentRevivePopup", (err, uiPrefab) => {// console.log("TournamentRevivePopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("TubeRaceJoinPopup", (err, uiPrefab) => {// console.log("TubeRaceJoinPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("TubeRaceLosePopup", (err, uiPrefab) => {// console.log("TubeRaceLosePopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("TubeRacePopup", (err, uiPrefab) => {// console.log("TubeRacePopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("TubeRaceWinPopup", (err, uiPrefab) => {// console.log("TubeRaceWinPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
+          }), // resourceUtil.loadPrefabUI_Bundle("TournamentPopup",(err,uiPrefab)=>{
+          //     // console.log("TournamentPopup");
+          // }),
+          // resourceUtil.loadPrefabUI_Bundle("TournamentQuitPopup",(err,uiPrefab)=>{
+          //     // console.log("TournamentQuitPopup");
+          // }),
+          // resourceUtil.loadPrefabUI_Bundle("TournamentResultPopup",(err,uiPrefab)=>{
+          //     // console.log("TournamentResultPopup");
+          // }),
+          // resourceUtil.loadPrefabUI_Bundle("TournamentRevivePopup",(err,uiPrefab)=>{
+          //     // console.log("TournamentRevivePopup");
+          // }),
+          // resourceUtil.loadPrefabUI_Bundle("TubeRaceJoinPopup",(err,uiPrefab)=>{
+          //     // console.log("TubeRaceJoinPopup");
+          // }),
+          // resourceUtil.loadPrefabUI_Bundle("TubeRaceLosePopup",(err,uiPrefab)=>{
+          //     // console.log("TubeRaceLosePopup");
+          // }),
+          // resourceUtil.loadPrefabUI_Bundle("TubeRacePopup",(err,uiPrefab)=>{
+          //     // console.log("TubeRacePopup");
+          // }),
+          // resourceUtil.loadPrefabUI_Bundle("TubeRaceWinPopup",(err,uiPrefab)=>{
+          //     // console.log("TubeRaceWinPopup");
+          // }),
+          (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
             error: Error()
           }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("LevelFailedPopup", (err, uiPrefab) => {// console.log("TubeRaceWinPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("MoreLivesPopup", (err, uiPrefab) => {// console.log("TubeRaceWinPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
+          }), // resourceUtil.loadPrefabUI_Bundle("MoreLivesPopup",(err,uiPrefab)=>{
+          //     // console.log("TubeRaceWinPopup");
+          // }),
+          (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
             error: Error()
           }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("QuitConfirmPopup", (err, uiPrefab) => {// console.log("TubeRaceWinPopup");
           }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
@@ -514,10 +511,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
             error: Error()
           }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("TutPlasterPopup", (err, uiPrefab) => {// console.log("TubeRaceWinPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadPrefabUI_Bundle("WinTournamentPageHostPopup", (err, uiPrefab) => {// console.log("WinTournamentPageHostPopup");
-          }), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
+          }), // resourceUtil.loadPrefabUI_Bundle("WinTournamentPageHostPopup", (err, uiPrefab) => {
+          //     // console.log("WinTournamentPageHostPopup");
+          // }),
+          (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
             error: Error()
           }), resourceUtil) : resourceUtil).loadAudioClip("audio/sound/Button", (err, clip) => {}), (_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
             error: Error()
@@ -858,6 +855,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         setNextScene222() {
+          (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
+            error: Error()
+          }), PokiSDKManager) : PokiSDKManager).instance.setGameLoadingFinished();
           director.loadScene("play"); // this.setLoad_Step2_NoWait();
         }
 

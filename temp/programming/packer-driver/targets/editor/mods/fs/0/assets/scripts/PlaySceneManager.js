@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9", "__unresolved_10", "__unresolved_11", "__unresolved_12", "__unresolved_13", "__unresolved_14", "__unresolved_15", "__unresolved_16", "__unresolved_17", "__unresolved_18", "__unresolved_19", "__unresolved_20", "__unresolved_21", "__unresolved_22", "__unresolved_23", "__unresolved_24", "__unresolved_25", "__unresolved_26", "__unresolved_27", "__unresolved_28", "__unresolved_29", "__unresolved_30", "__unresolved_31", "__unresolved_32", "__unresolved_33", "__unresolved_34", "__unresolved_35", "__unresolved_36", "__unresolved_37", "__unresolved_38", "__unresolved_39", "__unresolved_40", "__unresolved_41", "__unresolved_42", "__unresolved_43", "__unresolved_44", "__unresolved_45", "__unresolved_46", "__unresolved_47", "__unresolved_48", "__unresolved_49", "__unresolved_50", "__unresolved_51", "__unresolved_52"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9", "__unresolved_10", "__unresolved_11", "__unresolved_12", "__unresolved_13", "__unresolved_14", "__unresolved_15", "__unresolved_16", "__unresolved_17", "__unresolved_18", "__unresolved_19", "__unresolved_20", "__unresolved_21", "__unresolved_22", "__unresolved_23", "__unresolved_24", "__unresolved_25", "__unresolved_26", "__unresolved_27", "__unresolved_28", "__unresolved_29", "__unresolved_30", "__unresolved_31", "__unresolved_32", "__unresolved_33", "__unresolved_34", "__unresolved_35", "__unresolved_36", "__unresolved_37", "__unresolved_38", "__unresolved_39", "__unresolved_40", "__unresolved_41", "__unresolved_42", "__unresolved_43", "__unresolved_44", "__unresolved_45", "__unresolved_46", "__unresolved_47", "__unresolved_48", "__unresolved_49", "__unresolved_50", "__unresolved_51", "__unresolved_52", "__unresolved_53"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Component, instantiate, Node, ParticleSystem, Vec3, WinPopup, LoadingPopup, resourceUtil, clientEvent, BOOSTER_TYPE, Constants, PLAY_TYPE, LoadingStartPopup, SummerPackPopup, RemoveAdPackPopup, MenuManager, localConfig, SettingPopup, ShopPopup, DailyChallengePopup, BoxRewardReceivePopup, DailyTaskPopup, RewardReceivePopup, AudioManager2, LevelChestsPopup, RewardChestsPopup, ThemeUnlockPopup, TournamentPopup, lodash, TournamentQuitPopup, TournamentResultPopup, TournamentRevivePopup, ShopItemPopup, TubeRaceJoinPopup, TubeRacePopup, TubeRaceWinPopup, TubeRaceLosePopup, MassterPassPopup, MasterPassDetailPopup, MasterPassInfoPopup, SpinPopup, FBInstantManager, ShareInfoPopup, ShareContextPopup, VIPPopup, WinWithFriendPopup, ShareContextWithFriendPopup, FriendsPopup, PlayMagicManager, QuitConfirmPopup, LevelFailedPopup, MoreLivesPopup, TutCurtainPopup, TutPlasterPopup, TutClayPopup, LogEventManager, WinTournamentPageHostPopup, BlackFridayPopup, ThemePopup, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _dec23, _dec24, _dec25, _dec26, _dec27, _dec28, _dec29, _dec30, _dec31, _dec32, _dec33, _dec34, _dec35, _dec36, _dec37, _dec38, _dec39, _dec40, _dec41, _dec42, _dec43, _dec44, _dec45, _dec46, _dec47, _dec48, _dec49, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22, _descriptor23, _descriptor24, _descriptor25, _descriptor26, _descriptor27, _descriptor28, _descriptor29, _descriptor30, _descriptor31, _descriptor32, _descriptor33, _descriptor34, _descriptor35, _descriptor36, _descriptor37, _descriptor38, _descriptor39, _descriptor40, _descriptor41, _descriptor42, _descriptor43, _descriptor44, _descriptor45, _descriptor46, _descriptor47, _descriptor48, _temp, _crd, ccclass, property, PlaySceneManager;
+  var _reporterNs, _cclegacy, _decorator, Component, instantiate, Node, ParticleSystem, Vec3, WinPopup, LoadingPopup, resourceUtil, clientEvent, BOOSTER_TYPE, Constants, PLAY_TYPE, LoadingStartPopup, SummerPackPopup, RemoveAdPackPopup, MenuManager, localConfig, SettingPopup, ShopPopup, DailyChallengePopup, BoxRewardReceivePopup, DailyTaskPopup, RewardReceivePopup, AudioManager2, LevelChestsPopup, RewardChestsPopup, ThemeUnlockPopup, TournamentPopup, lodash, TournamentQuitPopup, TournamentResultPopup, TournamentRevivePopup, ShopItemPopup, TubeRaceJoinPopup, TubeRacePopup, TubeRaceWinPopup, TubeRaceLosePopup, MassterPassPopup, MasterPassDetailPopup, MasterPassInfoPopup, SpinPopup, FBInstantManager, ShareInfoPopup, ShareContextPopup, VIPPopup, WinWithFriendPopup, ShareContextWithFriendPopup, FriendsPopup, PlayMagicManager, QuitConfirmPopup, LevelFailedPopup, MoreLivesPopup, TutCurtainPopup, TutPlasterPopup, TutClayPopup, LogEventManager, WinTournamentPageHostPopup, BlackFridayPopup, ThemePopup, PokiSDKManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _dec23, _dec24, _dec25, _dec26, _dec27, _dec28, _dec29, _dec30, _dec31, _dec32, _dec33, _dec34, _dec35, _dec36, _dec37, _dec38, _dec39, _dec40, _dec41, _dec42, _dec43, _dec44, _dec45, _dec46, _dec47, _dec48, _dec49, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22, _descriptor23, _descriptor24, _descriptor25, _descriptor26, _descriptor27, _descriptor28, _descriptor29, _descriptor30, _descriptor31, _descriptor32, _descriptor33, _descriptor34, _descriptor35, _descriptor36, _descriptor37, _descriptor38, _descriptor39, _descriptor40, _descriptor41, _descriptor42, _descriptor43, _descriptor44, _descriptor45, _descriptor46, _descriptor47, _descriptor48, _temp, _crd, ccclass, property, PlaySceneManager;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -259,6 +259,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("ThemePopup", "./game/ThemePopup", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfPokiSDKManager(extras) {
+    _reporterNs.report("PokiSDKManager", "./common/PokiSDKManager", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -376,6 +380,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       BlackFridayPopup = _unresolved_52.BlackFridayPopup;
     }, function (_unresolved_53) {
       ThemePopup = _unresolved_53.ThemePopup;
+    }, function (_unresolved_54) {
+      PokiSDKManager = _unresolved_54.PokiSDKManager;
     }],
     execute: function () {
       _crd = true;
@@ -1304,6 +1310,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           //     }
           // }
 
+          if ((_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
+            error: Error()
+          }), PokiSDKManager) : PokiSDKManager).instance.isFirstUserInteraction) {
+            (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
+              error: Error()
+            }), PokiSDKManager) : PokiSDKManager).instance.setGameStart();
+          }
+
           (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
             error: Error()
           }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
@@ -1355,6 +1369,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         touchLevel() {
+          if ((_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
+            error: Error()
+          }), PokiSDKManager) : PokiSDKManager).instance.isFirstUserInteraction) {
+            (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
+              error: Error()
+            }), PokiSDKManager) : PokiSDKManager).instance.setGameStart();
+          }
+
           (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
             error: Error()
           }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
@@ -1398,6 +1420,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           let indexDay = (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
             error: Error()
           }), localConfig) : localConfig).instance.getCountDay_From_Start(infoDayChallenge) + 1; // console.log("indexDay",indexDay);
+
+          if ((_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
+            error: Error()
+          }), PokiSDKManager) : PokiSDKManager).instance.isFirstUserInteraction) {
+            (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
+              error: Error()
+            }), PokiSDKManager) : PokiSDKManager).instance.setGameStart();
+          }
 
           (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
             error: Error()

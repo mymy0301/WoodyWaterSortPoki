@@ -4,40 +4,40 @@
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/LoadingPopup.js",
-    "mTimestamp": 1767865858949
+    "mTimestamp": 1767923162530
   },
   "assets/module/QuickTween/Util.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/module/QuickTween/Util.js",
-    "mTimestamp": 1767865858532
+    "mTimestamp": 1767923162425
   },
   "assets/scripts/LoadSceneManager.js": {
     "imports": {
-      "cc": "quick-pack:/cce/internal/x/cc.js",
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
       "__unresolved_6": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_9": "assets/scripts/common/PokiSDKManager.js",
+      "__unresolved_8": "assets/scripts/common/PGSPlayInstantManager.js",
       "__unresolved_1": "assets/scripts/framework/clientEvent.js",
       "__unresolved_5": "assets/scripts/framework/configuration.js",
       "__unresolved_2": "assets/scripts/framework/constants.js",
       "__unresolved_7": "assets/scripts/framework/musicManager.js",
       "__unresolved_3": "assets/scripts/framework/resourceUtil.js",
       "__unresolved_4": "assets/scripts/localConfig.js",
-      "__unresolved_8": "assets/scripts/common/PGSPlayInstantManager.js"
+      "__unresolved_9": "assets/scripts/common/PokiSDKManager.js"
     },
     "physicalLocation": "fs/0/assets/scripts/LoadSceneManager.js",
-    "mTimestamp": 1767865858839
+    "mTimestamp": 1767929028041
   },
   "assets/module/QuickTween/QuickTween.js": {
     "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
       "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
       "__unresolved_1": "assets/module/QuickTween/Util.js"
     },
     "physicalLocation": "fs/0/assets/module/QuickTween/QuickTween.js",
-    "mTimestamp": 1767865858480
+    "mTimestamp": 1767923162376
   },
   "assets/scripts/TestScene.js": {
     "imports": {
@@ -48,25 +48,25 @@
       "__unresolved_3": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/TestScene.js",
-    "mTimestamp": 1767865858883
+    "mTimestamp": 1767923162864
   },
   "assets/module/facebook-instant-games/facebook-instant-games-tests.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/module/facebook-instant-games/facebook-instant-games-tests.js",
-    "mTimestamp": 1767865858496
+    "mTimestamp": 1767923162542
   },
   "assets/scripts/WellDoneGroup.js": {
     "imports": {
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
       "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_3": "assets/scripts/framework/audioManager2.js",
       "__unresolved_1": "assets/scripts/framework/clientEvent.js",
+      "__unresolved_3": "assets/scripts/framework/audioManager2.js",
       "__unresolved_2": "assets/scripts/framework/constants.js"
     },
     "physicalLocation": "fs/0/assets/scripts/WellDoneGroup.js",
-    "mTimestamp": 1767865858909
+    "mTimestamp": 1767923162894
   },
   "assets/scripts/common/CountDownTimeHeart.js": {
     "imports": {
@@ -75,7 +75,7 @@
       "__unresolved_1": "assets/scripts/core/utils/Utils.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/CountDownTimeHeart.js",
-    "mTimestamp": 1767865859029
+    "mTimestamp": 1767923163511
   },
   "assets/scripts/common/CoinPoolManager.js": {
     "imports": {
@@ -87,19 +87,19 @@
       "__unresolved_3": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/CoinPoolManager.js",
-    "mTimestamp": 1767865858984
+    "mTimestamp": 1767923162935
   },
   "assets/scripts/common/CameraShakeManager.js": {
     "imports": {
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
       "cc": "quick-pack:/cce/internal/x/cc.js",
       "__unresolved_1": "assets/scripts/framework/clientEvent.js",
-      "__unresolved_3": "assets/scripts/framework/lodash.js",
       "__unresolved_2": "assets/scripts/framework/constants.js",
+      "__unresolved_3": "assets/scripts/framework/lodash.js",
       "__unresolved_4": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/CameraShakeManager.js",
-    "mTimestamp": 1767865858935
+    "mTimestamp": 1767923163464
   },
   "assets/scripts/common/CountDownNextTimeMS.js": {
     "imports": {
@@ -108,7 +108,7 @@
       "__unresolved_1": "assets/scripts/core/utils/Utils.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/CountDownNextTimeMS.js",
-    "mTimestamp": 1767865859005
+    "mTimestamp": 1767923163486
   },
   "assets/scripts/common/CountDownToNextTime.js": {
     "imports": {
@@ -117,18 +117,19 @@
       "__unresolved_1": "assets/scripts/core/utils/Utils.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/CountDownToNextTime.js",
-    "mTimestamp": 1767865859084
+    "mTimestamp": 1767923163564
   },
   "assets/scripts/PlaySceneManager.js": {
     "imports": {
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
       "cc": "quick-pack:/cce/internal/x/cc.js",
       "__unresolved_2": "assets/scripts/LoadingPopup.js",
+      "__unresolved_35": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_49": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_17": "assets/scripts/framework/audioManager2.js",
       "__unresolved_4": "assets/scripts/framework/clientEvent.js",
-      "__unresolved_22": "assets/scripts/framework/lodash.js",
+      "__unresolved_17": "assets/scripts/framework/audioManager2.js",
       "__unresolved_5": "assets/scripts/framework/constants.js",
+      "__unresolved_22": "assets/scripts/framework/lodash.js",
       "__unresolved_3": "assets/scripts/framework/resourceUtil.js",
       "__unresolved_14": "assets/scripts/game/BoxRewardReceivePopup.js",
       "__unresolved_13": "assets/scripts/game/DailyChallengePopup.js",
@@ -141,8 +142,8 @@
       "__unresolved_42": "assets/scripts/game/PlayMagicManager.js",
       "__unresolved_43": "assets/scripts/game/QuitConfirmPopup.js",
       "__unresolved_8": "assets/scripts/game/RemoveAdPackPopup.js",
-      "__unresolved_16": "assets/scripts/game/RewardReceivePopup.js",
       "__unresolved_19": "assets/scripts/game/RewardChestsPopup.js",
+      "__unresolved_16": "assets/scripts/game/RewardReceivePopup.js",
       "__unresolved_11": "assets/scripts/game/SettingPopup.js",
       "__unresolved_26": "assets/scripts/game/ShopItemPopup.js",
       "__unresolved_12": "assets/scripts/game/ShopPopup.js",
@@ -152,8 +153,8 @@
       "__unresolved_48": "assets/scripts/game/TutClayPopup.js",
       "__unresolved_46": "assets/scripts/game/TutCurtainPopup.js",
       "__unresolved_47": "assets/scripts/game/TutPlasterPopup.js",
-      "__unresolved_1": "assets/scripts/game/WinPopup.js",
       "__unresolved_50": "assets/scripts/game/WinTournamentPageHostPopup.js",
+      "__unresolved_1": "assets/scripts/game/WinPopup.js",
       "__unresolved_51": "assets/scripts/game/blackfriday/BlackFridayPopup.js",
       "__unresolved_31": "assets/scripts/game/masterpass/MassterPassPopup.js",
       "__unresolved_32": "assets/scripts/game/masterpass/MasterPassDetailPopup.js",
@@ -174,17 +175,17 @@
       "__unresolved_40": "assets/scripts/game/withFriends/ShareContextWithFriendPopup.js",
       "__unresolved_39": "assets/scripts/game/withFriends/WinWithFriendPopup.js",
       "__unresolved_10": "assets/scripts/localConfig.js",
-      "__unresolved_35": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_53": "assets/scripts/common/PokiSDKManager.js"
     },
     "physicalLocation": "fs/0/assets/scripts/PlaySceneManager.js",
-    "mTimestamp": 1767873282995
+    "mTimestamp": 1767930298649
   },
   "assets/scripts/common/EfxAutoDestroy.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/EfxAutoDestroy.js",
-    "mTimestamp": 1767865859638
+    "mTimestamp": 1767923163593
   },
   "assets/scripts/common/CountDownTimeNextDay.js": {
     "imports": {
@@ -196,7 +197,7 @@
       "__unresolved_4": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/CountDownTimeNextDay.js",
-    "mTimestamp": 1767865859057
+    "mTimestamp": 1767923163534
   },
   "assets/scripts/common/CountDownToNextTime_Tournament.js": {
     "imports": {
@@ -205,7 +206,7 @@
       "__unresolved_1": "assets/scripts/core/utils/Utils.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/CountDownToNextTime_Tournament.js",
-    "mTimestamp": 1767865859104
+    "mTimestamp": 1767923163585
   },
   "assets/scripts/common/FriendAvatarInfo.js": {
     "imports": {
@@ -213,7 +214,7 @@
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/FriendAvatarInfo.js",
-    "mTimestamp": 1767865859758
+    "mTimestamp": 1767923163607
   },
   "assets/scripts/common/HeartManager.js": {
     "imports": {
@@ -225,28 +226,28 @@
       "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/HeartManager.js",
-    "mTimestamp": 1767865859697
+    "mTimestamp": 1767923163666
   },
   "assets/scripts/common/HeartPoolManager.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/HeartPoolManager.js",
-    "mTimestamp": 1767865859708
+    "mTimestamp": 1767923163677
   },
   "assets/scripts/common/IconLoading.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/IconLoading.js",
-    "mTimestamp": 1767865859795
+    "mTimestamp": 1767923164264
   },
   "assets/scripts/common/IconNotification.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/IconNotification.js",
-    "mTimestamp": 1767865859777
+    "mTimestamp": 1767923164283
   },
   "assets/scripts/common/HeartUnlimitedPoolManager.js": {
     "imports": {
@@ -257,14 +258,14 @@
       "__unresolved_2": "assets/scripts/framework/constants.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/HeartUnlimitedPoolManager.js",
-    "mTimestamp": 1767865859748
+    "mTimestamp": 1767923163715
   },
   "assets/scripts/common/InfoDay.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/InfoDay.js",
-    "mTimestamp": 1767865859786
+    "mTimestamp": 1767923164293
   },
   "assets/scripts/common/InfoMonthReward.js": {
     "imports": {
@@ -272,21 +273,21 @@
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/InfoMonthReward.js",
-    "mTimestamp": 1767865859821
+    "mTimestamp": 1767923164333
   },
   "assets/scripts/common/InfoMonth.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/InfoMonth.js",
-    "mTimestamp": 1767865859808
+    "mTimestamp": 1767923164302
   },
   "assets/scripts/common/ItemChangeSprite.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/ItemChangeSprite.js",
-    "mTimestamp": 1767865859840
+    "mTimestamp": 1767923164323
   },
   "assets/scripts/common/ItemRankInfo.js": {
     "imports": {
@@ -295,7 +296,7 @@
       "__unresolved_1": "assets/scripts/framework/constants.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/ItemRankInfo.js",
-    "mTimestamp": 1767865860322
+    "mTimestamp": 1767923164416
   },
   "assets/scripts/common/ItemCoin.js": {
     "imports": {
@@ -306,47 +307,47 @@
       "__unresolved_2": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/ItemCoin.js",
-    "mTimestamp": 1767865860279
+    "mTimestamp": 1767923164403
   },
   "assets/scripts/common/ItemHeartUnlimited.js": {
     "imports": {
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
       "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_1": "assets/scripts/framework/audioManager2.js",
       "__unresolved_3": "assets/scripts/framework/clientEvent.js",
-      "__unresolved_2": "assets/scripts/framework/lodash.js",
-      "__unresolved_4": "assets/scripts/framework/constants.js"
+      "__unresolved_1": "assets/scripts/framework/audioManager2.js",
+      "__unresolved_4": "assets/scripts/framework/constants.js",
+      "__unresolved_2": "assets/scripts/framework/lodash.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/ItemHeartUnlimited.js",
-    "mTimestamp": 1767865860303
+    "mTimestamp": 1767923164358
   },
   "assets/scripts/common/ItemSpriteMove.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/ItemSpriteMove.js",
-    "mTimestamp": 1767865860343
+    "mTimestamp": 1767923164431
   },
   "assets/scripts/common/ItemScrollView.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/ItemScrollView.js",
-    "mTimestamp": 1767865860313
+    "mTimestamp": 1767923164371
   },
   "assets/scripts/common/ItemSpriteScale.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/ItemSpriteScale.js",
-    "mTimestamp": 1767865860390
+    "mTimestamp": 1767923164465
   },
   "assets/scripts/common/ItemSpriteRotate.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/ItemSpriteRotate.js",
-    "mTimestamp": 1767865860357
+    "mTimestamp": 1767923164446
   },
   "assets/scripts/common/ItemSpriteShake.js": {
     "imports": {
@@ -355,31 +356,31 @@
       "__unresolved_1": "assets/scripts/framework/lodash.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/ItemSpriteShake.js",
-    "mTimestamp": 1767865860370
+    "mTimestamp": 1767923164479
   },
   "assets/scripts/common/LeaderboardDataInfo.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/LeaderboardDataInfo.js",
-    "mTimestamp": 1767865860413
+    "mTimestamp": 1767923164507
   },
   "assets/scripts/common/ItemToastNotification.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/ItemToastNotification.js",
-    "mTimestamp": 1767865860405
+    "mTimestamp": 1767923164498
   },
   "assets/scripts/common/PlayFabManager.js": {
     "imports": {
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
       "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_1": "assets/scripts/framework/constants.js",
-      "__unresolved_2": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_2": "assets/scripts/common/FBInstantManager.js",
+      "__unresolved_1": "assets/scripts/framework/constants.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/PlayFabManager.js",
-    "mTimestamp": 1767865860680
+    "mTimestamp": 1767923164673
   },
   "assets/scripts/common/LogEventManager.js": {
     "imports": {
@@ -389,7 +390,7 @@
       "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/LogEventManager.js",
-    "mTimestamp": 1767865860491
+    "mTimestamp": 1767923164596
   },
   "assets/scripts/common/TextLoading.js": {
     "imports": {
@@ -398,7 +399,7 @@
       "__unresolved_1": "assets/scripts/framework/lodash.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/TextLoading.js",
-    "mTimestamp": 1767865860732
+    "mTimestamp": 1767923164811
   },
   "assets/scripts/common/basePopup.js": {
     "imports": {
@@ -408,7 +409,7 @@
       "__unresolved_2": "assets/scripts/framework/constants.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/basePopup.js",
-    "mTimestamp": 1767865860811
+    "mTimestamp": 1767923164860
   },
   "assets/scripts/common/ScrollViewGroupManager.js": {
     "imports": {
@@ -417,33 +418,33 @@
       "__unresolved_1": "assets/scripts/common/ItemScrollView.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/ScrollViewGroupManager.js",
-    "mTimestamp": 1767865860529
+    "mTimestamp": 1767923164716
   },
   "assets/scripts/common/ToastNotificationPopup.js": {
     "imports": {
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
       "cc": "quick-pack:/cce/internal/x/cc.js",
       "__unresolved_3": "assets/scripts/common/ItemToastNotification.js",
-      "__unresolved_4": "assets/scripts/framework/audioManager2.js",
       "__unresolved_1": "assets/scripts/framework/clientEvent.js",
+      "__unresolved_4": "assets/scripts/framework/audioManager2.js",
       "__unresolved_2": "assets/scripts/framework/constants.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/ToastNotificationPopup.js",
-    "mTimestamp": 1767865860750
+    "mTimestamp": 1767923164786
   },
   "assets/scripts/common/UIOnOffItem.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/UIOnOffItem.js",
-    "mTimestamp": 1767865860771
+    "mTimestamp": 1767923164887
   },
   "assets/scripts/common/blockInputEvent.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/blockInputEvent.js",
-    "mTimestamp": 1767865860865
+    "mTimestamp": 1767923164929
   },
   "assets/scripts/common/btnAdapter.js": {
     "imports": {
@@ -452,7 +453,7 @@
       "__unresolved_1": "assets/scripts/framework/audioManager2.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/btnAdapter.js",
-    "mTimestamp": 1767865860831
+    "mTimestamp": 1767923164909
   },
   "assets/scripts/common/confirmPopup.js": {
     "imports": {
@@ -463,14 +464,14 @@
       "__unresolved_2": "assets/scripts/framework/constants.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/confirmPopup.js",
-    "mTimestamp": 1767865860916
+    "mTimestamp": 1767923165025
   },
   "assets/scripts/common/capture-screen.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/capture-screen.js",
-    "mTimestamp": 1767865860852
+    "mTimestamp": 1767923164950
   },
   "assets/scripts/common/coinGroup.js": {
     "imports": {
@@ -482,21 +483,21 @@
       "__unresolved_3": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/coinGroup.js",
-    "mTimestamp": 1767865860895
+    "mTimestamp": 1767923164989
   },
   "assets/scripts/common/loadingGroup.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/loadingGroup.js",
-    "mTimestamp": 1767865860951
+    "mTimestamp": 1767923165055
   },
   "assets/scripts/common/message-data.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/message-data.js",
-    "mTimestamp": 1767865860985
+    "mTimestamp": 1767923165073
   },
   "assets/scripts/common/notificationPopup.js": {
     "imports": {
@@ -505,14 +506,14 @@
       "__unresolved_1": "assets/scripts/common/basePopup.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/notificationPopup.js",
-    "mTimestamp": 1767865860966
+    "mTimestamp": 1767923165098
   },
   "assets/scripts/common/spriteResizeKeepRatio.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/common/spriteResizeKeepRatio.js",
-    "mTimestamp": 1767865861003
+    "mTimestamp": 1767923165123
   },
   "assets/scripts/framework/audioManager2.js": {
     "imports": {
@@ -523,7 +524,7 @@
       "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/audioManager2.js",
-    "mTimestamp": 1767865861072
+    "mTimestamp": 1767923165339
   },
   "assets/scripts/framework/clientEvent.js": {
     "imports": {
@@ -532,14 +533,14 @@
       "__unresolved_1": "assets/scripts/framework/oneToMultiListener.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/clientEvent.js",
-    "mTimestamp": 1767865861160
+    "mTimestamp": 1767923165233
   },
   "assets/scripts/core/utils/Utils.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/core/utils/Utils.js",
-    "mTimestamp": 1767865861151
+    "mTimestamp": 1767923165224
   },
   "assets/scripts/framework/musicManager.js": {
     "imports": {
@@ -548,21 +549,21 @@
       "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/musicManager.js",
-    "mTimestamp": 1767865861479
+    "mTimestamp": 1767923166180
   },
   "assets/scripts/framework/oneToMultiListener.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/oneToMultiListener.js",
-    "mTimestamp": 1767865861457
+    "mTimestamp": 1767923165648
   },
   "assets/scripts/framework/lodash.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/lodash.js",
-    "mTimestamp": 1767865861441
+    "mTimestamp": 1767923165408
   },
   "assets/scripts/game/AvatarGroup.js": {
     "imports": {
@@ -573,7 +574,7 @@
       "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/AvatarGroup.js",
-    "mTimestamp": 1767865861623
+    "mTimestamp": 1767923166491
   },
   "assets/scripts/framework/resourceUtil.js": {
     "imports": {
@@ -584,7 +585,7 @@
       "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/resourceUtil.js",
-    "mTimestamp": 1767865861573
+    "mTimestamp": 1767923165849
   },
   "assets/scripts/game/BGProgressRewardGroup.js": {
     "imports": {
@@ -597,7 +598,7 @@
       "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/BGProgressRewardGroup.js",
-    "mTimestamp": 1767865861515
+    "mTimestamp": 1767923165686
   },
   "assets/scripts/game/BackGroundGameManager.js": {
     "imports": {
@@ -609,7 +610,7 @@
       "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/BackGroundGameManager.js",
-    "mTimestamp": 1767865861605
+    "mTimestamp": 1767923165720
   },
   "assets/scripts/game/BackGroundMenuManager.js": {
     "imports": {
@@ -618,7 +619,7 @@
       "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/BackGroundMenuManager.js",
-    "mTimestamp": 1767865861640
+    "mTimestamp": 1767923165735
   },
   "assets/scripts/game/BaseInfoPopup.js": {
     "imports": {
@@ -627,7 +628,7 @@
       "__unresolved_1": "assets/scripts/common/basePopup.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/BaseInfoPopup.js",
-    "mTimestamp": 1767865861738
+    "mTimestamp": 1767923165880
   },
   "assets/scripts/game/BackGroundPopupManager.js": {
     "imports": {
@@ -636,7 +637,7 @@
       "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/BackGroundPopupManager.js",
-    "mTimestamp": 1767865861748
+    "mTimestamp": 1767923165746
   },
   "assets/scripts/game/BoxRewardInfoGroup.js": {
     "imports": {
@@ -646,7 +647,7 @@
       "__unresolved_1": "assets/scripts/game/ItemBoxReward.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/BoxRewardInfoGroup.js",
-    "mTimestamp": 1767865861809
+    "mTimestamp": 1767923165787
   },
   "assets/scripts/game/BoxRewardReceivePopup.js": {
     "imports": {
@@ -661,7 +662,7 @@
       "__unresolved_6": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/BoxRewardReceivePopup.js",
-    "mTimestamp": 1767865861716
+    "mTimestamp": 1767923165965
   },
   "assets/scripts/game/ButtonRemoveAdManager.js": {
     "imports": {
@@ -669,12 +670,12 @@
       "cc": "quick-pack:/cce/internal/x/cc.js",
       "__unresolved_1": "assets/scripts/framework/clientEvent.js",
       "__unresolved_2": "assets/scripts/framework/constants.js",
+      "__unresolved_4": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_5": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_3": "assets/scripts/localConfig.js",
-      "__unresolved_4": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_3": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ButtonRemoveAdManager.js",
-    "mTimestamp": 1767865861914
+    "mTimestamp": 1767923166086
   },
   "assets/scripts/game/ButtonDailyChallengeManager.js": {
     "imports": {
@@ -686,7 +687,7 @@
       "__unresolved_3": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ButtonDailyChallengeManager.js",
-    "mTimestamp": 1767865862015
+    "mTimestamp": 1767923166062
   },
   "assets/scripts/game/ButtonDailyTaskManager.js": {
     "imports": {
@@ -698,7 +699,7 @@
       "__unresolved_3": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ButtonDailyTaskManager.js",
-    "mTimestamp": 1767865861779
+    "mTimestamp": 1767923166036
   },
   "assets/scripts/game/ButtonBoosterTypeGroup.js": {
     "imports": {
@@ -710,7 +711,7 @@
       "__unresolved_2": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ButtonBoosterTypeGroup.js",
-    "mTimestamp": 1767865861863
+    "mTimestamp": 1767923166003
   },
   "assets/scripts/game/ButtonSaleManager.js": {
     "imports": {
@@ -718,11 +719,11 @@
       "cc": "quick-pack:/cce/internal/x/cc.js",
       "__unresolved_1": "assets/scripts/framework/clientEvent.js",
       "__unresolved_2": "assets/scripts/framework/constants.js",
-      "__unresolved_4": "assets/scripts/localConfig.js",
-      "__unresolved_3": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_3": "assets/scripts/common/FBInstantManager.js",
+      "__unresolved_4": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ButtonSaleManager.js",
-    "mTimestamp": 1767865861828
+    "mTimestamp": 1767923166111
   },
   "assets/scripts/game/ButtonTabShopManager.js": {
     "imports": {
@@ -733,7 +734,7 @@
       "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ButtonTabShopManager.js",
-    "mTimestamp": 1767865861936
+    "mTimestamp": 1767923166133
   },
   "assets/scripts/game/ButtonVIPManager.js": {
     "imports": {
@@ -741,11 +742,11 @@
       "cc": "quick-pack:/cce/internal/x/cc.js",
       "__unresolved_2": "assets/scripts/framework/clientEvent.js",
       "__unresolved_3": "assets/scripts/framework/constants.js",
-      "__unresolved_1": "assets/scripts/localConfig.js",
-      "__unresolved_4": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_4": "assets/scripts/common/FBInstantManager.js",
+      "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ButtonVIPManager.js",
-    "mTimestamp": 1767865861889
+    "mTimestamp": 1767923166163
   },
   "assets/scripts/game/ChestProgressRewardGroup.js": {
     "imports": {
@@ -757,7 +758,7 @@
       "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ChestProgressRewardGroup.js",
-    "mTimestamp": 1767865861963
+    "mTimestamp": 1767923166210
   },
   "assets/scripts/game/DailyTaskPopup.js": {
     "imports": {
@@ -770,7 +771,7 @@
       "__unresolved_5": "assets/scripts/common/LogEventManager.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/DailyTaskPopup.js",
-    "mTimestamp": 1767865862211
+    "mTimestamp": 1767923166451
   },
   "assets/scripts/game/ComboGroup.js": {
     "imports": {
@@ -779,7 +780,7 @@
       "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ComboGroup.js",
-    "mTimestamp": 1767865861991
+    "mTimestamp": 1767923166413
   },
   "assets/scripts/game/EfxClayFinishManager.js": {
     "imports": {
@@ -790,7 +791,7 @@
       "__unresolved_3": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/EfxClayFinishManager.js",
-    "mTimestamp": 1767865862311
+    "mTimestamp": 1767923166512
   },
   "assets/scripts/game/DailyTaskQuestGroup.js": {
     "imports": {
@@ -804,7 +805,7 @@
       "__unresolved_2": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/DailyTaskQuestGroup.js",
-    "mTimestamp": 1767865862271
+    "mTimestamp": 1767923166600
   },
   "assets/scripts/game/EfxBottleFinishManager.js": {
     "imports": {
@@ -816,7 +817,7 @@
       "__unresolved_4": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/EfxBottleFinishManager.js",
-    "mTimestamp": 1767865862293
+    "mTimestamp": 1767923166475
   },
   "assets/scripts/game/EfxOBIMFinishManager.js": {
     "imports": {
@@ -828,7 +829,7 @@
       "__unresolved_4": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/EfxOBIMFinishManager.js",
-    "mTimestamp": 1767865862335
+    "mTimestamp": 1767923166532
   },
   "assets/scripts/game/EfxQuestionManager.js": {
     "imports": {
@@ -839,7 +840,7 @@
       "__unresolved_3": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/EfxQuestionManager.js",
-    "mTimestamp": 1767865862413
+    "mTimestamp": 1767923166648
   },
   "assets/scripts/game/EfxPlasterFinishManager.js": {
     "imports": {
@@ -851,7 +852,7 @@
       "__unresolved_3": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/EfxPlasterFinishManager.js",
-    "mTimestamp": 1767865862356
+    "mTimestamp": 1767923166624
   },
   "assets/scripts/game/ItemBoxReward.js": {
     "imports": {
@@ -861,14 +862,14 @@
       "__unresolved_2": "assets/scripts/framework/constants.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemBoxReward.js",
-    "mTimestamp": 1767865862441
+    "mTimestamp": 1767923166715
   },
   "assets/scripts/game/ItemClayFinishedEfx.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemClayFinishedEfx.js",
-    "mTimestamp": 1767865862605
+    "mTimestamp": 1767923166727
   },
   "assets/scripts/game/ItemDailyChallenge.js": {
     "imports": {
@@ -879,7 +880,7 @@
       "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemDailyChallenge.js",
-    "mTimestamp": 1767865862645
+    "mTimestamp": 1767923166909
   },
   "assets/scripts/game/ItemDailyChallengeBox.js": {
     "imports": {
@@ -891,14 +892,14 @@
       "__unresolved_3": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemDailyChallengeBox.js",
-    "mTimestamp": 1767865862709
+    "mTimestamp": 1767923166944
   },
   "assets/scripts/game/ItemBottleFinishedEfx.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemBottleFinishedEfx.js",
-    "mTimestamp": 1767865862424
+    "mTimestamp": 1767923166698
   },
   "assets/scripts/game/ItemDailyQuest.js": {
     "imports": {
@@ -910,7 +911,7 @@
       "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemDailyQuest.js",
-    "mTimestamp": 1767865862747
+    "mTimestamp": 1767923167040
   },
   "assets/scripts/game/ItemDailyLogin.js": {
     "imports": {
@@ -921,14 +922,14 @@
       "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemDailyLogin.js",
-    "mTimestamp": 1767865862675
+    "mTimestamp": 1767923166975
   },
   "assets/scripts/game/ItemDailyQuestBoxReward.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemDailyQuestBoxReward.js",
-    "mTimestamp": 1767865862761
+    "mTimestamp": 1767923167000
   },
   "assets/scripts/game/ItemLevel.js": {
     "imports": {
@@ -938,7 +939,7 @@
       "__unresolved_2": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemLevel.js",
-    "mTimestamp": 1767865862837
+    "mTimestamp": 1767923167118
   },
   "assets/scripts/game/ItemLeaderBoard.js": {
     "imports": {
@@ -947,39 +948,39 @@
       "__unresolved_2": "assets/scripts/framework/constants.js",
       "__unresolved_3": "assets/scripts/framework/resourceUtil.js",
       "__unresolved_4": "assets/scripts/core/utils/Utils.js",
-      "__unresolved_1": "assets/scripts/localConfig.js",
-      "__unresolved_5": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_5": "assets/scripts/common/FBInstantManager.js",
+      "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemLeaderBoard.js",
-    "mTimestamp": 1767865862809
+    "mTimestamp": 1767923167086
   },
   "assets/scripts/game/ItemGroupShop.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemGroupShop.js",
-    "mTimestamp": 1767865862770
+    "mTimestamp": 1767923166984
   },
   "assets/scripts/game/ItemOBIMFinishedEfx.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemOBIMFinishedEfx.js",
-    "mTimestamp": 1767865862849
+    "mTimestamp": 1767923167138
   },
   "assets/scripts/game/ItemQuestionEfx.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemQuestionEfx.js",
-    "mTimestamp": 1767865862861
+    "mTimestamp": 1767923167151
   },
   "assets/scripts/game/ItemPlasterFinishedEfx.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemPlasterFinishedEfx.js",
-    "mTimestamp": 1767865862854
+    "mTimestamp": 1767923167144
   },
   "assets/scripts/game/ItemShopDailyFree.js": {
     "imports": {
@@ -992,7 +993,7 @@
       "__unresolved_2": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemShopDailyFree.js",
-    "mTimestamp": 1767865862913
+    "mTimestamp": 1767923167199
   },
   "assets/scripts/game/ItemRewardReceive.js": {
     "imports": {
@@ -1002,7 +1003,7 @@
       "__unresolved_2": "assets/scripts/framework/constants.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemRewardReceive.js",
-    "mTimestamp": 1767865862885
+    "mTimestamp": 1767923167174
   },
   "assets/scripts/game/ItemShopExchange.js": {
     "imports": {
@@ -1013,34 +1014,34 @@
       "__unresolved_2": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemShopExchange.js",
-    "mTimestamp": 1767865863078
+    "mTimestamp": 1767923167235
   },
   "assets/scripts/game/ItemShopVIP.js": {
     "imports": {
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
       "cc": "quick-pack:/cce/internal/x/cc.js",
       "__unresolved_1": "assets/scripts/framework/constants.js",
+      "__unresolved_3": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_4": "assets/scripts/framework/clientEvent.js",
       "__unresolved_5": "assets/scripts/framework/audioManager2.js",
-      "__unresolved_2": "assets/scripts/localConfig.js",
-      "__unresolved_3": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_2": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemShopVIP.js",
-    "mTimestamp": 1767865863005
+    "mTimestamp": 1767923167339
   },
   "assets/scripts/game/ItemShopPack.js": {
     "imports": {
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
       "cc": "quick-pack:/cce/internal/x/cc.js",
       "__unresolved_1": "assets/scripts/framework/constants.js",
+      "__unresolved_2": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_4": "assets/scripts/framework/clientEvent.js",
       "__unresolved_5": "assets/scripts/framework/audioManager2.js",
       "__unresolved_6": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_3": "assets/scripts/localConfig.js",
-      "__unresolved_2": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_3": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemShopPack.js",
-    "mTimestamp": 1767865863216
+    "mTimestamp": 1767923167424
   },
   "assets/scripts/game/ItemTabLeaderBoard.js": {
     "imports": {
@@ -1050,7 +1051,7 @@
       "__unresolved_2": "assets/scripts/framework/clientEvent.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemTabLeaderBoard.js",
-    "mTimestamp": 1767865863244
+    "mTimestamp": 1767923167519
   },
   "assets/scripts/game/ItemTab.js": {
     "imports": {
@@ -1061,7 +1062,7 @@
       "__unresolved_3": "assets/scripts/common/LogEventManager.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemTab.js",
-    "mTimestamp": 1767865863047
+    "mTimestamp": 1767923167469
   },
   "assets/scripts/game/ItemTabDailyTask.js": {
     "imports": {
@@ -1071,7 +1072,7 @@
       "__unresolved_2": "assets/scripts/framework/clientEvent.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemTabDailyTask.js",
-    "mTimestamp": 1767865863103
+    "mTimestamp": 1767923167498
   },
   "assets/scripts/game/ItemTabTheme.js": {
     "imports": {
@@ -1081,14 +1082,14 @@
       "__unresolved_2": "assets/scripts/framework/clientEvent.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemTabTheme.js",
-    "mTimestamp": 1767865863283
+    "mTimestamp": 1767923167547
   },
   "assets/scripts/game/ItemTubeClayObj.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemTubeClayObj.js",
-    "mTimestamp": 1767865863712
+    "mTimestamp": 1767923167798
   },
   "assets/scripts/game/ItemTicket.js": {
     "imports": {
@@ -1100,7 +1101,7 @@
       "__unresolved_3": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemTicket.js",
-    "mTimestamp": 1767865863663
+    "mTimestamp": 1767923167779
   },
   "assets/scripts/game/ItemTubePlasterObj.js": {
     "imports": {
@@ -1110,7 +1111,7 @@
       "__unresolved_2": "assets/scripts/framework/constants.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemTubePlasterObj.js",
-    "mTimestamp": 1767865863992
+    "mTimestamp": 1767923168149
   },
   "assets/scripts/game/ItemWater.js": {
     "imports": {
@@ -1120,7 +1121,7 @@
       "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemWater.js",
-    "mTimestamp": 1767865864057
+    "mTimestamp": 1767923168224
   },
   "assets/scripts/game/ItemTubeOBIMObj.js": {
     "imports": {
@@ -1131,7 +1132,7 @@
       "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemTubeOBIMObj.js",
-    "mTimestamp": 1767865863698
+    "mTimestamp": 1767923168125
   },
   "assets/scripts/game/LeaderBoardGroupManager.js": {
     "imports": {
@@ -1140,7 +1141,7 @@
       "__unresolved_1": "assets/scripts/game/ItemLeaderBoard.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/LeaderBoardGroupManager.js",
-    "mTimestamp": 1767865864237
+    "mTimestamp": 1767923168286
   },
   "assets/scripts/game/ItemTube.js": {
     "imports": {
@@ -1150,16 +1151,16 @@
       "__unresolved_4": "assets/scripts/framework/constants.js",
       "__unresolved_5": "assets/scripts/framework/clientEvent.js",
       "__unresolved_6": "assets/scripts/framework/audioManager2.js",
+      "__unresolved_7": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_11": "assets/scripts/framework/lodash.js",
       "__unresolved_9": "assets/scripts/game/ItemTubeClayObj.js",
-      "__unresolved_10": "assets/scripts/game/ItemTubePlasterObj.js",
       "__unresolved_8": "assets/scripts/game/ItemTubeOBIMObj.js",
+      "__unresolved_10": "assets/scripts/game/ItemTubePlasterObj.js",
       "__unresolved_1": "assets/scripts/game/ItemWater.js",
-      "__unresolved_2": "assets/scripts/localConfig.js",
-      "__unresolved_7": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_2": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemTube.js",
-    "mTimestamp": 1767865863971
+    "mTimestamp": 1767923168091
   },
   "assets/scripts/game/LevelFailedPopup.js": {
     "imports": {
@@ -1173,14 +1174,14 @@
       "__unresolved_5": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/LevelFailedPopup.js",
-    "mTimestamp": 1767865864198
+    "mTimestamp": 1767923168442
   },
   "assets/scripts/game/LoadingStartPopup.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/LoadingStartPopup.js",
-    "mTimestamp": 1767865864261
+    "mTimestamp": 1767923168468
   },
   "assets/scripts/game/LeaderBoardGroup.js": {
     "imports": {
@@ -1190,22 +1191,22 @@
       "__unresolved_3": "assets/scripts/framework/constants.js",
       "__unresolved_4": "assets/scripts/framework/clientEvent.js",
       "__unresolved_6": "assets/scripts/common/ItemRankInfo.js",
+      "__unresolved_7": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_8": "assets/scripts/framework/lodash.js",
+      "__unresolved_9": "assets/scripts/common/PGSPlayInstantManager.js",
       "__unresolved_10": "assets/scripts/common/LogEventManager.js",
       "__unresolved_2": "assets/scripts/game/LeaderBoardGroupManager.js",
-      "__unresolved_5": "assets/scripts/localConfig.js",
-      "__unresolved_7": "assets/scripts/common/FBInstantManager.js",
-      "__unresolved_9": "assets/scripts/common/PGSPlayInstantManager.js"
+      "__unresolved_5": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/LeaderBoardGroup.js",
-    "mTimestamp": 1767865864174
+    "mTimestamp": 1767923168363
   },
   "assets/scripts/game/PlayManager.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/PlayManager.js",
-    "mTimestamp": 1767865864637
+    "mTimestamp": 1767923169186
   },
   "assets/scripts/game/RemoveAdPackPopup.js": {
     "imports": {
@@ -1218,7 +1219,7 @@
       "__unresolved_5": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/RemoveAdPackPopup.js",
-    "mTimestamp": 1767865864570
+    "mTimestamp": 1767923169231
   },
   "assets/scripts/game/ShopGroup.js": {
     "imports": {
@@ -1226,12 +1227,12 @@
       "cc": "quick-pack:/cce/internal/x/cc.js",
       "__unresolved_1": "assets/scripts/framework/clientEvent.js",
       "__unresolved_2": "assets/scripts/framework/constants.js",
+      "__unresolved_4": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_5": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_3": "assets/scripts/localConfig.js",
-      "__unresolved_4": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_3": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ShopGroup.js",
-    "mTimestamp": 1767865864764
+    "mTimestamp": 1767923169486
   },
   "assets/scripts/game/RewardReceivePopup.js": {
     "imports": {
@@ -1246,7 +1247,7 @@
       "__unresolved_6": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/RewardReceivePopup.js",
-    "mTimestamp": 1767865864627
+    "mTimestamp": 1767923169365
   },
   "assets/scripts/game/ShopGroupRemoveAd.js": {
     "imports": {
@@ -1257,23 +1258,7 @@
       "__unresolved_3": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ShopGroupRemoveAd.js",
-    "mTimestamp": 1767865865348
-  },
-  "assets/scripts/game/SettingPopup.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_1": "assets/scripts/common/basePopup.js",
-      "__unresolved_2": "assets/scripts/common/UIOnOffItem.js",
-      "__unresolved_4": "assets/scripts/framework/musicManager.js",
-      "__unresolved_5": "assets/scripts/framework/clientEvent.js",
-      "__unresolved_6": "assets/scripts/framework/constants.js",
-      "__unresolved_8": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_3": "assets/scripts/localConfig.js",
-      "__unresolved_7": "assets/scripts/common/FBInstantManager.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/game/SettingPopup.js",
-    "mTimestamp": 1767865864711
+    "mTimestamp": 1767923169499
   },
   "assets/scripts/game/SummerPackPopup.js": {
     "imports": {
@@ -1283,7 +1268,7 @@
       "__unresolved_2": "assets/scripts/game/ItemShopPack.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/SummerPackPopup.js",
-    "mTimestamp": 1767865865337
+    "mTimestamp": 1767923169606
   },
   "assets/scripts/game/ShopPopup.js": {
     "imports": {
@@ -1292,13 +1277,13 @@
       "__unresolved_1": "assets/scripts/common/basePopup.js",
       "__unresolved_2": "assets/scripts/framework/clientEvent.js",
       "__unresolved_3": "assets/scripts/framework/constants.js",
+      "__unresolved_5": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_6": "assets/scripts/framework/lodash.js",
       "__unresolved_7": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_4": "assets/scripts/localConfig.js",
-      "__unresolved_5": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_4": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ShopPopup.js",
-    "mTimestamp": 1767865865323
+    "mTimestamp": 1767923169590
   },
   "assets/scripts/game/TicketGroup.js": {
     "imports": {
@@ -1310,7 +1295,7 @@
       "__unresolved_4": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/TicketGroup.js",
-    "mTimestamp": 1767865865424
+    "mTimestamp": 1767923169749
   },
   "assets/scripts/game/TicketPoolManager.js": {
     "imports": {
@@ -1322,7 +1307,7 @@
       "__unresolved_3": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/TicketPoolManager.js",
-    "mTimestamp": 1767865865513
+    "mTimestamp": 1767923169781
   },
   "assets/scripts/game/ThemeGroup.js": {
     "imports": {
@@ -1335,7 +1320,7 @@
       "__unresolved_3": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ThemeGroup.js",
-    "mTimestamp": 1767865865599
+    "mTimestamp": 1767923169645
   },
   "assets/scripts/game/TutClayPopup.js": {
     "imports": {
@@ -1345,7 +1330,7 @@
       "__unresolved_2": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/TutClayPopup.js",
-    "mTimestamp": 1767865865648
+    "mTimestamp": 1767923169857
   },
   "assets/scripts/game/TournamentsGroup.js": {
     "imports": {
@@ -1355,7 +1340,7 @@
       "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/TournamentsGroup.js",
-    "mTimestamp": 1767865865488
+    "mTimestamp": 1767923169848
   },
   "assets/scripts/game/TutCurtainPopup.js": {
     "imports": {
@@ -1365,7 +1350,7 @@
       "__unresolved_2": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/TutCurtainPopup.js",
-    "mTimestamp": 1767865865639
+    "mTimestamp": 1767923169866
   },
   "assets/scripts/game/TubeProgressRewardGroup.js": {
     "imports": {
@@ -1378,7 +1363,7 @@
       "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/TubeProgressRewardGroup.js",
-    "mTimestamp": 1767865865628
+    "mTimestamp": 1767923169816
   },
   "assets/scripts/game/TutPlasterPopup.js": {
     "imports": {
@@ -1388,7 +1373,7 @@
       "__unresolved_2": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/TutPlasterPopup.js",
-    "mTimestamp": 1767865865702
+    "mTimestamp": 1767923169882
   },
   "assets/scripts/game/TutLevel5Popup.js": {
     "imports": {
@@ -1397,7 +1382,7 @@
       "__unresolved_1": "assets/scripts/common/basePopup.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/TutLevel5Popup.js",
-    "mTimestamp": 1767865865654
+    "mTimestamp": 1767923169873
   },
   "assets/scripts/game/TutLevelPopup.js": {
     "imports": {
@@ -1406,42 +1391,42 @@
       "__unresolved_1": "assets/scripts/common/basePopup.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/TutLevelPopup.js",
-    "mTimestamp": 1767865865669
+    "mTimestamp": 1767923169902
   },
   "assets/scripts/game/info/ItemTubePolygonConfig.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/info/ItemTubePolygonConfig.js",
-    "mTimestamp": 1767865865790
+    "mTimestamp": 1767923170052
   },
   "assets/scripts/game/info/ItemWaterConfig.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/info/ItemWaterConfig.js",
-    "mTimestamp": 1767865865775
+    "mTimestamp": 1767923170062
   },
   "assets/scripts/game/info/QuestDataInfo.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/info/QuestDataInfo.js",
-    "mTimestamp": 1767865865781
+    "mTimestamp": 1767923170076
   },
   "assets/scripts/game/info/LevelDataInfo.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/info/LevelDataInfo.js",
-    "mTimestamp": 1767865865768
+    "mTimestamp": 1767923170070
   },
   "assets/scripts/game/info/ItemTubeConfig.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/info/ItemTubeConfig.js",
-    "mTimestamp": 1767865865760
+    "mTimestamp": 1767923170022
   },
   "assets/scripts/game/info/ShopDataInfo.js": {
     "imports": {
@@ -1450,7 +1435,7 @@
       "__unresolved_1": "assets/scripts/framework/constants.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/info/ShopDataInfo.js",
-    "mTimestamp": 1767865865807
+    "mTimestamp": 1767923170096
   },
   "assets/scripts/game/info/SkinInfo.js": {
     "imports": {
@@ -1459,7 +1444,7 @@
       "__unresolved_1": "assets/scripts/framework/constants.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/info/SkinInfo.js",
-    "mTimestamp": 1767865865814
+    "mTimestamp": 1767923170103
   },
   "assets/scripts/game/info/TournamentPageHostDataInfo.js": {
     "imports": {
@@ -1468,14 +1453,14 @@
       "__unresolved_1": "assets/scripts/framework/constants.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/info/TournamentPageHostDataInfo.js",
-    "mTimestamp": 1767865865832
+    "mTimestamp": 1767923170119
   },
   "assets/scripts/game/info/TournamentDataInfo.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/info/TournamentDataInfo.js",
-    "mTimestamp": 1767865865820
+    "mTimestamp": 1767923170111
   },
   "assets/scripts/game/info/UnlockProgressInfo.js": {
     "imports": {
@@ -1484,7 +1469,7 @@
       "__unresolved_1": "assets/scripts/framework/constants.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/info/UnlockProgressInfo.js",
-    "mTimestamp": 1767865865842
+    "mTimestamp": 1767923170127
   },
   "assets/scripts/game/masterpass/MassterPassPopup.js": {
     "imports": {
@@ -1495,13 +1480,13 @@
       "__unresolved_5": "assets/scripts/framework/constants.js",
       "__unresolved_6": "assets/scripts/framework/clientEvent.js",
       "__unresolved_7": "assets/scripts/framework/audioManager2.js",
+      "__unresolved_8": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_9": "assets/scripts/common/LogEventManager.js",
       "__unresolved_2": "assets/scripts/game/masterpass/PassScrollViewGroupManager.js",
-      "__unresolved_3": "assets/scripts/localConfig.js",
-      "__unresolved_8": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_3": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/masterpass/MassterPassPopup.js",
-    "mTimestamp": 1767865866088
+    "mTimestamp": 1767923170332
   },
   "assets/scripts/game/masterpass/ItemRewardPass.js": {
     "imports": {
@@ -1511,7 +1496,7 @@
       "__unresolved_2": "assets/scripts/framework/constants.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/masterpass/ItemRewardPass.js",
-    "mTimestamp": 1767865865993
+    "mTimestamp": 1767923170283
   },
   "assets/scripts/game/masterpass/ButtonMassterPassManager.js": {
     "imports": {
@@ -1525,7 +1510,7 @@
       "__unresolved_4": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/masterpass/ButtonMassterPassManager.js",
-    "mTimestamp": 1767865865892
+    "mTimestamp": 1767923170182
   },
   "assets/scripts/game/masterpass/ItemMasterPass.js": {
     "imports": {
@@ -1535,13 +1520,13 @@
       "__unresolved_4": "assets/scripts/common/ItemScrollView.js",
       "__unresolved_5": "assets/scripts/framework/clientEvent.js",
       "__unresolved_6": "assets/scripts/framework/audioManager2.js",
+      "__unresolved_7": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_8": "assets/scripts/common/LogEventManager.js",
       "__unresolved_3": "assets/scripts/game/masterpass/ItemRewardPass.js",
-      "__unresolved_2": "assets/scripts/localConfig.js",
-      "__unresolved_7": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_2": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/masterpass/ItemMasterPass.js",
-    "mTimestamp": 1767865865967
+    "mTimestamp": 1767923170262
   },
   "assets/scripts/game/masterpass/MasterPassInfoPopup.js": {
     "imports": {
@@ -1552,7 +1537,7 @@
       "__unresolved_2": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/masterpass/MasterPassInfoPopup.js",
-    "mTimestamp": 1767865866106
+    "mTimestamp": 1767923170389
   },
   "assets/scripts/game/masterpass/PassScrollViewGroupManager.js": {
     "imports": {
@@ -1562,7 +1547,7 @@
       "__unresolved_2": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/masterpass/PassScrollViewGroupManager.js",
-    "mTimestamp": 1767865866125
+    "mTimestamp": 1767923170404
   },
   "assets/scripts/game/race/BoxRaceRewardInfoGroup.js": {
     "imports": {
@@ -1572,7 +1557,7 @@
       "__unresolved_2": "assets/scripts/framework/constants.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/race/BoxRaceRewardInfoGroup.js",
-    "mTimestamp": 1767865866241
+    "mTimestamp": 1767923170483
   },
   "assets/scripts/game/masterpass/MasterPassDetailPopup.js": {
     "imports": {
@@ -1581,25 +1566,25 @@
       "__unresolved_1": "assets/scripts/common/basePopup.js",
       "__unresolved_2": "assets/scripts/framework/constants.js",
       "__unresolved_3": "assets/scripts/common/CountDownToNextTime.js",
+      "__unresolved_5": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_6": "assets/scripts/framework/clientEvent.js",
       "__unresolved_7": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_4": "assets/scripts/localConfig.js",
-      "__unresolved_5": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_4": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/masterpass/MasterPassDetailPopup.js",
-    "mTimestamp": 1767865866034
+    "mTimestamp": 1767923170378
   },
   "assets/scripts/game/race/ItemPlayerRaceProgress.js": {
     "imports": {
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
       "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_3": "assets/scripts/framework/constants.js",
       "__unresolved_4": "assets/scripts/framework/resourceUtil.js",
-      "__unresolved_2": "assets/scripts/localConfig.js",
-      "__unresolved_1": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_2": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/race/ItemPlayerRaceProgress.js",
-    "mTimestamp": 1767865866380
+    "mTimestamp": 1767923170520
   },
   "assets/scripts/game/race/ButtonRaceManager.js": {
     "imports": {
@@ -1614,7 +1599,7 @@
       "__unresolved_4": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/race/ButtonRaceManager.js",
-    "mTimestamp": 1767865866287
+    "mTimestamp": 1767923170454
   },
   "assets/scripts/game/race/ItemPlayerRace.js": {
     "imports": {
@@ -1622,18 +1607,18 @@
       "cc": "quick-pack:/cce/internal/x/cc.js",
       "__unresolved_2": "assets/scripts/framework/constants.js",
       "__unresolved_3": "assets/scripts/framework/clientEvent.js",
-      "__unresolved_1": "assets/scripts/localConfig.js",
-      "__unresolved_4": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_4": "assets/scripts/common/FBInstantManager.js",
+      "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/race/ItemPlayerRace.js",
-    "mTimestamp": 1767865866347
+    "mTimestamp": 1767923170585
   },
   "assets/scripts/game/race/PlayerRaceScore.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/race/PlayerRaceScore.js",
-    "mTimestamp": 1767865866387
+    "mTimestamp": 1767923170603
   },
   "assets/scripts/game/race/PlayerRaceDataInfo.js": {
     "imports": {
@@ -1642,7 +1627,7 @@
       "__unresolved_1": "assets/scripts/framework/constants.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/race/PlayerRaceDataInfo.js",
-    "mTimestamp": 1767865866426
+    "mTimestamp": 1767923170595
   },
   "assets/scripts/game/race/RaceGroupManager.js": {
     "imports": {
@@ -1653,7 +1638,7 @@
       "__unresolved_2": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/race/RaceGroupManager.js",
-    "mTimestamp": 1767865866417
+    "mTimestamp": 1767923170635
   },
   "assets/scripts/game/race/TubeRaceLosePopup.js": {
     "imports": {
@@ -1666,7 +1651,7 @@
       "__unresolved_5": "assets/scripts/common/LogEventManager.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/race/TubeRaceLosePopup.js",
-    "mTimestamp": 1767865866449
+    "mTimestamp": 1767923170678
   },
   "assets/scripts/game/race/TubeRaceJoinPopup.js": {
     "imports": {
@@ -1679,19 +1664,19 @@
       "__unresolved_4": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/race/TubeRaceJoinPopup.js",
-    "mTimestamp": 1767865866476
+    "mTimestamp": 1767923170654
   },
   "assets/scripts/game/share/ShareContextPopup.js": {
     "imports": {
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
       "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_2": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_3": "assets/scripts/core/utils/Utils.js",
       "__unresolved_4": "assets/scripts/common/capture-screen.js",
-      "__unresolved_1": "assets/scripts/localConfig.js",
-      "__unresolved_2": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/share/ShareContextPopup.js",
-    "mTimestamp": 1767865866658
+    "mTimestamp": 1767923170872
   },
   "assets/scripts/game/race/TubeRacePopup.js": {
     "imports": {
@@ -1710,7 +1695,7 @@
       "__unresolved_4": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/race/TubeRacePopup.js",
-    "mTimestamp": 1767865866557
+    "mTimestamp": 1767923170846
   },
   "assets/scripts/game/spin/ButtonSpinManager.js": {
     "imports": {
@@ -1722,7 +1707,7 @@
       "__unresolved_3": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/spin/ButtonSpinManager.js",
-    "mTimestamp": 1767865866684
+    "mTimestamp": 1767923170900
   },
   "assets/scripts/game/race/TubeRaceWinPopup.js": {
     "imports": {
@@ -1737,7 +1722,7 @@
       "__unresolved_2": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/race/TubeRaceWinPopup.js",
-    "mTimestamp": 1767865866634
+    "mTimestamp": 1767923170749
   },
   "assets/scripts/game/tournaments/CountDownTime_TournamentGamePlay.js": {
     "imports": {
@@ -1748,7 +1733,7 @@
       "__unresolved_2": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/tournaments/CountDownTime_TournamentGamePlay.js",
-    "mTimestamp": 1767865866839
+    "mTimestamp": 1767923170975
   },
   "assets/scripts/game/spin/ItemSpin.js": {
     "imports": {
@@ -1758,19 +1743,19 @@
       "__unresolved_2": "assets/scripts/framework/constants.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/spin/ItemSpin.js",
-    "mTimestamp": 1767865866821
+    "mTimestamp": 1767923170954
   },
   "assets/scripts/game/share/ShareInfoPopup.js": {
     "imports": {
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
       "cc": "quick-pack:/cce/internal/x/cc.js",
       "__unresolved_2": "assets/scripts/core/utils/Utils.js",
+      "__unresolved_3": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_4": "assets/scripts/common/capture-screen.js",
-      "__unresolved_1": "assets/scripts/localConfig.js",
-      "__unresolved_3": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/share/ShareInfoPopup.js",
-    "mTimestamp": 1767865866715
+    "mTimestamp": 1767923170931
   },
   "assets/scripts/game/tournaments/InfoGroupTournamentPageHost.js": {
     "imports": {
@@ -1780,7 +1765,7 @@
       "__unresolved_2": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/tournaments/InfoGroupTournamentPageHost.js",
-    "mTimestamp": 1767865866859
+    "mTimestamp": 1767923171139
   },
   "assets/scripts/game/tournaments/InfoGroupTournament.js": {
     "imports": {
@@ -1793,7 +1778,7 @@
       "__unresolved_3": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/tournaments/InfoGroupTournament.js",
-    "mTimestamp": 1767865866913
+    "mTimestamp": 1767923171121
   },
   "assets/scripts/game/tournaments/ItemTournament.js": {
     "imports": {
@@ -1802,16 +1787,16 @@
       "__unresolved_2": "assets/scripts/framework/constants.js",
       "__unresolved_4": "assets/scripts/framework/clientEvent.js",
       "__unresolved_5": "assets/scripts/common/ItemRankInfo.js",
+      "__unresolved_6": "assets/scripts/common/PGSPlayInstantManager.js",
       "__unresolved_7": "assets/scripts/common/CountDownToNextTime_Tournament.js",
       "__unresolved_8": "assets/scripts/framework/resourceUtil.js",
+      "__unresolved_9": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_10": "assets/scripts/common/LogEventManager.js",
       "__unresolved_1": "assets/scripts/game/tournaments/ItemTournamentGroupPlayer.js",
-      "__unresolved_3": "assets/scripts/localConfig.js",
-      "__unresolved_9": "assets/scripts/common/FBInstantManager.js",
-      "__unresolved_6": "assets/scripts/common/PGSPlayInstantManager.js"
+      "__unresolved_3": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/tournaments/ItemTournament.js",
-    "mTimestamp": 1767865867009
+    "mTimestamp": 1767923171237
   },
   "assets/scripts/game/tournaments/ItemTournamentGroupPlayer.js": {
     "imports": {
@@ -1820,11 +1805,11 @@
       "__unresolved_2": "assets/scripts/framework/constants.js",
       "__unresolved_3": "assets/scripts/framework/resourceUtil.js",
       "__unresolved_4": "assets/scripts/core/utils/Utils.js",
-      "__unresolved_1": "assets/scripts/localConfig.js",
-      "__unresolved_5": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_5": "assets/scripts/common/FBInstantManager.js",
+      "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/tournaments/ItemTournamentGroupPlayer.js",
-    "mTimestamp": 1767865867097
+    "mTimestamp": 1767923171170
   },
   "assets/scripts/game/tournaments/TournamentQuitPopup.js": {
     "imports": {
@@ -1837,7 +1822,7 @@
       "__unresolved_4": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/tournaments/TournamentQuitPopup.js",
-    "mTimestamp": 1767865867124
+    "mTimestamp": 1767923171368
   },
   "assets/scripts/game/tournaments/LeaderBoardGroupFriendManager.js": {
     "imports": {
@@ -1846,7 +1831,7 @@
       "__unresolved_1": "assets/scripts/game/withFriends/ItemLeaderBoardFriend.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/tournaments/LeaderBoardGroupFriendManager.js",
-    "mTimestamp": 1767865866947
+    "mTimestamp": 1767923171273
   },
   "assets/scripts/game/tournaments/TournamentPopup.js": {
     "imports": {
@@ -1860,13 +1845,13 @@
       "__unresolved_6": "assets/scripts/framework/resourceUtil.js",
       "__unresolved_8": "assets/scripts/framework/clientEvent.js",
       "__unresolved_9": "assets/scripts/common/ItemRankInfo.js",
-      "__unresolved_12": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_7": "assets/scripts/localConfig.js",
       "__unresolved_10": "assets/scripts/common/FBInstantManager.js",
-      "__unresolved_11": "assets/scripts/common/PGSPlayInstantManager.js"
+      "__unresolved_11": "assets/scripts/common/PGSPlayInstantManager.js",
+      "__unresolved_12": "assets/scripts/common/LogEventManager.js",
+      "__unresolved_7": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/tournaments/TournamentPopup.js",
-    "mTimestamp": 1767865867184
+    "mTimestamp": 1767923171338
   },
   "assets/scripts/game/tournaments/TournamentResultPopup.js": {
     "imports": {
@@ -1878,13 +1863,13 @@
       "__unresolved_5": "assets/scripts/common/ItemRankInfo.js",
       "__unresolved_6": "assets/scripts/framework/clientEvent.js",
       "__unresolved_7": "assets/scripts/framework/audioManager2.js",
-      "__unresolved_10": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_4": "assets/scripts/localConfig.js",
+      "__unresolved_8": "assets/scripts/common/PGSPlayInstantManager.js",
       "__unresolved_9": "assets/scripts/common/FBInstantManager.js",
-      "__unresolved_8": "assets/scripts/common/PGSPlayInstantManager.js"
+      "__unresolved_10": "assets/scripts/common/LogEventManager.js",
+      "__unresolved_4": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/tournaments/TournamentResultPopup.js",
-    "mTimestamp": 1767865867068
+    "mTimestamp": 1767923171428
   },
   "assets/scripts/game/withFriends/ButtonWithFriendManager.js": {
     "imports": {
@@ -1895,7 +1880,7 @@
       "__unresolved_3": "assets/scripts/common/LogEventManager.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/withFriends/ButtonWithFriendManager.js",
-    "mTimestamp": 1767865867289
+    "mTimestamp": 1767923171537
   },
   "assets/scripts/game/vip/VIPPopup.js": {
     "imports": {
@@ -1903,13 +1888,13 @@
       "cc": "quick-pack:/cce/internal/x/cc.js",
       "__unresolved_1": "assets/scripts/common/basePopup.js",
       "__unresolved_2": "assets/scripts/framework/constants.js",
+      "__unresolved_4": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_5": "assets/scripts/framework/clientEvent.js",
       "__unresolved_6": "assets/scripts/framework/audioManager2.js",
-      "__unresolved_3": "assets/scripts/localConfig.js",
-      "__unresolved_4": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_3": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/vip/VIPPopup.js",
-    "mTimestamp": 1767865867274
+    "mTimestamp": 1767923171520
   },
   "assets/scripts/game/withFriends/FriendsPopup.js": {
     "imports": {
@@ -1919,69 +1904,69 @@
       "__unresolved_3": "assets/scripts/common/ItemRankInfo.js",
       "__unresolved_4": "assets/scripts/framework/constants.js",
       "__unresolved_5": "assets/scripts/framework/clientEvent.js",
+      "__unresolved_6": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_8": "assets/scripts/framework/lodash.js",
       "__unresolved_9": "assets/scripts/game/tournaments/LeaderBoardGroupFriendManager.js",
       "__unresolved_10": "assets/scripts/common/LogEventManager.js",
       "__unresolved_7": "assets/scripts/game/withFriends/WithFriendDataInfo.js",
-      "__unresolved_2": "assets/scripts/localConfig.js",
-      "__unresolved_6": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_2": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/withFriends/FriendsPopup.js",
-    "mTimestamp": 1767865867344
+    "mTimestamp": 1767923171594
   },
   "assets/scripts/game/withFriends/InfoGroupWithFriend.js": {
     "imports": {
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
       "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_3": "assets/scripts/core/utils/Utils.js",
       "__unresolved_4": "assets/scripts/framework/resourceUtil.js",
-      "__unresolved_2": "assets/scripts/localConfig.js",
-      "__unresolved_1": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_2": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/withFriends/InfoGroupWithFriend.js",
-    "mTimestamp": 1767865867389
+    "mTimestamp": 1767923171631
   },
   "assets/scripts/game/withFriends/ItemLeaderBoardFriend.js": {
     "imports": {
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
       "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_2": "assets/scripts/core/utils/Utils.js",
       "__unresolved_4": "assets/scripts/framework/constants.js",
       "__unresolved_5": "assets/scripts/framework/resourceUtil.js",
       "__unresolved_6": "assets/scripts/framework/clientEvent.js",
       "__unresolved_7": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_3": "assets/scripts/localConfig.js",
-      "__unresolved_1": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_3": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/withFriends/ItemLeaderBoardFriend.js",
-    "mTimestamp": 1767865867494
+    "mTimestamp": 1767923171672
   },
   "assets/scripts/game/withFriends/ShareContextWithFriendPopup.js": {
     "imports": {
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
       "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_2": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_3": "assets/scripts/core/utils/Utils.js",
       "__unresolved_4": "assets/scripts/framework/resourceUtil.js",
       "__unresolved_5": "assets/scripts/common/capture-screen.js",
-      "__unresolved_1": "assets/scripts/localConfig.js",
-      "__unresolved_2": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_1": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/withFriends/ShareContextWithFriendPopup.js",
-    "mTimestamp": 1767865867443
+    "mTimestamp": 1767923171717
   },
   "assets/scripts/newlevel/LevelConfigInfo.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/newlevel/LevelConfigInfo.js",
-    "mTimestamp": 1767865868006
+    "mTimestamp": 1767923171792
   },
   "assets/scripts/game/withFriends/WithFriendDataInfo.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/withFriends/WithFriendDataInfo.js",
-    "mTimestamp": 1767865867395
+    "mTimestamp": 1767923171799
   },
   "assets/scripts/game/withFriends/WinWithFriendPopup.js": {
     "imports": {
@@ -1990,22 +1975,22 @@
       "__unresolved_1": "assets/scripts/common/basePopup.js",
       "__unresolved_2": "assets/scripts/framework/constants.js",
       "__unresolved_3": "assets/scripts/framework/audioManager2.js",
+      "__unresolved_4": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_6": "assets/scripts/core/utils/Utils.js",
       "__unresolved_7": "assets/scripts/framework/resourceUtil.js",
       "__unresolved_8": "assets/scripts/framework/clientEvent.js",
       "__unresolved_9": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_5": "assets/scripts/localConfig.js",
-      "__unresolved_4": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_5": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/withFriends/WinWithFriendPopup.js",
-    "mTimestamp": 1767865867567
+    "mTimestamp": 1767923171784
   },
   "assets/scripts/newlevel/MagicLevelDataInfo.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/newlevel/MagicLevelDataInfo.js",
-    "mTimestamp": 1767865868025
+    "mTimestamp": 1767923172302
   },
   "assets/scripts/localConfig.js": {
     "imports": {
@@ -2024,11 +2009,11 @@
       "__unresolved_11": "assets/scripts/common/InfoMonthReward.js",
       "__unresolved_12": "assets/scripts/common/InfoMonth.js",
       "__unresolved_13": "assets/scripts/game/race/PlayerRaceDataInfo.js",
-      "__unresolved_15": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_14": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_14": "assets/scripts/common/FBInstantManager.js",
+      "__unresolved_15": "assets/scripts/common/LogEventManager.js"
     },
     "physicalLocation": "fs/0/assets/scripts/localConfig.js",
-    "mTimestamp": 1767870615560
+    "mTimestamp": 1767930299183
   },
   "assets/scripts/game/DailyTaskLoginGroup.js": {
     "imports": {
@@ -2037,13 +2022,13 @@
       "__unresolved_3": "assets/scripts/framework/clientEvent.js",
       "__unresolved_4": "assets/scripts/framework/constants.js",
       "__unresolved_6": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_7": "assets/scripts/common/PokiSDKManager.js",
       "__unresolved_1": "assets/scripts/game/ItemDailyLogin.js",
       "__unresolved_5": "assets/scripts/game/info/ShopDataInfo.js",
-      "__unresolved_2": "assets/scripts/localConfig.js"
+      "__unresolved_2": "assets/scripts/localConfig.js",
+      "__unresolved_7": "assets/scripts/common/PokiSDKManager.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/DailyTaskLoginGroup.js",
-    "mTimestamp": 1767865862173
+    "mTimestamp": 1767923166380
   },
   "assets/scripts/game/MoreLivesPopup.js": {
     "imports": {
@@ -2055,11 +2040,11 @@
       "__unresolved_5": "assets/scripts/framework/configuration.js",
       "__unresolved_6": "assets/scripts/framework/clientEvent.js",
       "__unresolved_7": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_8": "assets/scripts/common/PokiSDKManager.js",
-      "__unresolved_3": "assets/scripts/localConfig.js"
+      "__unresolved_3": "assets/scripts/localConfig.js",
+      "__unresolved_8": "assets/scripts/common/PokiSDKManager.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/MoreLivesPopup.js",
-    "mTimestamp": 1767865864384
+    "mTimestamp": 1767923168586
   },
   "assets/scripts/game/ItemShopFree.js": {
     "imports": {
@@ -2070,11 +2055,11 @@
       "__unresolved_4": "assets/scripts/common/CountDownToNextTime.js",
       "__unresolved_5": "assets/scripts/framework/audioManager2.js",
       "__unresolved_6": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_7": "assets/scripts/common/PokiSDKManager.js",
-      "__unresolved_3": "assets/scripts/localConfig.js"
+      "__unresolved_3": "assets/scripts/localConfig.js",
+      "__unresolved_7": "assets/scripts/common/PokiSDKManager.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemShopFree.js",
-    "mTimestamp": 1767865862941
+    "mTimestamp": 1767923167274
   },
   "assets/scripts/game/ItemTheme.js": {
     "imports": {
@@ -2084,11 +2069,11 @@
       "__unresolved_3": "assets/scripts/framework/resourceUtil.js",
       "__unresolved_4": "assets/scripts/framework/clientEvent.js",
       "__unresolved_5": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_6": "assets/scripts/common/PokiSDKManager.js",
-      "__unresolved_2": "assets/scripts/localConfig.js"
+      "__unresolved_2": "assets/scripts/localConfig.js",
+      "__unresolved_6": "assets/scripts/common/PokiSDKManager.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ItemTheme.js",
-    "mTimestamp": 1767865863516
+    "mTimestamp": 1767925299152
   },
   "assets/scripts/game/NoMovesGroup.js": {
     "imports": {
@@ -2096,14 +2081,14 @@
       "cc": "quick-pack:/cce/internal/x/cc.js",
       "__unresolved_1": "assets/scripts/framework/constants.js",
       "__unresolved_3": "assets/scripts/framework/clientEvent.js",
+      "__unresolved_4": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_5": "assets/scripts/framework/audioManager2.js",
       "__unresolved_6": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_7": "assets/scripts/common/PokiSDKManager.js",
       "__unresolved_2": "assets/scripts/localConfig.js",
-      "__unresolved_4": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_7": "assets/scripts/common/PokiSDKManager.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/NoMovesGroup.js",
-    "mTimestamp": 1767865864340
+    "mTimestamp": 1767924138097
   },
   "assets/scripts/game/DailyChallengePopup.js": {
     "imports": {
@@ -2118,13 +2103,13 @@
       "__unresolved_10": "assets/scripts/game/BoxRewardInfoGroup.js",
       "__unresolved_11": "assets/scripts/common/InfoMonth.js",
       "__unresolved_12": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_13": "assets/scripts/common/PokiSDKManager.js",
       "__unresolved_5": "assets/scripts/game/ItemDailyChallenge.js",
       "__unresolved_4": "assets/scripts/game/ItemDailyChallengeBox.js",
-      "__unresolved_2": "assets/scripts/localConfig.js"
+      "__unresolved_2": "assets/scripts/localConfig.js",
+      "__unresolved_13": "assets/scripts/common/PokiSDKManager.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/DailyChallengePopup.js",
-    "mTimestamp": 1767865862136
+    "mTimestamp": 1767923166342
   },
   "assets/scripts/game/RewardChestsPopup.js": {
     "imports": {
@@ -2136,11 +2121,11 @@
       "__unresolved_4": "assets/scripts/game/ItemRewardReceive.js",
       "__unresolved_5": "assets/scripts/framework/audioManager2.js",
       "__unresolved_7": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_8": "assets/scripts/common/PokiSDKManager.js",
-      "__unresolved_6": "assets/scripts/localConfig.js"
+      "__unresolved_6": "assets/scripts/localConfig.js",
+      "__unresolved_8": "assets/scripts/common/PokiSDKManager.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/RewardChestsPopup.js",
-    "mTimestamp": 1767865864551
+    "mTimestamp": 1767923169304
   },
   "assets/scripts/game/ShopItemPopup.js": {
     "imports": {
@@ -2150,11 +2135,11 @@
       "__unresolved_2": "assets/scripts/framework/constants.js",
       "__unresolved_4": "assets/scripts/framework/clientEvent.js",
       "__unresolved_5": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_6": "assets/scripts/common/PokiSDKManager.js",
-      "__unresolved_3": "assets/scripts/localConfig.js"
+      "__unresolved_3": "assets/scripts/localConfig.js",
+      "__unresolved_6": "assets/scripts/common/PokiSDKManager.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ShopItemPopup.js",
-    "mTimestamp": 1767865865393
+    "mTimestamp": 1767923764218
   },
   "assets/scripts/game/blackfriday/BlackFridayPopup.js": {
     "imports": {
@@ -2164,12 +2149,12 @@
       "__unresolved_2": "assets/scripts/common/basePopup.js",
       "__unresolved_3": "assets/scripts/framework/constants.js",
       "__unresolved_5": "assets/scripts/framework/clientEvent.js",
-      "__unresolved_7": "assets/scripts/common/PokiSDKManager.js",
       "__unresolved_6": "assets/scripts/game/info/ShopDataInfo.js",
-      "__unresolved_4": "assets/scripts/localConfig.js"
+      "__unresolved_4": "assets/scripts/localConfig.js",
+      "__unresolved_7": "assets/scripts/common/PokiSDKManager.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/blackfriday/BlackFridayPopup.js",
-    "mTimestamp": 1767865865695
+    "mTimestamp": 1767923170045
   },
   "assets/scripts/game/ThemeUnlockPopup.js": {
     "imports": {
@@ -2180,11 +2165,11 @@
       "__unresolved_4": "assets/scripts/framework/resourceUtil.js",
       "__unresolved_5": "assets/scripts/framework/audioManager2.js",
       "__unresolved_6": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_7": "assets/scripts/common/PokiSDKManager.js",
-      "__unresolved_3": "assets/scripts/localConfig.js"
+      "__unresolved_3": "assets/scripts/localConfig.js",
+      "__unresolved_7": "assets/scripts/common/PokiSDKManager.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ThemeUnlockPopup.js",
-    "mTimestamp": 1767865865557
+    "mTimestamp": 1767923169721
   },
   "assets/scripts/game/WinTournamentPageHostPopup.js": {
     "imports": {
@@ -2196,13 +2181,13 @@
       "__unresolved_5": "assets/scripts/game/LeaderBoardGroupManager.js",
       "__unresolved_6": "assets/scripts/framework/clientEvent.js",
       "__unresolved_7": "assets/scripts/common/LogEventManager.js",
+      "__unresolved_8": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_9": "assets/scripts/common/ItemRankInfo.js",
-      "__unresolved_10": "assets/scripts/common/PokiSDKManager.js",
       "__unresolved_3": "assets/scripts/localConfig.js",
-      "__unresolved_8": "assets/scripts/common/FBInstantManager.js"
+      "__unresolved_10": "assets/scripts/common/PokiSDKManager.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/WinTournamentPageHostPopup.js",
-    "mTimestamp": 1767865865752
+    "mTimestamp": 1767923170010
   },
   "assets/scripts/game/tournaments/TournamentRevivePopup.js": {
     "imports": {
@@ -2213,11 +2198,11 @@
       "__unresolved_4": "assets/scripts/framework/clientEvent.js",
       "__unresolved_5": "assets/scripts/framework/audioManager2.js",
       "__unresolved_6": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_7": "assets/scripts/common/PokiSDKManager.js",
-      "__unresolved_3": "assets/scripts/localConfig.js"
+      "__unresolved_3": "assets/scripts/localConfig.js",
+      "__unresolved_7": "assets/scripts/common/PokiSDKManager.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/tournaments/TournamentRevivePopup.js",
-    "mTimestamp": 1767865867219
+    "mTimestamp": 1767923171462
   },
   "assets/scripts/game/MenuManager.js": {
     "imports": {
@@ -2226,16 +2211,16 @@
       "__unresolved_1": "assets/scripts/game/ItemTab.js",
       "__unresolved_2": "assets/scripts/framework/constants.js",
       "__unresolved_3": "assets/scripts/framework/clientEvent.js",
+      "__unresolved_4": "assets/scripts/game/HomeGroup.js",
       "__unresolved_8": "assets/scripts/game/LeaderBoardGroup.js",
       "__unresolved_10": "assets/scripts/framework/resourceUtil.js",
       "__unresolved_5": "assets/scripts/game/ShopGroup.js",
       "__unresolved_7": "assets/scripts/game/ThemeGroup.js",
       "__unresolved_9": "assets/scripts/game/TournamentsGroup.js",
-      "__unresolved_6": "assets/scripts/localConfig.js",
-      "__unresolved_4": "assets/scripts/game/HomeGroup.js"
+      "__unresolved_6": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/MenuManager.js",
-    "mTimestamp": 1767865864482
+    "mTimestamp": 1767923168538
   },
   "assets/scripts/game/ThemePopup.js": {
     "imports": {
@@ -2249,7 +2234,109 @@
       "__unresolved_5": "assets/scripts/localConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/ThemePopup.js",
-    "mTimestamp": 1767865865456
+    "mTimestamp": 1767923169672
+  },
+  "assets/scripts/framework/configuration.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/scripts/common/FBInstantManager.js",
+      "__unresolved_5": "assets/scripts/common/InfoDay.js",
+      "__unresolved_3": "assets/scripts/framework/constants.js",
+      "__unresolved_4": "assets/scripts/framework/lodash.js",
+      "__unresolved_2": "assets/scripts/localConfig.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/framework/configuration.js",
+    "mTimestamp": 1767923165561
+  },
+  "assets/scripts/game/QuitConfirmPopup.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/scripts/common/basePopup.js",
+      "__unresolved_2": "assets/scripts/framework/constants.js",
+      "__unresolved_4": "assets/scripts/framework/clientEvent.js",
+      "__unresolved_5": "assets/scripts/common/LogEventManager.js",
+      "__unresolved_3": "assets/scripts/localConfig.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/game/QuitConfirmPopup.js",
+    "mTimestamp": 1767923169215
+  },
+  "assets/scripts/game/LevelChestsPopup.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/scripts/common/basePopup.js",
+      "__unresolved_2": "assets/scripts/framework/constants.js",
+      "__unresolved_3": "assets/scripts/game/ChestProgressRewardGroup.js",
+      "__unresolved_4": "assets/scripts/game/BGProgressRewardGroup.js",
+      "__unresolved_6": "assets/scripts/framework/clientEvent.js",
+      "__unresolved_7": "assets/scripts/core/utils/Utils.js",
+      "__unresolved_8": "assets/scripts/common/LogEventManager.js",
+      "__unresolved_5": "assets/scripts/localConfig.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/game/LevelChestsPopup.js",
+    "mTimestamp": 1767923168415
+  },
+  "assets/scripts/game/WinPopup.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/scripts/common/basePopup.js",
+      "__unresolved_2": "assets/scripts/framework/constants.js",
+      "__unresolved_3": "assets/scripts/framework/audioManager2.js",
+      "__unresolved_4": "assets/scripts/framework/clientEvent.js",
+      "__unresolved_6": "assets/scripts/common/LogEventManager.js",
+      "__unresolved_5": "assets/scripts/localConfig.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/game/WinPopup.js",
+    "mTimestamp": 1767923169957
+  },
+  "assets/scripts/framework/constants.js": {
+    "imports": {
+      "cc": "quick-pack:/cce/internal/x/cc.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/framework/constants.js",
+    "mTimestamp": 1767923165633
+  },
+  "assets/scripts/game/HeartGroup.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/scripts/common/CountDownTimeHeart.js",
+      "__unresolved_2": "assets/scripts/framework/clientEvent.js",
+      "__unresolved_3": "assets/scripts/framework/constants.js",
+      "__unresolved_4": "assets/scripts/localConfig.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/game/HeartGroup.js",
+    "mTimestamp": 1767923166686
+  },
+  "assets/scripts/game/HomeGroup.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/scripts/framework/clientEvent.js",
+      "__unresolved_2": "assets/scripts/framework/constants.js",
+      "__unresolved_6": "assets/scripts/framework/audioManager2.js",
+      "__unresolved_7": "assets/scripts/game/ButtonRemoveAdManager.js",
+      "__unresolved_8": "assets/scripts/common/LogEventManager.js",
+      "__unresolved_4": "assets/scripts/game/ItemLevel.js",
+      "__unresolved_5": "assets/scripts/game/masterpass/ButtonMassterPassManager.js",
+      "__unresolved_3": "assets/scripts/localConfig.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/game/HomeGroup.js",
+    "mTimestamp": 1767923239325
+  },
+  "assets/scripts/common/PGSPlayInstantManager.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_3": "assets/scripts/framework/clientEvent.js",
+      "__unresolved_1": "assets/scripts/framework/constants.js",
+      "__unresolved_2": "assets/scripts/localConfig.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/common/PGSPlayInstantManager.js",
+    "mTimestamp": 1767923164638
   },
   "quick-pack:/cce/internal/x/cc.js": {
     "imports": {
@@ -2339,88 +2426,14 @@
       }
     },
     "physicalLocation": "cce/internal/x/cc.js",
-    "mTimestamp": 1767865858175,
+    "mTimestamp": 1767923162041,
     "isEntry": true,
     "exposeAs": "cce:/internal/x/cc"
   },
   "quick-pack:/cce/internal/code-quality/cr.js": {
     "imports": {},
     "physicalLocation": "cce/internal/code-quality/cr.js",
-    "mTimestamp": 1767865868218
-  },
-  "assets/scripts/common/PokiSDKManager.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_1": "assets/scripts/framework/clientEvent.js",
-      "__unresolved_2": "assets/scripts/framework/constants.js",
-      "__unresolved_3": "assets/scripts/framework/musicManager.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/common/PokiSDKManager.js",
-    "mTimestamp": 1767867132231
-  },
-  "assets/scripts/framework/configuration.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_5": "assets/scripts/common/InfoDay.js",
-      "__unresolved_4": "assets/scripts/framework/lodash.js",
-      "__unresolved_3": "assets/scripts/framework/constants.js",
-      "__unresolved_2": "assets/scripts/localConfig.js",
-      "__unresolved_1": "assets/scripts/common/FBInstantManager.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/framework/configuration.js",
-    "mTimestamp": 1767867773679
-  },
-  "assets/scripts/game/QuitConfirmPopup.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_1": "assets/scripts/common/basePopup.js",
-      "__unresolved_2": "assets/scripts/framework/constants.js",
-      "__unresolved_4": "assets/scripts/framework/clientEvent.js",
-      "__unresolved_5": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_3": "assets/scripts/localConfig.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/game/QuitConfirmPopup.js",
-    "mTimestamp": 1767870280653
-  },
-  "assets/scripts/game/LevelChestsPopup.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_1": "assets/scripts/common/basePopup.js",
-      "__unresolved_2": "assets/scripts/framework/constants.js",
-      "__unresolved_3": "assets/scripts/game/ChestProgressRewardGroup.js",
-      "__unresolved_4": "assets/scripts/game/BGProgressRewardGroup.js",
-      "__unresolved_6": "assets/scripts/framework/clientEvent.js",
-      "__unresolved_7": "assets/scripts/core/utils/Utils.js",
-      "__unresolved_8": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_5": "assets/scripts/localConfig.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/game/LevelChestsPopup.js",
-    "mTimestamp": 1767869878433
-  },
-  "assets/scripts/game/WinPopup.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_1": "assets/scripts/common/basePopup.js",
-      "__unresolved_2": "assets/scripts/framework/constants.js",
-      "__unresolved_3": "assets/scripts/framework/audioManager2.js",
-      "__unresolved_4": "assets/scripts/framework/clientEvent.js",
-      "__unresolved_6": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_5": "assets/scripts/localConfig.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/game/WinPopup.js",
-    "mTimestamp": 1767869912428
-  },
-  "assets/scripts/framework/constants.js": {
-    "imports": {
-      "cc": "quick-pack:/cce/internal/x/cc.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/framework/constants.js",
-    "mTimestamp": 1767870617723
+    "mTimestamp": 1767923172641
   },
   "assets/scripts/game/spin/SpinPopup.js": {
     "imports": {
@@ -2435,23 +2448,60 @@
       "__unresolved_8": "assets/scripts/core/utils/Utils.js",
       "__unresolved_9": "assets/scripts/game/info/ShopDataInfo.js",
       "__unresolved_10": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_11": "assets/scripts/common/PokiSDKManager.js",
-      "__unresolved_4": "assets/scripts/localConfig.js"
+      "__unresolved_4": "assets/scripts/localConfig.js",
+      "__unresolved_11": "assets/scripts/common/PokiSDKManager.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/spin/SpinPopup.js",
-    "mTimestamp": 1767872412312
+    "mTimestamp": 1767926283051
   },
-  "assets/scripts/game/HeartGroup.js": {
+  "assets/scripts/common/PokiSDKManager.js": {
     "imports": {
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
       "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_1": "assets/scripts/common/CountDownTimeHeart.js",
-      "__unresolved_2": "assets/scripts/framework/clientEvent.js",
-      "__unresolved_3": "assets/scripts/framework/constants.js",
-      "__unresolved_4": "assets/scripts/localConfig.js"
+      "__unresolved_1": "assets/scripts/framework/clientEvent.js",
+      "__unresolved_2": "assets/scripts/framework/constants.js",
+      "__unresolved_3": "assets/scripts/framework/musicManager.js"
     },
-    "physicalLocation": "fs/0/assets/scripts/game/HeartGroup.js",
-    "mTimestamp": 1767870617929
+    "physicalLocation": "fs/0/assets/scripts/common/PokiSDKManager.js",
+    "mTimestamp": 1767930590692
+  },
+  "assets/scripts/common/FBInstantManager.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_8": "assets/scripts/common/FriendAvatarInfo.js",
+      "__unresolved_10": "assets/scripts/common/ItemRankInfo.js",
+      "__unresolved_13": "assets/scripts/common/LeaderboardDataInfo.js",
+      "__unresolved_11": "assets/scripts/common/LogEventManager.js",
+      "__unresolved_12": "assets/scripts/common/PGSPlayInstantManager.js",
+      "__unresolved_9": "assets/scripts/common/message-data.js",
+      "__unresolved_1": "assets/scripts/framework/clientEvent.js",
+      "__unresolved_2": "assets/scripts/framework/configuration.js",
+      "__unresolved_3": "assets/scripts/framework/constants.js",
+      "__unresolved_4": "assets/scripts/framework/lodash.js",
+      "__unresolved_5": "assets/scripts/framework/musicManager.js",
+      "__unresolved_6": "assets/scripts/framework/resourceUtil.js",
+      "__unresolved_14": "assets/scripts/game/info/TournamentPageHostDataInfo.js",
+      "__unresolved_7": "assets/scripts/localConfig.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/common/FBInstantManager.js",
+    "mTimestamp": 1767930140002
+  },
+  "assets/scripts/game/SettingPopup.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/scripts/common/basePopup.js",
+      "__unresolved_2": "assets/scripts/common/UIOnOffItem.js",
+      "__unresolved_4": "assets/scripts/framework/musicManager.js",
+      "__unresolved_5": "assets/scripts/framework/clientEvent.js",
+      "__unresolved_6": "assets/scripts/framework/constants.js",
+      "__unresolved_7": "assets/scripts/common/FBInstantManager.js",
+      "__unresolved_8": "assets/scripts/common/LogEventManager.js",
+      "__unresolved_3": "assets/scripts/localConfig.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/game/SettingPopup.js",
+    "mTimestamp": 1767930139366
   },
   "assets/scripts/game/PlayMagicManager.js": {
     "imports": {
@@ -2461,120 +2511,72 @@
       "__unresolved_2": "assets/scripts/game/ButtonBoosterTypeGroup.js",
       "__unresolved_5": "assets/scripts/framework/constants.js",
       "__unresolved_7": "assets/scripts/framework/clientEvent.js",
+      "__unresolved_8": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_9": "assets/scripts/core/utils/Utils.js",
       "__unresolved_10": "assets/scripts/framework/lodash.js",
       "__unresolved_11": "assets/scripts/WellDoneGroup.js",
+      "__unresolved_12": "assets/scripts/common/PGSPlayInstantManager.js",
       "__unresolved_14": "assets/scripts/framework/resourceUtil.js",
       "__unresolved_15": "assets/scripts/framework/audioManager2.js",
       "__unresolved_16": "assets/scripts/game/ComboGroup.js",
-      "__unresolved_18": "assets/scripts/game/NoMovesGroup.js",
       "__unresolved_19": "assets/scripts/common/LogEventManager.js",
       "__unresolved_21": "assets/scripts/game/BackGroundGameManager.js",
-      "__unresolved_22": "assets/scripts/common/PokiSDKManager.js",
+      "__unresolved_18": "assets/scripts/game/NoMovesGroup.js",
       "__unresolved_13": "assets/scripts/game/TutLevelPopup.js",
       "__unresolved_3": "assets/scripts/game/tournaments/InfoGroupTournament.js",
       "__unresolved_20": "assets/scripts/game/tournaments/InfoGroupTournamentPageHost.js",
       "__unresolved_4": "assets/scripts/game/withFriends/InfoGroupWithFriend.js",
       "__unresolved_6": "assets/scripts/localConfig.js",
       "__unresolved_17": "assets/scripts/newlevel/MagicLevelDataInfo.js",
-      "__unresolved_8": "assets/scripts/common/FBInstantManager.js",
-      "__unresolved_12": "assets/scripts/common/PGSPlayInstantManager.js"
+      "__unresolved_22": "assets/scripts/common/PokiSDKManager.js"
     },
     "physicalLocation": "fs/0/assets/scripts/game/PlayMagicManager.js",
-    "mTimestamp": 1767870618578
-  },
-  "assets/scripts/game/HomeGroup.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_1": "assets/scripts/framework/clientEvent.js",
-      "__unresolved_2": "assets/scripts/framework/constants.js",
-      "__unresolved_4": "assets/scripts/game/ItemLevel.js",
-      "__unresolved_3": "assets/scripts/localConfig.js",
-      "__unresolved_6": "assets/scripts/framework/audioManager2.js",
-      "__unresolved_5": "assets/scripts/game/masterpass/ButtonMassterPassManager.js",
-      "__unresolved_7": "assets/scripts/game/ButtonRemoveAdManager.js",
-      "__unresolved_8": "assets/scripts/common/LogEventManager.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/game/HomeGroup.js",
-    "mTimestamp": 1767873286119
-  },
-  "assets/scripts/common/FBInstantManager.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_1": "assets/scripts/framework/clientEvent.js",
-      "__unresolved_2": "assets/scripts/framework/configuration.js",
-      "__unresolved_3": "assets/scripts/framework/constants.js",
-      "__unresolved_4": "assets/scripts/framework/lodash.js",
-      "__unresolved_5": "assets/scripts/framework/musicManager.js",
-      "__unresolved_6": "assets/scripts/framework/resourceUtil.js",
-      "__unresolved_7": "assets/scripts/localConfig.js",
-      "__unresolved_8": "assets/scripts/common/FriendAvatarInfo.js",
-      "__unresolved_9": "assets/scripts/common/message-data.js",
-      "__unresolved_10": "assets/scripts/common/ItemRankInfo.js",
-      "__unresolved_11": "assets/scripts/common/LogEventManager.js",
-      "__unresolved_12": "assets/scripts/common/PGSPlayInstantManager.js",
-      "__unresolved_13": "assets/scripts/common/LeaderboardDataInfo.js",
-      "__unresolved_14": "assets/scripts/game/info/TournamentPageHostDataInfo.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/common/FBInstantManager.js",
-    "mTimestamp": 1767873285916
-  },
-  "assets/scripts/common/PGSPlayInstantManager.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_1": "assets/scripts/framework/constants.js",
-      "__unresolved_2": "assets/scripts/localConfig.js",
-      "__unresolved_3": "assets/scripts/framework/clientEvent.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/common/PGSPlayInstantManager.js",
-    "mTimestamp": 1767873285960
+    "mTimestamp": 1767930354918
   },
   "quick-pack:/cce/internal/x/prerequisite-imports.js": {
     "imports": {
-      "__unresolved_1": "assets/module/QuickTween/Util.js",
-      "__unresolved_3": "assets/scripts/LoadSceneManager.js",
       "__unresolved_0": "assets/module/QuickTween/QuickTween.js",
+      "__unresolved_1": "assets/module/QuickTween/Util.js",
       "__unresolved_2": "assets/module/facebook-instant-games/facebook-instant-games-tests.js",
+      "__unresolved_3": "assets/scripts/LoadSceneManager.js",
+      "__unresolved_4": "assets/scripts/LoadingPopup.js",
       "__unresolved_5": "assets/scripts/PlaySceneManager.js",
       "__unresolved_6": "assets/scripts/TestScene.js",
-      "__unresolved_4": "assets/scripts/LoadingPopup.js",
       "__unresolved_7": "assets/scripts/WellDoneGroup.js",
-      "__unresolved_9": "assets/scripts/common/CoinPoolManager.js",
       "__unresolved_8": "assets/scripts/common/CameraShakeManager.js",
+      "__unresolved_9": "assets/scripts/common/CoinPoolManager.js",
       "__unresolved_10": "assets/scripts/common/CountDownNextTimeMS.js",
       "__unresolved_11": "assets/scripts/common/CountDownTimeHeart.js",
       "__unresolved_12": "assets/scripts/common/CountDownTimeNextDay.js",
       "__unresolved_13": "assets/scripts/common/CountDownToNextTime.js",
       "__unresolved_14": "assets/scripts/common/CountDownToNextTime_Tournament.js",
       "__unresolved_15": "assets/scripts/common/EfxAutoDestroy.js",
+      "__unresolved_16": "assets/scripts/common/FBInstantManager.js",
       "__unresolved_17": "assets/scripts/common/FriendAvatarInfo.js",
       "__unresolved_18": "assets/scripts/common/HeartManager.js",
-      "__unresolved_20": "assets/scripts/common/HeartUnlimitedPoolManager.js",
       "__unresolved_19": "assets/scripts/common/HeartPoolManager.js",
+      "__unresolved_20": "assets/scripts/common/HeartUnlimitedPoolManager.js",
       "__unresolved_21": "assets/scripts/common/IconLoading.js",
       "__unresolved_22": "assets/scripts/common/IconNotification.js",
       "__unresolved_23": "assets/scripts/common/InfoDay.js",
+      "__unresolved_24": "assets/scripts/common/InfoMonth.js",
       "__unresolved_25": "assets/scripts/common/InfoMonthReward.js",
       "__unresolved_26": "assets/scripts/common/ItemChangeSprite.js",
-      "__unresolved_24": "assets/scripts/common/InfoMonth.js",
-      "__unresolved_29": "assets/scripts/common/ItemRankInfo.js",
-      "__unresolved_28": "assets/scripts/common/ItemHeartUnlimited.js",
       "__unresolved_27": "assets/scripts/common/ItemCoin.js",
-      "__unresolved_31": "assets/scripts/common/ItemSpriteMove.js",
+      "__unresolved_28": "assets/scripts/common/ItemHeartUnlimited.js",
+      "__unresolved_29": "assets/scripts/common/ItemRankInfo.js",
       "__unresolved_30": "assets/scripts/common/ItemScrollView.js",
+      "__unresolved_31": "assets/scripts/common/ItemSpriteMove.js",
       "__unresolved_33": "assets/scripts/common/ItemSpriteScale.js",
       "__unresolved_32": "assets/scripts/common/ItemSpriteRotate.js",
       "__unresolved_35": "assets/scripts/common/ItemToastNotification.js",
       "__unresolved_34": "assets/scripts/common/ItemSpriteShake.js",
       "__unresolved_36": "assets/scripts/common/LeaderboardDataInfo.js",
       "__unresolved_37": "assets/scripts/common/LogEventManager.js",
+      "__unresolved_38": "assets/scripts/common/PGSPlayInstantManager.js",
       "__unresolved_39": "assets/scripts/common/PlayFabManager.js",
-      "__unresolved_40": "assets/scripts/common/PokiSDKManager.js",
-      "__unresolved_41": "assets/scripts/common/ScrollViewGroupManager.js",
       "__unresolved_42": "assets/scripts/common/TextLoading.js",
+      "__unresolved_41": "assets/scripts/common/ScrollViewGroupManager.js",
       "__unresolved_43": "assets/scripts/common/ToastNotificationPopup.js",
       "__unresolved_44": "assets/scripts/common/UIOnOffItem.js",
       "__unresolved_45": "assets/scripts/common/basePopup.js",
@@ -2583,31 +2585,31 @@
       "__unresolved_48": "assets/scripts/common/capture-screen.js",
       "__unresolved_49": "assets/scripts/common/coinGroup.js",
       "__unresolved_50": "assets/scripts/common/confirmPopup.js",
-      "__unresolved_51": "assets/scripts/common/loadingGroup.js",
       "__unresolved_52": "assets/scripts/common/message-data.js",
+      "__unresolved_51": "assets/scripts/common/loadingGroup.js",
       "__unresolved_53": "assets/scripts/common/notificationPopup.js",
       "__unresolved_54": "assets/scripts/common/spriteResizeKeepRatio.js",
       "__unresolved_55": "assets/scripts/core/utils/Utils.js",
-      "__unresolved_56": "assets/scripts/framework/audioManager2.js",
       "__unresolved_57": "assets/scripts/framework/clientEvent.js",
+      "__unresolved_56": "assets/scripts/framework/audioManager2.js",
       "__unresolved_58": "assets/scripts/framework/configuration.js",
-      "__unresolved_60": "assets/scripts/framework/lodash.js",
       "__unresolved_59": "assets/scripts/framework/constants.js",
+      "__unresolved_60": "assets/scripts/framework/lodash.js",
       "__unresolved_61": "assets/scripts/framework/musicManager.js",
       "__unresolved_62": "assets/scripts/framework/oneToMultiListener.js",
       "__unresolved_63": "assets/scripts/framework/resourceUtil.js",
+      "__unresolved_64": "assets/scripts/game/AvatarGroup.js",
       "__unresolved_65": "assets/scripts/game/BGProgressRewardGroup.js",
       "__unresolved_66": "assets/scripts/game/BackGroundGameManager.js",
-      "__unresolved_64": "assets/scripts/game/AvatarGroup.js",
       "__unresolved_67": "assets/scripts/game/BackGroundMenuManager.js",
       "__unresolved_68": "assets/scripts/game/BackGroundPopupManager.js",
-      "__unresolved_69": "assets/scripts/game/BaseInfoPopup.js",
       "__unresolved_70": "assets/scripts/game/BoxRewardInfoGroup.js",
+      "__unresolved_69": "assets/scripts/game/BaseInfoPopup.js",
       "__unresolved_71": "assets/scripts/game/BoxRewardReceivePopup.js",
       "__unresolved_72": "assets/scripts/game/ButtonBoosterTypeGroup.js",
       "__unresolved_73": "assets/scripts/game/ButtonDailyChallengeManager.js",
-      "__unresolved_74": "assets/scripts/game/ButtonDailyTaskManager.js",
       "__unresolved_75": "assets/scripts/game/ButtonRemoveAdManager.js",
+      "__unresolved_74": "assets/scripts/game/ButtonDailyTaskManager.js",
       "__unresolved_76": "assets/scripts/game/ButtonSaleManager.js",
       "__unresolved_77": "assets/scripts/game/ButtonTabShopManager.js",
       "__unresolved_78": "assets/scripts/game/ButtonVIPManager.js",
@@ -2619,10 +2621,11 @@
       "__unresolved_84": "assets/scripts/game/DailyTaskQuestGroup.js",
       "__unresolved_86": "assets/scripts/game/EfxClayFinishManager.js",
       "__unresolved_85": "assets/scripts/game/EfxBottleFinishManager.js",
-      "__unresolved_87": "assets/scripts/game/EfxOBIMFinishManager.js",
       "__unresolved_88": "assets/scripts/game/EfxPlasterFinishManager.js",
+      "__unresolved_87": "assets/scripts/game/EfxOBIMFinishManager.js",
       "__unresolved_89": "assets/scripts/game/EfxQuestionManager.js",
       "__unresolved_90": "assets/scripts/game/HeartGroup.js",
+      "__unresolved_91": "assets/scripts/game/HomeGroup.js",
       "__unresolved_92": "assets/scripts/game/ItemBottleFinishedEfx.js",
       "__unresolved_93": "assets/scripts/game/ItemBoxReward.js",
       "__unresolved_94": "assets/scripts/game/ItemClayFinishedEfx.js",
@@ -2632,50 +2635,50 @@
       "__unresolved_98": "assets/scripts/game/ItemDailyQuest.js",
       "__unresolved_99": "assets/scripts/game/ItemDailyQuestBoxReward.js",
       "__unresolved_100": "assets/scripts/game/ItemGroupShop.js",
-      "__unresolved_101": "assets/scripts/game/ItemLeaderBoard.js",
       "__unresolved_102": "assets/scripts/game/ItemLevel.js",
+      "__unresolved_101": "assets/scripts/game/ItemLeaderBoard.js",
       "__unresolved_103": "assets/scripts/game/ItemOBIMFinishedEfx.js",
       "__unresolved_104": "assets/scripts/game/ItemPlasterFinishedEfx.js",
       "__unresolved_105": "assets/scripts/game/ItemQuestionEfx.js",
-      "__unresolved_107": "assets/scripts/game/ItemShopDailyFree.js",
       "__unresolved_106": "assets/scripts/game/ItemRewardReceive.js",
-      "__unresolved_109": "assets/scripts/game/ItemShopFree.js",
+      "__unresolved_107": "assets/scripts/game/ItemShopDailyFree.js",
       "__unresolved_108": "assets/scripts/game/ItemShopExchange.js",
-      "__unresolved_111": "assets/scripts/game/ItemShopVIP.js",
+      "__unresolved_109": "assets/scripts/game/ItemShopFree.js",
       "__unresolved_110": "assets/scripts/game/ItemShopPack.js",
+      "__unresolved_111": "assets/scripts/game/ItemShopVIP.js",
       "__unresolved_112": "assets/scripts/game/ItemTab.js",
       "__unresolved_113": "assets/scripts/game/ItemTabDailyTask.js",
-      "__unresolved_115": "assets/scripts/game/ItemTabTheme.js",
       "__unresolved_114": "assets/scripts/game/ItemTabLeaderBoard.js",
+      "__unresolved_115": "assets/scripts/game/ItemTabTheme.js",
       "__unresolved_116": "assets/scripts/game/ItemTheme.js",
       "__unresolved_117": "assets/scripts/game/ItemTicket.js",
       "__unresolved_118": "assets/scripts/game/ItemTube.js",
       "__unresolved_119": "assets/scripts/game/ItemTubeClayObj.js",
-      "__unresolved_121": "assets/scripts/game/ItemTubePlasterObj.js",
       "__unresolved_120": "assets/scripts/game/ItemTubeOBIMObj.js",
-      "__unresolved_123": "assets/scripts/game/LeaderBoardGroup.js",
+      "__unresolved_121": "assets/scripts/game/ItemTubePlasterObj.js",
       "__unresolved_122": "assets/scripts/game/ItemWater.js",
+      "__unresolved_123": "assets/scripts/game/LeaderBoardGroup.js",
       "__unresolved_124": "assets/scripts/game/LeaderBoardGroupManager.js",
       "__unresolved_125": "assets/scripts/game/LevelChestsPopup.js",
       "__unresolved_126": "assets/scripts/game/LevelFailedPopup.js",
       "__unresolved_127": "assets/scripts/game/LoadingStartPopup.js",
       "__unresolved_128": "assets/scripts/game/MenuManager.js",
-      "__unresolved_130": "assets/scripts/game/NoMovesGroup.js",
       "__unresolved_129": "assets/scripts/game/MoreLivesPopup.js",
       "__unresolved_131": "assets/scripts/game/PlayMagicManager.js",
+      "__unresolved_130": "assets/scripts/game/NoMovesGroup.js",
       "__unresolved_133": "assets/scripts/game/QuitConfirmPopup.js",
       "__unresolved_132": "assets/scripts/game/PlayManager.js",
       "__unresolved_134": "assets/scripts/game/RemoveAdPackPopup.js",
-      "__unresolved_136": "assets/scripts/game/RewardReceivePopup.js",
       "__unresolved_135": "assets/scripts/game/RewardChestsPopup.js",
+      "__unresolved_136": "assets/scripts/game/RewardReceivePopup.js",
+      "__unresolved_138": "assets/scripts/game/ShopGroup.js",
       "__unresolved_137": "assets/scripts/game/SettingPopup.js",
       "__unresolved_139": "assets/scripts/game/ShopGroupRemoveAd.js",
-      "__unresolved_138": "assets/scripts/game/ShopGroup.js",
       "__unresolved_140": "assets/scripts/game/ShopItemPopup.js",
       "__unresolved_141": "assets/scripts/game/ShopPopup.js",
       "__unresolved_142": "assets/scripts/game/SummerPackPopup.js",
-      "__unresolved_143": "assets/scripts/game/ThemeGroup.js",
       "__unresolved_144": "assets/scripts/game/ThemePopup.js",
+      "__unresolved_143": "assets/scripts/game/ThemeGroup.js",
       "__unresolved_145": "assets/scripts/game/ThemeUnlockPopup.js",
       "__unresolved_147": "assets/scripts/game/TicketPoolManager.js",
       "__unresolved_146": "assets/scripts/game/TicketGroup.js",
@@ -2686,19 +2689,19 @@
       "__unresolved_152": "assets/scripts/game/TutLevel5Popup.js",
       "__unresolved_153": "assets/scripts/game/TutLevelPopup.js",
       "__unresolved_154": "assets/scripts/game/TutPlasterPopup.js",
-      "__unresolved_155": "assets/scripts/game/WinPopup.js",
       "__unresolved_156": "assets/scripts/game/WinTournamentPageHostPopup.js",
-      "__unresolved_158": "assets/scripts/game/info/ItemTubeConfig.js",
+      "__unresolved_155": "assets/scripts/game/WinPopup.js",
       "__unresolved_157": "assets/scripts/game/blackfriday/BlackFridayPopup.js",
+      "__unresolved_158": "assets/scripts/game/info/ItemTubeConfig.js",
       "__unresolved_159": "assets/scripts/game/info/ItemTubePolygonConfig.js",
-      "__unresolved_160": "assets/scripts/game/info/ItemWaterConfig.js",
       "__unresolved_161": "assets/scripts/game/info/LevelDataInfo.js",
+      "__unresolved_160": "assets/scripts/game/info/ItemWaterConfig.js",
       "__unresolved_162": "assets/scripts/game/info/QuestDataInfo.js",
-      "__unresolved_164": "assets/scripts/game/info/SkinInfo.js",
       "__unresolved_163": "assets/scripts/game/info/ShopDataInfo.js",
+      "__unresolved_164": "assets/scripts/game/info/SkinInfo.js",
       "__unresolved_165": "assets/scripts/game/info/TournamentDataInfo.js",
-      "__unresolved_166": "assets/scripts/game/info/TournamentPageHostDataInfo.js",
       "__unresolved_167": "assets/scripts/game/info/UnlockProgressInfo.js",
+      "__unresolved_166": "assets/scripts/game/info/TournamentPageHostDataInfo.js",
       "__unresolved_168": "assets/scripts/game/masterpass/ButtonMassterPassManager.js",
       "__unresolved_169": "assets/scripts/game/masterpass/ItemMasterPass.js",
       "__unresolved_170": "assets/scripts/game/masterpass/ItemRewardPass.js",
@@ -2724,8 +2727,8 @@
       "__unresolved_190": "assets/scripts/game/spin/SpinPopup.js",
       "__unresolved_191": "assets/scripts/game/tournaments/CountDownTime_TournamentGamePlay.js",
       "__unresolved_192": "assets/scripts/game/tournaments/InfoGroupTournament.js",
-      "__unresolved_194": "assets/scripts/game/tournaments/ItemTournament.js",
       "__unresolved_193": "assets/scripts/game/tournaments/InfoGroupTournamentPageHost.js",
+      "__unresolved_194": "assets/scripts/game/tournaments/ItemTournament.js",
       "__unresolved_195": "assets/scripts/game/tournaments/ItemTournamentGroupPlayer.js",
       "__unresolved_196": "assets/scripts/game/tournaments/LeaderBoardGroupFriendManager.js",
       "__unresolved_197": "assets/scripts/game/tournaments/TournamentPopup.js",
@@ -2743,12 +2746,10 @@
       "__unresolved_209": "assets/scripts/localConfig.js",
       "__unresolved_210": "assets/scripts/newlevel/LevelConfigInfo.js",
       "__unresolved_211": "assets/scripts/newlevel/MagicLevelDataInfo.js",
-      "__unresolved_16": "assets/scripts/common/FBInstantManager.js",
-      "__unresolved_38": "assets/scripts/common/PGSPlayInstantManager.js",
-      "__unresolved_91": "assets/scripts/game/HomeGroup.js"
+      "__unresolved_40": "assets/scripts/common/PokiSDKManager.js"
     },
     "physicalLocation": "cce/internal/x/prerequisite-imports.js",
-    "mTimestamp": 1767873285449,
+    "mTimestamp": 1767930590587,
     "isEntry": true,
     "exposeAs": "cce:/internal/x/prerequisite-imports"
   }

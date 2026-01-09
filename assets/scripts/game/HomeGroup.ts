@@ -85,8 +85,8 @@ export class HomeGroup extends Component {
     @property(sp.Skeleton)
     character:sp.Skeleton;
 
-    @property(ButtonMassterPassManager)
-    buttonMassterPassManager:ButtonMassterPassManager;
+    // @property(ButtonMassterPassManager)
+    // buttonMassterPassManager:ButtonMassterPassManager;
 
 
     @property(Node)
@@ -229,11 +229,11 @@ export class HomeGroup extends Component {
             isShowPopup = true;
         }
 
-        if(!isShowPopup && localConfig.instance.raceActive == 1 && localConfig.instance.checkRaceFinished()){
-            AudioManager2.instance.playPopupOpen2();
-            clientEvent.dispatchEvent(Constants.SHOW_TUBERACE_POPUP,false);
-            isShowPopup = true;
-        }
+        // if(!isShowPopup && localConfig.instance.raceActive == 1 && localConfig.instance.checkRaceFinished()){
+        //     AudioManager2.instance.playPopupOpen2();
+        //     clientEvent.dispatchEvent(Constants.SHOW_TUBERACE_POPUP,false);
+        //     isShowPopup = true;
+        // }
 
 
        
@@ -251,31 +251,31 @@ export class HomeGroup extends Component {
             }
         }
 
-        if(!isShowPopup && localConfig.instance.currLevelUnlock >= localConfig.instance.RACE_LEVEL_UNLOCK){
-            if(localConfig.instance.raceActive == 0){
-                AudioManager2.instance.playPopupOpen2();
-                clientEvent.dispatchEvent(Constants.SHOW_TUBERACE_JOIN_POPUP);
-                isShowPopup = true;
-            }
-        }
+        // if(!isShowPopup && localConfig.instance.currLevelUnlock >= localConfig.instance.RACE_LEVEL_UNLOCK){
+        //     if(localConfig.instance.raceActive == 0){
+        //         AudioManager2.instance.playPopupOpen2();
+        //         clientEvent.dispatchEvent(Constants.SHOW_TUBERACE_JOIN_POPUP);
+        //         isShowPopup = true;
+        //     }
+        // }
 
-        if(!isShowPopup && localConfig.instance.currLevelUnlock >= localConfig.instance.PASS_LEVEL_UNLOCK){
-            let indexPass:number = localConfig.instance.passIndexAvailable;
-            // console.log("indexPass:"+indexPass);
-            let countFreeClaim:number = indexPass - localConfig.instance.arrPassFreeClaims.length + 1;
-            // console.log("countFreeClaim:"+countFreeClaim);
-            let countPassClaim:number = 0;
-            if(localConfig.instance.passActivated){
-                countPassClaim = indexPass - localConfig.instance.arrPassMasterClaims.length + 1;
-            }
+        // if(!isShowPopup && localConfig.instance.currLevelUnlock >= localConfig.instance.PASS_LEVEL_UNLOCK){
+        //     let indexPass:number = localConfig.instance.passIndexAvailable;
+        //     // console.log("indexPass:"+indexPass);
+        //     let countFreeClaim:number = indexPass - localConfig.instance.arrPassFreeClaims.length + 1;
+        //     // console.log("countFreeClaim:"+countFreeClaim);
+        //     let countPassClaim:number = 0;
+        //     if(localConfig.instance.passActivated){
+        //         countPassClaim = indexPass - localConfig.instance.arrPassMasterClaims.length + 1;
+        //     }
 
-            let countClaimAvailable:number = countFreeClaim + countPassClaim;
-            if(countClaimAvailable > 0){
-                AudioManager2.instance.playPopupOpen2();
-                clientEvent.dispatchEvent(Constants.SHOW_MASSTERPASS_POPUP);
-                isShowPopup = true;
-            }
-        }
+        //     let countClaimAvailable:number = countFreeClaim + countPassClaim;
+        //     if(countClaimAvailable > 0){
+        //         AudioManager2.instance.playPopupOpen2();
+        //         clientEvent.dispatchEvent(Constants.SHOW_MASSTERPASS_POPUP);
+        //         isShowPopup = true;
+        //     }
+        // }
 
         if(!isShowPopup && localConfig.instance.currLevelUnlock > 10){
             let isFinished:boolean = localConfig.instance.checkInfoDailyChallengeFinished(localConfig.instance.currInfoDay);
@@ -314,7 +314,7 @@ export class HomeGroup extends Component {
     setNextLevel(rewardCoin:number){
         this.lockGroup.active = true;
         this.contentGroup.setPosition(new Vec3(0,-600,0));
-        this.buttonMassterPassManager.initReceiveKey();
+        // this.buttonMassterPassManager.initReceiveKey();
         // console.log("setNextLevel");
         this.isInitLevel = true;
         let level:number = localConfig.instance.currLevelUnlock - 1;
@@ -388,13 +388,13 @@ export class HomeGroup extends Component {
             clientEvent.dispatchEvent(Constants.SHOW_ADDCOIN,rewardCoin);
             LogEventManager.instance.logResourceEarned("currency","coin",rewardCoin,"home","win_level");
             let timeDelay:number = 0;
-            if(localConfig.instance.currLevelUnlock > localConfig.instance.PASS_LEVEL_UNLOCK){
-                let timeLeft:number = localConfig.instance.passLastTime + localConfig.instance.PASS_TIME - localConfig.instance.getCurrTime();
-                if(timeLeft > 0){
-                    timeDelay = 1;
-                    this.buttonMassterPassManager.showReceiveKey();
-                }
-            }
+            // if(localConfig.instance.currLevelUnlock > localConfig.instance.PASS_LEVEL_UNLOCK){
+            //     let timeLeft:number = localConfig.instance.passLastTime + localConfig.instance.PASS_TIME - localConfig.instance.getCurrTime();
+            //     if(timeLeft > 0){
+            //         timeDelay = 1;
+            //         this.buttonMassterPassManager.showReceiveKey();
+            //     }
+            // }
            
             this.setNextLevel_Finished_Delay(timeDelay);
         },2);

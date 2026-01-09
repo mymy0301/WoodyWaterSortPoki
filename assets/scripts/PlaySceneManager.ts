@@ -56,6 +56,7 @@ import { LogEventManager } from './common/LogEventManager';
 import { WinTournamentPageHostPopup } from './game/WinTournamentPageHostPopup';
 import { BlackFridayPopup } from './game/blackfriday/BlackFridayPopup';
 import { ThemePopup } from './game/ThemePopup';
+import { PokiSDKManager } from './common/PokiSDKManager';
 const { ccclass, property } = _decorator;
 
 /**
@@ -353,6 +354,9 @@ export class PlaySceneManager extends Component {
         //     }
         // }
        
+        if(PokiSDKManager.instance.isFirstUserInteraction){
+            PokiSDKManager.instance.setGameStart();
+        }
         clientEvent.dispatchEvent(Constants.SHOW_LOADING_START_NOW_POPUP);
         this.menuManager.node.active = false;
         this.playManager.node.active = true;
@@ -371,6 +375,9 @@ export class PlaySceneManager extends Component {
     }
 
     touchLevel() {
+        if(PokiSDKManager.instance.isFirstUserInteraction){
+            PokiSDKManager.instance.setGameStart();
+        }
         clientEvent.dispatchEvent(Constants.SHOW_LOADING_START_NOW_POPUP);
         this.menuManager.node.active = false;
         this.playManager.node.active = true;
@@ -386,7 +393,9 @@ export class PlaySceneManager extends Component {
         localConfig.instance.currInfoDaySelect = infoDayChallenge;
         let indexDay:number = localConfig.instance.getCountDay_From_Start(infoDayChallenge) + 1;
         // console.log("indexDay",indexDay);
-
+        if (PokiSDKManager.instance.isFirstUserInteraction) {
+            PokiSDKManager.instance.setGameStart();
+        }
         clientEvent.dispatchEvent(Constants.SHOW_LOADING_START_NOW_POPUP);
         this.menuManager.node.active = false;
         this.playManager.node.active = true;

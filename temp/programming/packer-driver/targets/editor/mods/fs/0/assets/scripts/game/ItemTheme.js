@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Button, Component, Label, Node, Sprite, SpriteFrame, tween, Vec3, Constants, THEME_TYPE, TICKET_TYPE, UNLOCK_TYPE, localConfig, resourceUtil, clientEvent, LogEventManager, PokiSDKManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _temp, _crd, ccclass, property, ItemTheme;
+  var _reporterNs, _cclegacy, _decorator, Button, Component, Label, Node, Sprite, SpriteFrame, tween, Vec3, Constants, THEME_TYPE, TICKET_TYPE, UNLOCK_TYPE, localConfig, resourceUtil, clientEvent, LogEventManager, PokiSDKManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _temp, _crd, ccclass, property, ItemTheme;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -98,7 +98,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
        *
        */
 
-      _export("ItemTheme", ItemTheme = (_dec = ccclass('ItemTheme'), _dec2 = property(Sprite), _dec3 = property(Node), _dec4 = property(Button), _dec5 = property(Sprite), _dec6 = property(SpriteFrame), _dec7 = property(SpriteFrame), _dec8 = property(Node), _dec9 = property(Label), _dec10 = property(Node), _dec11 = property(Node), _dec12 = property(Node), _dec13 = property(Button), _dec14 = property(Button), _dec15 = property(Label), _dec16 = property(Button), _dec17 = property(Label), _dec18 = property(Button), _dec19 = property(Label), _dec(_class = (_class2 = (_temp = class ItemTheme extends Component {
+      _export("ItemTheme", ItemTheme = (_dec = ccclass('ItemTheme'), _dec2 = property(Sprite), _dec3 = property(Node), _dec4 = property(Button), _dec5 = property(Sprite), _dec6 = property(SpriteFrame), _dec7 = property(SpriteFrame), _dec8 = property(Node), _dec9 = property(Label), _dec10 = property(Node), _dec11 = property(Node), _dec12 = property(Node), _dec13 = property(Button), _dec14 = property(Button), _dec15 = property(Sprite), _dec16 = property(Label), _dec(_class = (_class2 = (_temp = class ItemTheme extends Component {
         constructor(...args) {
           super(...args);
 
@@ -132,17 +132,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           _initializerDefineProperty(this, "btnUnlock_Ad", _descriptor12, this);
 
-          _initializerDefineProperty(this, "btnUnlock_TicketGold", _descriptor13, this);
+          _initializerDefineProperty(this, "btnUnlock_Coin", _descriptor13, this);
 
-          _initializerDefineProperty(this, "txtUnlock_TicketGold", _descriptor14, this);
+          _initializerDefineProperty(this, "bgBtnUnlock_Coin", _descriptor14, this);
 
-          _initializerDefineProperty(this, "btnUnlock_TicketSilver", _descriptor15, this);
-
-          _initializerDefineProperty(this, "txtUnlock_TicketSilver", _descriptor16, this);
-
-          _initializerDefineProperty(this, "btnUnlock_Coin", _descriptor17, this);
-
-          _initializerDefineProperty(this, "txtUnlock_Coin", _descriptor18, this);
+          _initializerDefineProperty(this, "txtUnlock_Coin", _descriptor15, this);
 
           _defineProperty(this, "tweenSelected", null);
         }
@@ -160,8 +154,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), Constants) : Constants).THEME_UNSELECT_UPDATE, this.setThemeUnselect_Update, this);
           this.btnItemTheme.node.on(Button.EventType.CLICK, this.touchItemTheme, this);
           this.btnUnlock_Ad.node.on(Button.EventType.CLICK, this.touchUnlock_Ad, this);
-          this.btnUnlock_TicketGold.node.on(Button.EventType.CLICK, this.touchUnlock_TicketGold, this);
-          this.btnUnlock_TicketSilver.node.on(Button.EventType.CLICK, this.touchUnlock_TicketSilver, this);
           this.btnUnlock_Coin.node.on(Button.EventType.CLICK, this.touchUnlock_Coin, this);
         }
 
@@ -178,8 +170,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), Constants) : Constants).THEME_UNSELECT_UPDATE, this.setThemeUnselect_Update, this);
           this.btnItemTheme.node.off(Button.EventType.CLICK, this.touchItemTheme, this);
           this.btnUnlock_Ad.node.off(Button.EventType.CLICK, this.touchUnlock_Ad, this);
-          this.btnUnlock_TicketGold.node.off(Button.EventType.CLICK, this.touchUnlock_TicketGold, this);
-          this.btnUnlock_TicketSilver.node.off(Button.EventType.CLICK, this.touchUnlock_TicketSilver, this);
           this.btnUnlock_Coin.node.off(Button.EventType.CLICK, this.touchUnlock_Coin, this);
         }
 
@@ -263,6 +253,30 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             this.objLock.active = false;
             this.objUnlock.active = false;
           }
+
+          if (this.itemID == (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.getThemeSelected_byThemeType(this.themeType)) {} else {
+            if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+              error: Error()
+            }), localConfig) : localConfig).instance.checkThemeUnlocked(this.themeType, this.itemID)) {} else {
+              if (this.themeType == (_crd && THEME_TYPE === void 0 ? (_reportPossibleCrUseOfTHEME_TYPE({
+                error: Error()
+              }), THEME_TYPE) : THEME_TYPE).SKIN) {
+                let skinInfo = (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+                  error: Error()
+                }), localConfig) : localConfig).instance.getSkinInfo(this.itemID);
+
+                if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+                  error: Error()
+                }), localConfig) : localConfig).instance.currCoin >= skinInfo.price) {
+                  this.bgBtnUnlock_Coin.grayscale = false;
+                } else {
+                  this.bgBtnUnlock_Coin.grayscale = true;
+                }
+              }
+            }
+          }
         }
 
         setThemeUnselect_Update(themeType, itemID) {
@@ -276,8 +290,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           this.objLock.active = false;
           this.objSelected.active = false;
           this.objUnlock.active = false;
-          this.btnUnlock_TicketGold.node.active = false;
-          this.btnUnlock_TicketSilver.node.active = false;
           this.btnUnlock_Coin.node.active = false;
           this.btnUnlock_Ad.node.active = false;
           this.btnItemTheme.node.active = true;
@@ -341,19 +353,17 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
                   if (skinInfo.unlockType == (_crd && UNLOCK_TYPE === void 0 ? (_reportPossibleCrUseOfUNLOCK_TYPE({
                     error: Error()
-                  }), UNLOCK_TYPE) : UNLOCK_TYPE).TICKET_GOLD) {
-                    this.btnUnlock_TicketGold.node.active = true;
-                    this.txtUnlock_TicketGold.string = `${skinInfo.price}`;
-                  } else if (skinInfo.unlockType == (_crd && UNLOCK_TYPE === void 0 ? (_reportPossibleCrUseOfUNLOCK_TYPE({
-                    error: Error()
-                  }), UNLOCK_TYPE) : UNLOCK_TYPE).TICKET_SILVER) {
-                    this.btnUnlock_TicketSilver.node.active = true;
-                    this.txtUnlock_TicketSilver.string = `${skinInfo.price}`;
-                  } else if (skinInfo.unlockType == (_crd && UNLOCK_TYPE === void 0 ? (_reportPossibleCrUseOfUNLOCK_TYPE({
-                    error: Error()
                   }), UNLOCK_TYPE) : UNLOCK_TYPE).COIN) {
                     this.btnUnlock_Coin.node.active = true;
                     this.txtUnlock_Coin.string = `${skinInfo.price}`;
+
+                    if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+                      error: Error()
+                    }), localConfig) : localConfig).instance.currCoin >= skinInfo.price) {
+                      this.bgBtnUnlock_Coin.grayscale = false;
+                    } else {
+                      this.bgBtnUnlock_Coin.grayscale = true;
+                    }
                   } else if (skinInfo.unlockType == (_crd && UNLOCK_TYPE === void 0 ? (_reportPossibleCrUseOfUNLOCK_TYPE({
                     error: Error()
                   }), UNLOCK_TYPE) : UNLOCK_TYPE).WATCH_AD) {
@@ -914,42 +924,21 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         initializer: function () {
           return null;
         }
-      }), _descriptor13 = _applyDecoratedDescriptor(_class2.prototype, "btnUnlock_TicketGold", [_dec14], {
+      }), _descriptor13 = _applyDecoratedDescriptor(_class2.prototype, "btnUnlock_Coin", [_dec14], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
-      }), _descriptor14 = _applyDecoratedDescriptor(_class2.prototype, "txtUnlock_TicketGold", [_dec15], {
+      }), _descriptor14 = _applyDecoratedDescriptor(_class2.prototype, "bgBtnUnlock_Coin", [_dec15], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
-      }), _descriptor15 = _applyDecoratedDescriptor(_class2.prototype, "btnUnlock_TicketSilver", [_dec16], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: function () {
-          return null;
-        }
-      }), _descriptor16 = _applyDecoratedDescriptor(_class2.prototype, "txtUnlock_TicketSilver", [_dec17], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: function () {
-          return null;
-        }
-      }), _descriptor17 = _applyDecoratedDescriptor(_class2.prototype, "btnUnlock_Coin", [_dec18], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: function () {
-          return null;
-        }
-      }), _descriptor18 = _applyDecoratedDescriptor(_class2.prototype, "txtUnlock_Coin", [_dec19], {
+      }), _descriptor15 = _applyDecoratedDescriptor(_class2.prototype, "txtUnlock_Coin", [_dec16], {
         configurable: true,
         enumerable: true,
         writable: true,

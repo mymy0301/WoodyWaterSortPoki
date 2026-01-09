@@ -91,13 +91,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }
         }
 
-        start() {
-          this.isInitializeAsync = true;
-          (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
-            error: Error()
-          }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
-            error: Error()
-          }), Constants) : Constants).POKI_INIT_SUCCESS);
+        start() {// this.isInitializeAsync = true;
+          // clientEvent.dispatchEvent(Constants.POKI_INIT_SUCCESS);
         }
 
         setGameLoadingFinished() {

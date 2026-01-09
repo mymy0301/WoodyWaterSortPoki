@@ -4481,6 +4481,9 @@
     "btnCoin": {
       "__id__": 123
     },
+    "bgBtnCoin": {
+      "__id__": 106
+    },
     "txtPriceCoin": {
       "__id__": 118
     },

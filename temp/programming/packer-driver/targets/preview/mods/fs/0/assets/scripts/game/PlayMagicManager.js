@@ -603,6 +603,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         touchSetting() {
+          (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
+            error: Error()
+          }), PokiSDKManager) : PokiSDKManager).instance.setGameStop();
           (_crd && LogEventManager === void 0 ? (_reportPossibleCrUseOfLogEventManager({
             error: Error()
           }), LogEventManager) : LogEventManager).instance.logButtonClick("setting", "play");
@@ -662,6 +665,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         setReplay() {
+          (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
+            error: Error()
+          }), PokiSDKManager) : PokiSDKManager).instance.setGameStart();
           (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
             error: Error()
           }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
@@ -1263,6 +1269,17 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
         selectTubeItem(itemTube) {
           this.isHaveNewTubeDone = false;
+
+          if (!(_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
+            error: Error()
+          }), PokiSDKManager) : PokiSDKManager).instance.isFirstUserInteraction) {
+            (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
+              error: Error()
+            }), PokiSDKManager) : PokiSDKManager).instance.isFirstUserInteraction = true;
+            (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
+              error: Error()
+            }), PokiSDKManager) : PokiSDKManager).instance.setGameStart();
+          }
 
           if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
             error: Error()
@@ -2117,6 +2134,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
         setNoMoves_Touch_PlayOn() {
           this.isShowNoMovesGroup = false;
+          (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
+            error: Error()
+          }), PokiSDKManager) : PokiSDKManager).instance.setGameStart();
           (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
             error: Error()
           }), localConfig) : localConfig).instance.currGameState = (_crd && GAME_STATE === void 0 ? (_reportPossibleCrUseOfGAME_STATE({
@@ -2415,6 +2435,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), localConfig) : localConfig).instance.currGameState != (_crd && GAME_STATE === void 0 ? (_reportPossibleCrUseOfGAME_STATE({
             error: Error()
           }), GAME_STATE) : GAME_STATE).WIN) {
+            (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
+              error: Error()
+            }), PokiSDKManager) : PokiSDKManager).instance.setGameStop();
             (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
               error: Error()
             }), localConfig) : localConfig).instance.currGameState = (_crd && GAME_STATE === void 0 ? (_reportPossibleCrUseOfGAME_STATE({
@@ -2610,6 +2633,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
         setNextLevel() {
+          (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
+            error: Error()
+          }), PokiSDKManager) : PokiSDKManager).instance.setGameStart();
           (_crd && clientEvent === void 0 ? (_reportPossibleCrUseOfclientEvent({
             error: Error()
           }), clientEvent) : clientEvent).dispatchEvent((_crd && Constants === void 0 ? (_reportPossibleCrUseOfConstants({
@@ -3248,6 +3274,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         setSettingTouchContinue() {
+          (_crd && PokiSDKManager === void 0 ? (_reportPossibleCrUseOfPokiSDKManager({
+            error: Error()
+          }), PokiSDKManager) : PokiSDKManager).instance.setGameStart();
           (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
             error: Error()
           }), localConfig) : localConfig).instance.currGameState = (_crd && GAME_STATE === void 0 ? (_reportPossibleCrUseOfGAME_STATE({
