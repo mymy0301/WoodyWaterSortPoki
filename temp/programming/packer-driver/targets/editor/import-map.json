@@ -13,14 +13,14 @@
     "./mods/fs/0/assets/scripts/LoadSceneManager.js": {
       "__unresolved_0": "./mods/cce/internal/code-quality/cr.js",
       "cc": "./mods/cce/internal/x/cc.js",
-      "__unresolved_6": "./mods/fs/0/assets/scripts/common/LogEventManager.js",
-      "__unresolved_8": "./mods/fs/0/assets/scripts/common/PGSPlayInstantManager.js",
       "__unresolved_1": "./mods/fs/0/assets/scripts/framework/clientEvent.js",
-      "__unresolved_5": "./mods/fs/0/assets/scripts/framework/configuration.js",
       "__unresolved_2": "./mods/fs/0/assets/scripts/framework/constants.js",
-      "__unresolved_7": "./mods/fs/0/assets/scripts/framework/musicManager.js",
       "__unresolved_3": "./mods/fs/0/assets/scripts/framework/resourceUtil.js",
       "__unresolved_4": "./mods/fs/0/assets/scripts/localConfig.js",
+      "__unresolved_5": "./mods/fs/0/assets/scripts/framework/configuration.js",
+      "__unresolved_7": "./mods/fs/0/assets/scripts/framework/musicManager.js",
+      "__unresolved_6": "./mods/fs/0/assets/scripts/common/LogEventManager.js",
+      "__unresolved_8": "./mods/fs/0/assets/scripts/common/PGSPlayInstantManager.js",
       "__unresolved_9": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js"
     },
     "./mods/fs/0/assets/module/QuickTween/QuickTween.js": {
@@ -82,6 +82,7 @@
       "__unresolved_2": "./mods/fs/0/assets/scripts/LoadingPopup.js",
       "__unresolved_35": "./mods/fs/0/assets/scripts/common/FBInstantManager.js",
       "__unresolved_49": "./mods/fs/0/assets/scripts/common/LogEventManager.js",
+      "__unresolved_53": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js",
       "__unresolved_17": "./mods/fs/0/assets/scripts/framework/audioManager2.js",
       "__unresolved_4": "./mods/fs/0/assets/scripts/framework/clientEvent.js",
       "__unresolved_5": "./mods/fs/0/assets/scripts/framework/constants.js",
@@ -130,8 +131,7 @@
       "__unresolved_41": "./mods/fs/0/assets/scripts/game/withFriends/FriendsPopup.js",
       "__unresolved_40": "./mods/fs/0/assets/scripts/game/withFriends/ShareContextWithFriendPopup.js",
       "__unresolved_39": "./mods/fs/0/assets/scripts/game/withFriends/WinWithFriendPopup.js",
-      "__unresolved_10": "./mods/fs/0/assets/scripts/localConfig.js",
-      "__unresolved_53": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js"
+      "__unresolved_10": "./mods/fs/0/assets/scripts/localConfig.js"
     },
     "./mods/fs/0/assets/scripts/common/EfxAutoDestroy.js": {
       "cc": "./mods/cce/internal/x/cc.js"
@@ -1286,10 +1286,10 @@
       "__unresolved_3": "./mods/fs/0/assets/scripts/framework/clientEvent.js",
       "__unresolved_4": "./mods/fs/0/assets/scripts/framework/constants.js",
       "__unresolved_6": "./mods/fs/0/assets/scripts/common/LogEventManager.js",
+      "__unresolved_7": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js",
       "__unresolved_1": "./mods/fs/0/assets/scripts/game/ItemDailyLogin.js",
       "__unresolved_5": "./mods/fs/0/assets/scripts/game/info/ShopDataInfo.js",
-      "__unresolved_2": "./mods/fs/0/assets/scripts/localConfig.js",
-      "__unresolved_7": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js"
+      "__unresolved_2": "./mods/fs/0/assets/scripts/localConfig.js"
     },
     "./mods/fs/0/assets/scripts/game/MoreLivesPopup.js": {
       "__unresolved_0": "./mods/cce/internal/code-quality/cr.js",
@@ -1300,8 +1300,8 @@
       "__unresolved_5": "./mods/fs/0/assets/scripts/framework/configuration.js",
       "__unresolved_6": "./mods/fs/0/assets/scripts/framework/clientEvent.js",
       "__unresolved_7": "./mods/fs/0/assets/scripts/common/LogEventManager.js",
-      "__unresolved_3": "./mods/fs/0/assets/scripts/localConfig.js",
-      "__unresolved_8": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js"
+      "__unresolved_8": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js",
+      "__unresolved_3": "./mods/fs/0/assets/scripts/localConfig.js"
     },
     "./mods/fs/0/assets/scripts/game/ItemShopFree.js": {
       "__unresolved_0": "./mods/cce/internal/code-quality/cr.js",
@@ -1311,8 +1311,8 @@
       "__unresolved_4": "./mods/fs/0/assets/scripts/common/CountDownToNextTime.js",
       "__unresolved_5": "./mods/fs/0/assets/scripts/framework/audioManager2.js",
       "__unresolved_6": "./mods/fs/0/assets/scripts/common/LogEventManager.js",
-      "__unresolved_3": "./mods/fs/0/assets/scripts/localConfig.js",
-      "__unresolved_7": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js"
+      "__unresolved_7": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js",
+      "__unresolved_3": "./mods/fs/0/assets/scripts/localConfig.js"
     },
     "./mods/fs/0/assets/scripts/game/ItemTheme.js": {
       "__unresolved_0": "./mods/cce/internal/code-quality/cr.js",
@@ -1321,8 +1321,8 @@
       "__unresolved_3": "./mods/fs/0/assets/scripts/framework/resourceUtil.js",
       "__unresolved_4": "./mods/fs/0/assets/scripts/framework/clientEvent.js",
       "__unresolved_5": "./mods/fs/0/assets/scripts/common/LogEventManager.js",
-      "__unresolved_2": "./mods/fs/0/assets/scripts/localConfig.js",
-      "__unresolved_6": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js"
+      "__unresolved_6": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js",
+      "__unresolved_2": "./mods/fs/0/assets/scripts/localConfig.js"
     },
     "./mods/fs/0/assets/scripts/game/NoMovesGroup.js": {
       "__unresolved_0": "./mods/cce/internal/code-quality/cr.js",
@@ -1332,8 +1332,8 @@
       "__unresolved_4": "./mods/fs/0/assets/scripts/common/FBInstantManager.js",
       "__unresolved_5": "./mods/fs/0/assets/scripts/framework/audioManager2.js",
       "__unresolved_6": "./mods/fs/0/assets/scripts/common/LogEventManager.js",
-      "__unresolved_2": "./mods/fs/0/assets/scripts/localConfig.js",
-      "__unresolved_7": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js"
+      "__unresolved_7": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js",
+      "__unresolved_2": "./mods/fs/0/assets/scripts/localConfig.js"
     },
     "./mods/fs/0/assets/scripts/game/DailyChallengePopup.js": {
       "__unresolved_0": "./mods/cce/internal/code-quality/cr.js",
@@ -1347,10 +1347,10 @@
       "__unresolved_10": "./mods/fs/0/assets/scripts/game/BoxRewardInfoGroup.js",
       "__unresolved_11": "./mods/fs/0/assets/scripts/common/InfoMonth.js",
       "__unresolved_12": "./mods/fs/0/assets/scripts/common/LogEventManager.js",
-      "__unresolved_5": "./mods/fs/0/assets/scripts/game/ItemDailyChallenge.js",
+      "__unresolved_13": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js",
       "__unresolved_4": "./mods/fs/0/assets/scripts/game/ItemDailyChallengeBox.js",
-      "__unresolved_2": "./mods/fs/0/assets/scripts/localConfig.js",
-      "__unresolved_13": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js"
+      "__unresolved_5": "./mods/fs/0/assets/scripts/game/ItemDailyChallenge.js",
+      "__unresolved_2": "./mods/fs/0/assets/scripts/localConfig.js"
     },
     "./mods/fs/0/assets/scripts/game/RewardChestsPopup.js": {
       "__unresolved_0": "./mods/cce/internal/code-quality/cr.js",
@@ -1361,8 +1361,8 @@
       "__unresolved_4": "./mods/fs/0/assets/scripts/game/ItemRewardReceive.js",
       "__unresolved_5": "./mods/fs/0/assets/scripts/framework/audioManager2.js",
       "__unresolved_7": "./mods/fs/0/assets/scripts/common/LogEventManager.js",
-      "__unresolved_6": "./mods/fs/0/assets/scripts/localConfig.js",
-      "__unresolved_8": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js"
+      "__unresolved_8": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js",
+      "__unresolved_6": "./mods/fs/0/assets/scripts/localConfig.js"
     },
     "./mods/fs/0/assets/scripts/game/ShopItemPopup.js": {
       "__unresolved_0": "./mods/cce/internal/code-quality/cr.js",
@@ -1371,8 +1371,8 @@
       "__unresolved_2": "./mods/fs/0/assets/scripts/framework/constants.js",
       "__unresolved_4": "./mods/fs/0/assets/scripts/framework/clientEvent.js",
       "__unresolved_5": "./mods/fs/0/assets/scripts/common/LogEventManager.js",
-      "__unresolved_3": "./mods/fs/0/assets/scripts/localConfig.js",
-      "__unresolved_6": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js"
+      "__unresolved_6": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js",
+      "__unresolved_3": "./mods/fs/0/assets/scripts/localConfig.js"
     },
     "./mods/fs/0/assets/scripts/game/blackfriday/BlackFridayPopup.js": {
       "__unresolved_0": "./mods/cce/internal/code-quality/cr.js",
@@ -1381,9 +1381,9 @@
       "__unresolved_2": "./mods/fs/0/assets/scripts/common/basePopup.js",
       "__unresolved_3": "./mods/fs/0/assets/scripts/framework/constants.js",
       "__unresolved_5": "./mods/fs/0/assets/scripts/framework/clientEvent.js",
+      "__unresolved_7": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js",
       "__unresolved_6": "./mods/fs/0/assets/scripts/game/info/ShopDataInfo.js",
-      "__unresolved_4": "./mods/fs/0/assets/scripts/localConfig.js",
-      "__unresolved_7": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js"
+      "__unresolved_4": "./mods/fs/0/assets/scripts/localConfig.js"
     },
     "./mods/fs/0/assets/scripts/game/ThemeUnlockPopup.js": {
       "__unresolved_0": "./mods/cce/internal/code-quality/cr.js",
@@ -1393,8 +1393,8 @@
       "__unresolved_4": "./mods/fs/0/assets/scripts/framework/resourceUtil.js",
       "__unresolved_5": "./mods/fs/0/assets/scripts/framework/audioManager2.js",
       "__unresolved_6": "./mods/fs/0/assets/scripts/common/LogEventManager.js",
-      "__unresolved_3": "./mods/fs/0/assets/scripts/localConfig.js",
-      "__unresolved_7": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js"
+      "__unresolved_7": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js",
+      "__unresolved_3": "./mods/fs/0/assets/scripts/localConfig.js"
     },
     "./mods/fs/0/assets/scripts/game/WinTournamentPageHostPopup.js": {
       "__unresolved_0": "./mods/cce/internal/code-quality/cr.js",
@@ -1407,8 +1407,8 @@
       "__unresolved_7": "./mods/fs/0/assets/scripts/common/LogEventManager.js",
       "__unresolved_8": "./mods/fs/0/assets/scripts/common/FBInstantManager.js",
       "__unresolved_9": "./mods/fs/0/assets/scripts/common/ItemRankInfo.js",
-      "__unresolved_3": "./mods/fs/0/assets/scripts/localConfig.js",
-      "__unresolved_10": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js"
+      "__unresolved_10": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js",
+      "__unresolved_3": "./mods/fs/0/assets/scripts/localConfig.js"
     },
     "./mods/fs/0/assets/scripts/game/tournaments/TournamentRevivePopup.js": {
       "__unresolved_0": "./mods/cce/internal/code-quality/cr.js",
@@ -1418,8 +1418,8 @@
       "__unresolved_4": "./mods/fs/0/assets/scripts/framework/clientEvent.js",
       "__unresolved_5": "./mods/fs/0/assets/scripts/framework/audioManager2.js",
       "__unresolved_6": "./mods/fs/0/assets/scripts/common/LogEventManager.js",
-      "__unresolved_3": "./mods/fs/0/assets/scripts/localConfig.js",
-      "__unresolved_7": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js"
+      "__unresolved_7": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js",
+      "__unresolved_3": "./mods/fs/0/assets/scripts/localConfig.js"
     },
     "./mods/fs/0/assets/scripts/game/MenuManager.js": {
       "__unresolved_0": "./mods/cce/internal/code-quality/cr.js",
@@ -1527,8 +1527,8 @@
       "__unresolved_8": "./mods/fs/0/assets/scripts/core/utils/Utils.js",
       "__unresolved_9": "./mods/fs/0/assets/scripts/game/info/ShopDataInfo.js",
       "__unresolved_10": "./mods/fs/0/assets/scripts/common/LogEventManager.js",
-      "__unresolved_4": "./mods/fs/0/assets/scripts/localConfig.js",
-      "__unresolved_11": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js"
+      "__unresolved_11": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js",
+      "__unresolved_4": "./mods/fs/0/assets/scripts/localConfig.js"
     },
     "./mods/fs/0/assets/scripts/common/PokiSDKManager.js": {
       "__unresolved_0": "./mods/cce/internal/code-quality/cr.js",
@@ -1585,13 +1585,13 @@
       "__unresolved_18": "./mods/fs/0/assets/scripts/game/NoMovesGroup.js",
       "__unresolved_19": "./mods/fs/0/assets/scripts/common/LogEventManager.js",
       "__unresolved_21": "./mods/fs/0/assets/scripts/game/BackGroundGameManager.js",
+      "__unresolved_22": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js",
       "__unresolved_13": "./mods/fs/0/assets/scripts/game/TutLevelPopup.js",
       "__unresolved_3": "./mods/fs/0/assets/scripts/game/tournaments/InfoGroupTournament.js",
       "__unresolved_20": "./mods/fs/0/assets/scripts/game/tournaments/InfoGroupTournamentPageHost.js",
       "__unresolved_4": "./mods/fs/0/assets/scripts/game/withFriends/InfoGroupWithFriend.js",
       "__unresolved_6": "./mods/fs/0/assets/scripts/localConfig.js",
-      "__unresolved_17": "./mods/fs/0/assets/scripts/newlevel/MagicLevelDataInfo.js",
-      "__unresolved_22": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js"
+      "__unresolved_17": "./mods/fs/0/assets/scripts/newlevel/MagicLevelDataInfo.js"
     },
     "./mods/cce/internal/x/cc.js": {
       "__unresolved_0": "cce:/internal/x/cc-fu/base",
@@ -1618,11 +1618,10 @@
     },
     "./mods/cce/internal/x/prerequisite-imports.js": {
       "__unresolved_0": "./mods/fs/0/assets/module/QuickTween/QuickTween.js",
-      "__unresolved_1": "./mods/fs/0/assets/module/QuickTween/Util.js",
       "__unresolved_2": "./mods/fs/0/assets/module/facebook-instant-games/facebook-instant-games-tests.js",
-      "__unresolved_4": "./mods/fs/0/assets/scripts/LoadingPopup.js",
-      "__unresolved_3": "./mods/fs/0/assets/scripts/LoadSceneManager.js",
+      "__unresolved_1": "./mods/fs/0/assets/module/QuickTween/Util.js",
       "__unresolved_5": "./mods/fs/0/assets/scripts/PlaySceneManager.js",
+      "__unresolved_4": "./mods/fs/0/assets/scripts/LoadingPopup.js",
       "__unresolved_6": "./mods/fs/0/assets/scripts/TestScene.js",
       "__unresolved_7": "./mods/fs/0/assets/scripts/WellDoneGroup.js",
       "__unresolved_8": "./mods/fs/0/assets/scripts/common/CameraShakeManager.js",
@@ -1642,10 +1641,10 @@
       "__unresolved_22": "./mods/fs/0/assets/scripts/common/IconNotification.js",
       "__unresolved_23": "./mods/fs/0/assets/scripts/common/InfoDay.js",
       "__unresolved_24": "./mods/fs/0/assets/scripts/common/InfoMonth.js",
-      "__unresolved_26": "./mods/fs/0/assets/scripts/common/ItemChangeSprite.js",
       "__unresolved_25": "./mods/fs/0/assets/scripts/common/InfoMonthReward.js",
-      "__unresolved_28": "./mods/fs/0/assets/scripts/common/ItemHeartUnlimited.js",
+      "__unresolved_26": "./mods/fs/0/assets/scripts/common/ItemChangeSprite.js",
       "__unresolved_27": "./mods/fs/0/assets/scripts/common/ItemCoin.js",
+      "__unresolved_28": "./mods/fs/0/assets/scripts/common/ItemHeartUnlimited.js",
       "__unresolved_29": "./mods/fs/0/assets/scripts/common/ItemRankInfo.js",
       "__unresolved_30": "./mods/fs/0/assets/scripts/common/ItemScrollView.js",
       "__unresolved_31": "./mods/fs/0/assets/scripts/common/ItemSpriteMove.js",
@@ -1657,6 +1656,7 @@
       "__unresolved_37": "./mods/fs/0/assets/scripts/common/LogEventManager.js",
       "__unresolved_38": "./mods/fs/0/assets/scripts/common/PGSPlayInstantManager.js",
       "__unresolved_39": "./mods/fs/0/assets/scripts/common/PlayFabManager.js",
+      "__unresolved_40": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js",
       "__unresolved_41": "./mods/fs/0/assets/scripts/common/ScrollViewGroupManager.js",
       "__unresolved_42": "./mods/fs/0/assets/scripts/common/TextLoading.js",
       "__unresolved_43": "./mods/fs/0/assets/scripts/common/ToastNotificationPopup.js",
@@ -1682,8 +1682,8 @@
       "__unresolved_63": "./mods/fs/0/assets/scripts/framework/resourceUtil.js",
       "__unresolved_64": "./mods/fs/0/assets/scripts/game/AvatarGroup.js",
       "__unresolved_65": "./mods/fs/0/assets/scripts/game/BGProgressRewardGroup.js",
-      "__unresolved_67": "./mods/fs/0/assets/scripts/game/BackGroundMenuManager.js",
       "__unresolved_66": "./mods/fs/0/assets/scripts/game/BackGroundGameManager.js",
+      "__unresolved_67": "./mods/fs/0/assets/scripts/game/BackGroundMenuManager.js",
       "__unresolved_68": "./mods/fs/0/assets/scripts/game/BackGroundPopupManager.js",
       "__unresolved_69": "./mods/fs/0/assets/scripts/game/BaseInfoPopup.js",
       "__unresolved_70": "./mods/fs/0/assets/scripts/game/BoxRewardInfoGroup.js",
@@ -1695,8 +1695,8 @@
       "__unresolved_76": "./mods/fs/0/assets/scripts/game/ButtonSaleManager.js",
       "__unresolved_77": "./mods/fs/0/assets/scripts/game/ButtonTabShopManager.js",
       "__unresolved_78": "./mods/fs/0/assets/scripts/game/ButtonVIPManager.js",
-      "__unresolved_80": "./mods/fs/0/assets/scripts/game/ComboGroup.js",
       "__unresolved_79": "./mods/fs/0/assets/scripts/game/ChestProgressRewardGroup.js",
+      "__unresolved_80": "./mods/fs/0/assets/scripts/game/ComboGroup.js",
       "__unresolved_81": "./mods/fs/0/assets/scripts/game/DailyChallengePopup.js",
       "__unresolved_82": "./mods/fs/0/assets/scripts/game/DailyTaskLoginGroup.js",
       "__unresolved_83": "./mods/fs/0/assets/scripts/game/DailyTaskPopup.js",
@@ -1708,13 +1708,13 @@
       "__unresolved_89": "./mods/fs/0/assets/scripts/game/EfxQuestionManager.js",
       "__unresolved_90": "./mods/fs/0/assets/scripts/game/HeartGroup.js",
       "__unresolved_91": "./mods/fs/0/assets/scripts/game/HomeGroup.js",
-      "__unresolved_93": "./mods/fs/0/assets/scripts/game/ItemBoxReward.js",
       "__unresolved_92": "./mods/fs/0/assets/scripts/game/ItemBottleFinishedEfx.js",
+      "__unresolved_93": "./mods/fs/0/assets/scripts/game/ItemBoxReward.js",
       "__unresolved_94": "./mods/fs/0/assets/scripts/game/ItemClayFinishedEfx.js",
-      "__unresolved_95": "./mods/fs/0/assets/scripts/game/ItemDailyChallenge.js",
       "__unresolved_96": "./mods/fs/0/assets/scripts/game/ItemDailyChallengeBox.js",
-      "__unresolved_98": "./mods/fs/0/assets/scripts/game/ItemDailyQuest.js",
+      "__unresolved_95": "./mods/fs/0/assets/scripts/game/ItemDailyChallenge.js",
       "__unresolved_97": "./mods/fs/0/assets/scripts/game/ItemDailyLogin.js",
+      "__unresolved_98": "./mods/fs/0/assets/scripts/game/ItemDailyQuest.js",
       "__unresolved_99": "./mods/fs/0/assets/scripts/game/ItemDailyQuestBoxReward.js",
       "__unresolved_100": "./mods/fs/0/assets/scripts/game/ItemGroupShop.js",
       "__unresolved_101": "./mods/fs/0/assets/scripts/game/ItemLeaderBoard.js",
@@ -1762,10 +1762,10 @@
       "__unresolved_143": "./mods/fs/0/assets/scripts/game/ThemeGroup.js",
       "__unresolved_144": "./mods/fs/0/assets/scripts/game/ThemePopup.js",
       "__unresolved_145": "./mods/fs/0/assets/scripts/game/ThemeUnlockPopup.js",
-      "__unresolved_146": "./mods/fs/0/assets/scripts/game/TicketGroup.js",
       "__unresolved_147": "./mods/fs/0/assets/scripts/game/TicketPoolManager.js",
       "__unresolved_148": "./mods/fs/0/assets/scripts/game/TournamentsGroup.js",
       "__unresolved_149": "./mods/fs/0/assets/scripts/game/TubeProgressRewardGroup.js",
+      "__unresolved_146": "./mods/fs/0/assets/scripts/game/TicketGroup.js",
       "__unresolved_150": "./mods/fs/0/assets/scripts/game/TutClayPopup.js",
       "__unresolved_151": "./mods/fs/0/assets/scripts/game/TutCurtainPopup.js",
       "__unresolved_152": "./mods/fs/0/assets/scripts/game/TutLevel5Popup.js",
@@ -1786,8 +1786,8 @@
       "__unresolved_167": "./mods/fs/0/assets/scripts/game/info/UnlockProgressInfo.js",
       "__unresolved_168": "./mods/fs/0/assets/scripts/game/masterpass/ButtonMassterPassManager.js",
       "__unresolved_169": "./mods/fs/0/assets/scripts/game/masterpass/ItemMasterPass.js",
-      "__unresolved_170": "./mods/fs/0/assets/scripts/game/masterpass/ItemRewardPass.js",
       "__unresolved_171": "./mods/fs/0/assets/scripts/game/masterpass/MassterPassPopup.js",
+      "__unresolved_170": "./mods/fs/0/assets/scripts/game/masterpass/ItemRewardPass.js",
       "__unresolved_172": "./mods/fs/0/assets/scripts/game/masterpass/MasterPassDetailPopup.js",
       "__unresolved_173": "./mods/fs/0/assets/scripts/game/masterpass/MasterPassInfoPopup.js",
       "__unresolved_174": "./mods/fs/0/assets/scripts/game/masterpass/PassScrollViewGroupManager.js",
@@ -1819,16 +1819,16 @@
       "__unresolved_200": "./mods/fs/0/assets/scripts/game/tournaments/TournamentRevivePopup.js",
       "__unresolved_201": "./mods/fs/0/assets/scripts/game/vip/VIPPopup.js",
       "__unresolved_202": "./mods/fs/0/assets/scripts/game/withFriends/ButtonWithFriendManager.js",
-      "__unresolved_203": "./mods/fs/0/assets/scripts/game/withFriends/FriendsPopup.js",
       "__unresolved_204": "./mods/fs/0/assets/scripts/game/withFriends/InfoGroupWithFriend.js",
+      "__unresolved_203": "./mods/fs/0/assets/scripts/game/withFriends/FriendsPopup.js",
       "__unresolved_205": "./mods/fs/0/assets/scripts/game/withFriends/ItemLeaderBoardFriend.js",
       "__unresolved_206": "./mods/fs/0/assets/scripts/game/withFriends/ShareContextWithFriendPopup.js",
-      "__unresolved_207": "./mods/fs/0/assets/scripts/game/withFriends/WinWithFriendPopup.js",
       "__unresolved_208": "./mods/fs/0/assets/scripts/game/withFriends/WithFriendDataInfo.js",
+      "__unresolved_207": "./mods/fs/0/assets/scripts/game/withFriends/WinWithFriendPopup.js",
       "__unresolved_209": "./mods/fs/0/assets/scripts/localConfig.js",
       "__unresolved_210": "./mods/fs/0/assets/scripts/newlevel/LevelConfigInfo.js",
       "__unresolved_211": "./mods/fs/0/assets/scripts/newlevel/MagicLevelDataInfo.js",
-      "__unresolved_40": "./mods/fs/0/assets/scripts/common/PokiSDKManager.js"
+      "__unresolved_3": "./mods/fs/0/assets/scripts/LoadSceneManager.js"
     }
   }
 }

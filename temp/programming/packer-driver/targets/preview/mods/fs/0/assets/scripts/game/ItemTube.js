@@ -270,17 +270,15 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
         onEnable() {
-          this.btnTube.node.on(Node.EventType.TOUCH_START, this.touchItemTube, this);
-          this.btnTube.node.on(Node.EventType.TOUCH_CANCEL, this.touchEndItemTube, this);
-          this.btnTube.node.on(Node.EventType.TOUCH_END, this.touchEndItemTube, this);
-          this.btnTube.node.on(Node.EventType.TOUCH_MOVE, this.onTouchMoveItemTube, this);
+          this.btnTube.node.on(Node.EventType.TOUCH_START, this.touchItemTube, this); // this.btnTube.node.on(Node.EventType.TOUCH_CANCEL,this.touchEndItemTube,this);
+          // this.btnTube.node.on(Node.EventType.TOUCH_END, this.touchEndItemTube, this);
+          // this.btnTube.node.on(Node.EventType.TOUCH_MOVE, this.onTouchMoveItemTube, this);
         }
 
         onDisable() {
-          this.btnTube.node.on(Node.EventType.TOUCH_START, this.touchItemTube, this);
-          this.btnTube.node.off(Node.EventType.TOUCH_CANCEL, this.touchEndItemTube, this);
-          this.btnTube.node.off(Node.EventType.TOUCH_END, this.touchEndItemTube, this);
-          this.btnTube.node.off(Node.EventType.TOUCH_MOVE, this.onTouchMoveItemTube, this);
+          this.btnTube.node.on(Node.EventType.TOUCH_START, this.touchItemTube, this); // this.btnTube.node.off(Node.EventType.TOUCH_CANCEL,this.touchEndItemTube,this);
+          // this.btnTube.node.off(Node.EventType.TOUCH_END, this.touchEndItemTube, this);
+          // this.btnTube.node.off(Node.EventType.TOUCH_MOVE, this.onTouchMoveItemTube, this);
         }
 
         initItemTube(_tubeX, _tubeY, _arrIndexColors) {

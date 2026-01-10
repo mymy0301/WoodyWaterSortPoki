@@ -559,11 +559,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         setLoad_Step2() {
-          Promise.all([(_crd && resourceUtil === void 0 ? (_reportPossibleCrUseOfresourceUtil({
-            error: Error()
-          }), resourceUtil) : resourceUtil).loadSpriteFrame_Bundle("tube/1/1", (err, spriteFrame) => {})]).then(values => {
-            this.setLoad_Step3();
-          });
+          // Promise.all([
+          //     resourceUtil.loadSpriteFrame_Bundle("tube/1/1", (err, spriteFrame) => {
+          //     })
+          // ]).then(values=>{
+          // });
+          this.setLoad_Step3();
         } //Read data level
 
 

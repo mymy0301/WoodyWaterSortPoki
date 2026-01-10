@@ -409,12 +409,14 @@ export class LoadSceneManager extends Component {
     }
 
     setLoad_Step2(){
-        Promise.all([
-            resourceUtil.loadSpriteFrame_Bundle("tube/1/1", (err, spriteFrame) => {
-            })
-        ]).then(values=>{
-            this.setLoad_Step3();
-        });
+        // Promise.all([
+        //     resourceUtil.loadSpriteFrame_Bundle("tube/1/1", (err, spriteFrame) => {
+        //     })
+        // ]).then(values=>{
+            
+        // });
+
+        this.setLoad_Step3();
     }
 
 

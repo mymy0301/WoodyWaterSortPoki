@@ -134,7 +134,7 @@
     },
     "_materials": [
       {
-        "__uuid__": "cee799d1-6cde-4636-9039-7351f5ec036f",
+        "__uuid__": "3137f165-69ca-4cf0-ac06-3c8c50759370",
         "__expectedType__": "cc.Material"
       },
       null
@@ -783,11 +783,11 @@
   },
   {
     "__type__": "cc.TextureAnimationModule",
-    "_enable": false,
+    "_enable": true,
     "_numTilesX": 3,
     "numTilesX": 3,
-    "_numTilesY": 3,
-    "numTilesY": 3,
+    "_numTilesY": 2,
+    "numTilesY": 2,
     "_mode": 0,
     "animation": 1,
     "frameOverTime": {
@@ -953,7 +953,7 @@
     "_lengthScale": 1,
     "_mesh": null,
     "_mainTexture": {
-      "__uuid__": "e940a121-3e61-4415-a124-c1ac923e67f4@6c48a",
+      "__uuid__": "46a478d7-8dae-4783-b5bd-148e7db70399@6c48a",
       "__expectedType__": "cc.Texture2D"
     },
     "_useGPU": false,
@@ -1027,7 +1027,7 @@
     },
     "_materials": [
       {
-        "__uuid__": "a063f42a-c4b7-4c0a-ab85-6b19dbb4e5d1",
+        "__uuid__": "3137f165-69ca-4cf0-ac06-3c8c50759370",
         "__expectedType__": "cc.Material"
       },
       null
@@ -1676,11 +1676,11 @@
   },
   {
     "__type__": "cc.TextureAnimationModule",
-    "_enable": false,
+    "_enable": true,
     "_numTilesX": 3,
     "numTilesX": 3,
-    "_numTilesY": 3,
-    "numTilesY": 3,
+    "_numTilesY": 2,
+    "numTilesY": 2,
     "_mode": 0,
     "animation": 1,
     "frameOverTime": {
@@ -1846,7 +1846,7 @@
     "_lengthScale": 1,
     "_mesh": null,
     "_mainTexture": {
-      "__uuid__": "734abb45-9ab8-4a03-9e8b-a7d5b99e13a3@6c48a",
+      "__uuid__": "46a478d7-8dae-4783-b5bd-148e7db70399@6c48a",
       "__expectedType__": "cc.Texture2D"
     },
     "_useGPU": false,
@@ -1920,7 +1920,7 @@
     },
     "_materials": [
       {
-        "__uuid__": "ff48bda2-2498-47b2-acdf-c38020b0efa2",
+        "__uuid__": "3137f165-69ca-4cf0-ac06-3c8c50759370",
         "__expectedType__": "cc.Material"
       },
       null
@@ -2570,11 +2570,11 @@
   },
   {
     "__type__": "cc.TextureAnimationModule",
-    "_enable": false,
+    "_enable": true,
     "_numTilesX": 3,
     "numTilesX": 3,
-    "_numTilesY": 3,
-    "numTilesY": 3,
+    "_numTilesY": 2,
+    "numTilesY": 2,
     "_mode": 0,
     "animation": 1,
     "frameOverTime": {
@@ -2740,7 +2740,7 @@
     "_lengthScale": 1,
     "_mesh": null,
     "_mainTexture": {
-      "__uuid__": "8aef5872-6942-44d6-9bdf-46416d11c9e2@6c48a",
+      "__uuid__": "46a478d7-8dae-4783-b5bd-148e7db70399@6c48a",
       "__expectedType__": "cc.Texture2D"
     },
     "_useGPU": false,
@@ -2814,7 +2814,7 @@
     },
     "_materials": [
       {
-        "__uuid__": "07f99cf8-9ec8-4562-9fcf-381419d52eeb",
+        "__uuid__": "3137f165-69ca-4cf0-ac06-3c8c50759370",
         "__expectedType__": "cc.Material"
       },
       null
@@ -3464,11 +3464,11 @@
   },
   {
     "__type__": "cc.TextureAnimationModule",
-    "_enable": false,
+    "_enable": true,
     "_numTilesX": 3,
     "numTilesX": 3,
-    "_numTilesY": 3,
-    "numTilesY": 3,
+    "_numTilesY": 2,
+    "numTilesY": 2,
     "_mode": 0,
     "animation": 1,
     "frameOverTime": {
@@ -3634,7 +3634,7 @@
     "_lengthScale": 1,
     "_mesh": null,
     "_mainTexture": {
-      "__uuid__": "af4e4ace-371f-4179-ab42-b92c88b51828@6c48a",
+      "__uuid__": "46a478d7-8dae-4783-b5bd-148e7db70399@6c48a",
       "__expectedType__": "cc.Texture2D"
     },
     "_useGPU": false,
@@ -5374,7 +5374,7 @@
     },
     "_materials": [
       {
-        "__uuid__": "07f99cf8-9ec8-4562-9fcf-381419d52eeb",
+        "__uuid__": "3137f165-69ca-4cf0-ac06-3c8c50759370",
         "__expectedType__": "cc.Material"
       },
       null
@@ -6024,11 +6024,11 @@
   },
   {
     "__type__": "cc.TextureAnimationModule",
-    "_enable": false,
+    "_enable": true,
     "_numTilesX": 3,
     "numTilesX": 3,
-    "_numTilesY": 3,
-    "numTilesY": 3,
+    "_numTilesY": 2,
+    "numTilesY": 2,
     "_mode": 0,
     "animation": 1,
     "frameOverTime": {
@@ -6194,7 +6194,7 @@
     "_lengthScale": 1,
     "_mesh": null,
     "_mainTexture": {
-      "__uuid__": "af4e4ace-371f-4179-ab42-b92c88b51828@6c48a",
+      "__uuid__": "46a478d7-8dae-4783-b5bd-148e7db70399@6c48a",
       "__expectedType__": "cc.Texture2D"
     },
     "_useGPU": false,
