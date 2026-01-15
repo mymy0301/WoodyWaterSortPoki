@@ -1230,6 +1230,29 @@ export class ItemTube extends Component {
         this.showMagicAddCol();
     }
 
+    initMagicItemTube_AddCol_Now(_tubeX:number,_tubeY:number){
+        this.loadTube();
+        this.tubeX = _tubeX;
+        this.tubeY = _tubeY;
+
+        let posTube:Vec2 = localConfig.instance.getMagicPosTube_byXY(localConfig.instance.currMagicLevelConfigInfo,this.tubeX,this.tubeY);
+        // console.log("posTube:",posTube,this.tubeX,this.tubeY);
+        this.node.setPosition(new Vec3(posTube.x,posTube.y,0));
+        for(let i=0; i< this.arrItemWaters.length;i++){
+            this.arrItemWaters[i].initMagicIndexColor(-1);
+            this.arrItemWaters[i].initWaterLock(WATER_STATE.NONE);
+            this.arrItemWaters[i].node.active = false;
+        }
+        this.initItemWaterScale();
+        this.waterLine.node.active = false;
+        this.iconCover.node.active = false;
+        this.coverOpacity.opacity = 0;
+
+        this.updateCountItemWater(0);
+        this.currState = ITEM_TUBE_STATE.NONE;
+    }
+
+
     showAddCol(){
         let posTube:Vec2 = localConfig.instance.getPosTube_byXY(localConfig.instance.currLevelDataInfo,this.tubeX,this.tubeY);
         this.tweenAddCol = tween(this.node).to(0.2,{position:new Vec3(posTube.x,posTube.y,0)},{easing:'quadOut',onComplete:()=>{

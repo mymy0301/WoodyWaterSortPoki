@@ -555,6 +555,13 @@ export class PlayMagicManager extends Component {
             this.arrItemTubes.push(itemTube);
         }
 
+        if(localConfig.instance.currGameMode == GAME_MODE.NORMAL){
+            if(localConfig.instance.currLevel >= 5 && localConfig.instance.currLevel <= 20){
+                this.setUseBooster_AddCol_Now();
+            }
+        }
+        
+
     }
 
     lastItemTubeSelect:ItemTube = null;
@@ -1309,6 +1316,56 @@ export class PlayMagicManager extends Component {
         item.setParent(this.groupAllTubes);
         let itemTube: ItemTube = item.getComponent(ItemTube);
         itemTube.initMagicItemTube_AddCol(countTubebyY, indexAddColY);
+        this.arrItemTubes.push(itemTube);
+        
+
+        this.showButtonBoosterAddCol_Available();
+    }
+
+    setUseBooster_AddCol_Now(){
+        let indexAddColY:number = localConfig.instance.currMagicLevelConfigInfo.maxRow - 1;
+        let maxTubebyY:number = 0;
+        let arrItemTubes_byTubeY:ItemTube[] = this.arrItemTubes.filter(itemTube => itemTube.tubeY == indexAddColY);
+        maxTubebyY = arrItemTubes_byTubeY.length;
+        // console.log(indexAddColY,maxTubebyY);
+        for(let i=localConfig.instance.currMagicLevelConfigInfo.maxRow-2;i>= 0;i--){
+            let arrItemTubes_byTubeY:ItemTube[] = this.arrItemTubes.filter(itemTube => itemTube.tubeY == i);
+            // console.log(i,arrItemTubes_byTubeY.length);
+            if(arrItemTubes_byTubeY.length < maxTubebyY){
+                indexAddColY = i;
+                maxTubebyY = arrItemTubes_byTubeY.length;
+            }
+
+            // console.log("check::::::",i,maxTubebyY);
+        }
+        // console.log(indexAddColY);
+        let newMagicTubeInfo:MagicBInfo = new MagicBInfo();
+        newMagicTubeInfo.indexY = indexAddColY;
+        let countTubebyY:number = this.arrItemTubes.filter(itemTube => itemTube.tubeY == indexAddColY).length;
+        newMagicTubeInfo.indexX = countTubebyY;
+        localConfig.instance.currMagicLevelConfigInfo.B.push(newMagicTubeInfo);
+        localConfig.instance.mapMagicCountColbyIndexY.set(indexAddColY, newMagicTubeInfo.indexX + 1);
+
+        if(localConfig.instance.currMagicLevelConfigInfo.maxCol < countTubebyY + 1){
+            localConfig.instance.currMagicLevelConfigInfo.maxCol = countTubebyY + 1;
+        }
+
+
+
+        
+        // console.log(localConfig.instance.currMagicLevelConfigInfo);
+        localConfig.instance.initPos_byMagicLevelDataInfo(localConfig.instance.currMagicLevelConfigInfo);
+        this.groupAllTubes.setScale(new Vec3(localConfig.instance.scaleTube,localConfig.instance.scaleTube,1));
+        this.shuffleGroupAllTubes.setScale(new Vec3(localConfig.instance.scaleTube,localConfig.instance.scaleTube,1));
+        this.noMovesGroupAllTubes.setScale(new Vec3(localConfig.instance.scaleTube,localConfig.instance.scaleTube,1));
+        for(let i=0; i< this.arrItemTubes.length;i++){
+            this.arrItemTubes[i].updateMagicPos();
+        }
+
+        let item = instantiate(this.tubePrefab);
+        item.setParent(this.groupAllTubes);
+        let itemTube: ItemTube = item.getComponent(ItemTube);
+        itemTube.initMagicItemTube_AddCol_Now(countTubebyY, indexAddColY);
         this.arrItemTubes.push(itemTube);
         
 

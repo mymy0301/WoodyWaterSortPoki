@@ -1265,6 +1265,20 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             itemTube.initMagicItemTube(magicBInfo, indexX, indexY, arrIndexColors, arrWaterVisibles);
             this.arrItemTubes.push(itemTube);
           }
+
+          if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.currGameMode == (_crd && GAME_MODE === void 0 ? (_reportPossibleCrUseOfGAME_MODE({
+            error: Error()
+          }), GAME_MODE) : GAME_MODE).NORMAL) {
+            if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+              error: Error()
+            }), localConfig) : localConfig).instance.currLevel >= 5 && (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+              error: Error()
+            }), localConfig) : localConfig).instance.currLevel <= 20) {
+              this.setUseBooster_AddCol_Now();
+            }
+          }
         }
 
         selectTubeItem(itemTube) {
@@ -2313,6 +2327,84 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), ItemTube) : ItemTube);
           itemTube.initMagicItemTube_AddCol(countTubebyY, indexAddColY);
+          this.arrItemTubes.push(itemTube);
+          this.showButtonBoosterAddCol_Available();
+        }
+
+        setUseBooster_AddCol_Now() {
+          let indexAddColY = (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.currMagicLevelConfigInfo.maxRow - 1;
+          let maxTubebyY = 0;
+          let arrItemTubes_byTubeY = this.arrItemTubes.filter(itemTube => itemTube.tubeY == indexAddColY);
+          maxTubebyY = arrItemTubes_byTubeY.length; // console.log(indexAddColY,maxTubebyY);
+
+          for (let i = (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.currMagicLevelConfigInfo.maxRow - 2; i >= 0; i--) {
+            let arrItemTubes_byTubeY = this.arrItemTubes.filter(itemTube => itemTube.tubeY == i); // console.log(i,arrItemTubes_byTubeY.length);
+
+            if (arrItemTubes_byTubeY.length < maxTubebyY) {
+              indexAddColY = i;
+              maxTubebyY = arrItemTubes_byTubeY.length;
+            } // console.log("check::::::",i,maxTubebyY);
+
+          } // console.log(indexAddColY);
+
+
+          let newMagicTubeInfo = new (_crd && MagicBInfo === void 0 ? (_reportPossibleCrUseOfMagicBInfo({
+            error: Error()
+          }), MagicBInfo) : MagicBInfo)();
+          newMagicTubeInfo.indexY = indexAddColY;
+          let countTubebyY = this.arrItemTubes.filter(itemTube => itemTube.tubeY == indexAddColY).length;
+          newMagicTubeInfo.indexX = countTubebyY;
+          (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.currMagicLevelConfigInfo.B.push(newMagicTubeInfo);
+          (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.mapMagicCountColbyIndexY.set(indexAddColY, newMagicTubeInfo.indexX + 1);
+
+          if ((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.currMagicLevelConfigInfo.maxCol < countTubebyY + 1) {
+            (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+              error: Error()
+            }), localConfig) : localConfig).instance.currMagicLevelConfigInfo.maxCol = countTubebyY + 1;
+          } // console.log(localConfig.instance.currMagicLevelConfigInfo);
+
+
+          (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.initPos_byMagicLevelDataInfo((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.currMagicLevelConfigInfo);
+          this.groupAllTubes.setScale(new Vec3((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.scaleTube, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.scaleTube, 1));
+          this.shuffleGroupAllTubes.setScale(new Vec3((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.scaleTube, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.scaleTube, 1));
+          this.noMovesGroupAllTubes.setScale(new Vec3((_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.scaleTube, (_crd && localConfig === void 0 ? (_reportPossibleCrUseOflocalConfig({
+            error: Error()
+          }), localConfig) : localConfig).instance.scaleTube, 1));
+
+          for (let i = 0; i < this.arrItemTubes.length; i++) {
+            this.arrItemTubes[i].updateMagicPos();
+          }
+
+          let item = instantiate(this.tubePrefab);
+          item.setParent(this.groupAllTubes);
+          let itemTube = item.getComponent(_crd && ItemTube === void 0 ? (_reportPossibleCrUseOfItemTube({
+            error: Error()
+          }), ItemTube) : ItemTube);
+          itemTube.initMagicItemTube_AddCol_Now(countTubebyY, indexAddColY);
           this.arrItemTubes.push(itemTube);
           this.showButtonBoosterAddCol_Available();
         } //#endregion
