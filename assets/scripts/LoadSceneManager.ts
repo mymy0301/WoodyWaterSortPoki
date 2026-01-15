@@ -1,5 +1,5 @@
 
-import { _decorator, Component, director, game, macro, Node, ProgressBar, tween, Tween, UIOpacity, Vec3, view } from 'cc';
+import { _decorator, Component, director, game, macro, Node, ProgressBar, ResolutionPolicy, tween, Tween, UIOpacity, Vec3, view } from 'cc';
 import { clientEvent } from './framework/clientEvent';
 import { Constants, ENV_TYPE, PLAY_TYPE, SHOP_PACK_TYPE } from './framework/constants';
 import { resourceUtil } from './framework/resourceUtil';
@@ -35,10 +35,10 @@ export class LoadSceneManager extends Component {
     isPreloadScene:boolean = false;
     isDataFinished:boolean = false;
 
-    @property(Node)
-    bg:Node;
-    @property(Node)
-    bg2:Node;
+    // @property(Node)
+    // bg:Node;
+    // @property(Node)
+    // bg2:Node;
 
     @property(Node)
     nodeTitle:Node = null;
@@ -70,8 +70,6 @@ export class LoadSceneManager extends Component {
         clientEvent.off(Constants.POKI_INIT_SUCCESS,this.pokiInitSuccess,this);
     }
     start () {
-        
-
         console.log(PLAY_TYPE[localConfig.instance.playType].toLowerCase().toString());
         localConfig.instance.splashStartTime = localConfig.instance.getCurrTime();
         tween(this.nodeTitle_Opacity).to(3,{opacity:255},{easing:'quadOut'}).start();
@@ -82,6 +80,29 @@ export class LoadSceneManager extends Component {
         let self = this;
         localConfig.instance.scaleBG = 1;
         localConfig.instance.updateFixRatioScreen();
+
+        let w = view.getFrameSize().width;
+        let h = view.getFrameSize().height;
+        const frameRatio = w / h;
+        const designRatio = localConfig.instance.DEFAULT_W / localConfig.instance.DEFAULT_H;
+        if (frameRatio > designRatio) {
+            // Màn hình rộng hơn so với design -> Fit Height
+            view.setDesignResolutionSize(
+                localConfig.instance.DEFAULT_W,
+                localConfig.instance.DEFAULT_H,
+                ResolutionPolicy.FIXED_HEIGHT
+            );
+
+            console.log("👉 Fit Height");
+        } else {
+            // Màn hình cao hơn -> Fit Width
+            view.setDesignResolutionSize(
+                localConfig.instance.DEFAULT_W,
+                localConfig.instance.DEFAULT_H,
+                ResolutionPolicy.FIXED_WIDTH
+            );
+            console.log("👉 Fit Width");
+        }
 
         if(localConfig.instance.isMobile){
             // let w:number = window.innerWidth;
@@ -97,8 +118,8 @@ export class LoadSceneManager extends Component {
             if(w / h < localConfig.instance.DEFAULT_W / localConfig.instance.DEFAULT_H){
                 localConfig.instance.scaleBG = (localConfig.instance.DEFAULT_W / localConfig.instance.DEFAULT_H) / (w / h);
 
-                this.bg.setScale(new Vec3(localConfig.instance.scaleBG,localConfig.instance.scaleBG,localConfig.instance.scaleBG));
-                this.bg2.setScale(new Vec3(localConfig.instance.scaleBG,localConfig.instance.scaleBG,localConfig.instance.scaleBG));
+                // this.bg.setScale(new Vec3(localConfig.instance.scaleBG,localConfig.instance.scaleBG,localConfig.instance.scaleBG));
+                // this.bg2.setScale(new Vec3(localConfig.instance.scaleBG,localConfig.instance.scaleBG,localConfig.instance.scaleBG));
                 // console.log(localConfig.instance.scaleBG);
             }
         }

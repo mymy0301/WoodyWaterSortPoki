@@ -92,6 +92,9 @@ export class ItemTube extends Component {
     @property(UIOpacity)
     coverOpacity:UIOpacity;
 
+    @property(Node)
+    nodeSelected:Node = null;
+
     tweenIconCover:Tween<{}> = null;
     tweenCoverOpacity:Tween<{}> = null;
 
@@ -165,6 +168,7 @@ export class ItemTube extends Component {
     initMagicItemTube(_magicBInfo:MagicBInfo,_tubeX:number,_tubeY:number,_arrIndexColors:number[],_arrWaterLocks:WATER_STATE[]){
         // console.error("_arrWaterLocks:",_arrWaterLocks);
         // console.error("_arrIndexColors:",_arrIndexColors);
+        this.nodeSelected.active = false;
         this.magicBInfo = _magicBInfo;
         this.loadTube();
         
@@ -438,6 +442,9 @@ export class ItemTube extends Component {
     }
 
     setMoveToTarget(itemTubeTarget:ItemTube,indexStep:number,posTarget:Vec3,isRight:boolean,indexStepON:number,countWaterOFF:number){
+        this.iconHover_Bottom.color = new Color(255,255,255);
+        this.iconHover_Top.color = new Color(255,255,255);
+        this.nodeSelected.active = false;
         // this.initGraphicsTest();
         let itemTubeConfig:ItemTubeConfig = localConfig.instance.getItemTubeConfig_byIndexTube(localConfig.instance.getThemeSelected_byThemeType(THEME_TYPE.TUBE) - 1);
         // console.log(itemTubeConfig);
@@ -756,7 +763,10 @@ export class ItemTube extends Component {
 
     setTubeMoveBack_Finished(){
         // console.log("setTubeMoveBack_FinishedsetTubeMoveBack_Finished",this.arrItemWaters[0].indexColor,this.arrItemWaters[1].indexColor,this.arrItemWaters[2].indexColor,this.arrItemWaters[3].indexColor);    
+        this.iconHover_Bottom.color = new Color(255,255,255);
+        this.iconHover_Top.color = new Color(255,255,255);
         this.currState = ITEM_TUBE_STATE.NONE;
+        this.nodeSelected.active = false;
         this.btnTube.interactable = true;
         let isWaterUnlock:boolean = false;
         let countItemWater_SameHeadIndexColor_LOCK:number = this.getCountItemWater_SameHeadIndexColor_LOCK();
@@ -941,6 +951,9 @@ export class ItemTube extends Component {
         // console.log("setSelect_ItemTube");
         this.currState = ITEM_TUBE_STATE.SELECT;
         this.stopAlllTween();
+        // this.iconHover_Top.color = new Color(0,255,0);
+        // this.iconHover_Bottom.color = new Color(0,255,0);
+        this.nodeSelected.active = true;
         this.tweenTube = tween(this.groupTube).to(0.15,{position: new Vec3(0,60,0)},{easing:'backOut',onComplete:()=>{
             this.setSelect_ItemTube_Finished();
         }}).start();
@@ -952,6 +965,9 @@ export class ItemTube extends Component {
     }
 
     setUnselect_ItemTube(isPlaySound:boolean = true){
+        this.iconHover_Top.color = new Color(255,255,255);
+        this.iconHover_Bottom.color = new Color(255,255,255);
+        this.nodeSelected.active = false;
         // console.log("setUnselect_ItemTube");
         this.currState = ITEM_TUBE_STATE.UNSELECT;
         this.stopAlllTween();
@@ -966,6 +982,9 @@ export class ItemTube extends Component {
 
     setUnselect_ItemTube_Now(){
         if(this.currState == ITEM_TUBE_STATE.SELECT){
+            this.iconHover_Top.color = new Color(255,255,255);
+            this.iconHover_Bottom.color = new Color(255,255,255);
+            this.nodeSelected.active = false;
             this.stopAlllTween();
             this.currState = ITEM_TUBE_STATE.NONE;
         }
@@ -973,6 +992,9 @@ export class ItemTube extends Component {
 
     setUnselect_ItemTube_Now_ResetPos(){
         if(this.currState == ITEM_TUBE_STATE.SELECT){
+            this.iconHover_Top.color = new Color(255,255,255);
+            this.iconHover_Bottom.color = new Color(255,255,255);
+            this.nodeSelected.active = false;
             this.stopAlllTween();
             this.currState = ITEM_TUBE_STATE.NONE;
             this.groupTube.setPosition(0,0,0);

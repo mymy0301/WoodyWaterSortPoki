@@ -279,6 +279,8 @@ export class localConfig {
         // localConfig.instance.currLevelUnlock = 104;
         // localConfig.instance.currLevelUnlock = 105;
         // console.log(localConfig.instance.currLevelUnlock);
+
+        // localConfig.instance.currLevelUnlock = 39;
         
         localConfig.instance.isTutLevel5 = configuration.instance.getData_TutLevel5() == 1;
 
@@ -1396,59 +1398,116 @@ export class localConfig {
 
     initPos_byMagicLevelDataInfo(magicLevelDataInfo:MagicLevelDataInfo){
         // console.log("initPos_byLevelDataInfo",magicLevelDataInfo);
-        if(magicLevelDataInfo.maxRow <= 2){
-            if(magicLevelDataInfo.maxCol <= 3){
-                this.KC_X = 300;
-                this.KC_Y = 300;
-                this.scaleTube = 1;
-            }else if(magicLevelDataInfo.maxCol == 4){
-                this.KC_X = 250;
-                this.KC_Y = 650;
-                this.scaleTube = 0.9;
-            }else if(magicLevelDataInfo.maxCol == 5){
-                this.KC_X = 220;
-                this.KC_Y = 650;
-                this.scaleTube = 0.9;
-            }else if(magicLevelDataInfo.maxCol == 6){
-                this.KC_X = 200;
-                this.KC_Y = 700;
-                this.scaleTube = 0.8;
-            }else if(magicLevelDataInfo.maxCol == 7){
-                this.KC_X = 200;
-                this.KC_Y = 700;
-                this.scaleTube = 0.75;
-            }else if(magicLevelDataInfo.maxCol == 8){
-                this.KC_X = 200;
-                this.KC_Y = 700;
-                this.scaleTube = 0.75;
-            }else{
-                this.KC_X = 170;
-                this.KC_Y = 700;
-                this.scaleTube = 0.8;
+        if(localConfig.instance.isMobile){
+            if (magicLevelDataInfo.maxRow <= 2) {
+                if (magicLevelDataInfo.maxCol <= 3) {
+                    this.KC_X = 300;
+                    this.KC_Y = 300;
+                    this.scaleTube = 1;
+                } else if (magicLevelDataInfo.maxCol == 4) {
+                    this.KC_X = 250;
+                    this.KC_Y = 650;
+                    this.scaleTube = 0.9;
+                } else if (magicLevelDataInfo.maxCol == 5) {
+                    this.KC_X = 220;
+                    this.KC_Y = 650;
+                    this.scaleTube = 0.9;
+                } else if (magicLevelDataInfo.maxCol == 6) {
+                    this.KC_X = 200;
+                    this.KC_Y = 700;
+                    this.scaleTube = 0.8;
+                } else if (magicLevelDataInfo.maxCol == 7) {
+                    this.KC_X = 200;
+                    this.KC_Y = 700;
+                    this.scaleTube = 0.75;
+                } else if (magicLevelDataInfo.maxCol == 8) {
+                    this.KC_X = 200;
+                    this.KC_Y = 700;
+                    this.scaleTube = 0.75;
+                } else {
+                    this.KC_X = 170;
+                    this.KC_Y = 700;
+                    this.scaleTube = 0.8;
+                }
+            } else {
+                if (magicLevelDataInfo.maxCol == 5) {
+                    this.KC_X = 220;
+                    this.KC_Y = 600;
+                    this.scaleTube = 0.75;
+                } else if (magicLevelDataInfo.maxCol == 6) {
+                    this.KC_X = 200;
+                    this.KC_Y = 600;
+                    this.scaleTube = 0.75;
+                } else if (magicLevelDataInfo.maxCol == 7) {
+                    this.KC_X = 200;
+                    this.KC_Y = 600;
+                    this.scaleTube = 0.75;
+                } else if (magicLevelDataInfo.maxCol == 8) {
+                    this.KC_X = 180;
+                    this.KC_Y = 600;
+                    this.scaleTube = 0.75;
+                } else {
+                    this.KC_X = 180;
+                    this.KC_Y = 600;
+                    this.scaleTube = 0.75;
+                }
             }
         }else{
-            if(magicLevelDataInfo.maxCol == 5){
-                this.KC_X = 220;
-                this.KC_Y = 600;
-                this.scaleTube = 0.75;
-            }else if(magicLevelDataInfo.maxCol == 6){
-                this.KC_X = 200;
-                this.KC_Y = 600;
-                this.scaleTube = 0.75;
-            }else if(magicLevelDataInfo.maxCol == 7){
-                this.KC_X = 200;
-                this.KC_Y = 600;
-                this.scaleTube = 0.75;
-            }else if(magicLevelDataInfo.maxCol == 8){
-                this.KC_X = 180;
-                this.KC_Y = 600;
-                this.scaleTube = 0.75;
-            }else{
-                this.KC_X = 180;
-                this.KC_Y = 600;
-                this.scaleTube = 0.75;
+            if (magicLevelDataInfo.maxRow <= 2) {
+                if (magicLevelDataInfo.maxCol <= 3) {
+                    this.KC_X = 300;
+                    this.KC_Y = 600;
+                    this.scaleTube = 1.5;
+                } else if (magicLevelDataInfo.maxCol == 4) {
+                    this.KC_X = 250;
+                    this.KC_Y = 600;
+                    this.scaleTube = 1.35;
+                } else if (magicLevelDataInfo.maxCol == 5) {
+                    this.KC_X = 250;
+                    this.KC_Y = 600;
+                    this.scaleTube = 1.35;
+                } else if (magicLevelDataInfo.maxCol == 6) {
+                    this.KC_X = 250;
+                    this.KC_Y = 600;
+                    this.scaleTube = 1.35;
+                } else if (magicLevelDataInfo.maxCol == 7) {
+                    this.KC_X = 250;
+                    this.KC_Y = 600;
+                    this.scaleTube = 1.35;
+                } else if (magicLevelDataInfo.maxCol == 8) {
+                    this.KC_X = 250;
+                    this.KC_Y = 600;
+                    this.scaleTube = 1.35;
+                } else {
+                    this.KC_X = 250;
+                    this.KC_Y = 600;
+                    this.scaleTube = 1.35;
+                }
+            } else {
+                if (magicLevelDataInfo.maxCol == 5) {
+                    this.KC_X = 300;
+                    this.KC_Y = 550;
+                    this.scaleTube = 1;
+                } else if (magicLevelDataInfo.maxCol == 6) {
+                    this.KC_X = 300;
+                    this.KC_Y = 550;
+                    this.scaleTube = 1;
+                } else if (magicLevelDataInfo.maxCol == 7) {
+                    this.KC_X = 300;
+                    this.KC_Y = 550;
+                    this.scaleTube = 1;
+                } else if (magicLevelDataInfo.maxCol == 8) {
+                    this.KC_X = 300;
+                    this.KC_Y = 550;
+                    this.scaleTube = 1;
+                } else {
+                    this.KC_X = 300;
+                    this.KC_Y = 550;
+                    this.scaleTube = 1;
+                }
             }
         }
+        
 
         // console.error("initPos_byMagicLevelDataInfo",this.KC_X,this.KC_Y,this.scaleTube);
     }
@@ -2903,7 +2962,7 @@ export class localConfig {
     }
     //#region SPIN
 
-    isMobile:boolean = true;
+    isMobile:boolean = false;
     scaleBG:number = 1;
     // PADDING_TOP_DEFAULT:number = 120;
     DEFAULT_W:number = 1080;

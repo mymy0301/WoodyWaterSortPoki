@@ -15,6 +15,12 @@ export class PokiSDKManager extends Component {
             PokiSDKManager.instance = this;
         }
         game.addPersistRootNode(this.node);
+
+        if (window.mobileCheck() == 1) {
+            localConfig.instance.isMobile = true;
+        } else {
+            localConfig.instance.isMobile = false;
+        }
     }
 
     isInitializeAsync = false;

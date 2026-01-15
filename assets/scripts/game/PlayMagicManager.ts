@@ -102,6 +102,12 @@ export class PlayMagicManager extends Component {
     @property(Button)
     btnPause:Button;
 
+    @property(Node)
+    groupBoosterMobile:Node;
+
+    @property(Node)
+    groupBoosterDesktop:Node;
+
     protected onEnable(): void {
         localConfig.instance.currSceneType = SCENE_TYPE.GAME;
 
@@ -142,6 +148,14 @@ export class PlayMagicManager extends Component {
         clientEvent.on(Constants.TOURNAMENT_PAGEHOST_TOUCH_REPLAY,this.setTournamentPageHostReplay,this);
 
         this.initAllTop();
+
+        if(localConfig.instance.isMobile){
+            this.groupBoosterMobile.active = true;
+            this.groupBoosterDesktop.active = false;
+        }else{
+            this.groupBoosterMobile.active = false;
+            this.groupBoosterDesktop.active = true;
+        }
     }
 
     protected onDisable(): void {
@@ -308,9 +322,15 @@ export class PlayMagicManager extends Component {
         localConfig.instance.currGameMode = GAME_MODE.NORMAL;
         this.resetLevel();
         this.backGroundGameManager.hideTournamentPageHostBG();
-        this.groupAllTubes.setPosition(new Vec3(0,120,0));
-        this.shuffleGroupAllTubes.setPosition(new Vec3(0,120,0));
-        this.noMovesGroupAllTubes.setPosition(new Vec3(0,120,0));
+        if(localConfig.instance.isMobile){
+            this.groupAllTubes.setPosition(new Vec3(0, 120, 0));
+            this.shuffleGroupAllTubes.setPosition(new Vec3(0, 120, 0));
+            this.noMovesGroupAllTubes.setPosition(new Vec3(0, 120, 0));
+        }else{
+            this.groupAllTubes.setPosition(new Vec3(0,0,0));
+            this.shuffleGroupAllTubes.setPosition(new Vec3(0,0,0));
+            this.noMovesGroupAllTubes.setPosition(new Vec3(0,0,0));
+        }
         // if(indexLevel <= localConfig.instance.LEVEL_SHOW_HOME){
         //     // this.btnReplay.node.active = false;
         //     this.btnPause.node.active = false;
@@ -356,8 +376,16 @@ export class PlayMagicManager extends Component {
         localConfig.instance.currGameMode = GAME_MODE.DAILY_CHALLENGE;
         this.resetLevel();
         this.backGroundGameManager.hideTournamentPageHostBG();
-        this.groupAllTubes.setPosition(new Vec3(0,120,0));
-        this.shuffleGroupAllTubes.setPosition(new Vec3(0,120,0));
+        if(localConfig.instance.isMobile){
+            this.groupAllTubes.setPosition(new Vec3(0, 120, 0));
+            this.shuffleGroupAllTubes.setPosition(new Vec3(0, 120, 0));
+            this.noMovesGroupAllTubes.setPosition(new Vec3(0, 120, 0));
+        }else{
+            this.groupAllTubes.setPosition(new Vec3(0,0,0));
+            this.shuffleGroupAllTubes.setPosition(new Vec3(0,0,0));
+            this.noMovesGroupAllTubes.setPosition(new Vec3(0,0,0));
+        }
+        
         // this.btnReplay.node.active = true;
         // this.btnPause.node.active = true;
         this.txtInfoNormal.string = `${localConfig.instance.getInfoDayStr_2(localConfig.instance.currInfoDaySelect)}`;

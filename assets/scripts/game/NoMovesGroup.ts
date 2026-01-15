@@ -30,6 +30,9 @@ export class NoMovesGroup extends Component {
     // @property
     // serializableDummy = 0;
 
+    @property(Node)
+    bgDesktop: Node = null;
+
     @property(Button)
     btnPlayOn: Button = null;
 
@@ -93,6 +96,11 @@ export class NoMovesGroup extends Component {
 
     }
     showNoMovesGroup() {
+        if(localConfig.instance.isMobile){
+            this.bgDesktop.active = false;
+        }else{
+            this.bgDesktop.active = true;
+        }
         AudioManager2.instance.playNoMoves();
         this.lockGroup.active = true;
         this.bgOpacity.opacity = 0;

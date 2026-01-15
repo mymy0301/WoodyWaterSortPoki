@@ -47,8 +47,8 @@ export class BackGroundGameManager extends Component {
 
     start () {
         // [3]
-        this.bg.node.setScale(new Vec3(localConfig.instance.scaleBG,localConfig.instance.scaleBG,localConfig.instance.scaleBG));
-        this.bg3.node.setScale(new Vec3(localConfig.instance.scaleBG,localConfig.instance.scaleBG,localConfig.instance.scaleBG));
+        // this.bg.node.setScale(new Vec3(localConfig.instance.scaleBG,localConfig.instance.scaleBG,localConfig.instance.scaleBG));
+        // this.bg3.node.setScale(new Vec3(localConfig.instance.scaleBG,localConfig.instance.scaleBG,localConfig.instance.scaleBG));
     }
 
     // update (deltaTime: number) {
